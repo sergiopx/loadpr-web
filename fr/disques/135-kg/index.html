@@ -108,7 +108,8 @@ header.site::after { /* the plate rule: 25 red · 20 blue · 15 yellow · 10 gre
   background: linear-gradient(90deg, var(--p25) 0 25%, var(--p20) 25% 50%, var(--p15) 50% 75%, var(--p10) 75%);
 }
 header.site .wrap { display: flex; align-items: center; gap: 24px; height: var(--nav-h); }
-.brand { font-weight: 800; letter-spacing: -.03em; font-size: 22px; color: var(--ink); white-space: nowrap; }
+.brand { display: inline-flex; align-items: center; gap: 9px; font-weight: 800; letter-spacing: -.03em; font-size: 22px; color: var(--ink); white-space: nowrap; }
+.brand .mark { width: 28px; height: 28px; border-radius: 7px; box-shadow: 0 0 0 .5px rgba(0,0,0,.08), 0 1px 3px rgba(0,0,0,.12); flex: 0 0 auto; }
 .brand:hover { text-decoration: none; }
 .brand b { color: var(--blue); font-weight: 800; }
 header.site nav { margin-left: auto; display: flex; gap: 22px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
@@ -307,7 +308,8 @@ footer.site .cols { display: grid; grid-template-columns: repeat(auto-fit, minma
 footer.site .cols strong { display: block; color: var(--ink); font-size: 13px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: .06em; }
 footer.site a { color: var(--muted); display: block; padding: 3px 0; }
 footer.site a:hover { color: var(--ink); }
-footer.site .brand { font-size: 28px; margin-bottom: 6px; display: inline-block; }
+footer.site .brand { font-size: 28px; margin-bottom: 8px; gap: 11px; }
+footer.site .brand .mark { width: 36px; height: 36px; border-radius: 9px; }
 footer.site .priv { font-size: 13px; color: var(--faint); border-top: 1px solid var(--hair); padding-top: 18px; margin-top: 18px; }
 
 /* ── legal + 404 ─────────────────────────────────────────────────────────── */
@@ -332,8 +334,10 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
 @keyframes lp-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 @keyframes lp-slide { from { opacity: 0; transform: translateX(-18px); } to { opacity: 1; transform: none; } }
 </style>
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="icon" href="/assets/icon/icon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/assets/icon/icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/icon/icon-180.png">
+  <link rel="manifest" href="/manifest.webmanifest">
   <script type="module" src="/assets/tool/app.js"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"LoadPR","operatingSystem":"iOS","applicationCategory":"HealthApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":"https://apps.apple.com/app/id6768525538"}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://loadpr.com/fr/"},{"@type":"ListItem","position":2,"name":"Calculateur de disques","item":"https://loadpr.com/fr/calculateur-de-disques/"},{"@type":"ListItem","position":3,"name":"135 kg","item":"https://loadpr.com/fr/disques/135-kg/"}]}</script>
@@ -341,7 +345,7 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
 </head>
 <body class="page-prog">
   <header class="site"><div class="wrap">
-    <a class="brand" href="/fr/">Load<b>PR</b></a>
+    <a class="brand" href="/fr/"><img class="mark" src="/assets/icon/icon-64.png" width="28" height="28" alt="" decoding="async"><span>Load<b>PR</b></span></a>
     <nav aria-label="Outils"><a href="/fr/calculateur-de-disques/">Calculateur de disques</a><a href="/fr/calculateur-1rm/">Calculateur 1RM</a><a href="/fr/calculateur-echauffement/">Échauffement</a><a href="/fr/convertisseur-kg-lb/">Convertisseur kg ↔ lb</a><a href="/fr/guide/couleurs-disques-olympiques/">Guides</a></nav>
     <span class="langswitch" aria-label="Langue"><a class="" href="https://loadpr.com/" hreflang="en" lang="en" aria-label="English">EN</a><a class="" href="https://loadpr.com/es/discos/135-kg/" hreflang="es" lang="es" aria-label="Español">ES</a><a class="on" href="https://loadpr.com/fr/disques/135-kg/" hreflang="fr" lang="fr" aria-label="Français">FR</a></span>
   </div></header>
@@ -373,7 +377,7 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
   </div></main>
   <footer class="site"><div class="wrap">
     <div class="cols">
-      <div><span class="brand">Load<b>PR</b></span><div>LoadPR — calculateur de disques et suivi des PR</div></div>
+      <div><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — calculateur de disques et suivi des PR</div></div>
       <div><strong>Outils</strong><a href="/fr/calculateur-de-disques/">Calculateur de disques</a><a href="/fr/calculateur-1rm/">Calculateur 1RM</a><a href="/fr/calculateur-echauffement/">Échauffement</a><a href="/fr/convertisseur-kg-lb/">Convertisseur kg ↔ lb</a></div>
       <div><strong>Guides</strong><a href="/fr/guide/couleurs-disques-olympiques/">Couleurs des disques olympiques : le guide complet</a><a href="/fr/guide/poids-des-barres/">Combien pèse une barre ? Tous les types</a><a href="/fr/guide/equivalences-kg-lb/">Équivalences kg ↔ lb pour la salle</a></div>
       <div><strong>Mentions légales</strong><a href="/privacy/">Confidentialité</a><a href="/terms/">Conditions</a></div>
