@@ -20,9 +20,9 @@ export function renderDiagram(plates, { unit = 'kg' } = {}) {
   const hFor = (w) => 74 + (Math.min(w, maxRef) / maxRef) * 150; // 74..224
 
   let x = barStub + sleeveW;
-  const rects = asc.map((w) => {
+  const rects = asc.map((w, i) => {
     const h = hFor(w);
-    const r = `<rect x="${x.toFixed(1)}" y="${(cy - h / 2).toFixed(1)}" width="${pw}" height="${h.toFixed(1)}" rx="${rx}" fill="${colorFor(w, unit)}" filter="url(#lp-shadow)"/>`;
+    const r = `<rect x="${x.toFixed(1)}" y="${(cy - h / 2).toFixed(1)}" width="${pw}" height="${h.toFixed(1)}" rx="${rx}" class="plate" style="--i:${i}" fill="${colorFor(w, unit)}" filter="url(#lp-shadow)"/>`;
     x += pw + gap;
     return r;
   });

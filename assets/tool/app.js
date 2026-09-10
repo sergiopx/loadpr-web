@@ -28,7 +28,7 @@ function h(tag, attrs = {}, children = []) {
   }
   return el;
 }
-const fmt = (n) => (Math.round(n * 100) / 100).toString().replace('.', s.decimal || '.');
+const fmt = (n) => (Math.round(n * 100) / 100).toString().replace('.', (s.meta && s.meta.decimal) || '.');
 
 function loadState() {
   try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch { return {}; }
