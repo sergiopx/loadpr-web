@@ -248,6 +248,10 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .cta p { margin: 0; color: var(--band-muted); font-size: 17px; max-width: 46ch; }
 .cta .btn { background: #fff; color: #1c1c1e; }
 .cta .btn:hover { background: #f5f5f7; }
+.cta-inline { margin: 36px 0; padding: 20px 22px; border-radius: var(--radius-md); background: var(--surface-2); display: flex; align-items: center; justify-content: space-between; gap: 14px 24px; flex-wrap: wrap; }
+.prose .cta-inline p { margin: 0; font-size: 16px; color: var(--muted); max-width: 40ch; }
+.cta-inline strong { color: var(--ink); }
+.cta-inline .btn { flex-shrink: 0; }
 
 /* ── prose ───────────────────────────────────────────────────────────────── */
 .prose { max-width: 44rem; }
