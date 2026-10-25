@@ -13,6 +13,7 @@
   --bg-alt: #f5f5f7;
   --surface: #ffffff;
   --surface-2: #f2f2f7;   /* iOS systemGray6 */
+  --field: var(--surface-2);
   --border: #d2d2d7;
   --hair: #e5e5ea;        /* systemGray5 */
   --ink: #1c1c1e;         /* label */
@@ -27,6 +28,7 @@
   --band: #1c1c1e; --band-ink: #f5f5f7; --band-muted: #98989f;
   --seg-track: #ececf0;
   --seg-thumb: #ffffff;
+  --dot-ring: rgba(0,0,0,.12);  /* plate-dot edge; dark mode lifts it so the 2.5 kg #1C1C1E dot reads on surfaces */
   --radius: 22px;
   --radius-md: 16px;
   --radius-sm: 12px;
@@ -45,7 +47,7 @@
     --border:#38383a; --hair:#2c2c2e; --ink:#f5f5f7; --muted:#98989f; --faint:#8e8e93;
     --blue:#0a84ff; --blue-press:#409cff; --ok:#30d158; --warn:#ffd60a;
     --band:#1c1c1e; --band-ink:#f5f5f7;
-    --seg-track:#2c2c2e; --seg-thumb:#636366;
+    --seg-track:#2c2c2e; --seg-thumb:#636366; --field:#2c2c2e; --dot-ring:rgba(255,255,255,.35);
     --shadow-lg:0 24px 60px rgba(0,0,0,.6); --shadow-thumb:0 2px 6px rgba(0,0,0,.4);
   }
 }
@@ -57,6 +59,7 @@ body {
   letter-spacing: -.01em; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
   padding-bottom: env(safe-area-inset-bottom);
   text-wrap: pretty;
+  overflow-x: clip; /* .bleed/.cta use 100vw, which counts a classic scrollbar */
 }
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--gutter); }
 a { color: var(--blue); text-decoration: none; }
@@ -95,7 +98,26 @@ header.site nav a:hover, header.site nav a[aria-current] { color: var(--ink); te
 .langswitch a { font-size: 12px; font-weight: 600; color: var(--muted); padding: 4px 9px; border-radius: var(--pill); }
 .langswitch a:hover { text-decoration: none; color: var(--ink); }
 .langswitch a.on { color: var(--ink); background: var(--seg-thumb); box-shadow: var(--shadow-thumb); }
-@media (max-width: 720px) { header.site nav { display: none; } }
+@media (max-width: 720px) { header.site nav { display: none; } header.site .langswitch { margin-left: auto; } }
+/* Medium widths: the nav scrolls with no visible cue, so links must fit, not scroll.
+   Below the full wrap width the langswitch shrinks to the current-locale pill, then
+   links drop in NAV_TOOL_KEYS order (config/tools.js): 3 = 1RM percentages,
+   4 = What's on the bar, 5 = Guides. The footer links every one of them. */
+@media (min-width: 721px) and (max-width: 1119px) {
+  .langswitch a:not([aria-current]) { display: none; }
+  header.site nav a:nth-child(3) { display: none; }
+}
+@media (min-width: 721px) and (max-width: 899px) { header.site nav a:nth-child(4) { display: none; } }
+@media (min-width: 721px) and (max-width: 819px) { header.site nav a:nth-child(5) { display: none; } }
+/* Header App Store button: outside <nav>, so it stays when the nav hides.
+   header.site outranks .btn, which is declared further down. */
+header.site .nav-cta { flex: 0 0 auto; padding: 7px 14px; font-size: 14px; line-height: 1.2; white-space: nowrap; margin-left: 12px; }
+/* Phones: only the current-locale pill; the footer's language column switches. */
+@media (max-width: 420px) {
+  .langswitch a:not([aria-current]) { display: none; }
+  header.site .wrap { gap: 16px; } /* room for the longest label, es "Descargar app" */
+  header.site .nav-cta { padding: 6px 10px; font-size: 13px; margin-left: 8px; }
+}
 
 main { padding: 0; }
 main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
@@ -131,7 +153,7 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .lp-field { display: grid; gap: 7px; }
 .lp-label { font-size: 13px; color: var(--muted); font-weight: 500; }
 .lp-form input, .lp-form select {
-  width: 100%; padding: 13px 14px; font-size: 17px; background: var(--surface-2); color: var(--ink);
+  width: 100%; padding: 13px 14px; font-size: 17px; background: var(--field); color: var(--ink);
   border: 1px solid transparent; border-radius: var(--radius-sm); letter-spacing: -.01em;
   transition: border-color .15s, box-shadow .15s; -webkit-appearance: none; appearance: none; font-family: inherit;
 }
@@ -155,9 +177,12 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .lp-inv[open] summary::before { content: "－ "; }
 .lp-inv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; padding: 6px 0 14px; }
 .lp-inv-row { display: flex; align-items: center; gap: 9px; font-size: 15px; }
-.lp-inv-row input[type=checkbox] { width: 20px; height: 20px; accent-color: var(--blue); }
+.lp-inv-row input[type=checkbox] { width: 20px; height: 20px; padding: 0; flex: 0 0 auto; -webkit-appearance: checkbox; appearance: auto; accent-color: var(--blue); }
 .lp-inv-w { flex: 1; }
-.lp-count { flex: 0 0 82px; padding: 7px 9px !important; font-size: 13px !important; }
+.lp-count { flex: 0 0 96px; padding: 7px 9px !important; font-size: 13px !important; }
+/* no spinners: they ate the room the "Unlimited" placeholder needs */
+.lp-form input.lp-count { -moz-appearance: textfield; appearance: textfield; }
+.lp-count::-webkit-inner-spin-button, .lp-count::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
 
 /* results */
 .lp-out { margin-top: 20px; display: grid; gap: 14px; }
@@ -174,13 +199,33 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .lp-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 14px; color: var(--muted); }
 .lp-per-side { font-weight: 500; margin-right: 2px; }
 .lp-chip { display: inline-flex; align-items: center; gap: 8px; background: var(--surface); border-radius: var(--pill); padding: 6px 13px; font-size: 14px; font-weight: 600; color: var(--ink); box-shadow: inset 0 0 0 1px var(--hair); font-variant-numeric: tabular-nums; }
-.lp-dot { width: 11px; height: 11px; border-radius: 50%; flex: 0 0 auto; box-shadow: inset 0 0 0 1px rgba(0,0,0,.12); }
+.lp-dot { width: 11px; height: 11px; border-radius: 50%; flex: 0 0 auto; box-shadow: inset 0 0 0 1px var(--dot-ring); }
 .lp-chip-empty { color: var(--muted); font-weight: 400; }
 
 .lp-table { width: 100%; border-collapse: collapse; font-size: 16px; font-variant-numeric: tabular-nums; }
 .lp-table th, .lp-table td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--hair); }
 .lp-table th { color: var(--faint); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; font-weight: 600; }
 .lp-table tr:last-child td { border-bottom: 0; }
+/* Wide tables scroll inside their box instead of widening the page. */
+.prose table { display: block; overflow-x: auto; max-width: 100%; }
+.lp-table-wrap { overflow-x: auto; max-width: 100%; }
+
+/* bar reader steppers and the home gym extras */
+.lp-pct-range > .lp-field { flex: 1; min-width: 0; }
+.lp-pct-range { gap: 8px; }
+.lp-pct-range select { padding-left: 10px; padding-right: 24px; background-position: right 8px center; }
+.lp-hint { margin: 0; font-size: 14px; color: var(--muted); }
+.lp-step-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; }
+.lp-step-row { display: flex; align-items: center; gap: 9px; font-size: 15px; }
+.lp-step-btn { width: 34px; height: 34px; border: 0; border-radius: 50%; background: var(--surface-2); color: var(--ink); font-size: 18px; font-weight: 600; line-height: 1; cursor: pointer; font-family: inherit; }
+.lp-step-btn:hover { color: var(--blue); }
+.lp-step-n { min-width: 1.6em; text-align: center; font-weight: 600; font-variant-numeric: tabular-nums; }
+.lp-other { margin: 0 0 4px; }
+.lp-missing { color: var(--ink); }
+.lp-totals { list-style: none; margin: 0; padding: 4px 0 14px; display: flex; flex-wrap: wrap; gap: 6px; font-size: 14px; font-variant-numeric: tabular-nums; }
+.lp-totals li { background: var(--surface); border-radius: var(--pill); padding: 4px 11px; box-shadow: inset 0 0 0 1px var(--hair); }
+.lp-totals .lp-more { background: transparent; box-shadow: none; color: var(--muted); }
+@media (max-width: 420px) { .lp-step-grid, .lp-inv-grid { grid-template-columns: 1fr; } }
 
 .lp-langbar { display: flex; align-items: center; gap: 12px; justify-content: center; flex-wrap: wrap; background: var(--surface-2); color: var(--ink); padding: 10px 16px; font-size: 14px; border-bottom: 1px solid var(--hair); }
 .lp-btn-sm { background: var(--blue); color: #fff; border: 0; padding: 7px 16px; border-radius: var(--pill); font-weight: 500; font-size: 13px; cursor: pointer; font-family: inherit; }
@@ -259,6 +304,20 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .prose ul { padding-left: 1.2em; }
 .prose li { margin: 4px 0; }
 .prose h2 { margin-top: 44px; }
+/* ── guide hub ───────────────────────────────────────────────────────────── */
+.hub .lede, .page-satellite .lede { color: var(--muted); font-size: clamp(18px, 2vw, 22px); line-height: 1.4; margin: 0 0 8px; }
+.guide-list { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.guide-card { display: flex; flex-direction: column; gap: 6px; height: 100%; border: 1px solid var(--hair); border-radius: var(--radius-sm); padding: 18px; color: var(--ink); transition: border-color .18s; }
+.guide-card:hover { border-color: var(--blue); text-decoration: none; }
+.guide-card-t { display: block; font-weight: 600; font-size: 18px; letter-spacing: -.01em; }
+.guide-card-d { display: block; color: var(--muted); font-size: 15px; line-height: 1.45; }
+.badge { align-self: flex-start; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); background: var(--surface-2); padding: 3px 9px; border-radius: var(--pill); }
+@media (max-width: 720px) { .guide-list { grid-template-columns: 1fr; } }
+/* related guides: hub cards under a guide or prog page */
+.related-guides { margin-top: 56px; }
+.related-guides h2 { margin: 0; font-size: 20px; }
+.related-guides .guide-list { margin-top: 16px; }
+.prose .meta-dates { color: var(--muted); font-size: 14px; margin: -8px 0 24px; }
 .support { margin-top: 64px; }
 .support h2:first-child { margin-top: 0; }
 body.page-guide h1 { margin-top: 10px; }
@@ -280,6 +339,16 @@ body.page-guide h1 { margin-top: 10px; }
 /* ── section under the split hero ───────────────────────────────────────── */
 .tool-section { margin-top: 24px; }
 .tool-section h2 { margin-top: 0; }
+/* Tool satellite: the way back to the parent tool. */
+.sat-back { margin: 32px 0 0; font-weight: 600; }
+/* Scenario: the short answer up top, steps, and the engine-computed example card. */
+body.page-scenario h1 { margin-top: 10px; }
+.prose .scn-answer { font-size: clamp(19px, 2vw, 22px); line-height: 1.45; font-weight: 500; }
+.prose.scenario ol { padding-left: 1.4em; }
+.scn-example { border: 1px solid var(--hair); border-radius: var(--radius-sm); background: var(--bg-alt); padding: 18px; margin: 16px 0 0; }
+.scn-example .lp-diagram { width: 100%; max-height: 220px; }
+.prose .scn-example-total { margin: 12px 0 0; font-size: 15px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.page-scenario .tool-section { margin-top: 56px; }
 
 /* ── footer ──────────────────────────────────────────────────────────────── */
 footer.site { border-top: 1px solid var(--hair); background: var(--bg-alt); padding: 44px 0 32px; color: var(--muted); font-size: 14px; }

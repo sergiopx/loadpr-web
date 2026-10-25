@@ -1,13 +1,16 @@
 import { colorFor } from '../engine/presets.js';
 
+const esc = (str) => String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+
 // Render the LoadPR-app-style plate visual as an SVG string: ONE side, plates
 // as tall rounded bars ramping up in height from a short grey bar sleeve, with
 // soft drop shadows and the app's iOS colors. Pure + dependency-free so it runs
 // identically at build time (static HTML) and live in the browser.
 //
 // `plates` is one side's denominations (any order — drawn smallest→largest so
-// the silhouette ramps up outward, matching the app).
-export function renderDiagram(plates, { unit = 'kg' } = {}) {
+// the silhouette ramps up outward, matching the app). `label` is the localized
+// "plates per side" (ui.diagramLabel) read after the count by screen readers.
+export function renderDiagram(plates, { unit = 'kg', label = '' } = {}) {
   const maxRef = unit === 'lb' ? 45 : 25; // biggest common plate = tallest
   const asc = [...plates].sort((a, b) => a - b);
   const pw = 34;        // plate width
@@ -31,7 +34,7 @@ export function renderDiagram(plates, { unit = 'kg' } = {}) {
   const bar = `<rect x="0" y="${cy - 6}" width="${barStub + 3}" height="12" rx="6" fill="#C7C7CC"/>`;
   const sleeve = `<rect x="${barStub}" y="${cy - 11}" width="${sleeveW}" height="22" rx="5" fill="#AEAEB2"/>`;
 
-  return `<svg class="lp-diagram" viewBox="0 0 ${W} ${H}" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="${plates.length} plates per side" xmlns="http://www.w3.org/2000/svg">` +
+  return `<svg class="lp-diagram" viewBox="0 0 ${W} ${H}" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="${esc(`${plates.length} ${label}`.trim())}" xmlns="http://www.w3.org/2000/svg">` +
     `<defs><filter id="lp-shadow" x="-30%" y="-20%" width="160%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="rgba(0,0,0,0.20)"/></filter></defs>` +
     `${bar}${sleeve}${rects.join('')}</svg>`;
 }

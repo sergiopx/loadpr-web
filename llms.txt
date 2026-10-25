@@ -1,0 +1,98 @@
+# LoadPR
+
+> Load your barbell right, instantly
+
+LoadPR is an iPhone app that works out which plates to load on a barbell and tracks your personal records (PRs). This site adds free browser calculators for loading a barbell in kilograms or pounds: a plate calculator, a home gym plate calculator for the plates you own, a one-rep max (1RM) calculator, a 1RM percentage calculator, a warmup calculator, a kg to lb converter and a "what's on the bar" calculator that adds up a loaded barbell. The app is free to download, with optional in-app purchases. Contact: support@loadpr.com.
+
+## English (en)
+
+### Home
+- [LoadPR — Load your barbell right, instantly](https://loadpr.com/): Free barbell calculators: plates per side, 1RM, warmup sets and kg ↔ lb conversion. No signup. Get LoadPR for iOS and load your bar right at the gym.
+
+### Tools
+- [Plate Calculator | How Many Plates Per Side](https://loadpr.com/plate-calculator/): Instantly work out which plates to load per side. Free, no signup. Get LoadPR for iOS and take it to the gym.
+- [1RM Calculator | Estimate Your Max](https://loadpr.com/1rm-calculator/): Estimate your one-rep max with Epley, Brzycki, Lombardi and O'Conner formulas, plus a 50-100% percentage table.
+- [Warmup Calculator | Progressive Sets](https://loadpr.com/warmup-calculator/): Generate progressive warmup sets from your working weight, rounded to loadable plates.
+- [Kg to Lb Converter | Kilos to Pounds](https://loadpr.com/kg-to-lb/): Convert kilograms to pounds and back, with rounding to the nearest loadable plate.
+- [1RM Percentage Calculator | Training Loads](https://loadpr.com/1rm-percentage-calculator/): Turn your one-rep max into a percentage chart from 100% down to 50%, with every weight rounded to a load you can put on the bar.
+- [What's on the Bar? Loaded Barbell Weight](https://loadpr.com/whats-on-the-bar/): Count the plates on one side of a loaded barbell and get the total weight in kg and lb, with the bar and collars included.
+- [Home Gym Plate Calculator | Use Your Own Plates](https://loadpr.com/home-gym-plate-calculator/): Enter the plates you own and a target weight. Get the exact load with the fewest plates, or the closest you can get and the pair to add if one pair does it.
+
+### Guides
+- [Barbell & Plate Guides](https://loadpr.com/guide/): Guides for lifters: Olympic plate colors, how much every barbell weighs, and kg to lb equivalents for loading the bar right in any gym.
+- [Olympic Plate Colors \(IWF\)](https://loadpr.com/guide/olympic-plate-colors/): What each Olympic plate color means under the IWF standard: 25 kg red, 20 kg blue, 15 kg yellow, 10 kg green, plus the change plates.
+- [How Much Does a Barbell Weigh? 45 lb / 20 kg](https://loadpr.com/guide/barbell-weights/): A gym barbell weighs 45 lb \(20 kg\). Women's Olympic bar 33 lb \(15 kg\), EZ curl 15–25 lb, trap bar 45–60 lb, plus what 1 to 5 plates per side adds up to.
+- [Kg to Lb Equivalents for Lifting](https://loadpr.com/guide/kg-to-lb-equivalents/): Conversion table between kilograms and pounds for the most common training loads.
+
+### Plate charts by weight
+- [How many plates for 95 to 495 lb (10 pages, one per weight)](https://loadpr.com/how-many-plates/95-lb/): URL pattern https://loadpr.com/how-many-plates/<weight>-lb/
+
+### About
+- [About LoadPR](https://loadpr.com/about/): LoadPR is an iPhone plate calculator and PR tracker, plus free web calculators for loading a barbell. Built by an independent developer.
+
+### Legal
+- [Privacy Policy](https://loadpr.com/privacy/): How LoadPR handles your information. Fitness data stays on your device and in your private iCloud; we run no external servers.
+- [Terms of Service](https://loadpr.com/terms/): The Terms of Service governing your use of the LoadPR iOS app, including subscriptions, in-app purchases, and the Apple EULA acknowledgement.
+
+## Español (es)
+
+### Home
+- [LoadPR — Calcula los discos de tu barra al instante](https://loadpr.com/es/): Calculadoras gratis para la barra: discos por lado, 1RM, series de calentamiento y conversión kg ↔ lb. Sin registro. Lleva LoadPR para iOS al gimnasio.
+
+### Tools
+- [Calculadora de discos | Cuántos discos por lado](https://loadpr.com/es/calculadora-de-discos/): Calcula al instante qué discos poner por lado en tu barra. Gratis, sin registro. Descarga LoadPR para iOS y llévalo al gimnasio.
+- [Calculadora 1RM | Estima tu máximo](https://loadpr.com/es/calculadora-1rm/): Estima tu 1RM con las fórmulas Epley, Brzycki, Lombardi y O'Conner, y obtén la tabla de porcentajes del 50 al 100%.
+- [Calculadora de calentamiento | Series progresivas](https://loadpr.com/es/calculadora-calentamiento/): Genera tus series de calentamiento progresivas a partir del peso de trabajo, redondeadas a discos reales.
+- [Conversor kg a lb | Kilos a libras](https://loadpr.com/es/conversor-kg-lb/): Convierte kilogramos a libras y viceversa, con redondeo al disco cargable más cercano.
+- [Porcentajes del 1RM | Tabla de cargas](https://loadpr.com/es/calculadora-porcentajes-1rm/): Convierte tu repetición máxima en una tabla de porcentajes del 100 al 50%, con cada peso redondeado a una carga que puedes montar en la barra.
+- [¿Cuánto pesa la barra cargada? | Calculadora](https://loadpr.com/es/cuanto-pesa-la-barra-cargada/): Cuenta los discos de un lado de la barra y obtén el peso total en kg y lb, con la barra y los collarines incluidos.
+- [Calculadora de discos para casa | Usa tus discos](https://loadpr.com/es/calculadora-discos-casa/): Indica los discos que tienes y el peso objetivo. Verás la carga exacta con el menor número de discos, o la más cercana y, si basta un par, cuál añadir.
+
+### Guides
+- [Guías de barras y discos](https://loadpr.com/es/guia/): Guías para levantadores: colores de los discos olímpicos, cuánto pesa cada barra y equivalencias de kg a libras para cargar bien la barra.
+- [Colores de los discos olímpicos \(IWF\)](https://loadpr.com/es/guia/colores-discos-olimpicos/): Qué significa cada color de disco olímpico según la IWF: 25 kg rojo, 20 kg azul, 15 kg amarillo, 10 kg verde y las placas de cambio.
+- [¿Cuánto pesa una barra? Olímpica, Z/EZ y en libras](https://loadpr.com/es/guia/peso-de-barras/): La barra olímpica pesa 20 kg \(45 lb\) y la femenina 15 kg \(33 lb\). La barra Z, EZ o W pesa entre 7 y 11 kg \(15–25 lb\). Tabla en kilos y libras de cada barra.
+- [Equivalencias de kg a libras para levantar](https://loadpr.com/es/guia/equivalencias-kg-lb/): Tabla de equivalencias entre kilogramos y libras para las cargas más habituales de entrenamiento.
+
+### Plate charts by weight
+- [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/es/discos/40-kg/): URL pattern https://loadpr.com/es/discos/<weight>-kg/
+
+## Français (fr)
+
+### Home
+- [LoadPR — Chargez votre barre sans vous tromper](https://loadpr.com/fr/): Calculateurs gratuits pour la barre : disques par côté, 1RM, échauffement et conversion kg ↔ lb. Sans inscription. LoadPR sur iOS vous suit à la salle.
+
+### Tools
+- [Calcul de disques | Combien de disques par côté](https://loadpr.com/fr/calculateur-de-disques/): Calculez instantanément quels disques mettre de chaque côté de votre barre. Gratuit, sans inscription. Téléchargez LoadPR pour iOS et emportez-le à la salle.
+- [Calculateur 1RM | Estimez votre max](https://loadpr.com/fr/calculateur-1rm/): Estimez votre 1RM avec les formules Epley, Brzycki, Lombardi et O'Conner, et obtenez le tableau des pourcentages de 50 à 100 %.
+- [Calculateur d'échauffement | Séries progressives](https://loadpr.com/fr/calculateur-echauffement/): Générez vos séries d'échauffement progressives à partir de votre poids de travail, arrondies à des disques réels.
+- [Convertisseur kg en lb | Kilos en livres](https://loadpr.com/fr/convertisseur-kg-lb/): Convertissez les kilogrammes en livres et inversement, avec arrondi au disque chargeable le plus proche.
+- [Pourcentages du 1RM | Tableau des charges](https://loadpr.com/fr/calculateur-pourcentage-1rm/): Transformez votre répétition maximale en tableau de pourcentages de 100 à 50 %, chaque poids arrondi à une charge réalisable sur la barre.
+- [Combien pèse la barre chargée ? | Calculateur](https://loadpr.com/fr/poids-sur-la-barre/): Comptez les disques d'un côté de la barre et obtenez le poids total en kg et en lb, barre et colliers compris.
+- [Disques à la maison | Chargez avec vos disques](https://loadpr.com/fr/calculateur-disques-maison/): Indiquez vos disques et le poids visé. Obtenez la charge exacte avec le moins de disques, ou la plus proche et, si une paire suffit, laquelle ajouter.
+
+### Guides
+- [Guides barres et disques](https://loadpr.com/fr/guide/): Guides pour la musculation : couleurs des disques olympiques, poids de chaque barre et équivalences kg en livres pour bien charger la barre.
+- [Couleurs des disques olympiques \(IWF\)](https://loadpr.com/fr/guide/couleurs-disques-olympiques/): Ce que signifie chaque couleur de disque olympique selon l'IWF : 25 kg rouge, 20 kg bleu, 15 kg jaune, 10 kg vert et les disques d'ajustement.
+- [Poids des barres de musculation](https://loadpr.com/fr/guide/poids-des-barres/): Poids de la barre olympique masculine \(20 kg\), féminine \(15 kg\), des barres techniques, EZ, hexagonales et plus encore.
+- [Équivalences kg en livres pour la musculation](https://loadpr.com/fr/guide/equivalences-kg-lb/): Tableau d'équivalences entre kilogrammes et livres pour les charges d'entraînement les plus courantes.
+
+### Plate charts by weight
+- [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/fr/disques/40-kg/): URL pattern https://loadpr.com/fr/disques/<weight>-kg/
+
+## Türkçe (tr)
+
+### Home
+- [LoadPR — Barınızı anında doğru yükleyin](https://loadpr.com/tr/): Ücretsiz bar hesaplama araçları: her tarafa kaç plaka, 1RM, ısınma setleri ve kg ↔ lb çevirme. Kayıt gerekmez. LoadPR'ı iOS'a indirin, salona götürün.
+
+### Tools
+- [Plaka Hesaplama | Her Tarafa Kaç Plaka](https://loadpr.com/tr/plaka-hesaplama/): Barın her iki tarafına hangi plakaları takacağınızı anında hesaplayın. Ücretsiz, kayıt gerektirmez. iOS için LoadPR'ı indirin, salona götürün.
+- [1RM Hesaplama: Tek Tekrar Maksimum](https://loadpr.com/tr/1rm-hesaplama/): Epley, Brzycki, Lombardi ve O'Conner formülleriyle tek tekrar maksimumunuzu tahmin edin, %50–100 yüzde tablosunu da görün.
+- [Isınma Seti Hesaplama | Kademeli Setler](https://loadpr.com/tr/isinma-hesaplama/): Çalışma ağırlığınızdan kademeli ısınma setleri oluşturun. Her set, plakalarla yüklenebilen bir ağırlığa yuvarlanır.
+- [Kg Lb Çevirici | Kilogramdan Libreye](https://loadpr.com/tr/kg-lb-cevirici/): Kilogramı libreye, libreyi kilograma çevirin. Sonuç, yüklenebilir en yakın plaka ağırlığına yuvarlanır.
+- [1RM Yüzde Hesaplama | Antrenman Ağırlıkları](https://loadpr.com/tr/1rm-yuzde-hesaplama/): Tek tekrar maksimumunuzu %100'den %50'ye inen bir yüzde tablosuna dönüştürün. Her ağırlık, bara yükleyebileceğiniz bir değere yuvarlanır.
+- [Barda Kaç Kilo Var? Yüklü Bar Ağırlığı](https://loadpr.com/tr/bardaki-agirlik/): Yüklü barın bir tarafındaki plakaları sayın; bar ve klipsler dahil toplam ağırlığı kg ve lb olarak görün.
+- [Ev Salonu Plaka Hesaplama | Kendi Plakalarınız](https://loadpr.com/tr/ev-salonu-plaka-hesaplama/): Plakalarınızı ve hedef ağırlığı girin. En az plakayla tam yükü ya da en yakın ağırlığı görün; tek bir çift yetiyorsa hangisini ekleyeceğinizi de gösteririz.
+
+### Plate charts by weight
+- [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/tr/plaka/40-kg/): URL pattern https://loadpr.com/tr/plaka/<weight>-kg/
