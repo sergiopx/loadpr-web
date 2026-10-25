@@ -17,10 +17,15 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://loadpr.com/privacy/">
   <meta property="og:image" content="https://loadpr.com/assets/og/en.png">
+  <meta property="og:image:alt" content="The LoadPR logo and the line “Load your barbell right, instantly” beside one side of a barbell loaded with a yellow and a red plate">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:image" content="https://loadpr.com/assets/og/en.png">
+  <meta name="twitter:image:alt" content="The LoadPR logo and the line “Load your barbell right, instantly” beside one side of a barbell loaded with a yellow and a red plate">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Privacy Policy — LoadPR">
+  <meta name="twitter:description" content="How LoadPR handles your information. Fitness data stays on your device and in your private iCloud; we run no external servers.">
   <link rel="preload" href="/assets/fonts/archivo-display.woff2" as="font" type="font/woff2" crossorigin>
   <style>/* LoadPR web — athletic editorial on iOS-native chrome.
    Display: Archivo variable (self-hosted, wght 500–900, wdth 100–125).
@@ -304,6 +309,7 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .tools-row .idx { font-size: 13px; color: var(--faint); font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 600; letter-spacing: .04em; }
 .tools-row .arrow { color: var(--faint); font-weight: 500; transition: transform .2s var(--ease), color .2s; }
 .tools-row a[aria-current] { color: var(--muted); }
+.tools-all { margin: 18px 0 0; font-weight: 600; }
 
 /* ── App Store band (full-bleed, dark) ───────────────────────────────────── */
 .cta {
@@ -337,6 +343,15 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .guide-card-d { display: block; color: var(--muted); font-size: 15px; line-height: 1.45; }
 .badge { align-self: flex-start; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); background: var(--surface-2); padding: 3px 9px; border-radius: var(--pill); }
 @media (max-width: 720px) { .guide-list { grid-template-columns: 1fr; } }
+/* tools hub: one card per tool, with its widget capture where there is one */
+.tool-grid { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.tool-card { display: flex; flex-direction: column; gap: 6px; height: 100%; border: 1px solid var(--hair); border-radius: var(--radius-sm); padding: 18px; color: var(--ink); transition: border-color .18s; }
+.tool-card:hover { border-color: var(--blue); text-decoration: none; }
+.tool-card img { display: block; width: 100%; height: auto; border-radius: var(--radius-sm); margin-bottom: 8px; background: var(--bg-alt); }
+.tool-card-t { display: block; font-weight: 600; font-size: 18px; letter-spacing: -.01em; }
+.tool-card-d { display: block; color: var(--muted); font-size: 15px; line-height: 1.45; }
+@media (max-width: 960px) { .tool-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .tool-grid { grid-template-columns: 1fr; } }
 /* related guides: hub cards under a guide or prog page */
 .related-guides { margin-top: 56px; }
 .related-guides h2 { margin: 0; font-size: 20px; }
@@ -372,7 +387,48 @@ body.page-scenario h1 { margin-top: 10px; }
 .scn-example { border: 1px solid var(--hair); border-radius: var(--radius-sm); background: var(--bg-alt); padding: 18px; margin: 16px 0 0; }
 .scn-example .lp-diagram { width: 100%; max-height: 220px; }
 .prose .scn-example-total { margin: 12px 0 0; font-size: 15px; color: var(--muted); font-variant-numeric: tabular-nums; }
+/* ── en home sections ───────────────────────────────────────────────────── */
+.home-sec { margin-top: 64px; }
+.home-sec > h2:first-child { margin-top: 0; }
+.home-steps { padding-left: 1.4em; }
+.home-diff-item h3 { margin: 28px 0 6px; font-size: 20px; letter-spacing: -.01em; }
+.home-diff-item p { margin: 0; }
+.home-plans { display: grid; grid-template-columns: 1fr; gap: 0 32px; }
+.home-plans h3 { margin: 20px 0 4px; font-size: 20px; }
+@media (min-width: 720px) { .home-plans { grid-template-columns: 1fr 1fr; } }
+/* screenshot strip: on phones a focusable snap scroller (scrolls inside itself,
+   never the page) with a peeking next shot and a right-edge fade; from 768 px a
+   grid that shows every shot */
+.home-gallery { margin-top: 64px; }
+.home-gallery h2 { margin: 0 0 18px; }
+.shot-scroller { overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; border-radius: var(--radius-md);
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent); }
+/* the mask clips anything outside the border box, so the focus ring sits inside and drops the fade */
+.shot-scroller:focus-visible { outline-offset: -3px; -webkit-mask-image: none; mask-image: none; }
+.shot-row { list-style: none; margin: 0; padding: 0 40px 12px 0; display: flex; gap: 14px; }
+.shot-row li { flex: 0 0 auto; width: min(62vw, 240px); scroll-snap-align: start; }
+@media (min-width: 768px) {
+  .shot-scroller { overflow: visible; -webkit-mask-image: none; mask-image: none; }
+  .shot-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 0; }
+  .shot-row li { width: auto; }
+}
+@media (min-width: 1024px) { .shot-row { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+.shot-row img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); background: #161618; }
 .page-scenario .tool-section { margin-top: 56px; }
+/* ── feature pages and hub ──────────────────────────────────────────────── */
+.feature .lede { color: var(--muted); font-size: clamp(18px, 2vw, 22px); line-height: 1.45; margin: 0; }
+.prose figure.shot { margin: 24px 0 0; width: min(70vw, 260px); }
+.shot img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); background: #161618; }
+.shot figcaption { margin-top: 10px; font-size: 14px; line-height: 1.4; color: var(--muted); }
+@media (min-width: 960px) {
+  .feature-intro { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 32px; align-items: start; }
+  .prose .feature-intro figure.shot { margin: 0; width: auto; }
+}
+.feature-access h2 { font-size: 22px; }
+.feature-shots { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 36px; }
+.feature-shots figure.shot { margin: 0; }
+.feature-card img { aspect-ratio: 3 / 4; object-fit: cover; object-position: top; background: #161618; }
+.feature-more { margin-top: 56px; }
 
 /* ── footer ──────────────────────────────────────────────────────────────── */
 footer.site { border-top: 1px solid var(--hair); background: var(--bg-alt); padding: 44px 0 32px; color: var(--muted); font-size: 14px; }
@@ -383,6 +439,16 @@ footer.site a:hover { color: var(--ink); }
 footer.site .brand { font-size: 28px; margin-bottom: 8px; gap: 11px; }
 footer.site .brand .mark { width: 36px; height: 36px; border-radius: 9px; }
 footer.site .priv { font-size: 13px; color: var(--faint); border-top: 1px solid var(--hair); padding-top: 18px; margin-top: 18px; }
+/* Phones: two columns, brand across both; links get >= 24px targets (WCAG 2.2 2.5.8). */
+@media (max-width: 720px) {
+  footer.site .cols { grid-template-columns: 1fr 1fr; gap: 24px 20px; }
+  footer.site .foot-brand { grid-column: 1 / -1; }
+  footer.site a { padding: 6px 0; font-size: 14px; }
+}
+
+/* ── /support/ ───────────────────────────────────────────────────────────── */
+#sup-links-h, #ft-tools-h { margin: 56px 0 0; font-size: 20px; }
+#sup-links-h + .related, #ft-tools-h + .related { margin-top: 16px; }
 
 /* ── legal + 404 ─────────────────────────────────────────────────────────── */
 body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
@@ -412,7 +478,7 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
   <link rel="manifest" href="/manifest.webmanifest">
   <script type="module" src="/assets/tool/app.js"></script>
 
-  <script>window.__LOADPR__={"strings":{"meta":{"siteName":"LoadPR","lang":"en","dir":"ltr","tagline":"Load your barbell right, instantly","homeDescription":"Free barbell calculators: plates per side, 1RM, warmup sets and kg ↔ lb conversion. No signup. Get LoadPR for iOS and load your bar right at the gym.","decimal":"."},"nav":{"calculator":"Plate calculator","oneRepMax":"1RM calculator","warmup":"Warmup","converter":"kg ↔ lb converter","guides":"Guides","getApp":"Get the app","percentTable":"1RM percentages","plateReader":"What's on the bar","homeGym":"Home gym plates"},"ui":{"targetWeight":"Target weight","unit":"Unit","kg":"kg","lb":"lb","bar":"Bar","barPresets":{"olympic_m":"Olympic ♂ (20 kg / 45 lb)","olympic_w":"Olympic ♀ (15 kg / 33 lb)","training":"Technique (10 kg / 15 lb)","custom":"Custom"},"collar":"Collars (per side)","inventory":"Available plates","unlimited":"Unlimited","calculate":"Calculate","reset":"Reset","perSide":"Per side","totalOnBar":"Total on bar","exact":"Exact load","notExact":"Can't be loaded exactly with your plates","nearestLoadable":"nearest loadable","closestBelow":"Closest below","closestAbove":"Closest above","reverseMode":"Read a loaded bar","reverseHint":"Add the plates you see on one side to get the total","empty":"Bar only","add":"Add plate","removePlate":"Remove plate","langSwitch":"Language","switchPrompt":"View this page in {lang}?","switchYes":"Switch","switchNo":"No thanks","openApp":"Open in app","prevWeight":"Lighter","nextWeight":"Heavier","nearby":"Nearby loads","breadcrumbHome":"Home","notFoundTitle":"Page not found","notFoundBody":"That page isn't loaded on this bar. Try the plate calculator instead.","notFoundButton":"Go to the calculator","relatedGuides":"Related guides","faq":"FAQ","toolsLabel":"Tools","updated":"Updated","lastUpdated":"Last updated","guideBadge":"Guide","scenarioBadge":"Scenario","convertArrow":"{from} → {to}","reps":"Reps","diagramLabel":"plates per side","tryTool":"Try it with your own numbers","backToTool":"← Back to {tool}","moreForTool":"More ways to use this tool","scenario":{"situation":"The situation","steps":"Step by step","example":"Worked example","mistakes":"Common mistakes","tryTool":"Work out your own load"}},"tools":{"plateCalc":{"h1":"Barbell plate calculator","title":"Plate Calculator | How Many Plates Per Side | LoadPR","description":"Instantly work out which plates to load per side. Free, no signup. Get LoadPR for iOS and take it to the gym.","intro":"Enter a target weight and we'll show exactly which plates go on each side. If it isn't loadable with your plates, we show the closest weight you can hit.","below":["\u003ch2>How much does the bar weigh?\u003c/h2>\u003cp>A standard men's Olympic bar weighs \u003cstrong>20 kg\u003c/strong> (45 lb) and the women's bar \u003cstrong>15 kg\u003c/strong> (33 lb). Technique and training bars weigh 10 to 15 kg. Always add the bar to the total: 100 kg on the bar is 40 kg of plates per side plus the 20 kg bar.\u003c/p>","\u003ch2>Plates per side, not in total\u003c/h2>\u003cp>A barbell is loaded symmetrically: every plate you put on one side goes on the other too. That's why this calculator gives you plates \u003cstrong>per side\u003c/strong>. For 60 kg with a 20 kg bar you need 20 kg per side: one 20 kg plate on each end.\u003c/p>","\u003ch2>Olympic plate colors\u003c/h2>\u003cp>Under the IWF standard, competition plates follow a color code: \u003cstrong>25 kg red, 20 kg blue, 15 kg yellow, 10 kg green\u003c/strong>. Our diagram uses the same colors so you can read a load at a glance.\u003c/p>"]},"oneRepMax":{"h1":"One-rep max (1RM) calculator","title":"1RM Calculator | Estimate Your Max | LoadPR","description":"Estimate your one-rep max with Epley, Brzycki, Lombardi and O'Conner formulas, plus a 50-100% percentage table.","intro":"Enter weight and reps to estimate your one-rep max and see your training percentages.","reps":"Reps","formula":"Formula","formulas":{"epley":"Epley","brzycki":"Brzycki","lombardi":"Lombardi","oconner":"O'Conner"},"estimated1rm":"Estimated 1RM","percent":"%","weight":"Weight","below":["\u003ch2>Which formula should you use?\u003c/h2>\u003cp>There is no perfect formula. \u003cstrong>Epley\u003c/strong> and \u003cstrong>Brzycki\u003c/strong> are the most widely used and agree closely at low reps. Above 8–10 reps every estimate loses accuracy: treat it as a reference, not a hard truth.\u003c/p>"]},"warmup":{"h1":"Warmup set calculator","title":"Warmup Calculator | Progressive Sets | LoadPR","description":"Generate progressive warmup sets from your working weight, rounded to loadable plates.","intro":"Enter your working weight and we'll build your warmup sets, rounded to the nearest loadable plate.","workingWeight":"Working weight","set":"Set","below":["\u003ch2>Why warm up progressively\u003c/h2>\u003cp>Raising the weight step by step primes your nervous system and joints without building fatigue. A good warmup doesn't tire you out: it leaves you ready for your working set.\u003c/p>"]},"converter":{"h1":"Kg to lb converter","title":"Kg to Lb Converter | Kilos to Pounds | LoadPR","description":"Convert kilograms to pounds and back, with rounding to the nearest loadable plate.","intro":"Convert between kilograms and pounds instantly. Perfect for reading a program written in the other unit.","from":"From","to":"To","result":"Result","below":["\u003ch2>The exact equivalence\u003c/h2>\u003cp>1 kg = 2.2046 lb and 1 lb = 0.4536 kg. A 20 kg plate is 44.09 lb, not 45 lb, which is why a bar loaded in kilos never matches one loaded in pounds exactly.\u003c/p>"]},"percentTable":{"h1":"1RM percentage calculator","title":"1RM Percentage Calculator | Training Loads | LoadPR","description":"Turn your one-rep max into a percentage chart from 100% down to 50%, with every weight rounded to a load you can put on the bar.","intro":"Enter your one-rep max to see every training percentage, plus the nearest weight you can actually load with standard plates.","below":["\u003ch2>Why round to a loadable weight\u003c/h2>\u003cp>Percentages rarely land on a weight you can load. 95% of a 140 kg max is 133 kg, but with 1.25 kg as the smallest plate the bar moves in 2.5 kg steps, so the closest load is \u003cstrong>132.5 kg\u003c/strong>. In pounds the step is 5 lb with 2.5 lb plates.\u003c/p>","\u003ch2>Choosing a range\u003c/h2>\u003cp>Programs written in percentages often put heavy sets above 80% of your max and volume or technique work below it. Pick the range and step that match your program: 5% for a quick overview, 2.5% for finer steps.\u003c/p>"],"oneRm":"Your 1RM","from":"From","to":"To","step":"Step","percent":"%","weight":"Weight","loadable":"Loadable"},"plateReader":{"h1":"What's on the bar? Loaded barbell calculator","title":"What's on the Bar? Loaded Barbell Weight | LoadPR","description":"Count the plates on one side of a loaded barbell and get the total weight in kg and lb, with the bar and collars included.","intro":"Walked up to a loaded bar? Add the plates you see on one side and get the total, with the bar and collars counted in.","below":["\u003ch2>Count one side, double it\u003c/h2>\u003cp>A barbell is loaded the same on both ends, so you only need to count one side. The total is the bar, plus both collars, plus twice the plates on one side: 20 kg + 2 × (20 + 10) = \u003cstrong>80 kg\u003c/strong>.\u003c/p>","\u003ch2>Kilo plates in a pound gym\u003c/h2>\u003cp>A 20 kg plate is 44.09 lb, so a bar loaded in kilos almost never reads as a round number in pounds. The total is shown in both units so you can compare it with your program.\u003c/p>"],"perSidePlates":"Plates on one side","total":"Total","otherUnitLine":"In the other unit: {value}"},"homeGym":{"h1":"Home gym plate calculator","title":"Home Gym Plate Calculator | Use Your Own Plates | LoadPR","description":"Enter the plates you own and a target weight. Get the exact load with the fewest plates, or the closest you can get and the pair to add if one pair does it.","intro":"Tell us how many plates of each size you own. We find the exact load with the fewest plates, even when starting with the heaviest plate doesn't work.","below":["\u003ch2>Why heaviest-first can fail\u003c/h2>\u003cp>With two 25 kg and four 15 kg plates, 80 kg on a 20 kg bar needs 30 kg per side. Starting with a 25 leaves 5 kg you don't have, but \u003cstrong>15 + 15\u003c/strong> per side works. This calculator checks every combination your plates allow.\u003c/p>","\u003ch2>Count plates, not pairs\u003c/h2>\u003cp>Enter the total number of plates you own of each size. Each side needs its own plate, so three 10 kg plates still give you one pair.\u003c/p>"],"owned":"Plates you own","target":"Target weight","missing":"Add one pair of {plate} to load it exactly","canLoad":"What you can load","canLoadMore":"…and {n} more"}},"cta":{"headline":"Take LoadPR to the gym","sub":"Calculate plates, save your bars, and track your PRs from your phone.","button":"Download on the App Store"}},"tool":"plateCalc","unitDefault":"lb","appStoreId":"6768525538","currentLocale":"en","defaultLocale":"en","locales":{"en":{"url":"https://loadpr.com/","name":"English"},"es":{"url":"https://loadpr.com/es/","name":"Español"},"fr":{"url":"https://loadpr.com/fr/","name":"Français"},"tr":{"url":"https://loadpr.com/tr/","name":"Türkçe"}}}</script>
+  <script>window.__LOADPR__={"strings":{"meta":{"siteName":"LoadPR","lang":"en","dir":"ltr","tagline":"Load your barbell right, instantly","homeDescription":"Free barbell calculators: plates per side, 1RM, warmup sets and kg ↔ lb conversion. No signup. Get LoadPR for iOS and load your bar right at the gym.","decimal":".","ogImageAlt":"The LoadPR logo and the line “Load your barbell right, instantly” beside one side of a barbell loaded with a yellow and a red plate"},"nav":{"calculator":"Plate calculator","oneRepMax":"1RM calculator","warmup":"Warmup","converter":"kg ↔ lb converter","guides":"Guides","getApp":"Get the app","percentTable":"1RM percentages","plateReader":"What's on the bar","homeGym":"Home gym plates"},"ui":{"targetWeight":"Target weight","unit":"Unit","kg":"kg","lb":"lb","bar":"Bar","barPresets":{"olympic_m":"Olympic ♂ (20 kg / 45 lb)","olympic_w":"Olympic ♀ (15 kg / 33 lb)","training":"Technique (10 kg / 15 lb)","custom":"Custom"},"collar":"Collars (per side)","inventory":"Available plates","unlimited":"Unlimited","calculate":"Calculate","reset":"Reset","perSide":"Per side","totalOnBar":"Total on bar","exact":"Exact load","notExact":"Can't be loaded exactly with your plates","nearestLoadable":"nearest loadable","closestBelow":"Closest below","closestAbove":"Closest above","reverseMode":"Read a loaded bar","reverseHint":"Add the plates you see on one side to get the total","empty":"Bar only","add":"Add plate","removePlate":"Remove plate","langSwitch":"Language","switchPrompt":"View this page in {lang}?","switchYes":"Switch","switchNo":"No thanks","openApp":"Open in app","prevWeight":"Lighter","nextWeight":"Heavier","nearby":"Nearby loads","breadcrumbHome":"Home","allTools":"All tools","notFoundTitle":"Page not found","notFoundBody":"That page isn't loaded on this bar. Try the plate calculator instead.","notFoundButton":"Go to the calculator","relatedGuides":"Related guides","faq":"FAQ","toolsLabel":"Tools","updated":"Updated","lastUpdated":"Last updated","guideBadge":"Guide","scenarioBadge":"Scenario","convertArrow":"{from} → {to}","reps":"Reps","diagramLabel":"plates per side","tryTool":"Try it with your own numbers","backToTool":"← Back to {tool}","moreForTool":"More ways to use this tool","scenario":{"situation":"The situation","steps":"Step by step","example":"Worked example","mistakes":"Common mistakes","tryTool":"Work out your own load"}},"tools":{"plateCalc":{},"oneRepMax":{"reps":"Reps","formula":"Formula","formulas":{"epley":"Epley","brzycki":"Brzycki","lombardi":"Lombardi","oconner":"O'Conner"},"estimated1rm":"Estimated 1RM","percent":"%","weight":"Weight"},"warmup":{"workingWeight":"Working weight","set":"Set"},"converter":{"from":"From","to":"To","result":"Result"},"percentTable":{"oneRm":"Your 1RM","from":"From","to":"To","step":"Step","percent":"%","weight":"Weight","loadable":"Loadable"},"plateReader":{"perSidePlates":"Plates on one side","total":"Total","otherUnitLine":"In the other unit: {value}"},"homeGym":{"owned":"Plates you own","target":"Target weight","missing":"Add one pair of {plate} to load it exactly","canLoad":"What you can load","canLoadMore":"…and {n} more"}},"cta":{"headline":"Take LoadPR to the gym","sub":"Calculate plates, save your bars, and track your PRs from your phone.","button":"Download on the App Store"}},"tool":"plateCalc","unitDefault":"lb","appStoreId":"6768525538","currentLocale":"en","defaultLocale":"en","locales":{"en":{"url":"https://loadpr.com/","name":"English"},"es":{"url":"https://loadpr.com/es/","name":"Español"},"fr":{"url":"https://loadpr.com/fr/","name":"Français"},"tr":{"url":"https://loadpr.com/tr/","name":"Türkçe"}}}</script>
 </head>
 <body class="page-legal">
   <header class="site"><div class="wrap">
@@ -452,10 +518,12 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
   </div></main>
   <footer class="site"><div class="wrap">
     <div class="cols">
-      <div><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — plate calculator &amp; PR tracker</div></div>
-      <div><strong>Tools</strong><a href="/plate-calculator/">Plate calculator</a><a href="/1rm-calculator/">1RM calculator</a><a href="/warmup-calculator/">Warmup</a><a href="/kg-to-lb/">kg ↔ lb converter</a><a href="/1rm-percentage-calculator/">1RM percentages</a><a href="/whats-on-the-bar/">What&#39;s on the bar</a><a href="/home-gym-plate-calculator/">Home gym plates</a></div>
-      <div><strong>Guides</strong><a href="/guide/">All guides</a><a href="/guide/olympic-plate-colors/">Olympic plate colors: the complete guide</a><a href="/guide/barbell-weights/">How much does a barbell weigh?</a><a href="/guide/kg-to-lb-equivalents/">Kg ↔ lb equivalents for the gym</a></div>
-      <div><strong>Legal</strong><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/about/">About</a></div>
+      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — plate calculator &amp; PR tracker</div></div>
+      <div><strong>Tools</strong><a href="/tools/">All tools</a><a href="/plate-calculator/">Plate calculator</a><a href="/1rm-calculator/">1RM calculator</a><a href="/warmup-calculator/">Warmup</a><a href="/kg-to-lb/">kg ↔ lb converter</a><a href="/1rm-percentage-calculator/">1RM percentages</a><a href="/whats-on-the-bar/">What&#39;s on the bar</a><a href="/home-gym-plate-calculator/">Home gym plates</a></div>
+      <div><strong>Features</strong><a href="/features/">All features</a><a href="/features/plate-loading/">Plate loading on iPhone and Apple Watch</a><a href="/features/closest-loadable-weight/">Closest loadable weight</a><a href="/features/percentages/">Percentages of your PR</a><a href="/features/gyms-and-plates/">Gyms, bars and plates</a><a href="/features/pr-tracking/">PR tracking</a><a href="/features/progress-charts/">Progress charts</a><a href="/features/workout-timer/">Workout timer</a><a href="/features/apple-watch/">LoadPR on Apple Watch</a></div>
+      <div><strong>Guides</strong><a href="/guide/">All guides</a><a href="/guide/olympic-plate-colors/">Olympic plate colors: the complete guide</a><a href="/guide/barbell-weights/">How much does a barbell weigh?</a><a href="/guide/kg-to-lb-equivalents/">Kg ↔ lb equivalents for the gym</a><a href="/guide/plates-on-each-side/">How much is 1 to 6 plates on each side?</a><a href="/guide/how-much-does-a-plate-weigh/">How much does a weight plate weigh?</a><a href="/guide/olympic-vs-standard-plates/">Olympic vs standard plates: what is the difference?</a><a href="/guide/barbell-collar-weight/">How much do barbell collars weigh?</a><a href="/guide/what-is-1rm/">What is a 1RM (one-rep max)?</a><a href="/guide/what-is-a-pr/">What is a PR in the gym?</a><a href="/guide/how-to-calculate-1rm/">How is 1RM calculated?</a><a href="/guide/rep-max-chart/">What percentage of your 1RM can you lift for each rep count?</a><a href="/guide/how-to-test-your-1rm/">How do you test your 1RM safely?</a><a href="/guide/warm-up-sets/">How many warm-up sets before squat, bench and deadlift?</a></div>
+      <div><strong>Popular weights</strong><a href="/how-many-plates/95-lb/">95 lb</a><a href="/how-many-plates/135-lb/">135 lb</a><a href="/how-many-plates/185-lb/">185 lb</a><a href="/how-many-plates/225-lb/">225 lb</a><a href="/how-many-plates/275-lb/">275 lb</a><a href="/how-many-plates/315-lb/">315 lb</a><a href="/how-many-plates/365-lb/">365 lb</a><a href="/how-many-plates/405-lb/">405 lb</a><a href="/how-many-plates/455-lb/">455 lb</a><a href="/how-many-plates/495-lb/">495 lb</a></div>
+      <div><strong>LoadPR</strong><a href="/about/">About</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
       <div><strong>Language</strong><a href="https://loadpr.com/" hreflang="en" lang="en" aria-current="true">English</a><a href="https://loadpr.com/es/" hreflang="es" lang="es">Español</a><a href="https://loadpr.com/fr/" hreflang="fr" lang="fr">Français</a><a href="https://loadpr.com/tr/" hreflang="tr" lang="tr">Türkçe</a></div>
     </div>
     <div class="priv">No cookies. No tracking. Your data stays on your device.</div>

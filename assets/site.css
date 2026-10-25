@@ -280,6 +280,7 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .tools-row .idx { font-size: 13px; color: var(--faint); font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 600; letter-spacing: .04em; }
 .tools-row .arrow { color: var(--faint); font-weight: 500; transition: transform .2s var(--ease), color .2s; }
 .tools-row a[aria-current] { color: var(--muted); }
+.tools-all { margin: 18px 0 0; font-weight: 600; }
 
 /* ── App Store band (full-bleed, dark) ───────────────────────────────────── */
 .cta {
@@ -313,6 +314,15 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .guide-card-d { display: block; color: var(--muted); font-size: 15px; line-height: 1.45; }
 .badge { align-self: flex-start; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); background: var(--surface-2); padding: 3px 9px; border-radius: var(--pill); }
 @media (max-width: 720px) { .guide-list { grid-template-columns: 1fr; } }
+/* tools hub: one card per tool, with its widget capture where there is one */
+.tool-grid { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.tool-card { display: flex; flex-direction: column; gap: 6px; height: 100%; border: 1px solid var(--hair); border-radius: var(--radius-sm); padding: 18px; color: var(--ink); transition: border-color .18s; }
+.tool-card:hover { border-color: var(--blue); text-decoration: none; }
+.tool-card img { display: block; width: 100%; height: auto; border-radius: var(--radius-sm); margin-bottom: 8px; background: var(--bg-alt); }
+.tool-card-t { display: block; font-weight: 600; font-size: 18px; letter-spacing: -.01em; }
+.tool-card-d { display: block; color: var(--muted); font-size: 15px; line-height: 1.45; }
+@media (max-width: 960px) { .tool-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .tool-grid { grid-template-columns: 1fr; } }
 /* related guides: hub cards under a guide or prog page */
 .related-guides { margin-top: 56px; }
 .related-guides h2 { margin: 0; font-size: 20px; }
@@ -348,7 +358,48 @@ body.page-scenario h1 { margin-top: 10px; }
 .scn-example { border: 1px solid var(--hair); border-radius: var(--radius-sm); background: var(--bg-alt); padding: 18px; margin: 16px 0 0; }
 .scn-example .lp-diagram { width: 100%; max-height: 220px; }
 .prose .scn-example-total { margin: 12px 0 0; font-size: 15px; color: var(--muted); font-variant-numeric: tabular-nums; }
+/* ── en home sections ───────────────────────────────────────────────────── */
+.home-sec { margin-top: 64px; }
+.home-sec > h2:first-child { margin-top: 0; }
+.home-steps { padding-left: 1.4em; }
+.home-diff-item h3 { margin: 28px 0 6px; font-size: 20px; letter-spacing: -.01em; }
+.home-diff-item p { margin: 0; }
+.home-plans { display: grid; grid-template-columns: 1fr; gap: 0 32px; }
+.home-plans h3 { margin: 20px 0 4px; font-size: 20px; }
+@media (min-width: 720px) { .home-plans { grid-template-columns: 1fr 1fr; } }
+/* screenshot strip: on phones a focusable snap scroller (scrolls inside itself,
+   never the page) with a peeking next shot and a right-edge fade; from 768 px a
+   grid that shows every shot */
+.home-gallery { margin-top: 64px; }
+.home-gallery h2 { margin: 0 0 18px; }
+.shot-scroller { overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; border-radius: var(--radius-md);
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent); }
+/* the mask clips anything outside the border box, so the focus ring sits inside and drops the fade */
+.shot-scroller:focus-visible { outline-offset: -3px; -webkit-mask-image: none; mask-image: none; }
+.shot-row { list-style: none; margin: 0; padding: 0 40px 12px 0; display: flex; gap: 14px; }
+.shot-row li { flex: 0 0 auto; width: min(62vw, 240px); scroll-snap-align: start; }
+@media (min-width: 768px) {
+  .shot-scroller { overflow: visible; -webkit-mask-image: none; mask-image: none; }
+  .shot-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 0; }
+  .shot-row li { width: auto; }
+}
+@media (min-width: 1024px) { .shot-row { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+.shot-row img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); background: #161618; }
 .page-scenario .tool-section { margin-top: 56px; }
+/* ── feature pages and hub ──────────────────────────────────────────────── */
+.feature .lede { color: var(--muted); font-size: clamp(18px, 2vw, 22px); line-height: 1.45; margin: 0; }
+.prose figure.shot { margin: 24px 0 0; width: min(70vw, 260px); }
+.shot img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); background: #161618; }
+.shot figcaption { margin-top: 10px; font-size: 14px; line-height: 1.4; color: var(--muted); }
+@media (min-width: 960px) {
+  .feature-intro { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 32px; align-items: start; }
+  .prose .feature-intro figure.shot { margin: 0; width: auto; }
+}
+.feature-access h2 { font-size: 22px; }
+.feature-shots { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 36px; }
+.feature-shots figure.shot { margin: 0; }
+.feature-card img { aspect-ratio: 3 / 4; object-fit: cover; object-position: top; background: #161618; }
+.feature-more { margin-top: 56px; }
 
 /* ── footer ──────────────────────────────────────────────────────────────── */
 footer.site { border-top: 1px solid var(--hair); background: var(--bg-alt); padding: 44px 0 32px; color: var(--muted); font-size: 14px; }
@@ -359,6 +410,16 @@ footer.site a:hover { color: var(--ink); }
 footer.site .brand { font-size: 28px; margin-bottom: 8px; gap: 11px; }
 footer.site .brand .mark { width: 36px; height: 36px; border-radius: 9px; }
 footer.site .priv { font-size: 13px; color: var(--faint); border-top: 1px solid var(--hair); padding-top: 18px; margin-top: 18px; }
+/* Phones: two columns, brand across both; links get >= 24px targets (WCAG 2.2 2.5.8). */
+@media (max-width: 720px) {
+  footer.site .cols { grid-template-columns: 1fr 1fr; gap: 24px 20px; }
+  footer.site .foot-brand { grid-column: 1 / -1; }
+  footer.site a { padding: 6px 0; font-size: 14px; }
+}
+
+/* ── /support/ ───────────────────────────────────────────────────────────── */
+#sup-links-h, #ft-tools-h { margin: 56px 0 0; font-size: 20px; }
+#sup-links-h + .related, #ft-tools-h + .related { margin-top: 16px; }
 
 /* ── legal + 404 ─────────────────────────────────────────────────────────── */
 body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }

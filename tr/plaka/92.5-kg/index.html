@@ -19,10 +19,15 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://loadpr.com/tr/plaka/92.5-kg/">
   <meta property="og:image" content="https://loadpr.com/assets/og/tr.png">
+  <meta property="og:image:alt" content="LoadPR logosu ve “Barınızı anında doğru yükleyin” yazısı, yanında sarı ve kırmızı plaka takılı bir barın bir tarafı">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:image" content="https://loadpr.com/assets/og/tr.png">
+  <meta name="twitter:image:alt" content="LoadPR logosu ve “Barınızı anında doğru yükleyin” yazısı, yanında sarı ve kırmızı plaka takılı bir barın bir tarafı">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="92,5 kg İçin Kaç Plaka Gerekir? | LoadPR">
+  <meta name="twitter:description" content="Olimpik barda 92,5 kg yüklemek için her tarafa hangi plakaları takmanız gerektiğini görün. Diyagram ve hesaplayıcı LoadPR&#39;da.">
   <link rel="preload" href="/assets/fonts/archivo-display.woff2" as="font" type="font/woff2" crossorigin>
   <style>/* LoadPR web — athletic editorial on iOS-native chrome.
    Display: Archivo variable (self-hosted, wght 500–900, wdth 100–125).
@@ -306,6 +311,7 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .tools-row .idx { font-size: 13px; color: var(--faint); font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 600; letter-spacing: .04em; }
 .tools-row .arrow { color: var(--faint); font-weight: 500; transition: transform .2s var(--ease), color .2s; }
 .tools-row a[aria-current] { color: var(--muted); }
+.tools-all { margin: 18px 0 0; font-weight: 600; }
 
 /* ── App Store band (full-bleed, dark) ───────────────────────────────────── */
 .cta {
@@ -339,6 +345,15 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .guide-card-d { display: block; color: var(--muted); font-size: 15px; line-height: 1.45; }
 .badge { align-self: flex-start; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); background: var(--surface-2); padding: 3px 9px; border-radius: var(--pill); }
 @media (max-width: 720px) { .guide-list { grid-template-columns: 1fr; } }
+/* tools hub: one card per tool, with its widget capture where there is one */
+.tool-grid { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.tool-card { display: flex; flex-direction: column; gap: 6px; height: 100%; border: 1px solid var(--hair); border-radius: var(--radius-sm); padding: 18px; color: var(--ink); transition: border-color .18s; }
+.tool-card:hover { border-color: var(--blue); text-decoration: none; }
+.tool-card img { display: block; width: 100%; height: auto; border-radius: var(--radius-sm); margin-bottom: 8px; background: var(--bg-alt); }
+.tool-card-t { display: block; font-weight: 600; font-size: 18px; letter-spacing: -.01em; }
+.tool-card-d { display: block; color: var(--muted); font-size: 15px; line-height: 1.45; }
+@media (max-width: 960px) { .tool-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .tool-grid { grid-template-columns: 1fr; } }
 /* related guides: hub cards under a guide or prog page */
 .related-guides { margin-top: 56px; }
 .related-guides h2 { margin: 0; font-size: 20px; }
@@ -374,7 +389,48 @@ body.page-scenario h1 { margin-top: 10px; }
 .scn-example { border: 1px solid var(--hair); border-radius: var(--radius-sm); background: var(--bg-alt); padding: 18px; margin: 16px 0 0; }
 .scn-example .lp-diagram { width: 100%; max-height: 220px; }
 .prose .scn-example-total { margin: 12px 0 0; font-size: 15px; color: var(--muted); font-variant-numeric: tabular-nums; }
+/* ── en home sections ───────────────────────────────────────────────────── */
+.home-sec { margin-top: 64px; }
+.home-sec > h2:first-child { margin-top: 0; }
+.home-steps { padding-left: 1.4em; }
+.home-diff-item h3 { margin: 28px 0 6px; font-size: 20px; letter-spacing: -.01em; }
+.home-diff-item p { margin: 0; }
+.home-plans { display: grid; grid-template-columns: 1fr; gap: 0 32px; }
+.home-plans h3 { margin: 20px 0 4px; font-size: 20px; }
+@media (min-width: 720px) { .home-plans { grid-template-columns: 1fr 1fr; } }
+/* screenshot strip: on phones a focusable snap scroller (scrolls inside itself,
+   never the page) with a peeking next shot and a right-edge fade; from 768 px a
+   grid that shows every shot */
+.home-gallery { margin-top: 64px; }
+.home-gallery h2 { margin: 0 0 18px; }
+.shot-scroller { overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; border-radius: var(--radius-md);
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent); }
+/* the mask clips anything outside the border box, so the focus ring sits inside and drops the fade */
+.shot-scroller:focus-visible { outline-offset: -3px; -webkit-mask-image: none; mask-image: none; }
+.shot-row { list-style: none; margin: 0; padding: 0 40px 12px 0; display: flex; gap: 14px; }
+.shot-row li { flex: 0 0 auto; width: min(62vw, 240px); scroll-snap-align: start; }
+@media (min-width: 768px) {
+  .shot-scroller { overflow: visible; -webkit-mask-image: none; mask-image: none; }
+  .shot-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 0; }
+  .shot-row li { width: auto; }
+}
+@media (min-width: 1024px) { .shot-row { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+.shot-row img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); background: #161618; }
 .page-scenario .tool-section { margin-top: 56px; }
+/* ── feature pages and hub ──────────────────────────────────────────────── */
+.feature .lede { color: var(--muted); font-size: clamp(18px, 2vw, 22px); line-height: 1.45; margin: 0; }
+.prose figure.shot { margin: 24px 0 0; width: min(70vw, 260px); }
+.shot img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); background: #161618; }
+.shot figcaption { margin-top: 10px; font-size: 14px; line-height: 1.4; color: var(--muted); }
+@media (min-width: 960px) {
+  .feature-intro { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 32px; align-items: start; }
+  .prose .feature-intro figure.shot { margin: 0; width: auto; }
+}
+.feature-access h2 { font-size: 22px; }
+.feature-shots { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 36px; }
+.feature-shots figure.shot { margin: 0; }
+.feature-card img { aspect-ratio: 3 / 4; object-fit: cover; object-position: top; background: #161618; }
+.feature-more { margin-top: 56px; }
 
 /* ── footer ──────────────────────────────────────────────────────────────── */
 footer.site { border-top: 1px solid var(--hair); background: var(--bg-alt); padding: 44px 0 32px; color: var(--muted); font-size: 14px; }
@@ -385,6 +441,16 @@ footer.site a:hover { color: var(--ink); }
 footer.site .brand { font-size: 28px; margin-bottom: 8px; gap: 11px; }
 footer.site .brand .mark { width: 36px; height: 36px; border-radius: 9px; }
 footer.site .priv { font-size: 13px; color: var(--faint); border-top: 1px solid var(--hair); padding-top: 18px; margin-top: 18px; }
+/* Phones: two columns, brand across both; links get >= 24px targets (WCAG 2.2 2.5.8). */
+@media (max-width: 720px) {
+  footer.site .cols { grid-template-columns: 1fr 1fr; gap: 24px 20px; }
+  footer.site .foot-brand { grid-column: 1 / -1; }
+  footer.site a { padding: 6px 0; font-size: 14px; }
+}
+
+/* ── /support/ ───────────────────────────────────────────────────────────── */
+#sup-links-h, #ft-tools-h { margin: 56px 0 0; font-size: 20px; }
+#sup-links-h + .related, #ft-tools-h + .related { margin-top: 16px; }
 
 /* ── legal + 404 ─────────────────────────────────────────────────────────── */
 body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
@@ -415,7 +481,7 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
   <script type="module" src="/assets/tool/app.js"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"LoadPR","operatingSystem":"iOS","applicationCategory":"HealthApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":"https://apps.apple.com/app/id6768525538"}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana sayfa","item":"https://loadpr.com/tr/"},{"@type":"ListItem","position":2,"name":"Plaka hesaplama","item":"https://loadpr.com/tr/plaka-hesaplama/"},{"@type":"ListItem","position":3,"name":"92,5 kg","item":"https://loadpr.com/tr/plaka/92.5-kg/"}]}</script>
-  <script>window.__LOADPR__={"strings":{"meta":{"siteName":"LoadPR","lang":"tr","dir":"ltr","tagline":"Barınızı anında doğru yükleyin","homeDescription":"Ücretsiz bar hesaplama araçları: her tarafa kaç plaka, 1RM, ısınma setleri ve kg ↔ lb çevirme. Kayıt gerekmez. LoadPR'ı iOS'a indirin, salona götürün.","decimal":","},"nav":{"calculator":"Plaka hesaplama","oneRepMax":"1RM hesaplama","warmup":"Isınma","converter":"kg ↔ lb çevirici","guides":"Rehberler","getApp":"İndir","percentTable":"1RM yüzdeleri","plateReader":"Bardaki ağırlık","homeGym":"Ev salonu plakaları"},"ui":{"targetWeight":"Hedef ağırlık","unit":"Birim","kg":"kg","lb":"lb","bar":"Bar","barPresets":{"olympic_m":"Olimpik ♂ (20 kg / 45 lb)","olympic_w":"Olimpik ♀ (15 kg / 33 lb)","training":"Teknik (10 kg / 15 lb)","custom":"Özel"},"collar":"Klips (taraf başına)","inventory":"Mevcut plakalar","unlimited":"Sınırsız","calculate":"Hesapla","reset":"Sıfırla","perSide":"Taraf başına","totalOnBar":"Bardaki toplam","exact":"Tam yük","notExact":"Plakalarınızla tam olarak yüklenemiyor","nearestLoadable":"yüklenebilecek en yakın ağırlık","closestBelow":"En yakın alt ağırlık","closestAbove":"En yakın üst ağırlık","reverseMode":"Yüklü barı oku","reverseHint":"Toplamı görmek için bir taraftaki plakaları ekleyin","empty":"Yalnızca bar","add":"Plaka ekle","removePlate":"Plaka çıkar","langSwitch":"Dil","switchPrompt":"Bu sayfanın {lang} sürümüne geçmek ister misiniz?","switchYes":"Evet, geç","switchNo":"Hayır, teşekkürler","openApp":"Uygulamada aç","prevWeight":"Daha hafif","nextWeight":"Daha ağır","nearby":"Yakın ağırlıklar","breadcrumbHome":"Ana sayfa","notFoundTitle":"Sayfa bulunamadı","notFoundBody":"Bu sayfa bu bara yüklenmemiş. Bunun yerine plaka hesaplayıcıyı deneyin.","notFoundButton":"Hesaplayıcıya git","relatedGuides":"İlgili rehberler","faq":"SSS","toolsLabel":"Araçlar","updated":"Güncellendi","lastUpdated":"Son güncelleme","guideBadge":"Rehber","scenarioBadge":"Senaryo","convertArrow":"{from} → {to}","reps":"Tekrar","diagramLabel":"plaka (taraf başına)","tryTool":"Kendi değerlerinizle deneyin","backToTool":"← {tool} sayfasına dön","moreForTool":"Bu aracın diğer kullanımları","scenario":{"situation":"Durum","steps":"Adım adım","example":"Örnek hesaplama","mistakes":"Sık yapılan hatalar","tryTool":"Kendi yükünüzü hesaplayın"}},"tools":{"plateCalc":{"h1":"Bar için plaka hesaplama","title":"Plaka Hesaplama | Her Tarafa Kaç Plaka | LoadPR","description":"Barın her iki tarafına hangi plakaları takacağınızı anında hesaplayın. Ücretsiz, kayıt gerektirmez. iOS için LoadPR'ı indirin, salona götürün.","intro":"Hedef ağırlığı girin, her tarafa hangi plakaların gideceğini tam olarak gösterelim. Bu ağırlık plakalarınızla yüklenemiyorsa ulaşabileceğiniz en yakın ağırlığı gösteririz.","below":[]},"oneRepMax":{"h1":"Tek tekrar maksimum (1RM) hesaplama","title":"1RM Hesaplama: Tek Tekrar Maksimum | LoadPR","description":"Epley, Brzycki, Lombardi ve O'Conner formülleriyle tek tekrar maksimumunuzu tahmin edin, %50–100 yüzde tablosunu da görün.","intro":"Ağırlığı ve tekrar sayısını girin; tek tekrar maksimumunuzu tahmin edelim ve antrenman yüzdelerinizi gösterelim.","reps":"Tekrar","formula":"Formül","formulas":{"epley":"Epley","brzycki":"Brzycki","lombardi":"Lombardi","oconner":"O'Conner"},"estimated1rm":"Tahmini 1RM","percent":"%","weight":"Ağırlık","below":[]},"warmup":{"h1":"Isınma seti hesaplama","title":"Isınma Seti Hesaplama | Kademeli Setler | LoadPR","description":"Çalışma ağırlığınızdan kademeli ısınma setleri oluşturun. Her set, plakalarla yüklenebilen bir ağırlığa yuvarlanır.","intro":"Çalışma ağırlığınızı girin; ısınma setlerinizi en yakın yüklenebilir ağırlığa yuvarlayarak hazırlayalım.","workingWeight":"Çalışma ağırlığı","set":"Set","below":[]},"converter":{"h1":"Kilogram ve libre (lb) çevirici","title":"Kg Lb Çevirici | Kilogramdan Libreye | LoadPR","description":"Kilogramı libreye, libreyi kilograma çevirin. Sonuç, yüklenebilir en yakın plaka ağırlığına yuvarlanır.","intro":"Kilogram ile libre arasında anında çeviri yapın. Diğer birimle yazılmış bir programı okumak için ideal.","from":"Kaynak birim","to":"Hedef birim","result":"Sonuç","below":[]},"percentTable":{"h1":"1RM yüzde hesaplama","title":"1RM Yüzde Hesaplama | Antrenman Ağırlıkları | LoadPR","description":"Tek tekrar maksimumunuzu %100'den %50'ye inen bir yüzde tablosuna dönüştürün. Her ağırlık, bara yükleyebileceğiniz bir değere yuvarlanır.","intro":"1RM'inizi girin; her antrenman yüzdesini ve standart plakalarla gerçekten yükleyebileceğiniz en yakın ağırlığı görün.","below":[],"oneRm":"1RM'iniz","from":"Başlangıç","to":"Bitiş","step":"Adım","percent":"%","weight":"Ağırlık","loadable":"Yüklenebilir"},"plateReader":{"h1":"Barda ne kadar ağırlık var? Yüklü bar hesaplama","title":"Barda Kaç Kilo Var? Yüklü Bar Ağırlığı | LoadPR","description":"Yüklü barın bir tarafındaki plakaları sayın; bar ve klipsler dahil toplam ağırlığı kg ve lb olarak görün.","intro":"Yüklü bir bara mı denk geldiniz? Bir taraftaki plakaları ekleyin; bar ve klipsler dahil toplamı görün.","below":[],"perSidePlates":"Bir taraftaki plakalar","total":"Toplam","otherUnitLine":"Diğer birimde: {value}"},"homeGym":{"h1":"Ev salonu plaka hesaplama","title":"Ev Salonu Plaka Hesaplama | Kendi Plakalarınız | LoadPR","description":"Plakalarınızı ve hedef ağırlığı girin. En az plakayla tam yükü ya da en yakın ağırlığı görün; tek bir çift yetiyorsa hangisini ekleyeceğinizi de gösteririz.","intro":"Her boyuttan kaç plakanız olduğunu girin. En ağır plakayla başlamak işe yaramasa bile tam yükü en az plakayla buluruz.","below":[],"owned":"Plakalarınız","target":"Hedef ağırlık","missing":"Tam olarak yüklemek için bir çift {plate} plaka ekleyin","canLoad":"Yükleyebileceğiniz ağırlıklar","canLoadMore":"… ve {n} tane daha"}},"cta":{"headline":"LoadPR'ı salona götürün","sub":"Plakaları hesaplayın, barlarınızı kaydedin ve PR'larınızı telefonunuzdan takip edin.","button":"App Store'dan indirin"}},"tool":"plateCalc","unitDefault":"kg","appStoreId":"6768525538","currentLocale":"tr","defaultLocale":"en","locales":{"en":{"url":"https://loadpr.com/","name":"English"},"es":{"url":"https://loadpr.com/es/","name":"Español"},"fr":{"url":"https://loadpr.com/fr/","name":"Français"},"tr":{"url":"https://loadpr.com/tr/","name":"Türkçe"}}}</script>
+  <script>window.__LOADPR__={"strings":{"meta":{"siteName":"LoadPR","lang":"tr","dir":"ltr","tagline":"Barınızı anında doğru yükleyin","homeDescription":"Ücretsiz bar hesaplama araçları: her tarafa kaç plaka, 1RM, ısınma setleri ve kg ↔ lb çevirme. Kayıt gerekmez. LoadPR'ı iOS'a indirin, salona götürün.","decimal":",","ogImageAlt":"LoadPR logosu ve “Barınızı anında doğru yükleyin” yazısı, yanında sarı ve kırmızı plaka takılı bir barın bir tarafı"},"nav":{"calculator":"Plaka hesaplama","oneRepMax":"1RM hesaplama","warmup":"Isınma","converter":"kg ↔ lb çevirici","guides":"Rehberler","getApp":"İndir","percentTable":"1RM yüzdeleri","plateReader":"Bardaki ağırlık","homeGym":"Ev salonu plakaları"},"ui":{"targetWeight":"Hedef ağırlık","unit":"Birim","kg":"kg","lb":"lb","bar":"Bar","barPresets":{"olympic_m":"Olimpik ♂ (20 kg / 45 lb)","olympic_w":"Olimpik ♀ (15 kg / 33 lb)","training":"Teknik (10 kg / 15 lb)","custom":"Özel"},"collar":"Klips (taraf başına)","inventory":"Mevcut plakalar","unlimited":"Sınırsız","calculate":"Hesapla","reset":"Sıfırla","perSide":"Taraf başına","totalOnBar":"Bardaki toplam","exact":"Tam yük","notExact":"Plakalarınızla tam olarak yüklenemiyor","nearestLoadable":"yüklenebilecek en yakın ağırlık","closestBelow":"En yakın alt ağırlık","closestAbove":"En yakın üst ağırlık","reverseMode":"Yüklü barı oku","reverseHint":"Toplamı görmek için bir taraftaki plakaları ekleyin","empty":"Yalnızca bar","add":"Plaka ekle","removePlate":"Plaka çıkar","langSwitch":"Dil","switchPrompt":"Bu sayfanın {lang} sürümüne geçmek ister misiniz?","switchYes":"Evet, geç","switchNo":"Hayır, teşekkürler","openApp":"Uygulamada aç","prevWeight":"Daha hafif","nextWeight":"Daha ağır","nearby":"Yakın ağırlıklar","breadcrumbHome":"Ana sayfa","allTools":"Tüm araçlar","notFoundTitle":"Sayfa bulunamadı","notFoundBody":"Bu sayfa bu bara yüklenmemiş. Bunun yerine plaka hesaplayıcıyı deneyin.","notFoundButton":"Hesaplayıcıya git","relatedGuides":"İlgili rehberler","faq":"SSS","toolsLabel":"Araçlar","updated":"Güncellendi","lastUpdated":"Son güncelleme","guideBadge":"Rehber","scenarioBadge":"Senaryo","convertArrow":"{from} → {to}","reps":"Tekrar","diagramLabel":"plaka (taraf başına)","tryTool":"Kendi değerlerinizle deneyin","backToTool":"← {tool} sayfasına dön","moreForTool":"Bu aracın diğer kullanımları","scenario":{"situation":"Durum","steps":"Adım adım","example":"Örnek hesaplama","mistakes":"Sık yapılan hatalar","tryTool":"Kendi yükünüzü hesaplayın"}},"tools":{"plateCalc":{},"oneRepMax":{"reps":"Tekrar","formula":"Formül","formulas":{"epley":"Epley","brzycki":"Brzycki","lombardi":"Lombardi","oconner":"O'Conner"},"estimated1rm":"Tahmini 1RM","percent":"%","weight":"Ağırlık"},"warmup":{"workingWeight":"Çalışma ağırlığı","set":"Set"},"converter":{"from":"Kaynak birim","to":"Hedef birim","result":"Sonuç"},"percentTable":{"oneRm":"1RM'iniz","from":"Başlangıç","to":"Bitiş","step":"Adım","percent":"%","weight":"Ağırlık","loadable":"Yüklenebilir"},"plateReader":{"perSidePlates":"Bir taraftaki plakalar","total":"Toplam","otherUnitLine":"Diğer birimde: {value}"},"homeGym":{"owned":"Plakalarınız","target":"Hedef ağırlık","missing":"Tam olarak yüklemek için bir çift {plate} plaka ekleyin","canLoad":"Yükleyebileceğiniz ağırlıklar","canLoadMore":"… ve {n} tane daha"}},"cta":{"headline":"LoadPR'ı salona götürün","sub":"Plakaları hesaplayın, barlarınızı kaydedin ve PR'larınızı telefonunuzdan takip edin.","button":"App Store'dan indirin"}},"tool":"plateCalc","unitDefault":"kg","appStoreId":"6768525538","currentLocale":"tr","defaultLocale":"en","locales":{"en":{"url":"https://loadpr.com/","name":"English"},"es":{"url":"https://loadpr.com/es/","name":"Español"},"fr":{"url":"https://loadpr.com/fr/","name":"Français"},"tr":{"url":"https://loadpr.com/tr/","name":"Türkçe"}}}</script>
 </head>
 <body class="page-prog">
   <header class="site"><div class="wrap">
@@ -453,10 +519,10 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
   </div></main>
   <footer class="site"><div class="wrap">
     <div class="cols">
-      <div><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — plaka hesaplayıcı ve PR takibi</div></div>
-      <div><strong>Araçlar</strong><a href="/tr/plaka-hesaplama/">Plaka hesaplama</a><a href="/tr/1rm-hesaplama/">1RM hesaplama</a><a href="/tr/isinma-hesaplama/">Isınma</a><a href="/tr/kg-lb-cevirici/">kg ↔ lb çevirici</a><a href="/tr/1rm-yuzde-hesaplama/">1RM yüzdeleri</a><a href="/tr/bardaki-agirlik/">Bardaki ağırlık</a><a href="/tr/ev-salonu-plaka-hesaplama/">Ev salonu plakaları</a></div>
-      
-      <div><strong>Yasal</strong><a href="/privacy/">Gizlilik</a><a href="/terms/">Koşullar</a><a href="/about/">Hakkında</a></div>
+      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — plaka hesaplayıcı ve PR takibi</div></div>
+      <div><strong>Araçlar</strong><a href="/tr/araclar/">Tüm araçlar</a><a href="/tr/plaka-hesaplama/">Plaka hesaplama</a><a href="/tr/1rm-hesaplama/">1RM hesaplama</a><a href="/tr/isinma-hesaplama/">Isınma</a><a href="/tr/kg-lb-cevirici/">kg ↔ lb çevirici</a><a href="/tr/1rm-yuzde-hesaplama/">1RM yüzdeleri</a><a href="/tr/bardaki-agirlik/">Bardaki ağırlık</a><a href="/tr/ev-salonu-plaka-hesaplama/">Ev salonu plakaları</a></div>
+      <div><strong>Popüler ağırlıklar</strong><a href="/tr/plaka/60-kg/">60 kg</a><a href="/tr/plaka/80-kg/">80 kg</a><a href="/tr/plaka/100-kg/">100 kg</a><a href="/tr/plaka/120-kg/">120 kg</a><a href="/tr/plaka/140-kg/">140 kg</a><a href="/tr/plaka/160-kg/">160 kg</a><a href="/tr/plaka/180-kg/">180 kg</a><a href="/tr/plaka/200-kg/">200 kg</a></div>
+      <div><strong>LoadPR</strong><a href="/about/">Hakkında</a><a href="/support/">Destek</a><a href="/privacy/">Gizlilik</a><a href="/terms/">Koşullar</a></div>
       <div><strong>Dil</strong><a href="https://loadpr.com/" hreflang="en" lang="en">English</a><a href="https://loadpr.com/es/discos/92.5-kg/" hreflang="es" lang="es">Español</a><a href="https://loadpr.com/fr/disques/92.5-kg/" hreflang="fr" lang="fr">Français</a><a href="https://loadpr.com/tr/plaka/92.5-kg/" hreflang="tr" lang="tr" aria-current="true">Türkçe</a></div>
     </div>
     <div class="priv">Çerez yok. Takip yok. Verileriniz cihazınızda kalır.</div>

@@ -17,18 +17,43 @@ LoadPR is an iPhone app that works out which plates to load on a barbell and tra
 - [1RM Percentage Calculator | Training Loads](https://loadpr.com/1rm-percentage-calculator/): Turn your one-rep max into a percentage chart from 100% down to 50%, with every weight rounded to a load you can put on the bar.
 - [What's on the Bar? Loaded Barbell Weight](https://loadpr.com/whats-on-the-bar/): Count the plates on one side of a loaded barbell and get the total weight in kg and lb, with the bar and collars included.
 - [Home Gym Plate Calculator | Use Your Own Plates](https://loadpr.com/home-gym-plate-calculator/): Enter the plates you own and a target weight. Get the exact load with the fewest plates, or the closest you can get and the pair to add if one pair does it.
+- [Barbell Tools: Plates, 1RM, Warmups, kg to lb](https://loadpr.com/tools/): Every free LoadPR web tool on one page: plates per side, 1RM, percentages, warmup sets, kg to lb, what's on the bar and home gym plates.
+
+### App features
+- [LoadPR App Features for iPhone and Apple Watch](https://loadpr.com/features/): What LoadPR does on iPhone and Apple Watch: plate loading, gyms and plates, percentages, PR tracking, charts, timers, and what is free.
+- [Plate Loading App for iPhone: See the Bar](https://loadpr.com/features/plate-loading/): LoadPR draws one side of the barbell with the plates to load, color-coded, in lb or kg. Free to use with no limit, on iPhone and Apple Watch.
+- [Closest Loadable Weight on a Barbell](https://loadpr.com/features/closest-loadable-weight/): When a weight like 187.5 lb can't be built from your plates, LoadPR shows the closest weight you can load, with the plates for each side.
+- [Percentages of Your PR, Loaded on the Bar](https://loadpr.com/features/percentages/): Turn LoadPR's wheel from 50% to 120% of your current PR, or of any weight you type, and see a weight you can load with the plates for each side.
+- [Gym Plate Setup: Your Bar and Your Plates](https://loadpr.com/features/gyms-and-plates/): LoadPR's free version uses the standard lb or kg plates, two of each per side. With LoadPR+, save each gym's bar, its plates and how many you own.
+- [PR Tracker for Lifting: Log Every Best](https://loadpr.com/features/pr-tracking/): Log each PR in LoadPR with its weight, reps, date and a note. See the current PR of every lift and its history, with up to 5 lifts in the free version.
+- [Strength Progress Chart for Each Lift](https://loadpr.com/features/progress-charts/): Chart every PR in LoadPR: your singles and the estimated 1RM of sets of more reps, from 7 days to all time. A mini chart of your last 3 singles is free.
+- [Gym Workout Timer: Rest, EMOM, HIIT, AMRAP](https://loadpr.com/features/workout-timer/): LoadPR's Rest timer is free and counts down on the lock screen between sets. EMOM, HIIT and AMRAP interval timers come with LoadPR+.
+- [Apple Watch Plate Calculator and % Dial](https://loadpr.com/features/apple-watch/): Pick a lift on Apple Watch, turn the Digital Crown from 50% to 120% of your best single, and see the weight and the plates for one side of the bar.
 
 ### Guides
-- [Barbell & Plate Guides](https://loadpr.com/guide/): Guides for lifters: Olympic plate colors, how much every barbell weighs, and kg to lb equivalents for loading the bar right in any gym.
+- [Barbell & Plate Guides](https://loadpr.com/guide/): Guides for lifters: plates on each side, what a plate and a barbell weigh, Olympic vs standard plates, plate colors and kg to lb equivalents.
 - [Olympic Plate Colors \(IWF\)](https://loadpr.com/guide/olympic-plate-colors/): What each Olympic plate color means under the IWF standard: 25 kg red, 20 kg blue, 15 kg yellow, 10 kg green, plus the change plates.
-- [How Much Does a Barbell Weigh? 45 lb / 20 kg](https://loadpr.com/guide/barbell-weights/): A gym barbell weighs 45 lb \(20 kg\). Women's Olympic bar 33 lb \(15 kg\), EZ curl 15–25 lb, trap bar 45–60 lb, plus what 1 to 5 plates per side adds up to.
+- [How Much Does a Barbell Weigh? 45 lb / 20 kg](https://loadpr.com/guide/barbell-weights/): A gym barbell weighs 45 lb \(20 kg\). Women's Olympic bar 33 lb \(15 kg\), EZ curl 15–25 lb, trap bar 45–60 lb, safety squat bar 55–70 lb and more.
 - [Kg to Lb Equivalents for Lifting](https://loadpr.com/guide/kg-to-lb-equivalents/): Conversion table between kilograms and pounds for the most common training loads.
+- [How Much Is 1 to 6 Plates on Each Side?](https://loadpr.com/guide/plates-on-each-side/): 1 plate on each side is 135 lb, 2 plates 225 lb, 3 plates 315 lb and 4 plates 405 lb on a 45 lb bar. In kg, 2 × 20 kg plates per side make 100 kg.
+- [How Much Does a Plate Weigh? 45 lb = 20.41 kg](https://loadpr.com/guide/how-much-does-a-plate-weigh/): A standard gym plate weighs 45 lb \(20.41 kg\) in a pound gym, or 20 kg \(44.09 lb\) in a kilo gym. Every plate from 1.25 kg to 45 lb in both units.
+- [Olympic vs Standard Plates: The Difference](https://loadpr.com/guide/olympic-vs-standard-plates/): Olympic plates have a 2-inch \(50 mm\) hole for 45 lb Olympic bars; standard plates have a 1-inch hole for lighter 15–25 lb bars. Same weight, other bar.
+- [How Much Do Barbell Collars Weigh? 2.5 kg Each](https://loadpr.com/guide/barbell-collar-weight/): Competition collars weigh 2.5 kg \(5.51 lb\) each, so a pair adds 5 kg \(11.02 lb\). Spring clips and lock-jaw collars depend on the model.
+- [What Is a 1RM? One-Rep Max Explained](https://loadpr.com/guide/what-is-1rm/): A 1RM is the most weight you can lift for one full rep with good form. Tested vs estimated maxes, how it differs from a rep PR, and why programs use it.
+- [What Is a PR in the Gym? Personal Record Meaning](https://loadpr.com/guide/what-is-a-pr/): PR means personal record: the heaviest weight you have lifted for a given number of reps. Weight PRs vs rep PRs, how to find yours and how to track them.
+- [1RM Formulas: Epley, Brzycki, Lombardi, O'Conner](https://loadpr.com/guide/how-to-calculate-1rm/): A 1RM is estimated by putting a set of a few reps into a formula. Epley, Brzycki, Lombardi and O'Conner side by side, and why they split above 10 reps.
+- [Rep Max Chart: % of 1RM for 1 to 12 Reps](https://loadpr.com/guide/rep-max-chart/): A rep max chart turns reps into a % of your 1RM: 5 reps is about 85.7% by Epley and 88.9% by Brzycki. Full 1 to 12 rep table with kg and lb examples.
+- [How to Test Your 1RM Safely](https://loadpr.com/guide/how-to-test-your-1rm/): Work up in singles at 50, 70, 80, 90 and 95% of a planned max, then take 100%. Attempt tables for 140 kg and 315 lb, plus spotter and safety basics.
+- [How Many Warm-Up Sets for Squat, Bench, Deadlift?](https://loadpr.com/guide/warm-up-sets/): Most lifters need 3 to 5 warm-up sets. A simple ramp is 40, 60, 75 and 85% of the work set: 125, 190, 235 and 270 lb before 315 lb, with the plates.
 
 ### Plate charts by weight
 - [How many plates for 95 to 495 lb (10 pages, one per weight)](https://loadpr.com/how-many-plates/95-lb/): URL pattern https://loadpr.com/how-many-plates/<weight>-lb/
 
 ### About
 - [About LoadPR](https://loadpr.com/about/): LoadPR is an iPhone plate calculator and PR tracker, plus free web calculators for loading a barbell. Built by an independent developer.
+
+### Support
+- [LoadPR Support: purchases, sync and bugs](https://loadpr.com/support/): Get help with the LoadPR iPhone and Apple Watch app: restore or cancel LoadPR+, iCloud sync, CSV export, where your data lives, and how to report a bug.
 
 ### Legal
 - [Privacy Policy](https://loadpr.com/privacy/): How LoadPR handles your information. Fitness data stays on your device and in your private iCloud; we run no external servers.
@@ -47,6 +72,7 @@ LoadPR is an iPhone app that works out which plates to load on a barbell and tra
 - [Porcentajes del 1RM | Tabla de cargas](https://loadpr.com/es/calculadora-porcentajes-1rm/): Convierte tu repetición máxima en una tabla de porcentajes del 100 al 50%, con cada peso redondeado a una carga que puedes montar en la barra.
 - [¿Cuánto pesa la barra cargada? | Calculadora](https://loadpr.com/es/cuanto-pesa-la-barra-cargada/): Cuenta los discos de un lado de la barra y obtén el peso total en kg y lb, con la barra y los collarines incluidos.
 - [Calculadora de discos para casa | Usa tus discos](https://loadpr.com/es/calculadora-discos-casa/): Indica los discos que tienes y el peso objetivo. Verás la carga exacta con el menor número de discos, o la más cercana y, si basta un par, cuál añadir.
+- [Herramientas de barra: discos, 1RM, calentamiento](https://loadpr.com/es/herramientas/): Todas las herramientas web gratis de LoadPR en una página: discos por lado, 1RM, porcentajes, calentamiento, kg a lb, barra cargada y discos en casa.
 
 ### Guides
 - [Guías de barras y discos](https://loadpr.com/es/guia/): Guías para levantadores: colores de los discos olímpicos, cuánto pesa cada barra y equivalencias de kg a libras para cargar bien la barra.
@@ -70,6 +96,7 @@ LoadPR is an iPhone app that works out which plates to load on a barbell and tra
 - [Pourcentages du 1RM | Tableau des charges](https://loadpr.com/fr/calculateur-pourcentage-1rm/): Transformez votre répétition maximale en tableau de pourcentages de 100 à 50 %, chaque poids arrondi à une charge réalisable sur la barre.
 - [Combien pèse la barre chargée ? | Calculateur](https://loadpr.com/fr/poids-sur-la-barre/): Comptez les disques d'un côté de la barre et obtenez le poids total en kg et en lb, barre et colliers compris.
 - [Disques à la maison | Chargez avec vos disques](https://loadpr.com/fr/calculateur-disques-maison/): Indiquez vos disques et le poids visé. Obtenez la charge exacte avec le moins de disques, ou la plus proche et, si une paire suffit, laquelle ajouter.
+- [Outils barre : disques, 1RM, échauffement, kg en lb](https://loadpr.com/fr/outils/): Tous les outils web gratuits de LoadPR sur une page : disques par côté, 1RM, pourcentages, échauffement, kg en lb, barre chargée et disques maison.
 
 ### Guides
 - [Guides barres et disques](https://loadpr.com/fr/guide/): Guides pour la musculation : couleurs des disques olympiques, poids de chaque barre et équivalences kg en livres pour bien charger la barre.
@@ -93,6 +120,7 @@ LoadPR is an iPhone app that works out which plates to load on a barbell and tra
 - [1RM Yüzde Hesaplama | Antrenman Ağırlıkları](https://loadpr.com/tr/1rm-yuzde-hesaplama/): Tek tekrar maksimumunuzu %100'den %50'ye inen bir yüzde tablosuna dönüştürün. Her ağırlık, bara yükleyebileceğiniz bir değere yuvarlanır.
 - [Barda Kaç Kilo Var? Yüklü Bar Ağırlığı](https://loadpr.com/tr/bardaki-agirlik/): Yüklü barın bir tarafındaki plakaları sayın; bar ve klipsler dahil toplam ağırlığı kg ve lb olarak görün.
 - [Ev Salonu Plaka Hesaplama | Kendi Plakalarınız](https://loadpr.com/tr/ev-salonu-plaka-hesaplama/): Plakalarınızı ve hedef ağırlığı girin. En az plakayla tam yükü ya da en yakın ağırlığı görün; tek bir çift yetiyorsa hangisini ekleyeceğinizi de gösteririz.
+- [Halter araçları: plaka, 1RM, ısınma, kg-lb](https://loadpr.com/tr/araclar/): LoadPR'ın tüm ücretsiz web araçları tek sayfada: taraf başına plaka, 1RM, yüzdeler, ısınma setleri, kg-lb çevirme, bardaki ağırlık ve ev salonu plakaları.
 
 ### Plate charts by weight
 - [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/tr/plaka/40-kg/): URL pattern https://loadpr.com/tr/plaka/<weight>-kg/
