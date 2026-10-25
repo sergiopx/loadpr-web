@@ -52,7 +52,7 @@ LoadPR is an iPhone app that works out which plates to load on a barbell and tra
 - [Guías de barras y discos](https://loadpr.com/es/guia/): Guías para levantadores: colores de los discos olímpicos, cuánto pesa cada barra y equivalencias de kg a libras para cargar bien la barra.
 - [Colores de los discos olímpicos \(IWF\)](https://loadpr.com/es/guia/colores-discos-olimpicos/): Qué significa cada color de disco olímpico según la IWF: 25 kg rojo, 20 kg azul, 15 kg amarillo, 10 kg verde y las placas de cambio.
 - [¿Cuánto pesa una barra? Olímpica, Z/EZ y en libras](https://loadpr.com/es/guia/peso-de-barras/): La barra olímpica pesa 20 kg \(45 lb\) y la femenina 15 kg \(33 lb\). La barra Z, EZ o W pesa entre 7 y 11 kg \(15–25 lb\). Tabla en kilos y libras de cada barra.
-- [Equivalencias de kg a libras para levantar](https://loadpr.com/es/guia/equivalencias-kg-lb/): Tabla de equivalencias entre kilogramos y libras para las cargas más habituales de entrenamiento.
+- [100 kg en libras \(220,46 lb\) y tabla kg ↔ lb](https://loadpr.com/es/guia/equivalencias-kg-lb/): 100 kg son 220,46 libras \(1 kg = 2,2046 lb\). Tabla de equivalencias kg ↔ lb para las cargas habituales y cómo cargar 100 kg en la barra.
 
 ### Plate charts by weight
 - [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/es/discos/40-kg/): URL pattern https://loadpr.com/es/discos/<weight>-kg/

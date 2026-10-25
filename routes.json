@@ -32,7 +32,7 @@
   {"path":"/es/guia/","loc":"es","type":"guideHub","id":"guideHub","key":null,"parent":null,"title":"Guías de barras y discos | LoadPR"},
   {"path":"/es/guia/colores-discos-olimpicos/","loc":"es","type":"guide","id":"guide:plateColors","key":"plateColors","parent":null,"title":"Colores de los discos olímpicos (IWF) | LoadPR"},
   {"path":"/es/guia/peso-de-barras/","loc":"es","type":"guide","id":"guide:barWeights","key":"barWeights","parent":null,"title":"¿Cuánto pesa una barra? Olímpica, Z/EZ y en libras | LoadPR"},
-  {"path":"/es/guia/equivalencias-kg-lb/","loc":"es","type":"guide","id":"guide:kgLbEquiv","key":"kgLbEquiv","parent":null,"title":"Equivalencias de kg a libras para levantar | LoadPR"},
+  {"path":"/es/guia/equivalencias-kg-lb/","loc":"es","type":"guide","id":"guide:kgLbEquiv","key":"kgLbEquiv","parent":null,"title":"100 kg en libras (220,46 lb) y tabla kg ↔ lb | LoadPR"},
   {"path":"/es/discos/40-kg/","loc":"es","type":"prog","id":"prog:kg:40","key":null,"parent":null,"title":"Cuántos discos para 40 kg | LoadPR"},
   {"path":"/es/discos/42.5-kg/","loc":"es","type":"prog","id":"prog:kg:42.5","key":null,"parent":null,"title":"Cuántos discos para 42,5 kg | LoadPR"},
   {"path":"/es/discos/45-kg/","loc":"es","type":"prog","id":"prog:kg:45","key":null,"parent":null,"title":"Cuántos discos para 45 kg | LoadPR"},
