@@ -107,6 +107,114 @@ LoadPR is an iPhone app that works out which plates to load on a barbell and tra
 ### Plate charts by weight
 - [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/fr/disques/40-kg/): URL pattern https://loadpr.com/fr/disques/<weight>-kg/
 
+## Deutsch (de)
+
+### Home
+- [LoadPR — Deine Langhantel sofort richtig beladen](https://loadpr.com/de/): Kostenlose Hantelrechner: Scheiben pro Seite, 1RM, Aufwärmsätze und kg ↔ lb. Ohne Anmeldung. Hol dir LoadPR für iOS und belade deine Stange im Studio richtig.
+
+### Tools
+- [Scheibenrechner | Wie viele Scheiben pro Seite](https://loadpr.com/de/scheibenrechner/): Berechne sofort, welche Scheiben auf jede Seite gehören. Kostenlos, ohne Anmeldung. Hol dir LoadPR für iOS und nimm es mit ins Studio.
+- [1RM-Rechner | Maximalkraft schätzen](https://loadpr.com/de/1rm-rechner/): Schätze dein One-Rep-Max mit den Formeln von Epley, Brzycki, Lombardi und O'Conner, dazu eine Prozenttabelle von 50 bis 100 %.
+- [Aufwärm-Rechner | Ansteigende Aufwärmsätze](https://loadpr.com/de/aufwaerm-rechner/): Erstelle ansteigende Aufwärmsätze aus deinem Arbeitsgewicht, gerundet auf Gewichte, die du mit deinen Scheiben laden kannst.
+- [Kg in Lb umrechnen | Kilo in Pfund](https://loadpr.com/de/kg-in-lb-umrechnen/): Rechne Kilogramm in Pfund um und zurück, gerundet auf die nächste Scheibe, die du wirklich laden kannst.
+- [1RM-Prozentrechner | Trainingsgewichte](https://loadpr.com/de/1rm-prozent-rechner/): Mach aus deinem One-Rep-Max eine Prozenttabelle von 100 % bis 50 %, jedes Gewicht gerundet auf eine Last, die du auf die Stange laden kannst.
+- [Wie viel liegt auf der Stange? Gesamtgewicht](https://loadpr.com/de/gewicht-auf-der-stange/): Zähl die Scheiben auf einer Seite einer beladenen Langhantel und erhalte das Gesamtgewicht in kg und lb, Stange und Verschlüsse inklusive.
+- [Heimstudio-Scheibenrechner | Deine eigenen Scheiben](https://loadpr.com/de/heimstudio-scheibenrechner/): Gib deine Scheiben und ein Zielgewicht ein: exakte Beladung mit den wenigsten Scheiben oder das nächste Gewicht, plus das fehlende Paar, falls eines reicht.
+- [Hantel-Tools: Scheiben, 1RM, Aufwärmen, kg-lb](https://loadpr.com/de/tools/): Alle kostenlosen LoadPR-Web-Tools auf einer Seite: Scheiben pro Seite, 1RM, Prozente, Aufwärmsätze, kg in lb, Gewicht auf der Stange und Heimstudio-Scheiben.
+
+### Plate charts by weight
+- [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/de/hantelscheiben/40-kg/): URL pattern https://loadpr.com/de/hantelscheiben/<weight>-kg/
+
+## Italiano (it)
+
+### Home
+- [LoadPR — Carica il bilanciere giusto, all'istante](https://loadpr.com/it/): Calcolatori gratis per il bilanciere: dischi per lato, 1RM, serie di riscaldamento e kg ↔ lb. Senza registrazione. Scarica LoadPR per iOS e portalo in palestra.
+
+### Tools
+- [Calcolatore dischi | Quanti dischi per lato](https://loadpr.com/it/calcolatore-dischi/): Scopri all'istante quali dischi caricare per lato. Gratis, senza registrazione. Scarica LoadPR per iOS e portalo in palestra.
+- [Calcolo massimale 1RM | Stima il tuo massimale](https://loadpr.com/it/calcolo-massimale-1rm/): Stima il tuo massimale su una ripetizione con le formule di Epley, Brzycki, Lombardi e O'Conner, più una tabella delle percentuali dal 50 al 100%.
+- [Calcolo riscaldamento | Serie progressive](https://loadpr.com/it/calcolo-riscaldamento/): Genera serie di riscaldamento progressive a partire dal tuo peso di lavoro, arrotondate a carichi che puoi mettere con i dischi.
+- [Convertitore kg lb | Da chili a libbre](https://loadpr.com/it/convertitore-kg-lb/): Converti i chilogrammi in libbre e viceversa, con arrotondamento al disco caricabile più vicino.
+- [Percentuali del massimale 1RM | Carichi](https://loadpr.com/it/percentuali-massimale/): Trasforma il tuo massimale in una tabella di percentuali dal 100% al 50%, con ogni peso arrotondato a un carico che puoi mettere sul bilanciere.
+- [Quanto pesa il bilanciere carico? Peso totale](https://loadpr.com/it/peso-sul-bilanciere/): Conta i dischi su un lato di un bilanciere carico e ottieni il peso totale in kg e lb, compresi bilanciere e fermadischi.
+- [Dischi palestra in casa | Usa i tuoi dischi](https://loadpr.com/it/dischi-palestra-in-casa/): Inserisci i dischi che hai e un peso obiettivo: carico esatto con meno dischi possibile, o il più vicino e la coppia da aggiungere se ne basta una.
+- [Strumenti bilanciere: dischi, 1RM, riscaldamento](https://loadpr.com/it/strumenti/): Tutti gli strumenti web gratuiti di LoadPR in una pagina: dischi per lato, 1RM, percentuali, riscaldamento, kg-lb, peso sul bilanciere e dischi per casa.
+
+### Plate charts by weight
+- [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/it/dischi/40-kg/): URL pattern https://loadpr.com/it/dischi/<weight>-kg/
+
+## Português (Brasil) (pt-BR)
+
+### Home
+- [LoadPR — Carregue sua barra certo, na hora](https://loadpr.com/pt/): Calculadoras grátis para a barra: anilhas por lado, 1RM, séries de aquecimento e kg ↔ lb. Sem cadastro. Baixe o LoadPR para iOS e leve para a academia.
+
+### Tools
+- [Calculadora de anilhas | Quantas anilhas por lado](https://loadpr.com/pt/calculadora-de-anilhas/): Descubra na hora quais anilhas colocar em cada lado. Grátis, sem cadastro. Baixe o LoadPR para iOS e leve para a academia.
+- [Calculadora de 1RM | Estime sua carga máxima](https://loadpr.com/pt/calcular-1rm/): Estime sua carga máxima em uma repetição com as fórmulas de Epley, Brzycki, Lombardi e O'Conner, mais uma tabela de porcentagens de 50 a 100%.
+- [Calculadora de aquecimento | Séries progressivas](https://loadpr.com/pt/series-de-aquecimento/): Gere séries de aquecimento progressivas a partir do seu peso de trabalho, arredondadas para cargas que dá para montar com anilhas.
+- [Conversor kg para lb | Quilos para libras](https://loadpr.com/pt/conversor-kg-lb/): Converta quilos em libras e vice-versa, com arredondamento para a anilha mais próxima que dá para carregar.
+- [Porcentagem do 1RM | Cargas de treino](https://loadpr.com/pt/porcentagem-1rm/): Transforme seu 1RM em uma tabela de porcentagens de 100% a 50%, com cada peso arredondado para uma carga que você consegue colocar na barra.
+- [Quanto pesa a barra carregada? Peso total](https://loadpr.com/pt/quanto-pesa-a-barra-carregada/): Conte as anilhas de um lado de uma barra carregada e veja o peso total em kg e lb, com a barra e as presilhas incluídas.
+- [Anilhas para academia em casa | Use as suas](https://loadpr.com/pt/anilhas-academia-em-casa/): Informe as anilhas que você tem e o peso alvo. Veja a carga exata com menos anilhas, ou a mais próxima e o par que falta se um par bastar.
+- [Ferramentas para barra: anilhas, 1RM, aquecimento](https://loadpr.com/pt/ferramentas/): Todas as ferramentas grátis do LoadPR em uma página: anilhas por lado, 1RM, porcentagens, aquecimento, kg-lb, peso da barra e anilhas para casa.
+
+### Plate charts by weight
+- [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/pt/anilhas/40-kg/): URL pattern https://loadpr.com/pt/anilhas/<weight>-kg/
+
+## Nederlands (nl)
+
+### Home
+- [LoadPR — Laad je halterstang direct goed](https://loadpr.com/nl/): Gratis halterstang-calculators: schijven per kant, 1RM, warming-upsets en kg ↔ lb. Geen account nodig. Download LoadPR voor iOS en laad je stang goed in de gym.
+
+### Tools
+- [Schijvencalculator | Hoeveel schijven per kant](https://loadpr.com/nl/schijven-calculator/): Bereken direct welke schijven je per kant moet laden. Gratis, geen account nodig. Download LoadPR voor iOS en neem het mee naar de gym.
+- [1RM-calculator | Bereken je max](https://loadpr.com/nl/1rm-calculator/): Schat je one-rep max met de formules van Epley, Brzycki, Lombardi en O'Conner, plus een percentagetabel van 50 tot 100%.
+- [Warming-up calculator | Opbouwende sets](https://loadpr.com/nl/warming-up-calculator/): Maak opbouwende warming-upsets op basis van je werkgewicht, afgerond op gewichten die je met schijven kunt laden.
+- [Kg naar lb omrekenen | Kilo naar pond](https://loadpr.com/nl/kg-naar-lb/): Reken kilogram om naar pond en terug, afgerond op de dichtstbijzijnde schijf die je kunt laden.
+- [1RM-percentage calculator | Trainingsgewichten](https://loadpr.com/nl/1rm-percentage-calculator/): Zet je one-rep max om in een percentagetabel van 100% tot 50%, met elk gewicht afgerond op een gewicht dat je op de stang kunt laden.
+- [Hoeveel ligt er op de stang? Totaalgewicht](https://loadpr.com/nl/gewicht-op-de-stang/): Tel de schijven aan één kant van een geladen halterstang en krijg het totaalgewicht in kg en lb, inclusief stang en sluitingen.
+- [Thuisgym schijvencalculator | Je eigen schijven](https://loadpr.com/nl/thuisgym-schijven-calculator/): Vul je schijven en een doelgewicht in. Krijg het exacte gewicht met de minste schijven, of het dichtstbijzijnde en het paar dat je mist als één paar volstaat.
+- [Halter-tools: schijven, 1RM, warming-up, kg-lb](https://loadpr.com/nl/tools/): Alle gratis webtools van LoadPR op één pagina: schijven per kant, 1RM, percentages, warming-upsets, kg naar lb, gewicht op de stang en thuisgym-schijven.
+
+### Plate charts by weight
+- [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/nl/schijven/40-kg/): URL pattern https://loadpr.com/nl/schijven/<weight>-kg/
+
+## Polski (pl)
+
+### Home
+- [LoadPR — Załaduj sztangę dobrze, od razu](https://loadpr.com/pl/): Darmowe kalkulatory do sztangi: talerze na stronę, 1RM, serie rozgrzewkowe i kg ↔ lb. Bez rejestracji. Pobierz LoadPR na iOS i ładuj sztangę dobrze na siłowni.
+
+### Tools
+- [Kalkulator talerzy | Ile talerzy na stronę](https://loadpr.com/pl/kalkulator-talerzy/): Od razu sprawdź, jakie talerze założyć na każdą stronę. Za darmo, bez rejestracji. Pobierz LoadPR na iOS i zabierz go na siłownię.
+- [Kalkulator 1RM | Oblicz swój ciężar maksymalny](https://loadpr.com/pl/kalkulator-1rm/): Oszacuj swój ciężar maksymalny \(1RM\) wzorami Epleya, Brzyckiego, Lombardiego i O'Connera, z tabelą procentów od 50 do 100%.
+- [Kalkulator rozgrzewki | Serie stopniowane](https://loadpr.com/pl/kalkulator-rozgrzewki/): Wygeneruj stopniowane serie rozgrzewkowe na podstawie ciężaru roboczego, zaokrąglone do ciężarów, które załadujesz talerzami.
+- [Przelicznik kg na lb | Kilogramy na funty](https://loadpr.com/pl/przelicznik-kg-lb/): Przelicz kilogramy na funty i z powrotem, z zaokrągleniem do najbliższego talerza, który możesz załadować.
+- [Kalkulator procentów 1RM | Ciężary treningowe](https://loadpr.com/pl/procenty-1rm/): Zamień swój 1RM w tabelę procentów od 100% do 50%, a każdy ciężar zaokrąglij do takiego, który faktycznie załadujesz na sztangę.
+- [Ile waży załadowana sztanga? Łączny ciężar](https://loadpr.com/pl/ile-wazy-sztanga/): Policz talerze na jednej stronie załadowanej sztangi i poznaj łączny ciężar w kg i lb, razem z gryfem i zaciskami.
+- [Talerze do domowej siłowni | Twoje talerze](https://loadpr.com/pl/talerze-domowa-silownia/): Wpisz swoje talerze i ciężar docelowy. Dostaniesz dokładny ciężar z najmniejszą liczbą talerzy albo najbliższy i parę do dodania, jeśli jedna wystarczy.
+- [Narzędzia do sztangi: talerze, 1RM, rozgrzewka](https://loadpr.com/pl/narzedzia/): Wszystkie darmowe narzędzia LoadPR na jednej stronie: talerze na stronę, 1RM, procenty, rozgrzewka, kg na lb, ile waży sztanga i talerze do domu.
+
+### Plate charts by weight
+- [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/pl/talerze/40-kg/): URL pattern https://loadpr.com/pl/talerze/<weight>-kg/
+
+## Svenska (sv)
+
+### Home
+- [LoadPR — Lasta skivstången rätt, direkt](https://loadpr.com/sv/): Gratis skivstångsverktyg: skivor per sida, 1RM, uppvärmningsset och kg ↔ lb. Ingen registrering. Hämta LoadPR för iOS och lasta stången rätt på gymmet.
+
+### Tools
+- [Skivkalkylator | Hur många skivor per sida](https://loadpr.com/sv/skivkalkylator/): Räkna direkt ut vilka skivor du ska lasta per sida. Gratis, ingen registrering. Hämta LoadPR för iOS och ta med det till gymmet.
+- [1RM-kalkylator | Uppskatta ditt maxlyft](https://loadpr.com/sv/1rm-kalkylator/): Uppskatta ditt 1RM med formlerna från Epley, Brzycki, Lombardi och O'Conner, plus en procenttabell från 50 till 100 %.
+- [Uppvärmningskalkylator | Stegrade set](https://loadpr.com/sv/uppvarmning-kalkylator/): Skapa stegrade uppvärmningsset utifrån din arbetsvikt, avrundade till vikter du kan lasta med skivor.
+- [Kg till lb | Omvandla kilo till pund](https://loadpr.com/sv/kg-till-pund/): Omvandla kilo till pund och tillbaka, avrundat till närmaste skiva som går att lasta.
+- [1RM-procentkalkylator | Träningsvikter](https://loadpr.com/sv/1rm-procent/): Gör om ditt 1RM till en procenttabell från 100 % ner till 50 %, med varje vikt avrundad till en vikt du kan lasta på stången.
+- [Hur mycket väger stången? Lastad skivstång](https://loadpr.com/sv/vikt-pa-stangen/): Räkna skivorna på ena sidan av en lastad skivstång och få totalvikten i kg och lb, med stång och stånglås inräknade.
+- [Skivkalkylator för hemmagym | Dina egna skivor](https://loadpr.com/sv/hemmagym-skivor/): Ange skivorna du äger och en målvikt. Få exakt vikt med minst antal skivor, eller närmaste vikt och paret du behöver om ett par räcker.
+- [Skivstångsverktyg: skivor, 1RM, uppvärmning, kg-lb](https://loadpr.com/sv/verktyg/): Alla gratis webbverktyg från LoadPR på en sida: skivor per sida, 1RM, procent, uppvärmningsset, kg till lb, vikt på stången och skivor för hemmagym.
+
+### Plate charts by weight
+- [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/sv/skivor/40-kg/): URL pattern https://loadpr.com/sv/skivor/<weight>-kg/
+
 ## Türkçe (tr)
 
 ### Home
@@ -124,3 +232,93 @@ LoadPR is an iPhone app that works out which plates to load on a barbell and tra
 
 ### Plate charts by weight
 - [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/tr/plaka/40-kg/): URL pattern https://loadpr.com/tr/plaka/<weight>-kg/
+
+## Русский (ru)
+
+### Home
+- [LoadPR — Соберите штангу правильно за секунду](https://loadpr.com/ru/): Бесплатные калькуляторы для штанги: блины на каждую сторону, 1RM, разминочные подходы и kg ↔ lb. Без регистрации. Скачайте LoadPR для iOS и берите в зал.
+
+### Tools
+- [Калькулятор блинов | Сколько блинов на сторону](https://loadpr.com/ru/kalkulyator-blinov/): Мгновенно узнайте, какие блины повесить на каждую сторону. Бесплатно, без регистрации. Скачайте LoadPR для iOS и берите его в зал.
+- [Калькулятор 1RM | Разовый максимум](https://loadpr.com/ru/1rm-kalkulyator/): Рассчитайте разовый максимум по формулам Epley, Brzycki, Lombardi и O'Conner и получите таблицу процентов от 50 до 100%.
+- [Разминочные подходы | Калькулятор разминки](https://loadpr.com/ru/razminochnye-podhody/): Составьте разминочные подходы с постепенным ростом веса от вашего рабочего веса, округлённые до весов, которые можно собрать блинами.
+- [Кг в фунты | Конвертер kg и lb](https://loadpr.com/ru/kg-v-funty/): Переводите килограммы в фунты и обратно с округлением до ближайшего блина, который можно повесить.
+- [Проценты от 1RM | Рабочие веса](https://loadpr.com/ru/procenty-ot-1rm/): Превратите разовый максимум в таблицу процентов от 100% до 50%, где каждый вес округлён до того, что реально можно собрать на штанге.
+- [Сколько весит штанга? Вес собранной штанги](https://loadpr.com/ru/ves-shtangi/): Посчитайте блины на одной стороне собранной штанги и узнайте общий вес в kg и lb с учётом грифа и замков.
+- [Блины для домашнего зала | Ваш набор блинов](https://loadpr.com/ru/blini-dlya-domashnego-zala/): Введите свои блины и целевой вес. Получите точный вес наименьшим числом блинов или ближайший и пару, которой не хватает, если хватит одной.
+- [Инструменты для штанги: блины, 1RM, разминка](https://loadpr.com/ru/instrumenty/): Все бесплатные веб-инструменты LoadPR на одной странице: блины на сторону, 1RM, проценты, разминка, kg в lb, вес собранной штанги и блины для дома.
+
+### Plate charts by weight
+- [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/ru/blini/40-kg/): URL pattern https://loadpr.com/ru/blini/<weight>-kg/
+
+## 日本語 (ja)
+
+### Home
+- [LoadPR — バーベルのプレート、一瞬で正しく](https://loadpr.com/ja/): 無料のバーベル計算ツール：片側のプレート、1RM、ウォームアップセット、kg ↔ lb 換算。登録不要。iOS版LoadPRをダウンロードして、ジムでバーを正しくセットしよう。
+
+### Tools
+- [プレート計算｜片側に何kgのプレート？](https://loadpr.com/ja/plate-keisan/): 片側にどのプレートを付ければいいか、すぐに計算できます。無料・登録不要。iOS版LoadPRをダウンロードして、ジムに持っていこう。
+- [1RM計算｜最大挙上重量を推定](https://loadpr.com/ja/1rm-keisan/): Epley、Brzycki、Lombardi、O'Connerの各計算式で1RM（最大挙上重量）を推定。50〜100%のパーセンテージ表も表示します。
+- [ウォームアップ計算｜段階的なセット](https://loadpr.com/ja/warmup-keisan/): メインセットの重量から段階的なウォームアップセットを作成。どのセットもプレートでセットできる重量に丸めて表示します。
+- [kg lb 換算｜キロとポンドを変換](https://loadpr.com/ja/kg-lb-henkan/): キログラムをポンドに、ポンドをキログラムに換算。結果はセットできる最も近いプレート重量に丸めて表示します。
+- [1RMパーセンテージ計算｜トレーニング重量](https://loadpr.com/ja/1rm-percent-hyo/): 1RMを100%から50%までのパーセンテージ表に変換。どの重量も、実際にバーにセットできる重量に丸めて表示します。
+- [バーに何kg？セット済みバーベルの重量](https://loadpr.com/ja/bar-no-juryo/): セット済みのバーベルの片側にあるプレートを数えるだけで、バーとカラーを含めた合計重量をkgとlbで表示します。
+- [ホームジムのプレート計算｜手持ちのプレートで](https://loadpr.com/ja/home-gym-plate-keisan/): 持っているプレートと目標重量を入力。最少枚数でぴったりの組み合わせを表示し、無理なら最も近い重量と、1ペアで届く場合は追加すべきペアも表示します。
+- [バーベル計算ツール：プレート・1RM・ウォームアップ](https://loadpr.com/ja/tools/): LoadPRの無料Webツールをまとめて紹介：片側のプレート、1RM、パーセンテージ、ウォームアップセット、kg-lb換算、バーの重量、ホームジムのプレート。
+
+### Plate charts by weight
+- [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/ja/plate/40-kg/): URL pattern https://loadpr.com/ja/plate/<weight>-kg/
+
+## 한국어 (ko)
+
+### Home
+- [LoadPR — 바벨 원판, 바로 정확하게](https://loadpr.com/ko/): 무료 바벨 계산기: 한쪽 원판, 1RM, 워밍업 세트, kg ↔ lb 변환. 가입 없이 바로 사용하세요. iOS용 LoadPR을 받고 헬스장에서 바를 정확하게 세팅하세요.
+
+### Tools
+- [원판 계산기 | 한쪽에 원판 몇 개?](https://loadpr.com/ko/wonpan-gyesangi/): 한쪽에 어떤 원판을 끼워야 하는지 바로 계산하세요. 무료, 가입 필요 없음. iOS용 LoadPR을 받아 헬스장에서도 쓰세요.
+- [1RM 계산기 | 내 최대 중량 추정](https://loadpr.com/ko/1rm-gyesangi/): Epley, Brzycki, Lombardi, O'Conner 공식으로 1RM\(1회 최대 중량\)을 추정하고, 50~100% 퍼센트 표도 함께 확인하세요.
+- [워밍업 계산기 | 점진적 워밍업 세트](https://loadpr.com/ko/warmup-gyesangi/): 본세트 무게를 기준으로 점진적인 워밍업 세트를 만들어 드려요. 모든 세트는 원판으로 세팅할 수 있는 무게로 반올림돼요.
+- [kg lb 변환기 | 킬로그램을 파운드로](https://loadpr.com/ko/kg-lb-byeonhwan/): 킬로그램을 파운드로, 파운드를 킬로그램으로 변환하세요. 결과는 세팅 가능한 가장 가까운 원판 무게로 반올림돼요.
+- [1RM 퍼센트 계산기 | 훈련 무게 표](https://loadpr.com/ko/1rm-percent-pyo/): 1RM을 100%부터 50%까지의 퍼센트 표로 바꿔 드려요. 모든 무게는 실제로 바에 끼울 수 있는 무게로 반올림돼요.
+- [바에 몇 kg? 원판 끼운 바벨 총 무게](https://loadpr.com/ko/barbell-mugae/): 원판이 끼워진 바벨 한쪽의 원판만 세면 바와 칼라를 포함한 총 무게를 kg과 lb로 알려 드려요.
+- [홈짐 원판 계산기 | 내가 가진 원판으로](https://loadpr.com/ko/homegym-wonpan-gyesangi/): 가진 원판과 목표 무게를 입력하세요. 가장 적은 원판으로 정확한 조합을, 안 되면 가장 가까운 무게와 한 쌍으로 되는 경우 추가할 원판을 알려 드려요.
+- [바벨 도구: 원판, 1RM, 워밍업, kg-lb](https://loadpr.com/ko/tools/): LoadPR의 무료 웹 도구를 한곳에: 한쪽 원판, 1RM, 퍼센트, 워밍업 세트, kg-lb 변환, 바 무게 확인, 홈짐 원판 계산까지.
+
+### Plate charts by weight
+- [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/ko/wonpan/40-kg/): URL pattern https://loadpr.com/ko/wonpan/<weight>-kg/
+
+## 简体中文 (zh-Hans)
+
+### Home
+- [LoadPR — 杠铃挂片，一秒算对](https://loadpr.com/zh-hans/): 免费杠铃计算工具：每边挂几片、1RM、热身组和 kg ↔ lb 换算，无需注册。下载 iOS 版 LoadPR，在健身房也能把杠铃片挂对。
+
+### Tools
+- [杠铃片计算器｜每边挂几片](https://loadpr.com/zh-hans/gangling-pian-jisuanqi/): 立刻算出杠铃每边该挂哪些杠铃片。免费使用，无需注册。下载 iOS 版 LoadPR，带着它去健身房，每次都能把重量挂对。
+- [1RM 计算器｜估算你的最大重量](https://loadpr.com/zh-hans/1rm-jisuanqi/): 用 Epley、Brzycki、Lombardi 和 O'Conner 公式估算你的 1RM（单次最大重量），并附上 50–100% 的百分比表，方便安排训练重量。
+- [热身组计算器｜循序渐进的热身组](https://loadpr.com/zh-hans/reshen-zu-jisuan/): 根据你的正式组重量生成循序渐进的热身组，每一组都会取整到用杠铃片能挂出的重量，进健身房就能直接照着练。
+- [公斤磅换算｜kg 与 lb 互换](https://loadpr.com/zh-hans/gongjin-bang-huansuan/): 把公斤换算成磅，或把磅换算成公斤，结果会取整到最接近的可挂出杠铃片重量，看懂另一种单位写的训练计划。
+- [1RM 百分比计算器｜训练重量表](https://loadpr.com/zh-hans/1rm-baifenbi/): 把你的 1RM 变成一张从 100% 到 50% 的百分比表，每个重量都会取整到你能实际挂上杠铃的重量，训练时一目了然。
+- [杠上有多重？已挂片杠铃总重](https://loadpr.com/zh-hans/gangling-zhongliang/): 数一数已挂片杠铃一侧的杠铃片，即可得到包含杠铃杆和卡扣在内的总重量，同时以 kg 和 lb 两种单位显示。
+- [家庭健身房杠铃片计算器｜用你自己的片](https://loadpr.com/zh-hans/jiating-jianshen-gangling-pian/): 输入你拥有的杠铃片和目标重量，用最少的片数精确挂出；挂不出时显示最接近的重量，如果只差一对，还会告诉你该补哪一对。
+- [杠铃工具：杠铃片、1RM、热身、kg-lb 换算](https://loadpr.com/zh-hans/gongju/): LoadPR 的全部免费网页工具都在这里：每边杠铃片、1RM、百分比、热身组、kg-lb 换算、杠上有多重，以及家庭健身房杠铃片。
+
+### Plate charts by weight
+- [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/zh-hans/guapian/40-kg/): URL pattern https://loadpr.com/zh-hans/guapian/<weight>-kg/
+
+## 繁體中文 (zh-Hant)
+
+### Home
+- [LoadPR — 槓鈴上片，一秒算對](https://loadpr.com/zh-hant/): 免費槓鈴計算工具：每邊上幾片、1RM、熱身組和 kg ↔ lb 換算，不必註冊。下載 iOS 版 LoadPR，在健身房也能把槓片上對。
+
+### Tools
+- [槓片計算機｜每邊要上幾片](https://loadpr.com/zh-hant/gangpian-jisuanji/): 立即算出槓鈴每邊要上哪些槓片。免費使用，不必註冊。下載 iOS 版 LoadPR，帶著它去健身房，每次都能把重量上對。
+- [1RM 計算機｜估算你的最大重量](https://loadpr.com/zh-hant/1rm-jisuanji/): 用 Epley、Brzycki、Lombardi 和 O'Conner 公式估算你的 1RM（單次最大重量），並附上 50–100% 的百分比表，方便安排訓練重量。
+- [熱身組計算機｜循序漸進的熱身組](https://loadpr.com/zh-hant/reshen-zu-jisuan/): 依照你的正式組重量產生循序漸進的熱身組，每一組都會取整到用槓片組得出來的重量，到了健身房就能直接照著練。
+- [公斤磅換算｜kg 與 lb 互換](https://loadpr.com/zh-hant/gongjin-bang-huansuan/): 把公斤換算成磅，或把磅換算成公斤，結果會取整到最接近的可上片槓片重量，讓你輕鬆看懂另一種單位寫的課表。
+- [1RM 百分比計算機｜訓練重量表](https://loadpr.com/zh-hant/1rm-baifenbi/): 把你的 1RM 變成一張從 100% 到 50% 的百分比表，每個重量都會取整到你實際上得了槓的重量，訓練時一目了然。
+- [槓上有多重？已上片槓鈴總重](https://loadpr.com/zh-hant/gangling-zhongliang/): 數一數已上片槓鈴一側的槓片，就能算出包含槓鈴和卡扣在內的總重量，並同時以 kg 和 lb 兩種單位顯示。
+- [居家健身房槓片計算機｜用你自己的槓片](https://loadpr.com/zh-hant/jujia-jianshen-gangpian/): 輸入你擁有的槓片和目標重量，用最少片數精準組出；組不出時顯示最接近的重量，如果只差一對，還會告訴你該補哪一對。
+- [槓鈴工具：槓片、1RM、熱身、kg-lb 換算](https://loadpr.com/zh-hant/gongju/): LoadPR 的所有免費網頁工具都在這裡：每邊槓片、1RM、百分比、熱身組、kg-lb 換算、槓上有多重，以及居家健身房槓片。
+
+### Plate charts by weight
+- [How many plates for 40 to 300 kg (105 pages, one per weight)](https://loadpr.com/zh-hant/gangpian/40-kg/): URL pattern https://loadpr.com/zh-hant/gangpian/<weight>-kg/

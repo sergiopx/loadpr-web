@@ -69,6 +69,8 @@ a:hover { text-decoration: underline; }
 /* ── display type ────────────────────────────────────────────────────────── */
 .display, h1, .brand { font-family: var(--display); font-variation-settings: "wdth" 110; font-feature-settings: "tnum" 1; }
 h1 { font-size: clamp(44px, 7vw, 88px); line-height: .95; letter-spacing: -.035em; font-weight: 800; margin: 0 0 20px; text-wrap: balance; }
+/* Japanese has no spaces: break headings at phrase boundaries, not mid-word. */
+:lang(ja) :is(h1, h2, h3) { word-break: auto-phrase; }
 h2 { font-size: clamp(24px, 3vw, 34px); line-height: 1.1; letter-spacing: -.02em; font-weight: 700; margin: 56px 0 14px; text-wrap: balance; }
 h3 { font-size: 21px; font-weight: 600; letter-spacing: -.01em; margin: 0; }
 .intro { color: var(--muted); font-size: clamp(18px, 2vw, 22px); line-height: 1.4; margin: 0 0 28px; max-width: 46ch; }
@@ -94,17 +96,22 @@ header.site nav { margin-left: auto; display: flex; gap: 22px; overflow-x: auto;
 header.site nav::-webkit-scrollbar { display: none; }
 header.site nav a { color: var(--muted); font-size: 14px; font-weight: 500; white-space: nowrap; padding: 6px 0; }
 header.site nav a:hover, header.site nav a[aria-current] { color: var(--ink); text-decoration: none; }
-.langswitch { display: flex; gap: 2px; padding: 3px; background: var(--seg-track); border-radius: var(--pill); flex: 0 0 auto; }
-.langswitch a { font-size: 12px; font-weight: 600; color: var(--muted); padding: 4px 9px; border-radius: var(--pill); }
-.langswitch a:hover { text-decoration: none; color: var(--ink); }
-.langswitch a.on { color: var(--ink); background: var(--seg-thumb); box-shadow: var(--shadow-thumb); }
+/* Language menu: <details>, no script. The summary is the current-locale pill;
+   the list opens below it, two columns once there are many languages. */
+.langswitch { position: relative; flex: 0 0 auto; }
+.langswitch summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; color: var(--ink); padding: 6px 10px; background: var(--seg-track); border-radius: var(--pill); white-space: nowrap; }
+.langswitch summary::-webkit-details-marker { display: none; }
+.langswitch summary::after { content: ""; width: 5px; height: 5px; border: solid var(--muted); border-width: 0 1.5px 1.5px 0; transform: translateY(-2px) rotate(45deg); }
+.langswitch[open] summary::after { transform: translateY(1px) rotate(-135deg); }
+.langmenu { position: absolute; right: 0; top: calc(100% + 8px); z-index: 30; display: grid; grid-template-columns: repeat(2, minmax(110px, 1fr)); gap: 2px; padding: 8px; background: var(--surface); border: 1px solid var(--hair); border-radius: var(--radius-sm); box-shadow: var(--shadow-lg); }
+.langmenu a { font-size: 14px; color: var(--ink); padding: 7px 10px; border-radius: 8px; white-space: nowrap; }
+.langmenu a:hover { text-decoration: none; background: var(--surface-2); }
+.langmenu a[aria-current] { color: var(--blue); font-weight: 600; }
 @media (max-width: 720px) { header.site nav { display: none; } header.site .langswitch { margin-left: auto; } }
 /* Medium widths: the nav scrolls with no visible cue, so links must fit, not scroll.
-   Below the full wrap width the langswitch shrinks to the current-locale pill, then
-   links drop in NAV_TOOL_KEYS order (config/tools.js): 3 = 1RM percentages,
+   Below the full wrap width links drop in NAV_TOOL_KEYS order (config/tools.js): 3 = 1RM percentages,
    4 = What's on the bar, 5 = Guides. The footer links every one of them. */
 @media (min-width: 721px) and (max-width: 1119px) {
-  .langswitch a:not([aria-current]) { display: none; }
   header.site nav a:nth-child(3) { display: none; }
 }
 @media (min-width: 721px) and (max-width: 899px) { header.site nav a:nth-child(4) { display: none; } }
@@ -112,9 +119,8 @@ header.site nav a:hover, header.site nav a[aria-current] { color: var(--ink); te
 /* Header App Store button: outside <nav>, so it stays when the nav hides.
    header.site outranks .btn, which is declared further down. */
 header.site .nav-cta { flex: 0 0 auto; padding: 7px 14px; font-size: 14px; line-height: 1.2; white-space: nowrap; margin-left: 12px; }
-/* Phones: only the current-locale pill; the footer's language column switches. */
+/* Phones: tighter header so the language pill and App Store button both fit. */
 @media (max-width: 420px) {
-  .langswitch a:not([aria-current]) { display: none; }
   header.site .wrap { gap: 16px; } /* room for the longest label, es "Descargar app" */
   header.site .nav-cta { padding: 6px 10px; font-size: 13px; margin-left: 8px; }
 }
