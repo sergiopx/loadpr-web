@@ -49,6 +49,12 @@ function saveState(patch) {
   return next;
 }
 
+// A first visit opens on a worked example instead of an empty form, so the
+// plate diagram shows before anyone types. It is never saved: lastTarget is
+// written only on input, and a target the visitor cleared stays cleared ('').
+const EXAMPLE_TARGET = { lb: 225, kg: 100 };
+const exampleTarget = (unit) => EXAMPLE_TARGET[unit] ?? '';
+
 function plateSet(unit) { return unit === 'lb' ? LB_PLATES : KG_PLATES; }
 
 function field(label, control) {
@@ -191,7 +197,7 @@ function mountPlateCalc(root) {
   const st = equipment();
   const out = h('div', { class: 'lp-out', id: 'lp-out' });
   const target = h('input', { id: 'lp-target', type: 'number', step: '0.5', min: '0', inputmode: 'decimal',
-    value: preset ? preset.target : (loadState().lastTarget || ''), oninput: (e) => { saveState({ lastTarget: e.target.value }); compute(); } });
+    value: preset ? preset.target : (loadState().lastTarget ?? exampleTarget(st.unit)), oninput: (e) => { saveState({ lastTarget: e.target.value }); compute(); } });
   holdPreset(root, () => saveState({ lastTarget: target.value }));
 
   function compute() {
@@ -224,7 +230,7 @@ function mountOneRepMax(root) {
   const t = s.tools.oneRepMax;
   const out = h('div', { class: 'lp-out' });
   const st = loadState();
-  const weight = h('input', { type: 'number', step: '0.5', min: '0', inputmode: 'decimal', value: st.ormW || '' });
+  const weight = h('input', { type: 'number', step: '0.5', min: '0', inputmode: 'decimal', value: st.ormW ?? exampleTarget(cfg.unitDefault) });
   const reps = h('input', { type: 'number', min: '1', max: '20', value: st.ormR || '5' });
   const formula = h('select', {}, Object.keys(t.formulas).map((k) => h('option', { value: k }, t.formulas[k])));
   const go = () => {
@@ -233,7 +239,7 @@ function mountOneRepMax(root) {
     out.innerHTML = '';
     // Rep formulas are only meaningful for 1–20 reps; Brzycki diverges at 37 and goes negative past it.
     if (!(w > 0) || !(r >= 1 && r <= 20)) return;
-    const res = oneRepMax(w, r, formula.value);
+    const res = oneRepMax(w, r, formula.value || Object.keys(t.formulas)[0]);
     if (!Number.isFinite(res.oneRepMax) || res.oneRepMax <= 0) return;
     out.append(h('div', { class: 'lp-card' }, [
       h('div', { class: 'lp-card-head' }, [h('span', { class: 'lp-badge' }, t.estimated1rm), h('strong', { class: 'lp-weight-big' }, fmt(res.oneRepMax))]),
@@ -349,7 +355,7 @@ function mountHomeGym(root) {
   const st = equipment();
   const out = h('div', { class: 'lp-out' });
   const target = h('input', { id: 'lp-home-target', type: 'number', step: '0.5', min: '0', inputmode: 'decimal',
-    value: preset ? preset.target : (loadState().homeTarget || ''), oninput: (e) => { saveState({ homeTarget: e.target.value }); compute(); } });
+    value: preset ? preset.target : (loadState().homeTarget ?? exampleTarget(st.unit)), oninput: (e) => { saveState({ homeTarget: e.target.value }); compute(); } });
   holdPreset(root, () => saveState({ homeTarget: target.value }));
 
   // The smallest standard plate whose extra pair makes the target exact.
@@ -468,6 +474,30 @@ function languageSuggestion() {
   document.body.prepend(banner);
 }
 
+// ── home gallery arrows ──────────────────────────────────────────────────────
+// The buttons ship hidden; they appear only when the row overflows, page one
+// screenful at a time, and disable at either end.
+function galleryArrows() {
+  const row = document.getElementById('home-shot-row');
+  const prev = document.getElementById('shot-prev');
+  const next = document.getElementById('shot-next');
+  const scroller = row?.parentElement;
+  if (!scroller || !prev || !next) return;
+  const update = () => {
+    const max = scroller.scrollWidth - scroller.clientWidth;
+    prev.hidden = next.hidden = max <= 1;
+    prev.disabled = scroller.scrollLeft <= 1;
+    next.disabled = scroller.scrollLeft >= max - 1;
+  };
+  const page = (dir) => scroller.scrollBy({ left: dir * scroller.clientWidth * 0.8,
+    behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  prev.addEventListener('click', () => page(-1));
+  next.addEventListener('click', () => page(1));
+  scroller.addEventListener('scroll', update, { passive: true });
+  addEventListener('resize', update);
+  update();
+}
+
 // ── boot ─────────────────────────────────────────────────────────────────────
 const WIDGETS = {
   plateCalc: mountPlateCalc, oneRepMax: mountOneRepMax, warmup: mountWarmup, converter: mountConverter,
@@ -476,6 +506,7 @@ const WIDGETS = {
 
 function boot() {
   languageSuggestion();
+  galleryArrows();
   const root = document.getElementById('lp-app');
   if (!root) return;
   root.classList.add('lp-ready');

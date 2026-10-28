@@ -485,7 +485,21 @@ body.page-scenario h1 { margin-top: 10px; }
 .shot-row li { flex: 0 0 auto; width: min(62vw, 280px); scroll-snap-align: start; }
 .shot-row figure { margin: 0; }
 .shot-row img { display: block; width: 100%; height: auto; border-radius: var(--radius); background: #161618; }
-.shot-row figcaption { margin-top: 14px; font-size: 14px; line-height: 1.4; color: var(--muted); }
+.shot-row figcaption { margin-top: 16px; font-family: var(--display); font-size: 17px; font-weight: 600; line-height: 1.3; letter-spacing: -.01em; color: var(--ink); }
+/* Gallery arrows, Apple style: gray circles under the row, right-aligned. The
+   script unhides them only when the row overflows; touch users swipe. */
+.shot-navs { display: flex; justify-content: flex-end; gap: 14px; max-width: var(--maxw); margin: 18px auto 0; }
+.shot-nav { width: 44px; height: 44px; border: 0; border-radius: 50%; background: var(--seg-track); color: var(--ink); cursor: pointer; display: grid; place-items: center; transition: background .2s, opacity .2s; }
+.shot-nav::before { content: ""; width: 9px; height: 9px; border: solid currentColor; border-width: 2px 2px 0 0; transform: translateX(-2px) rotate(45deg); }
+.shot-prev::before { transform: translateX(2px) rotate(-135deg); }
+.shot-nav:hover { background: var(--hair); }
+.shot-nav:disabled { opacity: .35; cursor: default; }
+.home-gallery .band-note { margin-top: 40px; }
+/* How it works ends on the worked example: the steps, then the plates they produce. */
+.how-example { margin: 80px auto 0; max-width: var(--textw); text-align: center; }
+.how-example > h3 { font-size: clamp(24px, 2.6vw, 32px); margin: 0 0 12px; }
+.how-example > .band-text { margin-bottom: 32px; }
+.how-example .scn-hero { margin-bottom: 32px; background: var(--surface); }
 .shot-scroller:focus-visible { outline-offset: 4px; }
 
 /* centered hero (home) */
@@ -582,6 +596,11 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
       <h1>How much does a weight plate weigh?</h1>
       <p class="meta-dates">Updated <time datetime="2026-10-25">October 25, 2026</time></p>
       <p><strong>Short answer: the big plate in most gyms weighs 45 lb, which is 20.41 kg. In a kilo gym the matching plate is 20 kg, which is 44.09 lb.</strong> When lifters say "a plate" they mean one of these. A plate weighs what is stamped on it, and the tables below give every common plate in both units.</p>
+      <figure class="scn-example guide-example">
+        <svg class="lp-diagram" viewBox="0 0 108 240" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="1 plates per side" xmlns="http://www.w3.org/2000/svg"><defs><filter id="lp-shadow" x="-30%" y="-20%" width="160%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="rgba(0,0,0,0.20)"/></filter></defs><rect x="0" y="114" width="47" height="12" rx="6" fill="#C7C7CC"/><rect x="44" y="109" width="16" height="22" rx="5" fill="#AEAEB2"/><rect x="60.0" y="8.0" width="34" height="224.0" rx="10" class="plate" style="--i:0" fill="#0A84FF" filter="url(#lp-shadow)"/></svg>
+        <div class="lp-meta"><span class="lp-per-side">Per side:</span><span class="lp-chip"><i class="lp-dot" style="background:#0A84FF"></i>1 × 45</span></div>
+        <figcaption class="scn-example-total">Total on bar: 135 lb · Bar: 45 lb</figcaption>
+      </figure>
       <h2>Why a 45 lb plate is not 20 kg</h2><p>Pound plates are made in round pounds and kilo plates in round kilos, so the two big plates are close but not equal. One kilogram is 2.2046 lb:</p><ul><li>45 lb ÷ 2.2046 = <strong>20.41 kg</strong></li><li>20 kg × 2.2046 = <strong>44.09 lb</strong></li></ul><p>The gap is small for one plate and grows as you load more. A 45 lb bar with two 45s on each side is 225 lb, which is 102.06 kg. A 20 kg bar with two 20 kg plates on each side is 100 kg, which is 220.46 lb. Both get called "two plates", but they are not the same load.</p>
       <aside class="cta-inline"><p><strong>Let LoadPR do the plate math.</strong> LoadPR calculates the plates for your next set and tracks your PRs from your phone.</p><a class="btn" href="https://apps.apple.com/app/apple-store/id6768525538?pt=128893237&amp;ct=guide-how-much-does-a-plate-weigh-mid&amp;mt=8">Download on the App Store</a></aside>
       <h2>Pound plates in kg</h2><table class="lp-table"><thead><tr><th>Plate</th><th>Weight in kg</th></tr></thead><tbody><tr><td>45 lb</td><td>20.41</td></tr><tr><td>35 lb</td><td>15.88</td></tr><tr><td>25 lb</td><td>11.34</td></tr><tr><td>10 lb</td><td>4.54</td></tr><tr><td>5 lb</td><td>2.27</td></tr><tr><td>2.5 lb</td><td>1.13</td></tr></tbody></table><p>A 25 lb plate is 11.34 kg and a 10 lb plate is 4.54 kg, so pound plates never land on round kilos.</p>

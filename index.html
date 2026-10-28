@@ -497,7 +497,21 @@ body.page-scenario h1 { margin-top: 10px; }
 .shot-row li { flex: 0 0 auto; width: min(62vw, 280px); scroll-snap-align: start; }
 .shot-row figure { margin: 0; }
 .shot-row img { display: block; width: 100%; height: auto; border-radius: var(--radius); background: #161618; }
-.shot-row figcaption { margin-top: 14px; font-size: 14px; line-height: 1.4; color: var(--muted); }
+.shot-row figcaption { margin-top: 16px; font-family: var(--display); font-size: 17px; font-weight: 600; line-height: 1.3; letter-spacing: -.01em; color: var(--ink); }
+/* Gallery arrows, Apple style: gray circles under the row, right-aligned. The
+   script unhides them only when the row overflows; touch users swipe. */
+.shot-navs { display: flex; justify-content: flex-end; gap: 14px; max-width: var(--maxw); margin: 18px auto 0; }
+.shot-nav { width: 44px; height: 44px; border: 0; border-radius: 50%; background: var(--seg-track); color: var(--ink); cursor: pointer; display: grid; place-items: center; transition: background .2s, opacity .2s; }
+.shot-nav::before { content: ""; width: 9px; height: 9px; border: solid currentColor; border-width: 2px 2px 0 0; transform: translateX(-2px) rotate(45deg); }
+.shot-prev::before { transform: translateX(2px) rotate(-135deg); }
+.shot-nav:hover { background: var(--hair); }
+.shot-nav:disabled { opacity: .35; cursor: default; }
+.home-gallery .band-note { margin-top: 40px; }
+/* How it works ends on the worked example: the steps, then the plates they produce. */
+.how-example { margin: 80px auto 0; max-width: var(--textw); text-align: center; }
+.how-example > h3 { font-size: clamp(24px, 2.6vw, 32px); margin: 0 0 12px; }
+.how-example > .band-text { margin-bottom: 32px; }
+.how-example .scn-hero { margin-bottom: 32px; background: var(--surface); }
 .shot-scroller:focus-visible { outline-offset: 4px; }
 
 /* centered hero (home) */
@@ -616,41 +630,37 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
       </ul>
       <p class="band-more"><a class="more" href="/tools/">All tools</a></p>
     </section>
-    <section class="band" aria-labelledby="what-h">
+    <section class="band home-gallery" aria-labelledby="what-h">
       <div class="band-head">
         <h2 id="what-h">What is LoadPR?</h2>
         <p class="band-lead">LoadPR is a barbell plate calculator and PR tracker for iPhone and Apple Watch. You give it a weight, it shows the plates for one side of the bar. You log a set, it keeps the record. That is the whole app.</p>
       </div>
-      <div class="band-text"><p>This website is the free half: plate, 1RM, warm-up, percentage and kg to lb calculators that run in your browser. Use them on a laptop or a phone without installing anything. When you want the numbers on your wrist and your PRs saved, the app picks up where the site stops.</p><p>No feed. No streaks. No chatbot. Your lifts stay on your iPhone, not on a server.</p></div>
-    </section>
-    <section class="band alt home-gallery" aria-labelledby="home-shots-h">
-      <div class="band-head"><h2 id="home-shots-h">Inside the app</h2></div>
       <div class="shot-scroller" role="region" tabindex="0" aria-label="App screenshots, scroll sideways for more">
-        <ul class="shot-row"><li><figure><img src="/assets/shots/en/load-720.webp" srcset="/assets/shots/en/load-360.webp 360w, /assets/shots/en/load-720.webp 720w" sizes="(max-width: 767px) 62vw, 280px" width="720" height="1183" loading="lazy" decoding="async" alt="Bench Press at 100% of a 225 lb PR: 225 lb, two 45 lb plates on one side of the bar"><figcaption>Bench Press at 100% of a 225 lb PR: 225 lb, two 45 lb plates on one side of the bar</figcaption></figure></li><li><figure><img src="/assets/shots/en/closest-720.webp" srcset="/assets/shots/en/closest-360.webp 360w, /assets/shots/en/closest-720.webp 720w" sizes="(max-width: 767px) 62vw, 280px" width="720" height="1183" loading="lazy" decoding="async" alt="Closest loadable weight for 187.5 lb: 185 lb, one 45 and one 25 lb plate on one side of the bar"><figcaption>Closest loadable weight for 187.5 lb: 185 lb, one 45 and one 25 lb plate on one side of the bar</figcaption></figure></li><li><figure><img src="/assets/shots/en/percent-720.webp" srcset="/assets/shots/en/percent-360.webp 360w, /assets/shots/en/percent-720.webp 720w" sizes="(max-width: 767px) 62vw, 280px" width="720" height="1183" loading="lazy" decoding="async" alt="Percentage wheel at 80% of a 225 lb PR: 180 lb, one side of the bar"><figcaption>Percentage wheel at 80% of a 225 lb PR: 180 lb, one side of the bar</figcaption></figure></li><li><figure><img src="/assets/shots/en/chart-720.webp" srcset="/assets/shots/en/chart-360.webp 360w, /assets/shots/en/chart-720.webp 720w" sizes="(max-width: 767px) 62vw, 280px" width="720" height="1183" loading="lazy" decoding="async" alt="LoadPR+ progress chart for Deadlift: current PR 435 lb, All range selected"><figcaption>LoadPR+ progress chart for Deadlift: current PR 435 lb, All range selected</figcaption></figure></li><li><figure><img src="/assets/shots/en/timer-720.webp" srcset="/assets/shots/en/timer-360.webp 360w, /assets/shots/en/timer-720.webp 720w" sizes="(max-width: 767px) 62vw, 280px" width="720" height="1183" loading="lazy" decoding="async" alt="LoadPR+ EMOM timer, round 1 of 10"><figcaption>LoadPR+ EMOM timer, round 1 of 10</figcaption></figure></li><li><figure><img src="/assets/shots/en/watch-720.webp" srcset="/assets/shots/en/watch-360.webp 360w, /assets/shots/en/watch-720.webp 720w" sizes="(max-width: 767px) 62vw, 280px" width="720" height="1150" loading="lazy" decoding="async" alt="Apple Watch dial: Bench Press, 225 lb at 100% of 225"><figcaption>Apple Watch dial: Bench Press, 225 lb at 100% of 225</figcaption></figure></li></ul>
+        <ul class="shot-row" id="home-shot-row"><li><figure><img src="/assets/shots/en/load-720.webp" srcset="/assets/shots/en/load-360.webp 360w, /assets/shots/en/load-720.webp 720w" sizes="(max-width: 767px) 62vw, 280px" width="720" height="1183" loading="lazy" decoding="async" alt="Bench Press at 100% of a 225 lb PR: 225 lb, two 45 lb plates on one side of the bar"><figcaption>Plates for any lift, heaviest first.</figcaption></figure></li><li><figure><img src="/assets/shots/en/closest-720.webp" srcset="/assets/shots/en/closest-360.webp 360w, /assets/shots/en/closest-720.webp 720w" sizes="(max-width: 767px) 62vw, 280px" width="720" height="1183" loading="lazy" decoding="async" alt="Closest loadable weight for 187.5 lb: 185 lb, one 45 and one 25 lb plate on one side of the bar"><figcaption>An odd weight? The closest one you can load.</figcaption></figure></li><li><figure><img src="/assets/shots/en/percent-720.webp" srcset="/assets/shots/en/percent-360.webp 360w, /assets/shots/en/percent-720.webp 720w" sizes="(max-width: 767px) 62vw, 280px" width="720" height="1183" loading="lazy" decoding="async" alt="Percentage wheel at 80% of a 225 lb PR: 180 lb, one side of the bar"><figcaption>Spin to any percentage of your PR.</figcaption></figure></li><li><figure><img src="/assets/shots/en/chart-720.webp" srcset="/assets/shots/en/chart-360.webp 360w, /assets/shots/en/chart-720.webp 720w" sizes="(max-width: 767px) 62vw, 280px" width="720" height="1183" loading="lazy" decoding="async" alt="LoadPR+ progress chart for Deadlift: current PR 435 lb, All range selected"><figcaption>Every PR, charted. LoadPR+</figcaption></figure></li><li><figure><img src="/assets/shots/en/timer-720.webp" srcset="/assets/shots/en/timer-360.webp 360w, /assets/shots/en/timer-720.webp 720w" sizes="(max-width: 767px) 62vw, 280px" width="720" height="1183" loading="lazy" decoding="async" alt="LoadPR+ EMOM timer, round 1 of 10"><figcaption>An EMOM timer, built in. LoadPR+</figcaption></figure></li><li><figure><img src="/assets/shots/en/watch-720.webp" srcset="/assets/shots/en/watch-360.webp 360w, /assets/shots/en/watch-720.webp 720w" sizes="(max-width: 767px) 62vw, 280px" width="720" height="1150" loading="lazy" decoding="async" alt="Apple Watch dial: Bench Press, 225 lb at 100% of 225"><figcaption>Your plates on Apple Watch.</figcaption></figure></li></ul>
       </div>
+      <div class="shot-navs"><button type="button" id="shot-prev" class="shot-nav shot-prev" aria-label="Previous screenshots" aria-controls="home-shot-row" hidden></button><button type="button" id="shot-next" class="shot-nav shot-next" aria-label="Next screenshots" aria-controls="home-shot-row" hidden></button></div>
+      <p class="band-note">This website is the free half: plate, 1RM, warm-up, percentage and kg to lb calculators that run in your browser. Use them on a laptop or a phone without installing anything. When you want the numbers on your wrist and your PRs saved, the app picks up where the site stops.</p>
     </section>
-    <section class="band" aria-labelledby="how-h">
+    <section class="band alt" aria-labelledby="how-h">
       <div class="band-head">
         <h2 id="how-h">How LoadPR works</h2>
         <p class="band-sub">Four steps from a number on your program to plates on the bar.</p>
       </div>
       <ol class="steps"><li><h3>Pick the weight</h3><p>Choose a lift and turn the percentage wheel to a share of your current PR (your heaviest logged weight), or type any weight you want to load.</p></li><li><h3>Read one side of the bar</h3><p>LoadPR draws one side of the bar with the plates in loading order, heaviest first, each plate in its own color so you can match it to the rack at a glance.</p></li><li><h3>Get the closest weight</h3><p>If the exact weight can&#39;t be built from your plates, LoadPR shows the closest weight you can load instead of an error.</p></li><li><h3>Log the set</h3><p>Hit a new best and save it as a PR with weight, reps and date. The next percentage you pick is worked out from it.</p></li></ol>
+      <div class="how-example">
+        <h3 id="scn-h">A real example</h3>
+        <p class="band-text">Your bench press PR is 225 lb and today&#39;s program says 80% of your current PR (your heaviest logged weight). Turn the wheel to 80% and LoadPR shows 180 lb, with these plates on each side of a 45 lb bar:</p>
+        <div class="scn-example scn-hero">
+          <svg class="lp-diagram" viewBox="0 0 228 240" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="4 plates per side" xmlns="http://www.w3.org/2000/svg"><defs><filter id="lp-shadow" x="-30%" y="-20%" width="160%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="rgba(0,0,0,0.20)"/></filter></defs><rect x="0" y="114" width="47" height="12" rx="6" fill="#C7C7CC"/><rect x="44" y="109" width="16" height="22" rx="5" fill="#AEAEB2"/><rect x="60.0" y="78.8" width="34" height="82.3" rx="10" class="plate" style="--i:0" fill="#8E8E93" filter="url(#lp-shadow)"/><rect x="100.0" y="66.3" width="34" height="107.3" rx="10" class="plate" style="--i:1" fill="#FF9F0A" filter="url(#lp-shadow)"/><rect x="140.0" y="66.3" width="34" height="107.3" rx="10" class="plate" style="--i:2" fill="#FF9F0A" filter="url(#lp-shadow)"/><rect x="180.0" y="8.0" width="34" height="224.0" rx="10" class="plate" style="--i:3" fill="#0A84FF" filter="url(#lp-shadow)"/></svg>
+        <div class="lp-meta"><span class="lp-per-side">Per side:</span><span class="lp-chip"><i class="lp-dot" style="background:#0A84FF"></i>1 × 45</span><span class="lp-chip"><i class="lp-dot" style="background:#FF9F0A"></i>2 × 10</span><span class="lp-chip"><i class="lp-dot" style="background:#8E8E93"></i>1 × 2.5</span></div>
+          <p class="scn-example-total">Total on bar: 180 lb · Bar: 45 lb</p>
+        </div>
+        <div class="band-text"><p>Next week the program asks for 187.5 lb. With the standard plates that weight can&#39;t be loaded exactly, so LoadPR shows the closest weight you can load: 185 lb. The plate calculator on this site lists both neighbors, 185 lb below and 190 lb above, if you would rather go up.</p></div>
+      </div>
     </section>
-    <section class="band alt" aria-labelledby="diff-h">
+    <section class="band" aria-labelledby="diff-h">
       <div class="band-head"><h2 id="diff-h">What makes LoadPR different</h2></div>
       <ul class="bento"><li class="tile"><h3>One side of the bar, not a list of numbers</h3><p>You load one side at a time, so that is what you see: the plates for one sleeve, heaviest first, color-coded. Put the same plates on the other side and you are done.</p><a class="more" href="/features/plate-loading/">Learn more</a></li><li class="tile"><h3>The closest weight you can actually load</h3><p>Programs ask for numbers like 187.5 that small plates can&#39;t always make. Instead of saying it is impossible, LoadPR shows the nearest weight you can load, so the bar is never more than a small step off.</p><a class="more" href="/features/closest-loadable-weight/">Learn more</a></li><li class="tile"><h3>Your gym&#39;s plates</h3><p>The free version uses the standard lb or kg plates, two of each per side. With LoadPR+ you set up every gym you train in, with its bars, its plates and how many of each it has, so every answer uses plates that are really there.</p><a class="more" href="/features/gyms-and-plates/">Learn more</a></li><li class="tile"><h3>On your wrist</h3><p>On Apple Watch, pick a lift, turn the Digital Crown to a percentage and read the weight and the plate diagram. The phone can stay in your bag.</p><a class="more" href="/features/apple-watch/">Learn more</a></li><li class="tile tile-wide"><h3>Nothing else</h3><p>No feed. No streaks. No chatbot. LoadPR loads the bar and tracks the record, and keeps your data on your iPhone.</p></li></ul>
-    </section>
-    <section class="band" aria-labelledby="scn-h">
-      <div class="band-head">
-        <h2 id="scn-h">A real example</h2>
-        <p class="band-sub">Your bench press PR is 225 lb and today&#39;s program says 80% of your current PR (your heaviest logged weight). Turn the wheel to 80% and LoadPR shows 180 lb, with these plates on each side of a 45 lb bar:</p>
-      </div>
-      <div class="scn-example scn-hero">
-        <svg class="lp-diagram" viewBox="0 0 228 240" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="4 plates per side" xmlns="http://www.w3.org/2000/svg"><defs><filter id="lp-shadow" x="-30%" y="-20%" width="160%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="rgba(0,0,0,0.20)"/></filter></defs><rect x="0" y="114" width="47" height="12" rx="6" fill="#C7C7CC"/><rect x="44" y="109" width="16" height="22" rx="5" fill="#AEAEB2"/><rect x="60.0" y="78.8" width="34" height="82.3" rx="10" class="plate" style="--i:0" fill="#8E8E93" filter="url(#lp-shadow)"/><rect x="100.0" y="66.3" width="34" height="107.3" rx="10" class="plate" style="--i:1" fill="#FF9F0A" filter="url(#lp-shadow)"/><rect x="140.0" y="66.3" width="34" height="107.3" rx="10" class="plate" style="--i:2" fill="#FF9F0A" filter="url(#lp-shadow)"/><rect x="180.0" y="8.0" width="34" height="224.0" rx="10" class="plate" style="--i:3" fill="#0A84FF" filter="url(#lp-shadow)"/></svg>
-        <div class="lp-meta"><span class="lp-per-side">Per side:</span><span class="lp-chip"><i class="lp-dot" style="background:#0A84FF"></i>1 × 45</span><span class="lp-chip"><i class="lp-dot" style="background:#FF9F0A"></i>2 × 10</span><span class="lp-chip"><i class="lp-dot" style="background:#8E8E93"></i>1 × 2.5</span></div>
-        <p class="scn-example-total">Total on bar: 180 lb · Bar: 45 lb</p>
-      </div>
-      <div class="band-text"><p>Next week the program asks for 187.5 lb. With the standard plates that weight can&#39;t be loaded exactly, so LoadPR shows the closest weight you can load: 185 lb. The plate calculator on this site lists both neighbors, 185 lb below and 190 lb above, if you would rather go up.</p></div>
     </section>
     <section class="band alt" aria-labelledby="plans-h">
       <div class="band-head"><h2 id="plans-h">Free vs LoadPR+</h2></div>
