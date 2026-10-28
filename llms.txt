@@ -46,6 +46,7 @@ LoadPR is an iPhone app that works out which plates to load on a barbell and tra
 - [How to Test Your 1RM Safely](https://loadpr.com/guide/how-to-test-your-1rm/): Work up in singles at 50, 70, 80, 90 and 95% of a planned max, then take 100%. Attempt tables for 140 kg and 315 lb, plus spotter and safety basics.
 - [How Many Warm-Up Sets for Squat, Bench, Deadlift?](https://loadpr.com/guide/warm-up-sets/): Most lifters need 3 to 5 warm-up sets. A simple ramp is 40, 60, 75 and 85% of the work set: 125, 190, 235 and 270 lb before 315 lb, with the plates.
 - [5/3/1 Training Max: 90% or 85% of Your 1RM](https://loadpr.com/guide/531-training-max/): Your 5/3/1 training max is 90% of your 1RM \(85% in later books\). A 455 lb max gives a 409.5 lb TM, so the 85% set is 350 lb, not 386.75 lb.
+- [Why Can't I Load an Exact Weight on a Barbell?](https://loadpr.com/guide/cant-load-exact-weight/): The bar moves in steps of twice your smallest plate: 5 lb with 2.5s, 2.5 kg with 1.25s. How to round 172 lb or 102 kg, and when microplates help.
 
 ### Plate charts by weight
 - [How many plates for 95 to 495 lb (10 pages, one per weight)](https://loadpr.com/how-many-plates/95-lb/): URL pattern https://loadpr.com/how-many-plates/<weight>-lb/
