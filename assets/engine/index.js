@@ -6,6 +6,7 @@ export {
 export { convert, roundToNearestPlate } from './convert.js';
 export { warmupSets, DEFAULT_WARMUP_SCHEME } from './warmup.js';
 export { oneRepMax, percentTable, FORMULAS } from './onerepmax.js';
+export { fiveThreeOne, WEEKS_531, WARMUP_531, CYCLE_INCREASE, TM_PERCENTS } from './fivethreeone.js';
 export {
   KG_PLATES, LB_PLATES, KG_INVENTORY, LB_INVENTORY,
   BAR_PRESETS, DEFAULT_BAR, IWF_COLORS, colorFor,

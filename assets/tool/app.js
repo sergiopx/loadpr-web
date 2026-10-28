@@ -1,7 +1,7 @@
 import {
   nearestAchievable, reverseCalc, sideFromCounts, solveInventory, achievableTotals,
   convert, roundToNearestPlate, warmupSets, oneRepMax, percentTable, round,
-  KG_PLATES, LB_PLATES, BAR_PRESETS, colorFor,
+  KG_PLATES, LB_PLATES, BAR_PRESETS, colorFor, fiveThreeOne, TM_PERCENTS,
 } from '../engine/index.js';
 import { renderDiagram, groupPlates } from './diagram.js';
 
@@ -53,6 +53,8 @@ function saveState(patch) {
 // plate diagram shows before anyone types. It is never saved: lastTarget is
 // written only on input, and a target the visitor cleared stays cleared ('').
 const EXAMPLE_TARGET = { lb: 225, kg: 100 };
+// A 5/3/1 first visit opens on a typical deadlift max.
+const EXAMPLE_MAX_531 = { lb: 455, kg: 200 };
 const exampleTarget = (unit) => EXAMPLE_TARGET[unit] ?? '';
 
 function plateSet(unit) { return unit === 'lb' ? LB_PLATES : KG_PLATES; }
@@ -474,6 +476,72 @@ function languageSuggestion() {
   document.body.prepend(banner);
 }
 
+// ── 5/3/1 (Wendler: one cycle from a training max) ─────────────────────────
+// Every set is a % of the training max, rounded by the engine to a weight the
+// standard plates load on the chosen bar, with the plates for one side.
+function mountFiveThreeOne(root) {
+  const t = s.tools.fiveThreeOne;
+  const st = equipment();
+  const saved = loadState().w531 || {};
+  const out = h('div', { class: 'lp-out' });
+  const sel = (value, opts) => h('select', { value: String(value) }, opts.map(([v, label]) => h('option', { value: String(v) }, label)));
+  const max = h('input', { type: 'number', step: '0.5', min: '0', inputmode: 'decimal', value: saved.max ?? EXAMPLE_MAX_531[st.unit] });
+  const tm = sel(saved.tm || 90, [...TM_PERCENTS, 100].map((p) => [p, t.tmOptions[p]]));
+  const lift = sel(saved.lift || 'deadlift', Object.entries(t.lifts));
+  const supp = sel(saved.supp || 'none', Object.entries(t.supp));
+  const warm = h('input', { type: 'checkbox', checked: saved.warm !== false });
+
+  const perSide = (plates, unit) => (plates.length
+    ? h('span', { class: 'lp-531-plates' }, chipsFor(plates, unit))
+    : h('span', { class: 'lp-chip lp-chip-empty' }, t.emptyBar));
+
+  const go = () => {
+    saveEquipment(st);
+    // max is saved only once typed (oninput), like the plate calculator's target.
+    saveState({ w531: { ...loadState().w531, tm: tm.value, lift: lift.value, supp: supp.value, warm: warm.checked } });
+    out.innerHTML = '';
+    const m = Number(max.value);
+    if (!(m > 0) || !barValid(st)) return;
+    const r = fiveThreeOne(m, { unit: st.unit, bar: barWeight(st), tmPercent: Number(tm.value), warmup: warm.checked,
+      supplemental: supp.value, body: ['bench', 'press'].includes(lift.value) ? 'upper' : 'lower' });
+    const u = st.unit;
+    out.append(h('div', { class: 'lp-card lp-531-tm' }, [
+      h('div', { class: 'lp-card-head' }, [
+        h('span', { class: 'lp-badge' }, t.trainingMax),
+        h('strong', { class: 'lp-weight-big' }, [`${fmt(r.tm)} `, h('span', { class: 'lp-unit' }, u)]),
+      ]),
+      h('p', { class: 'lp-hint' }, t.nextCycle.replace('{increase}', `${fmt(r.increase)} ${u}`).replace('{value}', `${fmt(r.nextTm)} ${u}`)),
+      h('p', { class: 'lp-hint' }, t.plusNote),
+    ]));
+    for (const w of r.weeks) {
+      out.append(h('section', { class: 'lp-card lp-531-week' }, [
+        h('h3', {}, t.weeks[w.key]),
+        scrollTable(h('table', { class: 'lp-table' }, [
+          h('thead', {}, h('tr', {}, [h('th', {}, t.percent), h('th', {}, t.reps), h('th', {}, t.weight), h('th', {}, t.perSide)])),
+          h('tbody', {}, w.sets.map((x) => h('tr', { class: `lp-531-${x.kind}`, title: t.kinds[x.kind] }, [
+            h('td', {}, `${fmt(x.percent)}%`),
+            h('td', {}, x.sets > 1 ? `${x.sets} × ${x.reps}` : x.reps),
+            h('td', {}, [h('strong', {}, `${fmt(x.load)} ${u}`), x.load !== x.weight ? h('small', {}, fmt(x.weight)) : null]),
+            h('td', {}, perSide(x.plates, u)),
+          ]))),
+        ])),
+      ]));
+    }
+  };
+  max.addEventListener('input', () => { saveState({ w531: { ...loadState().w531, max: max.value } }); go(); });
+  [tm, lift, supp].forEach((el) => el.addEventListener('change', go));
+  warm.addEventListener('change', go);
+  root.append(h('div', { class: 'lp-form' }, [
+    field(t.max, max),
+    field(t.tm, tm),
+    field(s.ui.unit, unitToggle(st, () => remount(root, mountFiveThreeOne))),
+    field(s.ui.bar, barSelect(st, go)),
+    h('div', { class: 'lp-bar-group lp-pct-range' }, [field(t.lift, lift), field(t.supplemental, supp)]),
+    h('label', { class: 'lp-inv-row lp-531-warm' }, [warm, h('span', {}, t.warmups)]),
+  ]), out);
+  go();
+}
+
 // ── home gallery arrows ──────────────────────────────────────────────────────
 // The buttons ship hidden; they appear only when the row overflows, page one
 // screenful at a time, and disable at either end.
@@ -501,7 +569,7 @@ function galleryArrows() {
 // ── boot ─────────────────────────────────────────────────────────────────────
 const WIDGETS = {
   plateCalc: mountPlateCalc, oneRepMax: mountOneRepMax, warmup: mountWarmup, converter: mountConverter,
-  percentTable: mountPercentTable, plateReader: mountPlateReader, homeGym: mountHomeGym,
+  percentTable: mountPercentTable, plateReader: mountPlateReader, homeGym: mountHomeGym, fiveThreeOne: mountFiveThreeOne,
 };
 
 function boot() {

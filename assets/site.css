@@ -113,7 +113,7 @@ header.site nav a:hover, header.site nav a[aria-current] { opacity: 1; text-deco
 @media (min-width: 721px) { header.site .langswitch summary { font-size: 12px; padding: 4px 9px; } }
 /* Medium widths: the nav scrolls with no visible cue, so links must fit, not scroll.
    Below the full wrap width links drop in NAV_TOOL_KEYS order (config/tools.js): 3 = 1RM percentages,
-   4 = What's on the bar, 5 = Guides. The footer links every one of them. */
+   4 = 5/3/1, 5 = Guides. The footer links every one of them. */
 @media (min-width: 721px) and (max-width: 1119px) {
   header.site nav a:nth-child(3) { display: none; }
 }
@@ -221,6 +221,25 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .prose table { display: block; overflow-x: auto; max-width: 100%; }
 .lp-table-wrap { overflow-x: auto; max-width: 100%; }
 
+/* 5/3/1: the training max card, then one table per week. Warm-up and
+   supplemental rows are quieter than the main sets; the exact % sits under the
+   loaded weight when rounding moved it. */
+.lp-531-week h3 { font-size: 17px; margin: 0 0 6px; }
+.lp-531-week .lp-table td { vertical-align: middle; }
+.lp-531-week th, .lp-531-week td:not(:last-child) { white-space: nowrap; }
+.lp-531-week td small { display: block; font-size: 12px; color: var(--muted); font-weight: 400; }
+.lp-531-warmup td, .lp-531-supp td { color: var(--muted); }
+.lp-531-main td strong { color: var(--ink); }
+.lp-531-plates { display: inline-flex; flex-wrap: wrap; gap: 4px; }
+.lp-531-plates .lp-chip, .lp-531-week .lp-chip-empty { padding: 3px 9px; font-size: 13px; gap: 6px; white-space: nowrap; }
+/* Phones: four columns need the room, so the week cards and cells tighten. */
+@media (max-width: 480px) {
+  .lp-531-week { padding: 16px 12px; }
+  .lp-531-week .lp-table th, .lp-531-week .lp-table td { padding: 9px 5px; }
+  .lp-531-plates .lp-chip { padding: 3px 7px; gap: 4px; }
+}
+.lp-531-tm .lp-hint + .lp-hint { margin-top: 4px; }
+.lp-531-warm { font-size: 15px; }
 /* bar reader steppers and the home gym extras */
 .lp-pct-range > .lp-field { flex: 1; min-width: 0; }
 .lp-pct-range { gap: 8px; }
