@@ -54,7 +54,7 @@
   --hair: #e8e8ed;
   --ink: #1d1d1f;
   --muted: #6e6e73;
-  --faint: #86868b;
+  --faint: #6e6e73;       /* AA for small text on white and gray; #86868b was 3.6:1 */
   --blue: #0066cc;        /* link blue */
   --btn: #0071e3;         /* button blue */
   --btn-press: #0077ed;
@@ -90,7 +90,8 @@
   }
 }
 * { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html { -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 body {
   margin: 0; background: var(--bg); color: var(--ink);
   font: 17px/1.47 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -103,6 +104,10 @@ body {
 a { color: var(--blue); text-decoration: none; }
 a:hover { text-decoration: underline; }
 :focus-visible { outline: 3px solid color-mix(in srgb, var(--blue) 60%, transparent); outline-offset: 3px; border-radius: 6px; }
+/* Skip link: off screen until a keyboard user tabs to it. main takes focus but draws no ring. */
+.skip { position: absolute; left: 12px; top: -100px; z-index: 50; background: var(--surface); color: var(--ink); padding: 10px 18px; border-radius: var(--pill); box-shadow: var(--shadow-lg); font-size: 15px; }
+.skip:focus { top: 10px; text-decoration: none; }
+main:focus { outline: none; }
 
 /* ── display type: SF Pro Display weights, Apple's tracking ─────────────── */
 .display, h1, h2, h3, .brand { font-family: var(--display); }
@@ -137,7 +142,7 @@ header.site nav a:hover, header.site nav a[aria-current] { opacity: 1; text-deco
 /* Language menu: <details>, no script. The summary is the current-locale pill;
    the list opens below it, two columns once there are many languages. */
 .langswitch { position: relative; flex: 0 0 auto; }
-.langswitch summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; color: var(--ink); padding: 6px 10px; background: var(--seg-track); border-radius: var(--pill); white-space: nowrap; }
+.langswitch summary { position: relative; list-style: none; cursor: pointer; display: flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; color: var(--ink); padding: 6px 10px; background: var(--seg-track); border-radius: var(--pill); white-space: nowrap; }
 .langswitch summary::-webkit-details-marker { display: none; }
 .langswitch summary::after { content: ""; width: 5px; height: 5px; border: solid var(--muted); border-width: 0 1.5px 1.5px 0; transform: translateY(-2px) rotate(45deg); }
 .langswitch[open] summary::after { transform: translateY(1px) rotate(-135deg); }
@@ -157,7 +162,9 @@ header.site nav a:hover, header.site nav a[aria-current] { opacity: 1; text-deco
 @media (min-width: 721px) and (max-width: 819px) { header.site nav a:nth-child(5) { display: none; } }
 /* Header App Store button: outside <nav>, so it stays when the nav hides.
    header.site outranks .btn, which is declared further down. */
-header.site .nav-cta { flex: 0 0 auto; padding: 5px 12px; font-size: 12px; line-height: 1.3; white-space: nowrap; margin-left: 4px; }
+header.site .nav-cta { position: relative; flex: 0 0 auto; padding: 5px 12px; font-size: 12px; line-height: 1.3; white-space: nowrap; margin-left: 4px; }
+/* The small header pills keep their look but get a 44px-tall hit area (WCAG 2.5.5 / Apple HIG). */
+header.site .nav-cta::before, .langswitch summary::before { content: ""; position: absolute; inset: -10px -4px; }
 /* Phones: tighter header so the language pill and App Store button both fit. */
 @media (max-width: 420px) {
   header.site .wrap { gap: 16px; } /* room for the longest label, es "Descargar app" */
@@ -262,8 +269,10 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .lp-hint { margin: 0; font-size: 14px; color: var(--muted); }
 .lp-step-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; }
 .lp-step-row { display: flex; align-items: center; gap: 9px; font-size: 15px; }
-.lp-step-btn { width: 34px; height: 34px; border: 0; border-radius: 50%; background: var(--surface-2); color: var(--ink); font-size: 18px; font-weight: 600; line-height: 1; cursor: pointer; font-family: inherit; }
+.lp-step-btn { width: 40px; height: 40px; position: relative; border: 0; border-radius: 50%; background: var(--surface-2); color: var(--ink); font-size: 18px; font-weight: 600; line-height: 1; cursor: pointer; font-family: inherit; }
 .lp-step-btn:hover { color: var(--blue); }
+.lp-step-btn::before { content: ""; position: absolute; inset: -2px; } /* 44px hit area */
+.lp-step-btn:active { transform: scale(.92); }
 .lp-step-n { min-width: 1.6em; text-align: center; font-weight: 600; font-variant-numeric: tabular-nums; }
 .lp-other { margin: 0 0 4px; }
 .lp-missing { color: var(--ink); }
@@ -353,7 +362,7 @@ main > .wrap > .prose.hub .lede { margin: 0 auto; max-width: 46ch; }
 .hub .lede, .page-satellite .lede { color: var(--muted); font-size: clamp(18px, 2vw, 22px); line-height: 1.4; margin: 0 0 8px; }
 .guide-list { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
 .guide-card { display: flex; flex-direction: column; gap: 8px; height: 100%; background: var(--bg-alt); border-radius: var(--radius-md); padding: 24px; color: var(--ink); transition: transform .3s var(--ease); }
-.guide-card:hover { text-decoration: none; transform: scale(1.015); }
+.guide-card:hover { text-decoration: none; }
 .guide-card-t { display: block; font-family: var(--display); font-weight: 600; font-size: 19px; letter-spacing: -.01em; }
 .guide-card-d { display: block; color: var(--muted); font-size: 15px; line-height: 1.45; }
 .badge { align-self: flex-start; font-size: 12px; font-weight: 600; color: var(--muted); background: var(--surface); padding: 3px 10px; border-radius: var(--pill); }
@@ -361,7 +370,7 @@ main > .wrap > .prose.hub .lede { margin: 0 auto; max-width: 46ch; }
 /* tools hub: one card per tool, with its widget capture where there is one */
 .tool-grid { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 .tool-card { display: flex; flex-direction: column; gap: 6px; height: 100%; background: var(--bg-alt); border-radius: var(--radius); padding: 0 0 24px; overflow: hidden; color: var(--ink); transition: transform .3s var(--ease); }
-.tool-card:hover { text-decoration: none; transform: scale(1.015); }
+.tool-card:hover { text-decoration: none; }
 .tool-card img { display: block; width: 100%; height: auto; margin-bottom: 14px; }
 .tool-card > span { padding: 0 24px; }
 .tool-card:not(:has(img)) { padding-top: 24px; }
@@ -430,7 +439,7 @@ body.page-scenario h1 { margin-top: 10px; }
 .tile-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .tile-grid > li { display: flex; }
 .tool-tile { display: flex; flex-direction: column; gap: 6px; width: 100%; padding: 0 0 28px; overflow: hidden; transition: transform .3s var(--ease); }
-.tool-tile:hover { text-decoration: none; transform: scale(1.015); }
+.tool-tile:hover { text-decoration: none; }
 .tool-tile img { display: block; width: 100%; height: auto; margin-bottom: 18px; }
 .tool-tile .tile-t, .tool-tile .tile-d { padding: 0 28px; }
 .tool-tile:not(:has(img)) { padding-top: 28px; }
@@ -543,6 +552,11 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
 .notfound h1 { font-size: clamp(30px, 5vw, 48px); }
 
 /* ── motion: one hero moment, everything else ≤200ms ─────────────────────── */
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .guide-card:hover, .tool-card:hover, .tool-tile:hover { transform: scale(1.015); }
+}
+/* Cards press in on touch instead, so a tap still answers. */
+.guide-card:active, .tool-card:active, .tool-tile:active { transform: scale(.985); transition-duration: .1s; }
 @media (prefers-reduced-motion: no-preference) {
   .hero-txt > *, .num-hero > *, .prose > *, .notfound > * { animation: lp-rise .55s var(--ease) both; }
   .hero-txt > :nth-child(2), .num-hero > :nth-child(2) { animation-delay: .05s; }
@@ -562,16 +576,16 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
   <script type="module" src="/assets/tool/app.js"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"LoadPR","operatingSystem":"iOS","applicationCategory":"HealthApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":"https://apps.apple.com/app/id6768525538"}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://loadpr.com/ko/"},{"@type":"ListItem","position":2,"name":"원판 계산기","item":"https://loadpr.com/ko/wonpan-gyesangi/"},{"@type":"ListItem","position":3,"name":"255 kg","item":"https://loadpr.com/ko/wonpan/255-kg/"}]}</script>
-  <script>window.__LOADPR__={"strings":{"meta":{"siteName":"LoadPR","lang":"ko","dir":"ltr","tagline":"바벨 원판, 바로 정확하게","homeDescription":"무료 바벨 계산기: 한쪽 원판, 1RM, 워밍업 세트, kg ↔ lb 변환. 가입 없이 바로 사용하세요. iOS용 LoadPR을 받고 헬스장에서 바를 정확하게 세팅하세요.","decimal":".","ogImageAlt":"LoadPR 로고와 “바벨 원판, 바로 정확하게” 문구, 옆에 노란색과 빨간색 원판을 끼운 바벨의 한쪽"},"nav":{"calculator":"원판 계산기","oneRepMax":"1RM 계산기","warmup":"워밍업","converter":"kg ↔ lb 변환","guides":"가이드","getApp":"앱 받기","percentTable":"1RM 퍼센트","plateReader":"바 무게 확인","homeGym":"홈짐 원판"},"ui":{"targetWeight":"목표 무게","unit":"단위","kg":"kg","lb":"lb","bar":"바","barPresets":{"olympic_m":"올림픽 ♂ (20 kg / 45 lb)","olympic_w":"올림픽 ♀ (15 kg / 33 lb)","training":"테크닉 (10 kg / 15 lb)","custom":"사용자 지정"},"collar":"바벨 칼라 (한쪽)","inventory":"사용 가능한 원판","unlimited":"무제한","calculate":"계산","reset":"초기화","perSide":"한쪽","totalOnBar":"바 총 무게","exact":"정확히 세팅 가능","notExact":"가진 원판으로는 정확히 맞출 수 없어요","nearestLoadable":"세팅 가능한 가장 가까운 무게","closestBelow":"가장 가까운 아래 무게","closestAbove":"가장 가까운 위 무게","reverseMode":"끼워진 바 읽기","reverseHint":"한쪽에 보이는 원판을 추가하면 총 무게를 알려 드려요","empty":"빈 바","add":"원판 추가","removePlate":"원판 빼기","langSwitch":"언어","switchPrompt":"이 페이지를 {lang}(으)로 볼까요?","switchYes":"전환","switchNo":"괜찮아요","openApp":"앱에서 열기","prevWeight":"더 가볍게","nextWeight":"더 무겁게","nearby":"가까운 무게","breadcrumbHome":"홈","allTools":"모든 도구","notFoundTitle":"페이지를 찾을 수 없어요","notFoundBody":"이 페이지는 이 바에 끼워져 있지 않아요. 대신 원판 계산기를 써 보세요.","notFoundButton":"계산기로 가기","relatedGuides":"관련 가이드","faq":"자주 묻는 질문","toolsLabel":"도구","updated":"업데이트","lastUpdated":"최종 업데이트","guideBadge":"가이드","scenarioBadge":"상황별 예시","convertArrow":"{from} → {to}","reps":"횟수","diagramLabel":"한쪽 원판","tryTool":"내 숫자로 해 보기","backToTool":"← {tool}(으)로 돌아가기","moreForTool":"이 도구의 다른 활용법","scenario":{"situation":"상황","steps":"단계별 방법","example":"계산 예시","mistakes":"흔한 실수","tryTool":"내 무게 계산하기"}},"tools":{"plateCalc":{},"oneRepMax":{"reps":"횟수","formula":"공식","formulas":{"epley":"Epley","brzycki":"Brzycki","lombardi":"Lombardi","oconner":"O'Conner"},"estimated1rm":"예상 1RM","percent":"%","weight":"무게"},"warmup":{"workingWeight":"본세트 무게","set":"세트"},"converter":{"from":"변환 전","to":"변환 후","result":"결과"},"percentTable":{"oneRm":"내 1RM","from":"시작","to":"끝","step":"간격","percent":"%","weight":"무게","loadable":"세팅 가능"},"plateReader":{"perSidePlates":"한쪽 원판","total":"총 무게","otherUnitLine":"다른 단위로: {value}"},"homeGym":{"owned":"가진 원판","target":"목표 무게","missing":"{plate} 원판 한 쌍을 추가하면 정확히 맞출 수 있어요","canLoad":"세팅할 수 있는 무게","canLoadMore":"…외 {n}개"}},"cta":{"headline":"LoadPR을 헬스장에 가져가세요","sub":"원판 계산, 바 저장, PR 기록까지 휴대폰 하나로.","button":"App Store에서 다운로드"}},"tool":"plateCalc","unitDefault":"kg","appStoreId":"6768525538","currentLocale":"ko","defaultLocale":"en","locales":{"en":{"url":"https://loadpr.com/","name":"English"},"es":{"url":"https://loadpr.com/es/","name":"Español"},"fr":{"url":"https://loadpr.com/fr/","name":"Français"},"de":{"url":"https://loadpr.com/de/","name":"Deutsch"},"it":{"url":"https://loadpr.com/it/","name":"Italiano"},"pt":{"url":"https://loadpr.com/pt/","name":"Português (Brasil)"},"nl":{"url":"https://loadpr.com/nl/","name":"Nederlands"},"pl":{"url":"https://loadpr.com/pl/","name":"Polski"},"sv":{"url":"https://loadpr.com/sv/","name":"Svenska"},"tr":{"url":"https://loadpr.com/tr/","name":"Türkçe"},"ru":{"url":"https://loadpr.com/ru/","name":"Русский"},"ja":{"url":"https://loadpr.com/ja/","name":"日本語"},"ko":{"url":"https://loadpr.com/ko/","name":"한국어"},"zh-hans":{"url":"https://loadpr.com/zh-hans/","name":"简体中文"},"zh-hant":{"url":"https://loadpr.com/zh-hant/","name":"繁體中文"}}}</script>
+  <script>window.__LOADPR__={"strings":{"meta":{"siteName":"LoadPR","lang":"ko","dir":"ltr","tagline":"바벨 원판, 바로 정확하게","homeDescription":"무료 바벨 계산기: 한쪽 원판, 1RM, 워밍업 세트, kg ↔ lb 변환. 가입 없이 바로 사용하세요. iOS용 LoadPR을 받고 헬스장에서 바를 정확하게 세팅하세요.","decimal":".","ogImageAlt":"LoadPR 로고와 “바벨 원판, 바로 정확하게” 문구, 옆에 노란색과 빨간색 원판을 끼운 바벨의 한쪽"},"nav":{"calculator":"원판 계산기","oneRepMax":"1RM 계산기","warmup":"워밍업","converter":"kg ↔ lb 변환","guides":"가이드","getApp":"앱 받기","percentTable":"1RM 퍼센트","plateReader":"바 무게 확인","homeGym":"홈짐 원판"},"ui":{"targetWeight":"목표 무게","unit":"단위","kg":"kg","lb":"lb","bar":"바","barPresets":{"olympic_m":"올림픽 ♂ (20 kg / 45 lb)","olympic_w":"올림픽 ♀ (15 kg / 33 lb)","training":"테크닉 (10 kg / 15 lb)","custom":"사용자 지정"},"collar":"바벨 칼라 (한쪽)","inventory":"사용 가능한 원판","unlimited":"무제한","calculate":"계산","reset":"초기화","perSide":"한쪽","totalOnBar":"바 총 무게","exact":"정확히 세팅 가능","notExact":"가진 원판으로는 정확히 맞출 수 없어요","nearestLoadable":"세팅 가능한 가장 가까운 무게","closestBelow":"가장 가까운 아래 무게","closestAbove":"가장 가까운 위 무게","reverseMode":"끼워진 바 읽기","reverseHint":"한쪽에 보이는 원판을 추가하면 총 무게를 알려 드려요","empty":"빈 바","add":"원판 추가","removePlate":"원판 빼기","langSwitch":"언어","skipToContent":"본문으로 건너뛰기","switchPrompt":"이 페이지를 {lang}(으)로 볼까요?","switchYes":"전환","switchNo":"괜찮아요","openApp":"앱에서 열기","prevWeight":"더 가볍게","nextWeight":"더 무겁게","nearby":"가까운 무게","breadcrumbHome":"홈","allTools":"모든 도구","notFoundTitle":"페이지를 찾을 수 없어요","notFoundBody":"이 페이지는 이 바에 끼워져 있지 않아요. 대신 원판 계산기를 써 보세요.","notFoundButton":"계산기로 가기","relatedGuides":"관련 가이드","faq":"자주 묻는 질문","toolsLabel":"도구","updated":"업데이트","lastUpdated":"최종 업데이트","guideBadge":"가이드","scenarioBadge":"상황별 예시","convertArrow":"{from} → {to}","reps":"횟수","diagramLabel":"한쪽 원판","tryTool":"내 숫자로 해 보기","backToTool":"← {tool}(으)로 돌아가기","moreForTool":"이 도구의 다른 활용법","scenario":{"situation":"상황","steps":"단계별 방법","example":"계산 예시","mistakes":"흔한 실수","tryTool":"내 무게 계산하기"}},"tools":{"plateCalc":{},"oneRepMax":{"reps":"횟수","formula":"공식","formulas":{"epley":"Epley","brzycki":"Brzycki","lombardi":"Lombardi","oconner":"O'Conner"},"estimated1rm":"예상 1RM","percent":"%","weight":"무게"},"warmup":{"workingWeight":"본세트 무게","set":"세트"},"converter":{"from":"변환 전","to":"변환 후","result":"결과"},"percentTable":{"oneRm":"내 1RM","from":"시작","to":"끝","step":"간격","percent":"%","weight":"무게","loadable":"세팅 가능"},"plateReader":{"perSidePlates":"한쪽 원판","total":"총 무게","otherUnitLine":"다른 단위로: {value}"},"homeGym":{"owned":"가진 원판","target":"목표 무게","missing":"{plate} 원판 한 쌍을 추가하면 정확히 맞출 수 있어요","canLoad":"세팅할 수 있는 무게","canLoadMore":"…외 {n}개"}},"cta":{"headline":"LoadPR을 헬스장에 가져가세요","sub":"원판 계산, 바 저장, PR 기록까지 휴대폰 하나로.","button":"App Store에서 다운로드"}},"tool":"plateCalc","unitDefault":"kg","appStoreId":"6768525538","currentLocale":"ko","defaultLocale":"en","locales":{"en":{"url":"https://loadpr.com/","name":"English"},"es":{"url":"https://loadpr.com/es/","name":"Español"},"fr":{"url":"https://loadpr.com/fr/","name":"Français"},"de":{"url":"https://loadpr.com/de/","name":"Deutsch"},"it":{"url":"https://loadpr.com/it/","name":"Italiano"},"pt":{"url":"https://loadpr.com/pt/","name":"Português (Brasil)"},"nl":{"url":"https://loadpr.com/nl/","name":"Nederlands"},"pl":{"url":"https://loadpr.com/pl/","name":"Polski"},"sv":{"url":"https://loadpr.com/sv/","name":"Svenska"},"tr":{"url":"https://loadpr.com/tr/","name":"Türkçe"},"ru":{"url":"https://loadpr.com/ru/","name":"Русский"},"ja":{"url":"https://loadpr.com/ja/","name":"日本語"},"ko":{"url":"https://loadpr.com/ko/","name":"한국어"},"zh-hans":{"url":"https://loadpr.com/zh-hans/","name":"简体中文"},"zh-hant":{"url":"https://loadpr.com/zh-hant/","name":"繁體中文"}}}</script>
 </head>
 <body class="page-prog">
-  <header class="site"><div class="wrap">
+  <a class="skip" href="#main">본문으로 건너뛰기</a><header class="site"><div class="wrap">
     <a class="brand" href="/ko/"><img class="mark" src="/assets/icon/icon-64.png" width="28" height="28" alt="" decoding="async"><span>Load<b>PR</b></span></a>
     <nav aria-label="도구"><a href="/ko/wonpan-gyesangi/">원판 계산기</a><a href="/ko/1rm-gyesangi/">1RM 계산기</a><a href="/ko/1rm-percent-pyo/">1RM 퍼센트</a><a href="/ko/barbell-mugae/">바 무게 확인</a></nav>
     <details class="langswitch"><summary aria-label="언어: 한국어">KO</summary><div class="langmenu"><a href="https://loadpr.com/" hreflang="en" lang="en">English</a><a href="https://loadpr.com/es/discos/255-kg/" hreflang="es" lang="es">Español</a><a href="https://loadpr.com/fr/disques/255-kg/" hreflang="fr" lang="fr">Français</a><a href="https://loadpr.com/de/hantelscheiben/255-kg/" hreflang="de" lang="de">Deutsch</a><a href="https://loadpr.com/it/dischi/255-kg/" hreflang="it" lang="it">Italiano</a><a href="https://loadpr.com/pt/anilhas/255-kg/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="https://loadpr.com/nl/schijven/255-kg/" hreflang="nl" lang="nl">Nederlands</a><a href="https://loadpr.com/pl/talerze/255-kg/" hreflang="pl" lang="pl">Polski</a><a href="https://loadpr.com/sv/skivor/255-kg/" hreflang="sv" lang="sv">Svenska</a><a href="https://loadpr.com/tr/plaka/255-kg/" hreflang="tr" lang="tr">Türkçe</a><a href="https://loadpr.com/ru/blini/255-kg/" hreflang="ru" lang="ru">Русский</a><a href="https://loadpr.com/ja/plate/255-kg/" hreflang="ja" lang="ja">日本語</a><a aria-current="true" href="https://loadpr.com/ko/wonpan/255-kg/" hreflang="ko" lang="ko">한국어</a><a href="https://loadpr.com/zh-hans/guapian/255-kg/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="https://loadpr.com/zh-hant/gangpian/255-kg/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></div></details>
     <a class="btn nav-cta" href="https://apps.apple.com/app/apple-store/id6768525538?pt=128893237&amp;ct=ko-wonpan-255-kg-nav&amp;mt=8">앱 받기</a>
   </div></header>
-  <main><div class="wrap">
+  <main id="main" tabindex="-1"><div class="wrap">
     <ol class="crumbs"><li><a href="/ko/">홈</a></li><li><a href="/ko/wonpan-gyesangi/">원판 계산기</a></li><li aria-current="page">255 kg</li></ol>
     <section class="num-hero">
       <p class="big"><span>255</span><small>kg</small></p>

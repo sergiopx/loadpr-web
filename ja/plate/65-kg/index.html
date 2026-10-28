@@ -54,7 +54,7 @@
   --hair: #e8e8ed;
   --ink: #1d1d1f;
   --muted: #6e6e73;
-  --faint: #86868b;
+  --faint: #6e6e73;       /* AA for small text on white and gray; #86868b was 3.6:1 */
   --blue: #0066cc;        /* link blue */
   --btn: #0071e3;         /* button blue */
   --btn-press: #0077ed;
@@ -90,7 +90,8 @@
   }
 }
 * { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html { -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 body {
   margin: 0; background: var(--bg); color: var(--ink);
   font: 17px/1.47 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -103,6 +104,10 @@ body {
 a { color: var(--blue); text-decoration: none; }
 a:hover { text-decoration: underline; }
 :focus-visible { outline: 3px solid color-mix(in srgb, var(--blue) 60%, transparent); outline-offset: 3px; border-radius: 6px; }
+/* Skip link: off screen until a keyboard user tabs to it. main takes focus but draws no ring. */
+.skip { position: absolute; left: 12px; top: -100px; z-index: 50; background: var(--surface); color: var(--ink); padding: 10px 18px; border-radius: var(--pill); box-shadow: var(--shadow-lg); font-size: 15px; }
+.skip:focus { top: 10px; text-decoration: none; }
+main:focus { outline: none; }
 
 /* ── display type: SF Pro Display weights, Apple's tracking ─────────────── */
 .display, h1, h2, h3, .brand { font-family: var(--display); }
@@ -137,7 +142,7 @@ header.site nav a:hover, header.site nav a[aria-current] { opacity: 1; text-deco
 /* Language menu: <details>, no script. The summary is the current-locale pill;
    the list opens below it, two columns once there are many languages. */
 .langswitch { position: relative; flex: 0 0 auto; }
-.langswitch summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; color: var(--ink); padding: 6px 10px; background: var(--seg-track); border-radius: var(--pill); white-space: nowrap; }
+.langswitch summary { position: relative; list-style: none; cursor: pointer; display: flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; color: var(--ink); padding: 6px 10px; background: var(--seg-track); border-radius: var(--pill); white-space: nowrap; }
 .langswitch summary::-webkit-details-marker { display: none; }
 .langswitch summary::after { content: ""; width: 5px; height: 5px; border: solid var(--muted); border-width: 0 1.5px 1.5px 0; transform: translateY(-2px) rotate(45deg); }
 .langswitch[open] summary::after { transform: translateY(1px) rotate(-135deg); }
@@ -157,7 +162,9 @@ header.site nav a:hover, header.site nav a[aria-current] { opacity: 1; text-deco
 @media (min-width: 721px) and (max-width: 819px) { header.site nav a:nth-child(5) { display: none; } }
 /* Header App Store button: outside <nav>, so it stays when the nav hides.
    header.site outranks .btn, which is declared further down. */
-header.site .nav-cta { flex: 0 0 auto; padding: 5px 12px; font-size: 12px; line-height: 1.3; white-space: nowrap; margin-left: 4px; }
+header.site .nav-cta { position: relative; flex: 0 0 auto; padding: 5px 12px; font-size: 12px; line-height: 1.3; white-space: nowrap; margin-left: 4px; }
+/* The small header pills keep their look but get a 44px-tall hit area (WCAG 2.5.5 / Apple HIG). */
+header.site .nav-cta::before, .langswitch summary::before { content: ""; position: absolute; inset: -10px -4px; }
 /* Phones: tighter header so the language pill and App Store button both fit. */
 @media (max-width: 420px) {
   header.site .wrap { gap: 16px; } /* room for the longest label, es "Descargar app" */
@@ -262,8 +269,10 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .lp-hint { margin: 0; font-size: 14px; color: var(--muted); }
 .lp-step-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; }
 .lp-step-row { display: flex; align-items: center; gap: 9px; font-size: 15px; }
-.lp-step-btn { width: 34px; height: 34px; border: 0; border-radius: 50%; background: var(--surface-2); color: var(--ink); font-size: 18px; font-weight: 600; line-height: 1; cursor: pointer; font-family: inherit; }
+.lp-step-btn { width: 40px; height: 40px; position: relative; border: 0; border-radius: 50%; background: var(--surface-2); color: var(--ink); font-size: 18px; font-weight: 600; line-height: 1; cursor: pointer; font-family: inherit; }
 .lp-step-btn:hover { color: var(--blue); }
+.lp-step-btn::before { content: ""; position: absolute; inset: -2px; } /* 44px hit area */
+.lp-step-btn:active { transform: scale(.92); }
 .lp-step-n { min-width: 1.6em; text-align: center; font-weight: 600; font-variant-numeric: tabular-nums; }
 .lp-other { margin: 0 0 4px; }
 .lp-missing { color: var(--ink); }
@@ -353,7 +362,7 @@ main > .wrap > .prose.hub .lede { margin: 0 auto; max-width: 46ch; }
 .hub .lede, .page-satellite .lede { color: var(--muted); font-size: clamp(18px, 2vw, 22px); line-height: 1.4; margin: 0 0 8px; }
 .guide-list { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
 .guide-card { display: flex; flex-direction: column; gap: 8px; height: 100%; background: var(--bg-alt); border-radius: var(--radius-md); padding: 24px; color: var(--ink); transition: transform .3s var(--ease); }
-.guide-card:hover { text-decoration: none; transform: scale(1.015); }
+.guide-card:hover { text-decoration: none; }
 .guide-card-t { display: block; font-family: var(--display); font-weight: 600; font-size: 19px; letter-spacing: -.01em; }
 .guide-card-d { display: block; color: var(--muted); font-size: 15px; line-height: 1.45; }
 .badge { align-self: flex-start; font-size: 12px; font-weight: 600; color: var(--muted); background: var(--surface); padding: 3px 10px; border-radius: var(--pill); }
@@ -361,7 +370,7 @@ main > .wrap > .prose.hub .lede { margin: 0 auto; max-width: 46ch; }
 /* tools hub: one card per tool, with its widget capture where there is one */
 .tool-grid { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 .tool-card { display: flex; flex-direction: column; gap: 6px; height: 100%; background: var(--bg-alt); border-radius: var(--radius); padding: 0 0 24px; overflow: hidden; color: var(--ink); transition: transform .3s var(--ease); }
-.tool-card:hover { text-decoration: none; transform: scale(1.015); }
+.tool-card:hover { text-decoration: none; }
 .tool-card img { display: block; width: 100%; height: auto; margin-bottom: 14px; }
 .tool-card > span { padding: 0 24px; }
 .tool-card:not(:has(img)) { padding-top: 24px; }
@@ -430,7 +439,7 @@ body.page-scenario h1 { margin-top: 10px; }
 .tile-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .tile-grid > li { display: flex; }
 .tool-tile { display: flex; flex-direction: column; gap: 6px; width: 100%; padding: 0 0 28px; overflow: hidden; transition: transform .3s var(--ease); }
-.tool-tile:hover { text-decoration: none; transform: scale(1.015); }
+.tool-tile:hover { text-decoration: none; }
 .tool-tile img { display: block; width: 100%; height: auto; margin-bottom: 18px; }
 .tool-tile .tile-t, .tool-tile .tile-d { padding: 0 28px; }
 .tool-tile:not(:has(img)) { padding-top: 28px; }
@@ -543,6 +552,11 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
 .notfound h1 { font-size: clamp(30px, 5vw, 48px); }
 
 /* ── motion: one hero moment, everything else ≤200ms ─────────────────────── */
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .guide-card:hover, .tool-card:hover, .tool-tile:hover { transform: scale(1.015); }
+}
+/* Cards press in on touch instead, so a tap still answers. */
+.guide-card:active, .tool-card:active, .tool-tile:active { transform: scale(.985); transition-duration: .1s; }
 @media (prefers-reduced-motion: no-preference) {
   .hero-txt > *, .num-hero > *, .prose > *, .notfound > * { animation: lp-rise .55s var(--ease) both; }
   .hero-txt > :nth-child(2), .num-hero > :nth-child(2) { animation-delay: .05s; }
@@ -562,16 +576,16 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
   <script type="module" src="/assets/tool/app.js"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"LoadPR","operatingSystem":"iOS","applicationCategory":"HealthApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":"https://apps.apple.com/app/id6768525538"}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://loadpr.com/ja/"},{"@type":"ListItem","position":2,"name":"プレート計算","item":"https://loadpr.com/ja/plate-keisan/"},{"@type":"ListItem","position":3,"name":"65 kg","item":"https://loadpr.com/ja/plate/65-kg/"}]}</script>
-  <script>window.__LOADPR__={"strings":{"meta":{"siteName":"LoadPR","lang":"ja","dir":"ltr","tagline":"バーベルのプレート、一瞬で正しく","homeDescription":"無料のバーベル計算ツール：片側のプレート、1RM、ウォームアップセット、kg ↔ lb 換算。登録不要。iOS版LoadPRをダウンロードして、ジムでバーを正しくセットしよう。","decimal":".","ogImageAlt":"LoadPRのロゴと「バーベルのプレート、一瞬で正しく」の文字。横に黄色と赤のプレートを付けたバーベルの片側"},"nav":{"calculator":"プレート計算","oneRepMax":"1RM計算","warmup":"ウォームアップ","converter":"kg ↔ lb 換算","guides":"ガイド","getApp":"アプリを入手","percentTable":"1RMパーセンテージ","plateReader":"バーの重量を読む","homeGym":"ホームジムのプレート"},"ui":{"targetWeight":"目標重量","unit":"単位","kg":"kg","lb":"lb","bar":"バー","barPresets":{"olympic_m":"オリンピック ♂（20 kg / 45 lb）","olympic_w":"オリンピック ♀（15 kg / 33 lb）","training":"テクニック（10 kg / 15 lb）","custom":"カスタム"},"collar":"カラー（片側）","inventory":"使えるプレート","unlimited":"無制限","calculate":"計算","reset":"リセット","perSide":"片側","totalOnBar":"バーの合計","exact":"ぴったりセットできます","notExact":"手持ちのプレートではぴったりセットできません","nearestLoadable":"セットできる最も近い重量","closestBelow":"下の最も近い重量","closestAbove":"上の最も近い重量","reverseMode":"セット済みのバーを読む","reverseHint":"片側に見えるプレートを追加すると合計がわかります","empty":"バーのみ","add":"プレートを追加","removePlate":"プレートを外す","langSwitch":"言語","switchPrompt":"このページを{lang}で表示しますか？","switchYes":"切り替える","switchNo":"いいえ","openApp":"アプリで開く","prevWeight":"軽く","nextWeight":"重く","nearby":"近い重量","breadcrumbHome":"ホーム","allTools":"すべてのツール","notFoundTitle":"ページが見つかりません","notFoundBody":"このページはバーにセットされていないようです。代わりにプレート計算をお試しください。","notFoundButton":"計算ツールへ","relatedGuides":"関連ガイド","faq":"よくある質問","toolsLabel":"ツール","updated":"更新","lastUpdated":"最終更新","guideBadge":"ガイド","scenarioBadge":"ケース","convertArrow":"{from} → {to}","reps":"回数","diagramLabel":"片側のプレート","tryTool":"自分の数値で試す","backToTool":"← {tool}に戻る","moreForTool":"このツールのほかの使い方","scenario":{"situation":"状況","steps":"手順","example":"計算例","mistakes":"よくある間違い","tryTool":"自分の重量を計算する"}},"tools":{"plateCalc":{},"oneRepMax":{"reps":"回数","formula":"計算式","formulas":{"epley":"Epley","brzycki":"Brzycki","lombardi":"Lombardi","oconner":"O'Conner"},"estimated1rm":"推定1RM","percent":"%","weight":"重量"},"warmup":{"workingWeight":"メインセットの重量","set":"セット"},"converter":{"from":"換算元","to":"換算先","result":"結果"},"percentTable":{"oneRm":"あなたの1RM","from":"開始","to":"終了","step":"刻み","percent":"%","weight":"重量","loadable":"セット可能"},"plateReader":{"perSidePlates":"片側のプレート","total":"合計","otherUnitLine":"もう一方の単位：{value}"},"homeGym":{"owned":"持っているプレート","target":"目標重量","missing":"{plate}を1ペア追加すればぴったりセットできます","canLoad":"セットできる重量","canLoadMore":"…ほか{n}件"}},"cta":{"headline":"LoadPRをジムに持っていこう","sub":"プレートの計算、バーの保存、PRの記録をスマホひとつで。","button":"App Storeからダウンロード"}},"tool":"plateCalc","unitDefault":"kg","appStoreId":"6768525538","currentLocale":"ja","defaultLocale":"en","locales":{"en":{"url":"https://loadpr.com/","name":"English"},"es":{"url":"https://loadpr.com/es/","name":"Español"},"fr":{"url":"https://loadpr.com/fr/","name":"Français"},"de":{"url":"https://loadpr.com/de/","name":"Deutsch"},"it":{"url":"https://loadpr.com/it/","name":"Italiano"},"pt":{"url":"https://loadpr.com/pt/","name":"Português (Brasil)"},"nl":{"url":"https://loadpr.com/nl/","name":"Nederlands"},"pl":{"url":"https://loadpr.com/pl/","name":"Polski"},"sv":{"url":"https://loadpr.com/sv/","name":"Svenska"},"tr":{"url":"https://loadpr.com/tr/","name":"Türkçe"},"ru":{"url":"https://loadpr.com/ru/","name":"Русский"},"ja":{"url":"https://loadpr.com/ja/","name":"日本語"},"ko":{"url":"https://loadpr.com/ko/","name":"한국어"},"zh-hans":{"url":"https://loadpr.com/zh-hans/","name":"简体中文"},"zh-hant":{"url":"https://loadpr.com/zh-hant/","name":"繁體中文"}}}</script>
+  <script>window.__LOADPR__={"strings":{"meta":{"siteName":"LoadPR","lang":"ja","dir":"ltr","tagline":"バーベルのプレート、一瞬で正しく","homeDescription":"無料のバーベル計算ツール：片側のプレート、1RM、ウォームアップセット、kg ↔ lb 換算。登録不要。iOS版LoadPRをダウンロードして、ジムでバーを正しくセットしよう。","decimal":".","ogImageAlt":"LoadPRのロゴと「バーベルのプレート、一瞬で正しく」の文字。横に黄色と赤のプレートを付けたバーベルの片側"},"nav":{"calculator":"プレート計算","oneRepMax":"1RM計算","warmup":"ウォームアップ","converter":"kg ↔ lb 換算","guides":"ガイド","getApp":"アプリを入手","percentTable":"1RMパーセンテージ","plateReader":"バーの重量を読む","homeGym":"ホームジムのプレート"},"ui":{"targetWeight":"目標重量","unit":"単位","kg":"kg","lb":"lb","bar":"バー","barPresets":{"olympic_m":"オリンピック ♂（20 kg / 45 lb）","olympic_w":"オリンピック ♀（15 kg / 33 lb）","training":"テクニック（10 kg / 15 lb）","custom":"カスタム"},"collar":"カラー（片側）","inventory":"使えるプレート","unlimited":"無制限","calculate":"計算","reset":"リセット","perSide":"片側","totalOnBar":"バーの合計","exact":"ぴったりセットできます","notExact":"手持ちのプレートではぴったりセットできません","nearestLoadable":"セットできる最も近い重量","closestBelow":"下の最も近い重量","closestAbove":"上の最も近い重量","reverseMode":"セット済みのバーを読む","reverseHint":"片側に見えるプレートを追加すると合計がわかります","empty":"バーのみ","add":"プレートを追加","removePlate":"プレートを外す","langSwitch":"言語","skipToContent":"コンテンツへスキップ","switchPrompt":"このページを{lang}で表示しますか？","switchYes":"切り替える","switchNo":"いいえ","openApp":"アプリで開く","prevWeight":"軽く","nextWeight":"重く","nearby":"近い重量","breadcrumbHome":"ホーム","allTools":"すべてのツール","notFoundTitle":"ページが見つかりません","notFoundBody":"このページはバーにセットされていないようです。代わりにプレート計算をお試しください。","notFoundButton":"計算ツールへ","relatedGuides":"関連ガイド","faq":"よくある質問","toolsLabel":"ツール","updated":"更新","lastUpdated":"最終更新","guideBadge":"ガイド","scenarioBadge":"ケース","convertArrow":"{from} → {to}","reps":"回数","diagramLabel":"片側のプレート","tryTool":"自分の数値で試す","backToTool":"← {tool}に戻る","moreForTool":"このツールのほかの使い方","scenario":{"situation":"状況","steps":"手順","example":"計算例","mistakes":"よくある間違い","tryTool":"自分の重量を計算する"}},"tools":{"plateCalc":{},"oneRepMax":{"reps":"回数","formula":"計算式","formulas":{"epley":"Epley","brzycki":"Brzycki","lombardi":"Lombardi","oconner":"O'Conner"},"estimated1rm":"推定1RM","percent":"%","weight":"重量"},"warmup":{"workingWeight":"メインセットの重量","set":"セット"},"converter":{"from":"換算元","to":"換算先","result":"結果"},"percentTable":{"oneRm":"あなたの1RM","from":"開始","to":"終了","step":"刻み","percent":"%","weight":"重量","loadable":"セット可能"},"plateReader":{"perSidePlates":"片側のプレート","total":"合計","otherUnitLine":"もう一方の単位：{value}"},"homeGym":{"owned":"持っているプレート","target":"目標重量","missing":"{plate}を1ペア追加すればぴったりセットできます","canLoad":"セットできる重量","canLoadMore":"…ほか{n}件"}},"cta":{"headline":"LoadPRをジムに持っていこう","sub":"プレートの計算、バーの保存、PRの記録をスマホひとつで。","button":"App Storeからダウンロード"}},"tool":"plateCalc","unitDefault":"kg","appStoreId":"6768525538","currentLocale":"ja","defaultLocale":"en","locales":{"en":{"url":"https://loadpr.com/","name":"English"},"es":{"url":"https://loadpr.com/es/","name":"Español"},"fr":{"url":"https://loadpr.com/fr/","name":"Français"},"de":{"url":"https://loadpr.com/de/","name":"Deutsch"},"it":{"url":"https://loadpr.com/it/","name":"Italiano"},"pt":{"url":"https://loadpr.com/pt/","name":"Português (Brasil)"},"nl":{"url":"https://loadpr.com/nl/","name":"Nederlands"},"pl":{"url":"https://loadpr.com/pl/","name":"Polski"},"sv":{"url":"https://loadpr.com/sv/","name":"Svenska"},"tr":{"url":"https://loadpr.com/tr/","name":"Türkçe"},"ru":{"url":"https://loadpr.com/ru/","name":"Русский"},"ja":{"url":"https://loadpr.com/ja/","name":"日本語"},"ko":{"url":"https://loadpr.com/ko/","name":"한국어"},"zh-hans":{"url":"https://loadpr.com/zh-hans/","name":"简体中文"},"zh-hant":{"url":"https://loadpr.com/zh-hant/","name":"繁體中文"}}}</script>
 </head>
 <body class="page-prog">
-  <header class="site"><div class="wrap">
+  <a class="skip" href="#main">コンテンツへスキップ</a><header class="site"><div class="wrap">
     <a class="brand" href="/ja/"><img class="mark" src="/assets/icon/icon-64.png" width="28" height="28" alt="" decoding="async"><span>Load<b>PR</b></span></a>
     <nav aria-label="ツール"><a href="/ja/plate-keisan/">プレート計算</a><a href="/ja/1rm-keisan/">1RM計算</a><a href="/ja/1rm-percent-hyo/">1RMパーセンテージ</a><a href="/ja/bar-no-juryo/">バーの重量を読む</a></nav>
     <details class="langswitch"><summary aria-label="言語: 日本語">JA</summary><div class="langmenu"><a href="https://loadpr.com/" hreflang="en" lang="en">English</a><a href="https://loadpr.com/es/discos/65-kg/" hreflang="es" lang="es">Español</a><a href="https://loadpr.com/fr/disques/65-kg/" hreflang="fr" lang="fr">Français</a><a href="https://loadpr.com/de/hantelscheiben/65-kg/" hreflang="de" lang="de">Deutsch</a><a href="https://loadpr.com/it/dischi/65-kg/" hreflang="it" lang="it">Italiano</a><a href="https://loadpr.com/pt/anilhas/65-kg/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="https://loadpr.com/nl/schijven/65-kg/" hreflang="nl" lang="nl">Nederlands</a><a href="https://loadpr.com/pl/talerze/65-kg/" hreflang="pl" lang="pl">Polski</a><a href="https://loadpr.com/sv/skivor/65-kg/" hreflang="sv" lang="sv">Svenska</a><a href="https://loadpr.com/tr/plaka/65-kg/" hreflang="tr" lang="tr">Türkçe</a><a href="https://loadpr.com/ru/blini/65-kg/" hreflang="ru" lang="ru">Русский</a><a aria-current="true" href="https://loadpr.com/ja/plate/65-kg/" hreflang="ja" lang="ja">日本語</a><a href="https://loadpr.com/ko/wonpan/65-kg/" hreflang="ko" lang="ko">한국어</a><a href="https://loadpr.com/zh-hans/guapian/65-kg/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="https://loadpr.com/zh-hant/gangpian/65-kg/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></div></details>
     <a class="btn nav-cta" href="https://apps.apple.com/app/apple-store/id6768525538?pt=128893237&amp;ct=ja-plate-65-kg-nav&amp;mt=8">アプリを入手</a>
   </div></header>
-  <main><div class="wrap">
+  <main id="main" tabindex="-1"><div class="wrap">
     <ol class="crumbs"><li><a href="/ja/">ホーム</a></li><li><a href="/ja/plate-keisan/">プレート計算</a></li><li aria-current="page">65 kg</li></ol>
     <section class="num-hero">
       <p class="big"><span>65</span><small>kg</small></p>
