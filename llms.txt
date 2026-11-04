@@ -4,6 +4,27 @@
 
 LoadPR is an iPhone app that works out which plates to load on a barbell and tracks your personal records (PRs). This site adds free browser calculators for loading a barbell in kilograms or pounds: a plate calculator, a home gym plate calculator for the plates you own, a one-rep max (1RM) calculator, a 1RM percentage calculator, a 5/3/1 calculator, a warmup calculator, a kg to lb converter and a "what's on the bar" calculator that adds up a loaded barbell. The app is free to download, with optional in-app purchases. Contact: support@loadpr.com.
 
+The complete English text of every tool, guide and app feature page, with tables, FAQs and sources, is in one file: /llms-full.txt
+
+## Quick answers
+
+- **Olympic plate colors: the complete guide** Competition plates follow the color code of the International Weightlifting Federation \(IWF\). Knowing the colors lets you read the load on a bar without walking over to check the numbers.
+- **How much does a barbell weigh?** A standard Olympic barbell weighs 45 lb \(20 kg\). That's the long bar in almost every gym's squat rack, bench press and deadlift platform.
+- **Kg ↔ lb equivalents for the gym** Plenty of programs are written in the other unit. This guide helps you translate loads without losing precision.
+- **How much is 1 to 6 plates on each side?** With a 45 lb bar and 45 lb plates, 1 plate on each side is 135 lb, 2 plates are 225 lb, 3 plates are 315 lb, 4 plates are 405 lb, 5 plates are 495 lb and 6 plates are 585 lb. In the gym, "a plate" means one 45 lb plate \(a 20 kg plate in a kilo gym\), and lifters count the plates on one side of the bar.
+- **How much does a weight plate weigh?** The big plate in most gyms weighs 45 lb, which is 20.41 kg. In a kilo gym the matching plate is 20 kg, which is 44.09 lb.
+- **Olympic vs standard plates: what is the difference?** The difference is the hole. Olympic plates have a 2-inch \(50 mm\) center hole and fit Olympic bars, like the 45 lb \(20 kg\) bar in a commercial gym.
+- **How much do barbell collars weigh?** A competition collar weighs 2.5 kg \(5.51 lb\), so a pair adds 5 kg \(11.02 lb\) to the bar. That is the collar used in weightlifting and powerlifting meets, where it counts toward the weight on the bar.
+- **What is a 1RM \(one-rep max\)?** 1RM means one-repetition maximum, the heaviest weight you can lift for one full rep with good form. It is sometimes typed 1 RPM or 1 rm, but it is the same thing.
+- **What is a PR in the gym?** PR stands for personal record, the best you have ever done on a lift. In the weight room it usually means the heaviest weight you have lifted for a given number of reps.
+- **How is 1RM calculated?** A 1RM is calculated by putting a set you lifted for a few reps into a formula that estimates your one-rep max. The four common formulas are Epley, Brzycki, Lombardi and O'Conner.
+- **What percentage of your 1RM can you lift for each rep count?** A rep max chart turns a rep count into a percentage of your 1RM. By the Epley formula you can lift about 85.7% of your 1RM for 5 reps and 75% for 10.
+- **How do you test your 1RM safely?** Warm up, then work up to your max in jumps that get smaller as the bar gets heavier, with a spotter or safety arms in place. A simple progression is 50%, 70%, 80%, 90% and 95% of the max you plan to hit, then 100%.
+- **How many warm-up sets before squat, bench and deadlift?** Most lifters do 3 to 5 warm-up sets before a heavy squat, bench press or deadlift, and more as the work set gets heavier. A simple ramp is four sets: 40% of your work set for 5 reps, 60% for 5, 75% for 3 and 85% for 2.
+- **What is the training max in 5/3/1?** In 5/3/1 the training max \(TM\) is 90% of your 1RM, and every percentage in the program is taken from the training max, not from your max. A 455 lb deadlift max gives a 409.5 lb training max, so the 85% set is 350 lb, not 386.75 lb.
+- **Why can't I load an exact weight on a barbell?** Every plate goes on both sides of the bar, so the total can only move in steps of twice your smallest plate: 5 lb steps with 2.5 lb plates, and 2.5 kg steps with 1.25 kg plates. A target like 172 lb falls between 170 lb and 175 lb, and no mix of standard plates makes it.
+- **How do you count the weight on a barbell?** Add up the plates on one side, double that, then add the bar. A 45 lb bar with a 45, a 25 and a 5 on each side is 45 + 2 × \(45 + 25 + 5\) = 195 lb.
+
 ## English (en)
 
 ### Home

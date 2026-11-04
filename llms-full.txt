@@ -1,0 +1,2023 @@
+# LoadPR: full text (English)
+
+> Load your barbell right, instantly
+
+LoadPR is an iPhone app that works out which plates to load on a barbell and tracks your personal records (PRs). This site adds free browser calculators for loading a barbell in kilograms or pounds: a plate calculator, a home gym plate calculator for the plates you own, a one-rep max (1RM) calculator, a 1RM percentage calculator, a 5/3/1 calculator, a warmup calculator, a kg to lb converter and a "what's on the bar" calculator that adds up a loaded barbell. The app is free to download, with optional in-app purchases. Contact: support@loadpr.com.
+
+Every page below is on loadpr.com at the URL given. All weights and percentages come from the same engine as the calculators, so the numbers match the site and the app.
+
+# Tools
+
+## Barbell plate calculator
+
+URL: https://loadpr.com/plate-calculator/
+
+Enter a target weight and we'll show exactly which plates go on each side. If it isn't loadable with your plates, we show the closest weight you can hit.
+
+### How much does the bar weigh?
+
+A standard men's Olympic bar weighs **20 kg** (45 lb) and the women's bar **15 kg** (33 lb). Technique and training bars weigh 10 to 15 kg. Always add the bar to the total: 100 kg on the bar is 40 kg of plates per side plus the 20 kg bar.
+
+### Plates per side, not in total
+
+A barbell is loaded symmetrically: every plate you put on one side goes on the other too. That's why this calculator gives you plates **per side**. For 60 kg with a 20 kg bar you need 20 kg per side: one 20 kg plate on each end.
+
+### Olympic plate colors
+
+Under the IWF standard, competition plates follow a color code: **25 kg red, 20 kg blue, 15 kg yellow, 10 kg green**. Our diagram uses the same colors so you can read a load at a glance.
+
+---
+
+## One-rep max (1RM) calculator
+
+URL: https://loadpr.com/1rm-calculator/
+
+Enter weight and reps to estimate your one-rep max and see your training percentages.
+
+### Which formula should you use?
+
+There is no perfect formula. **Epley** and **Brzycki** are the most widely used and agree closely at low reps. Above 8–10 reps every estimate loses accuracy: treat it as a reference, not a hard truth.
+
+---
+
+## Warmup set calculator
+
+URL: https://loadpr.com/warmup-calculator/
+
+Enter your working weight and we'll build your warmup sets, rounded to the nearest loadable plate.
+
+### Why warm up progressively
+
+Raising the weight step by step primes your nervous system and joints without building fatigue. A good warmup doesn't tire you out: it leaves you ready for your working set.
+
+---
+
+## Kg to lb converter
+
+URL: https://loadpr.com/kg-to-lb/
+
+Convert between kilograms and pounds instantly. Perfect for reading a program written in the other unit.
+
+### The exact equivalence
+
+1 kg = 2.2046 lb and 1 lb = 0.4536 kg. A 20 kg plate is 44.09 lb, not 45 lb, which is why a bar loaded in kilos never matches one loaded in pounds exactly.
+
+---
+
+## 1RM percentage calculator
+
+URL: https://loadpr.com/1rm-percentage-calculator/
+
+Enter your one-rep max to see every training percentage, plus the nearest weight you can actually load with standard plates.
+
+### Why round to a loadable weight
+
+Percentages rarely land on a weight you can load. 95% of a 140 kg max is 133 kg, but with 1.25 kg as the smallest plate the bar moves in 2.5 kg steps, so the closest load is **132.5 kg**. In pounds the step is 5 lb with 2.5 lb plates.
+
+### Choosing a range
+
+Programs written in percentages often put heavy sets above 80% of your max and volume or technique work below it. Pick the range and step that match your program: 5% for a quick overview, 2.5% for finer steps.
+
+---
+
+## What's on the bar? Loaded barbell calculator
+
+URL: https://loadpr.com/whats-on-the-bar/
+
+Walked up to a loaded bar? Add the plates you see on one side and get the total, with the bar and collars counted in.
+
+### Count one side, double it
+
+A barbell is loaded the same on both ends, so you only need to count one side. The total is the bar, plus both collars, plus twice the plates on one side: 20 kg + 2 × (20 + 10) = **80 kg**.
+
+### Kilo plates in a pound gym
+
+A 20 kg plate is 44.09 lb, so a bar loaded in kilos almost never reads as a round number in pounds. The total is shown in both units so you can compare it with your program.
+
+---
+
+## Home gym plate calculator
+
+URL: https://loadpr.com/home-gym-plate-calculator/
+
+Tell us how many plates of each size you own. We find the exact load with the fewest plates, even when starting with the heaviest plate doesn't work.
+
+### Why heaviest-first can fail
+
+With two 25 kg and four 15 kg plates, 80 kg on a 20 kg bar needs 30 kg per side. Starting with a 25 leaves 5 kg you don't have, but **15 + 15** per side works. This calculator checks every combination your plates allow.
+
+### Count plates, not pairs
+
+Enter the total number of plates you own of each size. Each side needs its own plate, so three 10 kg plates still give you one pair.
+
+---
+
+## 5/3/1 calculator
+
+URL: https://loadpr.com/531-calculator/
+
+Enter your one-rep max. We take the training max, lay out the three weeks and the deload, and show the plates for every set, rounded to weights you can load.
+
+### Why the weights look lower than your max
+
+5/3/1 takes every percentage from the **training max**, 90% of your 1RM, not from the 1RM itself. A 455 lb deadlift gives a 409.5 lb training max, so week 1's top set at 85% is 348.08 lb, loaded as **350 lb**. The [5/3/1 training max guide](https://loadpr.com/guide/531-training-max/) explains 90% versus 85%.
+
+### After each cycle
+
+Add 5 lb (2.5 kg) to the training max for the bench press and overhead press, and 10 lb (5 kg) for the squat and deadlift, then run the next cycle. The calculator shows the next training max for the lift you pick.
+
+### Supplemental work
+
+First Set Last repeats the first working set of the week for 5 sets of 5. Boring But Big adds 5 sets of 10 at 50% of the training max. Neither runs in the deload week.
+
+# Guides
+
+## Olympic plate colors: the complete guide
+
+URL: https://loadpr.com/guide/olympic-plate-colors/
+
+Updated 2026-10-28
+
+Competition plates follow the color code of the International Weightlifting Federation (IWF). Knowing the colors lets you read the load on a bar without walking over to check the numbers.
+
+### Main plates
+
+- **25 kg — red** (55 lb)
+- **20 kg — blue** (44 lb)
+- **15 kg — yellow** (33 lb)
+- **10 kg — green** (22 lb)
+- **5 kg — white** (11 lb)
+
+### Change plates
+
+The small plates (2.5 / 2 / 1.5 / 1 / 0.5 kg) repeat the same color sequence at a smaller size and are used to adjust the load in fine increments during competition. In a regular gym your smallest plate sets the smallest jump, which is [why you can't load an exact weight on a barbell](https://loadpr.com/guide/cant-load-exact-weight/) without change plates.
+
+### What about regular gyms?
+
+Outside competition, most plates are black rubber bumpers or bare iron with no color. The IWF code is only mandatory at sanctioned meets, though many pound-denominated bumper sets borrow it: 45 lb blue, 35 lb yellow, 25 lb green, 10 lb white. Whatever its color, a plate weighs what is stamped on it: [how much a plate weighs](https://loadpr.com/guide/how-much-does-a-plate-weigh/) lists every plate in kg and lb.
+
+### Sources
+
+- [IPF Technical Rulebook (2026)](https://www.powerlifting.sport/fileadmin/ipf/data/rules/technical-rules/english/2026_IPF_Technical_Rulebook__effective_01_March_2026__v3.pdf)
+- [Olympic weightlifting: equipment (Wikipedia)](https://en.wikipedia.org/wiki/Olympic_weightlifting)
+
+### FAQ
+
+**What color is the 20 kg plate?**
+Blue. It's the standard Olympic plate for most working loads.
+
+**How much does the red plate weigh?**
+25 kg (55 lb) under the IWF color code for main plates.
+
+---
+
+## How much does a barbell weigh?
+
+URL: https://loadpr.com/guide/barbell-weights/
+
+Updated 2026-10-25
+
+**Short answer: a standard Olympic barbell weighs 45 lb (20 kg).** That's the long bar in almost every gym's squat rack, bench press and deadlift platform. The women's Olympic bar weighs 33 lb (15 kg). Every other bar is in the table below.
+
+### Barbell weights at a glance
+
+| Bar | lb | kg |
+|---|---|---|
+| Men's Olympic bar (7.2 ft / 2.2 m) | 45 | 20 |
+| Women's Olympic bar (6.6 ft / 2.01 m) | 33 | 15 |
+| Technique / training bar | 15–33 | 7–15 |
+| EZ curl bar | 15–25 | 7–11 |
+| Hex (trap) bar | 45–60 | 20–27 |
+| Safety squat bar | 55–70 | 25–32 |
+| Standard 1-inch bar (home sets) | 15–25 | 7–11 |
+| Smith machine bar | varies, often 15–25 | varies, often 7–11 |
+
+### Is the bar at the gym 45 lb?
+
+Almost always, yes. The long bar with rotating sleeves in the squat rack and on the bench is a men's Olympic bar: 45 lb (20 kg). Shorter, thinner bars without rotating sleeves (about 1 inch thick) are lighter, usually 15–25 lb. If a bar has no stamp, check the end cap or ask the staff.
+
+### Bench press and squat bars
+
+Both use the same 45 lb (20 kg) Olympic bar unless your gym has a specialty bar, and the bar counts toward your total: an empty bar on the bench is already 45 lb. Some dedicated powerlifting squat bars are thicker and weigh 55 lb (25 kg); deadlift bars are usually 45 lb (20 kg).
+
+### The bar counts in every total
+
+The bar is part of the load. With a 45 lb bar and 45 lb plates (or a 20 kg bar and 20 kg plates):
+
+| Plates per side | lb | kg |
+|---|---|---|
+| 1 | 135 | 60 |
+| 2 | 225 | 100 |
+
+For 3 to 6 plates, kilo totals and 25 lb plates, see [how much is 1 to 6 plates on each side](https://loadpr.com/guide/plates-on-each-side/). For any other load, the [plate calculator](https://loadpr.com/plate-calculator/) counts the bar for you. Training in the other unit? Use the [kg ↔ lb converter](https://loadpr.com/kg-to-lb/).
+
+If you don't know your bar's exact weight, pick "Custom" in the calculator and enter it by hand. Collars add to the total too: see [how much barbell collars weigh](https://loadpr.com/guide/barbell-collar-weight/).
+
+### Sources
+
+- [IPF Technical Rulebook (2026)](https://www.powerlifting.sport/fileadmin/ipf/data/rules/technical-rules/english/2026_IPF_Technical_Rulebook__effective_01_March_2026__v3.pdf)
+- [Barbell (Wikipedia)](https://en.wikipedia.org/wiki/Barbell)
+
+### FAQ
+
+**How much does a standard barbell weigh?**
+A standard men's Olympic barbell weighs 45 lb (20 kg). The women's Olympic bar weighs 33 lb (15 kg).
+
+**Does the bar count toward the total weight?**
+Yes. A 45 lb bar with one 45 lb plate on each side is 135 lb in total.
+
+**How much does an EZ curl bar weigh?**
+About 15–25 lb (7–11 kg), depending on the model.
+
+**How much does a trap bar weigh?**
+A hex (trap) bar usually weighs 45–60 lb (20–27 kg).
+
+**How much does a Smith machine bar weigh?**
+It depends on the machine. Many are around 15–25 lb, and counterbalanced ones can be lighter. Check the label on the machine.
+
+---
+
+## Kg ↔ lb equivalents for the gym
+
+URL: https://loadpr.com/guide/kg-to-lb-equivalents/
+
+Updated 2026-10-28
+
+Plenty of programs are written in the other unit. This guide helps you translate loads without losing precision.
+
+### The conversion
+
+1 kg = 2.2046 lb. To go from kilos to pounds multiply by 2.2046; for the other direction multiply by 0.4536.
+
+### Common loads
+
+- 60 kg ≈ 132 lb
+- 100 kg ≈ 220 lb
+- 140 kg ≈ 309 lb
+- 135 lb ≈ 61 kg
+- 225 lb ≈ 102 kg
+- 315 lb ≈ 143 kg
+
+Remember: kg plates and lb plates don't line up, so a loaded bar is rarely a round number in both units. Use the converter for the exact value, then round to the [nearest loadable weight](https://loadpr.com/guide/cant-load-exact-weight/) for your plates.
+
+### Sources
+
+- [Pound (mass): 1 lb = 0.45359237 kg (Wikipedia)](https://en.wikipedia.org/wiki/Pound_(mass))
+
+### FAQ
+
+**How many pounds is 100 kg?**
+About 220.5 lb.
+
+**How many kilos is 225 lb?**
+About 102 kg.
+
+---
+
+## How much is 1 to 6 plates on each side?
+
+URL: https://loadpr.com/guide/plates-on-each-side/
+
+Updated 2026-10-25
+
+**Short answer: with a 45 lb bar and 45 lb plates, 1 plate on each side is 135 lb, 2 plates are 225 lb, 3 plates are 315 lb, 4 plates are 405 lb, 5 plates are 495 lb and 6 plates are 585 lb.** In the gym, "a plate" means one 45 lb plate (a 20 kg plate in a kilo gym), and lifters count the plates on one side of the bar. In kilos, 2 plates on each side of a 20 kg bar is 100 kg.
+
+### How to work it out: 3 plates on each side
+
+Add the plates on one side, double that for both sides, then add the bar:
+
+- Plates on one side: 45 + 45 + 45 = 135 lb.
+- Both sides: 2 × 135 = 270 lb.
+- Add the bar: 270 + 45 = **315 lb**.
+
+The same steps work for any count: 1 plate is 45 + 2 × 45 = 135 lb, and 2 plates are 45 + 2 × 90 = 225 lb. Every extra 45 lb plate on each side adds 90 lb to the bar, because it goes on both ends.
+
+### Plates on each side in pounds
+
+A 45 lb Olympic bar with 45 lb plates. Each total links to the plate breakdown for that weight:
+
+| Plates per side | Total (lb) | Plates on the bar |
+|---|---|---|
+| 1 | 135 | 2 |
+| 2 | 225 | 4 |
+| 3 | 315 | 6 |
+| 4 | 405 | 8 |
+| 5 | 495 | 10 |
+| 6 | 585 | 12 |
+
+405 lb is the "four plates" milestone and 495 lb is five plates. How many plates fit on one sleeve depends on the bar and on how thick the plates are.
+
+### Plates on each side in kg
+
+In a kilo gym "a plate" is usually the 20 kg plate on a 20 kg bar. If you are asking how much N plates is in kg with pound plates, the last column converts the pound totals above:
+
+| Plates per side | 20 kg plates, 20 kg bar | 45 lb plates, 45 lb bar, in kg |
+|---|---|---|
+| 1 | 60 kg | 61.24 kg |
+| 2 | 100 kg | 102.06 kg |
+| 3 | 140 kg | 142.88 kg |
+| 4 | 180 kg | 183.7 kg |
+| 5 | 220 kg | 224.53 kg |
+| 6 | 260 kg | 265.35 kg |
+
+So 5 plates in kg is 220 kg with 20 kg plates, or 224.53 kg if the plates are 45 lb ones. A 20 kg plate weighs 44.09 lb, a little less than a 45 lb plate (see [how much a plate weighs](https://loadpr.com/guide/how-much-does-a-plate-weigh/)). Some kilo gyms load 25 kg plates instead: one 25 kg plate on each side of a 20 kg bar is 70 kg, and two are 120 kg.
+
+### With 25 lb plates
+
+Lighter plates add up the same way. On a 45 lb bar:
+
+| 25 lb plates per side | Total (lb) |
+|---|---|
+| 1 | 95 |
+| 2 | 145 |
+| 3 | 195 |
+| 4 | 245 |
+
+Mixed plates work too: one 45 and one 25 on each side is 185 lb, and two 45s and a 25 on each side is 275 lb. For any mix, [what's on the bar](https://loadpr.com/whats-on-the-bar/) adds it up for you, and the [plate calculator](https://loadpr.com/plate-calculator/) goes the other way, from a target weight to the plates per side.
+
+### Bench press: how much is 2 plates?
+
+Bench, squat and deadlift use the same 45 lb bar in most gyms, so the numbers do not change: a 2 plate bench is 225 lb and a 3 plate squat is 315 lb. A 1 plate bench is 135 lb. If your bench bar weighs something else, use its weight instead of 45 lb; [how much a barbell weighs](https://loadpr.com/guide/barbell-weights/) lists the common bars.
+
+### Common mistakes
+
+- **Mixing up plates per side and plates in total.** "4 plates" usually means four on each side (405 lb). If someone means four plates in total, two on each side, that is 225 lb. Ask which one they mean.
+- **Forgetting the bar.** Two 45s on each side are 180 lb of plates; the bar makes it 225 lb.
+- **Assuming every bar weighs 45 lb.** A women's Olympic bar is 33 lb (15 kg), so 2 plates on each side of it are 213 lb. In kilos, 2 × 20 kg on each side of a 15 kg bar is 95 kg.
+- **Leaving out collars.** Collars add a little weight, and how much depends on the model. Count them when you need an exact total.
+- **Mixing kg and lb plates.** A 20 kg plate is not a 45 lb plate. Convert with the [kg to lb converter](https://loadpr.com/kg-to-lb/) before you add them up.
+
+### Loading it with the LoadPR app
+
+The tables on this page are plain arithmetic, with as many 45s as the load needs. The LoadPR app's free plate set has two of each plate per side (45, 35, 25, 10, 5 and 2.5 lb, or 25 down to 1.25 kg), so a load like 225 lb comes straight from it. With LoadPR+ you can enter the plates your gym actually has.
+
+### FAQ
+
+**How much is 2 plates on each side?**
+225 lb with a 45 lb bar and two 45 lb plates on each side. In kilos, two 20 kg plates on each side of a 20 kg bar make 100 kg.
+
+**How much is 1 plate on each side?**
+135 lb: a 45 lb bar plus one 45 lb plate on each side. With a 20 kg bar and 20 kg plates it is 60 kg.
+
+**How much weight is 4 plates?**
+405 lb when it means four 45 lb plates on each side of a 45 lb bar. If it means four plates in total, two on each side, it is 225 lb.
+
+**How much is 5 plates in kg?**
+220 kg with five 20 kg plates on each side of a 20 kg bar. Five 45 lb plates on each side of a 45 lb bar make 495 lb, which is 224.53 kg.
+
+**How much is 6 plates on each side?**
+585 lb with six 45 lb plates on each side of a 45 lb bar, or 260 kg with six 20 kg plates on each side of a 20 kg bar.
+
+---
+
+## How much does a weight plate weigh?
+
+URL: https://loadpr.com/guide/how-much-does-a-plate-weigh/
+
+Updated 2026-10-25
+
+**Short answer: the big plate in most gyms weighs 45 lb, which is 20.41 kg. In a kilo gym the matching plate is 20 kg, which is 44.09 lb.** When lifters say "a plate" they mean one of these. A plate weighs what is stamped on it, and the tables below give every common plate in both units.
+
+### Why a 45 lb plate is not 20 kg
+
+Pound plates are made in round pounds and kilo plates in round kilos, so the two big plates are close but not equal. One kilogram is 2.2046 lb:
+
+- 45 lb ÷ 2.2046 = **20.41 kg**
+- 20 kg × 2.2046 = **44.09 lb**
+
+The gap is small for one plate and grows as you load more. A 45 lb bar with two 45s on each side is 225 lb, which is 102.06 kg. A 20 kg bar with two 20 kg plates on each side is 100 kg, which is 220.46 lb. Both get called "two plates", but they are not the same load.
+
+### Pound plates in kg
+
+| Plate | Weight in kg |
+|---|---|
+| 45 lb | 20.41 |
+| 35 lb | 15.88 |
+| 25 lb | 11.34 |
+| 10 lb | 4.54 |
+| 5 lb | 2.27 |
+| 2.5 lb | 1.13 |
+
+A 25 lb plate is 11.34 kg and a 10 lb plate is 4.54 kg, so pound plates never land on round kilos.
+
+### Kilo plates in pounds
+
+| Plate | Weight in lb |
+|---|---|
+| 25 kg | 55.12 |
+| 20 kg | 44.09 |
+| 15 kg | 33.07 |
+| 10 kg | 22.05 |
+| 5 kg | 11.02 |
+| 2.5 kg | 5.51 |
+| 1.25 kg | 2.76 |
+
+The 25 kg plate (55.12 lb) is heavier than a 45 lb plate, which surprises lifters who move from a pound gym to a kilo gym. On competition plates the colors tell them apart: 25 kg is red and 20 kg is blue (see [Olympic plate colors](https://loadpr.com/guide/olympic-plate-colors/)).
+
+### A plate's weight vs the bar total
+
+The number on a plate is the weight of that one plate, not the weight on the bar. The load you lift is the bar plus every plate on both ends, so a pair of 45 lb plates adds 90 lb to the bar, and a pair of 20 kg plates adds 40 kg. For bar totals with 1 to 6 plates on each side, see [how much is 1 to 6 plates on each side](https://loadpr.com/guide/plates-on-each-side/).
+
+### Bumper plates vs iron plates
+
+A 45 lb bumper and a 45 lb iron plate weigh the same. The bumper is made of rubber, which is lighter for its size than iron, so it is thicker and takes more room on the sleeve; how thick depends on the model. Most full-size bumpers are 450 mm (about 17.7 in) across, the competition size, so the bar sits at the same height whichever bumper is on it; some light bumpers are smaller. Competition (calibrated) plates are made to a tight weight tolerance. Ordinary gym plates can be off by a little, and how much depends on the maker.
+
+### Olympic and standard plates
+
+A 45 lb plate with a 2-inch hole (Olympic) and a 45 lb plate with a 1-inch hole (standard) weigh the same. The hole decides which bar the plate fits, not what it weighs. See [Olympic vs standard plates](https://loadpr.com/guide/olympic-vs-standard-plates/).
+
+### Common mistakes
+
+- **Treating 20 kg and 45 lb as equal.** A 20 kg plate is 44.09 lb, not 45, and on a heavy bar the difference adds up.
+- **Rounding a kilo to 2 lb.** A kilo is 2.2046 lb, so a 20 kg plate is 44.09 lb, not 40.
+- **Leaving out the bar.** The plates are only part of the load; a 45 lb bar with one 45 on each side is 135 lb.
+- **Reading the wrong number.** Some plates are stamped in both lb and kg. Check which unit is the main one before you add them up, or use the [kg to lb converter](https://loadpr.com/kg-to-lb/).
+
+### Sources
+
+- [Pound (mass): 1 lb = 0.45359237 kg (Wikipedia)](https://en.wikipedia.org/wiki/Pound_(mass))
+
+### FAQ
+
+**How much does a 45 lb plate weigh in kg?**
+20.41 kg. One kilogram is 2.2046 lb, so 45 lb divided by 2.2046 is 20.41 kg.
+
+**How much does a 20 kg plate weigh in pounds?**
+44.09 lb, slightly less than a 45 lb plate.
+
+**How many kg is 1 plate?**
+One 45 lb plate is 20.41 kg. In a kilo gym, one plate usually means a 20 kg plate, which is 44.09 lb.
+
+**How much does a 25 kg plate weigh in pounds?**
+55.12 lb, so it is heavier than a 45 lb plate (20.41 kg).
+
+**Do bumper plates weigh the same as iron plates?**
+Yes. A 45 lb bumper weighs 45 lb (20.41 kg), the same as a 45 lb iron plate. The bumper is thicker because rubber is lighter for its size than iron.
+
+---
+
+## Olympic vs standard plates: what is the difference?
+
+URL: https://loadpr.com/guide/olympic-vs-standard-plates/
+
+Updated 2026-10-25
+
+**Short answer: the difference is the hole. Olympic plates have a 2-inch (50 mm) center hole and fit Olympic bars, like the 45 lb (20 kg) bar in a commercial gym. Standard plates have a 1-inch hole and fit standard bars, the thinner 15–25 lb bars in many home sets.** A 45 lb Olympic plate and a 45 lb standard plate weigh the same; they just do not fit the same bar.
+
+### Example: the same plates on each bar
+
+Put one 25 lb and one 10 lb plate on each side. The plates weigh the same on both bars, so only the bar changes the total:
+
+- Olympic bar, 45 lb: 45 + 2 × (25 + 10) = **115 lb**
+- Standard bar, 20 lb (check yours, they vary): 20 + 2 × (25 + 10) = **90 lb**
+
+Most of the difference between two setups is the bar. [How much a barbell weighs](https://loadpr.com/guide/barbell-weights/) lists the common bars, and the [home gym plate calculator](https://loadpr.com/home-gym-plate-calculator/) works out a load from the plates you own.
+
+### Olympic vs standard at a glance
+
+|  | Olympic | Standard |
+|---|---|---|
+| Center hole | About 2 in (50 mm) | About 1 in |
+| Bar | Olympic bar: 45 lb (20 kg) men's, 33 lb (15 kg) women's | Standard bar: usually 15–25 lb (7–11 kg) |
+| Sleeves | Thick sleeves that rotate | About as thick as the bar, usually fixed |
+| Where you see them | Commercial gyms, weightlifting and powerlifting | Many beginner and home sets |
+
+### Can you put Olympic plates on a standard bar?
+
+Not safely. A 2-inch hole on a 1-inch bar leaves the plate loose, so it slides and rattles, and standard collars are not made to hold it. Standard plates do not fit an Olympic bar at all: a 1-inch hole will not go over a 2-inch sleeve. Some makers sell adapter sleeves for a standard bar; they add their own weight, and the bar's rated load still applies.
+
+### Which one to buy for a home gym
+
+Olympic plates fit the bars in commercial gyms, so your numbers carry over, and there are more bars, racks and bumper plates made for them. Standard sets are lighter, take less room and often cost less to start with, but a standard bar is usually rated for less weight than an Olympic bar; the exact rating depends on the model. If you plan to lift heavy, Olympic is the usual choice.
+
+### Olympic plates in kg and lb
+
+Olympic plates come in both units. Pound sets usually run 45, 35, 25, 10, 5 and 2.5 lb; kilo sets 25, 20, 15, 10, 5, 2.5 and 1.25 kg. A 45 lb plate is 20.41 kg and a 20 kg plate is 44.09 lb, so the two are close but not the same; [how much a plate weighs](https://loadpr.com/guide/how-much-does-a-plate-weigh/) lists every plate in both units. On competition plates the color shows the weight ([Olympic plate colors](https://loadpr.com/guide/olympic-plate-colors/)).
+
+### Common mistakes
+
+- **Thinking "Olympic" means competition plates.** In most gyms it only means the 2-inch hole. Competition plates are a stricter kind of Olympic plate, with set sizes and colors.
+- **Assuming every bar weighs 45 lb.** A standard bar is usually 15–25 lb, so the same plates make a lighter total.
+- **Buying plates before the bar.** Check the bar's sleeves first; the plates have to match them.
+- **Mixing units.** Kilo and pound Olympic plates both fit an Olympic bar, so a mixed bar is easy to load by mistake. Convert with the [kg to lb converter](https://loadpr.com/kg-to-lb/).
+
+### Bars and plates in the LoadPR app
+
+The free setup in the LoadPR app is a 45 lb (or 20 kg) Olympic bar with two of each plate per side. If you train with a standard bar or your own plate set, LoadPR+ lets you add custom bars and plates (see [gyms and plates](https://loadpr.com/features/gyms-and-plates/)).
+
+### Sources
+
+- [Barbell (Wikipedia)](https://en.wikipedia.org/wiki/Barbell)
+
+### FAQ
+
+**What is the difference between Olympic and standard plates?**
+The center hole. Olympic plates have a 2-inch (50 mm) hole for Olympic bars; standard plates have a 1-inch hole for standard bars. A 45 lb plate weighs 45 lb either way.
+
+**Do Olympic plates fit a standard bar?**
+No. A 2-inch hole is loose on a 1-inch bar and the plate will slide. Use plates that match the bar, or a standard set on a standard bar.
+
+**Can I use standard plates on an Olympic bar?**
+No. A 1-inch hole does not fit over the 2-inch sleeve of an Olympic bar, so a 45 lb (20 kg) Olympic bar needs Olympic plates.
+
+**Is a 45 lb Olympic plate heavier than a 45 lb standard plate?**
+No. Both weigh 45 lb (20.41 kg). Only the hole size, and often the shape, differ.
+
+**Why are Olympic plates called Olympic?**
+They fit the 2-inch bar used in Olympic weightlifting. In most gyms the name just means the 2-inch hole; competition plates add strict sizes and colors on top of that.
+
+---
+
+## How much do barbell collars weigh?
+
+URL: https://loadpr.com/guide/barbell-collar-weight/
+
+Updated 2026-10-25
+
+**Short answer: a competition collar weighs 2.5 kg (5.51 lb), so a pair adds 5 kg (11.02 lb) to the bar.** That is the collar used in weightlifting and powerlifting meets, where it counts toward the weight on the bar. The spring clips and lock-jaw collars in most gyms are much lighter, and their exact weight depends on the model.
+
+### Example: one plate on each side with competition collars
+
+Take a 20 kg bar, one 20 kg plate on each side and a 2.5 kg competition collar on each end. Count the bar, both collars and both plates:
+
+- 20 + 2 × 2.5 + 2 × 20 = **65 kg**
+- Without the collars it is 20 + 2 × 20 = 60 kg.
+
+The same works backwards. To load 100 kg with competition collars, take the bar and both collars off first: 100 − 20 − 2 × 2.5 = 75 kg of plates, or 37.5 kg on each side. That is **25 + 10 + 2.5 kg per side**. Without collars, 100 kg is 40 kg per side: 25 + 15 kg.
+
+### Collar weights by type
+
+| Collar | Weight |
+|---|---|
+| Competition collar | 2.5 kg each (5.51 lb), 5 kg a pair (11.02 lb) |
+| Spring clip | Depends on the model; far lighter than a competition collar |
+| Lock-jaw or clamp collar | Depends on the model |
+| Screw-on collar for a 1-inch bar | Depends on the model |
+
+Competition collars are used on competition bars at weightlifting and powerlifting meets. Spring clips are the ones in most commercial gyms, lock-jaw and clamp collars turn up in gyms and home gyms, and screw-on collars come with home sets built on standard 1-inch bars.
+
+If you need an exact total with clips or clamps, weigh a pair on a kitchen or luggage scale, or check the maker’s listing.
+
+### Do collars count toward the weight on the bar?
+
+In competition they do. At IWF weightlifting and IPF powerlifting meets the bar is 20 kg and each collar is 2.5 kg, so an empty bar with collars is already 25 kg. Every attempt includes them:
+
+| Plates on each side | Without collars | With 2.5 kg collars |
+|---|---|---|
+| None | 20 kg | 25 kg |
+| 1 × 20 kg | 60 kg | 65 kg |
+| 1 × 25 kg | 70 kg | 75 kg |
+| 2 × 25 kg | 120 kg | 125 kg |
+| 3 × 25 kg | 170 kg | 175 kg |
+
+In training it is your choice. Light spring clips change the total so little that most lifters leave them out. What matters is doing the same thing every time, so that a number in your log means the same load next month.
+
+### Collars in a pound gym
+
+Competition collars are made in kilos, so in a pound gym they add 11.02 lb for the pair. A 45 lb bar with two 45 lb plates on each side is 225 lb; with competition collars it is 236.02 lb. If you train in pounds but compete in kilos, count the collars when you work out your openers. The [kg to lb converter](https://loadpr.com/kg-to-lb/) handles the rest of the conversion, and [how much a plate weighs](https://loadpr.com/guide/how-much-does-a-plate-weigh/) lists every plate in both units.
+
+### How to enter collars in the plate calculator
+
+The [plate calculator](https://loadpr.com/plate-calculator/) has a field called **Collars (per side)**. Enter the weight of one collar, in the unit the calculator is set to: 2.5 for competition collars in kilos, or 0 to leave them out. The calculator counts a collar on each end, takes both off the target and then splits the rest into plates. With a 20 kg bar, 100 kg and 2.5 in the field, it shows 25 + 10 + 2.5 kg per side, as in the example above.
+
+The same field is on [what’s on the bar](https://loadpr.com/whats-on-the-bar/), which adds up a loaded bar, and on the [home gym plate calculator](https://loadpr.com/home-gym-plate-calculator/). Switching between kg and lb resets the field to 0, so enter it again in the new unit.
+
+### Why use collars at all?
+
+Collars stop the plates from sliding along the sleeve. A plate that creeps outward on one side makes the bar uneven, and on a fast lift or a missed rep plates can slide off. That is why meets require them, and why many gyms ask you to use them on squats, presses and Olympic lifts. The bar’s own weight is covered in [how much a barbell weighs](https://loadpr.com/guide/barbell-weights/).
+
+### Common mistakes
+
+- **Counting one collar.** There is a collar on each end, so a pair of 2.5 kg collars adds 5 kg, not 2.5 kg.
+- **Entering the pair in a per-side field.** The calculator field takes one collar. Typing 5 for competition collars counts 10 kg.
+- **Assuming every collar weighs 2.5 kg.** Only competition collars do. Gym clips weigh far less, and clamps depend on the model.
+- **Mixing units.** A 2.5 kg collar is 5.51 lb, not 5 lb. Enter it in the unit your calculator uses.
+- **Changing how you count.** If you counted collars last month and leave them out today, your numbers stop being comparable.
+
+### Sources
+
+- [IPF Technical Rulebook (2026)](https://www.powerlifting.sport/fileadmin/ipf/data/rules/technical-rules/english/2026_IPF_Technical_Rulebook__effective_01_March_2026__v3.pdf)
+
+### FAQ
+
+**How much does a competition collar weigh?**
+A competition collar weighs 2.5 kg (5.51 lb). A pair adds 5 kg (11.02 lb) to the bar.
+
+**Do collars count in a powerlifting meet?**
+Yes. At IPF meets the 20 kg bar and two 2.5 kg collars make 25 kg before any plates go on, so one 20 kg plate on each side is 65 kg.
+
+**How much do spring clips weigh?**
+It depends on the model, and they are far lighter than a 2.5 kg competition collar. For an exact total, weigh a pair on a scale.
+
+**How many plates per side for 100 kg with competition collars?**
+25 + 10 + 2.5 kg on each side of a 20 kg bar. The collars take 5 kg, leaving 37.5 kg per side.
+
+**What goes in the collars field of a plate calculator?**
+The weight of one collar, such as 2.5 for competition collars in kg. The calculator counts one on each end, so 2.5 adds 5 kg in total.
+
+---
+
+## What is a 1RM (one-rep max)?
+
+URL: https://loadpr.com/guide/what-is-1rm/
+
+Updated 2026-10-25
+
+**Short answer: 1RM means one-repetition maximum, the heaviest weight you can lift for one full rep with good form.** It is sometimes typed 1 RPM or 1 rm, but it is the same thing. Strength programs use it as a reference point: a workout of 5 sets at 80% means 80% of your 1RM for that lift.
+
+### Example: estimating a 1RM from a set of 5
+
+You do not have to lift your max to know roughly what it is. Say you bench 100 kg for 5 reps. The Epley formula estimates a 1RM from a set like this:
+
+- 1RM = weight × (1 + reps ÷ 30)
+- 100 × (1 + 5 ÷ 30) = **116.67 kg**
+
+So a lifter who can bench 100 kg for 5 could probably bench about 116.67 kg once. It is an estimate, not a promise. For your own numbers and other formulas, use the [1RM calculator](https://loadpr.com/1rm-calculator/).
+
+### Tested vs estimated 1RM
+
+There are two ways to get the number, and they answer slightly different questions.
+
+|  | Tested 1RM | Estimated 1RM |
+|---|---|---|
+| How you get it | Work up to one heavy single | Put a set of a few reps into a formula |
+| How exact it is | Exact for that day | Close at low reps, rougher above 8 to 10 reps |
+| How tiring it is | Very: it needs warm-ups and recovery | Normal: it comes from a set you do anyway |
+| Typical use | Meets, testing weeks | Setting training loads between tests |
+
+A tested max is real, but it costs a session and needs a spotter or safety arms. An estimate is free, but different formulas give different answers, and none of them is reliable for sets of 15 or 20.
+
+### 1RM vs a rep PR
+
+A 1RM is a single. A rep PR is the most you have lifted for some other number of reps, such as your best set of 5. Both are personal records, and a rep PR can be turned into an estimated 1RM like the example above. The guide [what is a PR in the gym](https://loadpr.com/guide/what-is-a-pr/) covers rep PRs and weight PRs in full.
+
+### What LoadPR calls your current PR
+
+In the LoadPR app, the current PR of a lift is the heaviest weight you have logged for it, at any number of reps. It is not an estimate: if your heaviest bench entry is 225 lb for 3, your current PR is 225 lb. The app estimates the 1RM separately with the Epley formula, which it writes as weight × (1 + 0.0333 × reps), so 200 lb for 3 reps comes to an estimated 219.98 lb. With LoadPR+ the estimate appears as its own line on the full progress chart. The percentage wheel works from your current PR or from any weight you type, so you can type your 1RM if you want percentages of it. More in [PR tracking](https://loadpr.com/features/pr-tracking/).
+
+### Why programs use a percentage of your 1RM
+
+Percentages let one plan fit every lifter. A program that says 80% gives a 140 kg squatter and a 60 kg squatter the same effort. For a 140 kg 1RM:
+
+| % of 1RM | Exact | Loadable with kilo plates |
+|---|---|---|
+| 90% | 126 kg | 125 kg |
+| 80% | 112 kg | 112.5 kg |
+| 70% | 98 kg | 97.5 kg |
+| 60% | 84 kg | 85 kg |
+
+The exact number is rarely loadable, so you round to the nearest weight your plates can make. The [1RM percentage calculator](https://loadpr.com/1rm-percentage-calculator/) does that for the whole table.
+
+### Every lift has its own 1RM
+
+Your squat, bench press, deadlift and overhead press each have a separate 1RM, and so do variations such as a paused bench or a front squat. Keep them apart in your log. A 1RM also belongs to its conditions: a max with a belt and a max without one are different numbers, and so is a max in kg compared with one rounded to pounds.
+
+### Mistakes with a 1RM
+
+- **Counting a rep that was not a full rep.** A squat above depth or a bench that bounced is not a 1RM.
+- **Estimating from very long sets.** A set of 15 says more about endurance than about your max.
+- **Mixing formulas.** Epley and other formulas give slightly different estimates. Pick one and stay with it so your numbers compare. [How 1RM is calculated](https://loadpr.com/guide/how-to-calculate-1rm/) sets them side by side.
+- **Training from an old max.** A 1RM from months ago may be too high or too low now. Re-estimate from a recent set.
+- **Treating the estimate as a target.** An estimated 1RM is a planning number, not a weight you have to hit.
+
+### Sources
+
+- [One-repetition maximum: estimation formulas (Wikipedia)](https://en.wikipedia.org/wiki/One-repetition_maximum)
+
+### FAQ
+
+**What does 1RM stand for?**
+One-repetition maximum: the heaviest weight you can lift for one full rep with good form.
+
+**Is 1 RPM the same as 1RM?**
+Yes. 1 RPM is a common way of typing 1RM. Both mean the most weight you can lift once.
+
+**How do you estimate a 1RM without maxing out?**
+Lift a weight for 3 to 5 reps and put it into a formula. By Epley, 100 kg for 5 reps is an estimated 1RM of 116.67 kg.
+
+**Is a 1RM the same as a PR?**
+A 1RM you have actually lifted is your 1-rep PR. A PR can also be for more reps, such as your best set of 5, which is a rep PR rather than a 1RM.
+
+**What is 80% of a 140 kg 1RM?**
+112 kg. With standard kilo plates on a 20 kg bar, the nearest loadable weight is 112.5 kg.
+
+---
+
+## What is a PR in the gym?
+
+URL: https://loadpr.com/guide/what-is-a-pr/
+
+Updated 2026-10-25
+
+**Short answer: PR stands for personal record, the best you have ever done on a lift.** In the weight room it usually means the heaviest weight you have lifted for a given number of reps. Some lifters say PB, for personal best; it means the same. To “hit a PR” is to beat your old best.
+
+### Example: reading PRs from a bench press log
+
+Here are a lifter’s best bench press sets:
+
+| Set | What it is |
+|---|---|
+| 225 lb × 1 | Weight PR (the heaviest weight lifted) |
+| 205 lb × 3 | 3-rep PR |
+| 185 lb × 5 | 5-rep PR |
+
+Asked “what is your bench PR?”, this lifter says 225 lb, the heaviest weight on the list. Asked for a 5-rep PR, the answer is 185 lb. Each rep count has its own record.
+
+### Weight PR vs rep PR
+
+A **weight PR** is the heaviest weight you have lifted on a lift, at any reps. Most of the time that is a single. A **rep PR** is the heaviest weight for a set number of reps, or the most reps with a set weight: 185 lb for 6 beats 185 lb for 5. Rep PRs come much more often than weight PRs, which makes them a good way to see progress between heavy days.
+
+### How to find your PR
+
+Look back through your log for the lift and find the heaviest weight. That is your PR, and the reps next to it say which kind it is. If you have no log, your PR is the heaviest weight you are sure you lifted with full reps. Write down the conditions too, such as belt, paused or competition, because a paused bench and a touch-and-go bench are not the same lift.
+
+### Gym PRs and meet PRs
+
+Lifters who compete often keep two sets of records. A gym PR is the best you have done in training, judged by you. A meet PR, sometimes called a competition PR, is the best you have done on the platform, where judges decide whether the lift counts, the commands have to be followed and the bar is loaded with competition collars. Keep them apart in your log so neither one hides the other.
+
+### PR vs 1RM
+
+A 1-rep PR is a max you actually lifted. A rep PR also points to a one-rep max you have not tested yet: by the Epley formula, the 205 lb triple above comes to an estimated 225.5 lb, about the same as the 225 lb single. What a 1RM is and how it is estimated is covered in [what is a 1RM](https://loadpr.com/guide/what-is-1rm/).
+
+### How LoadPR records your PRs
+
+In the LoadPR app each lift keeps a list of PR entries, newest first. An entry holds the weight in lb or kg, the reps from 1 to 20, the date and an optional note. The current PR of the lift is the heaviest weight you have logged, at any reps; when two entries weigh the same, the newer one counts. Entries can be in different units, and LoadPR compares them by their real weight, so a 100 kg single (220.46 lb) counts as heavier than a 220 lb single.
+
+The free version tracks up to 5 exercises, each with every PR you log. See [PR tracking](https://loadpr.com/features/pr-tracking/) for the details, including logging a PR with Siri.
+
+### Mistakes when counting a PR
+
+- **Leaving out the reps.** “205” says little on its own. 205 for 3 and 205 for 1 are different records.
+- **Counting a rep that did not count.** A half squat or a bench with a big bounce is not a PR.
+- **Comparing different lifts.** A paused bench, a belted squat or a sumo deadlift each deserve their own records.
+- **Mixing kg and lb.** 100 kg is 220.46 lb, so it beats 220 lb. Convert before you compare, or use the [kg to lb converter](https://loadpr.com/kg-to-lb/).
+- **Chasing a PR every session.** Records come from steady training, and most sessions are not record days.
+
+### Sources
+
+- [Personal record (Wikipedia)](https://en.wikipedia.org/wiki/Personal_record)
+
+### FAQ
+
+**What does PR mean in the gym?**
+PR means personal record: the heaviest weight you have lifted on a lift for a given number of reps, such as a 225 lb bench single.
+
+**What is my PR?**
+Your PR is the heaviest weight you have lifted on that lift with full reps. If your best bench sets are 225 lb for 1 and 205 lb for 3, your bench PR is 225 lb.
+
+**What is a rep PR?**
+The heaviest weight for a set number of reps, or the most reps with a set weight. 185 lb for 6 is a rep PR over 185 lb for 5.
+
+**Is a PR the same as a PB?**
+Yes. PB means personal best and PR means personal record; both name your best lift, such as 225 lb for 1.
+
+**What is a weight PR?**
+The heaviest weight you have lifted on a lift at any reps. In a log with 225 lb for 1 and 205 lb for 3, the weight PR is 225 lb.
+
+---
+
+## How is 1RM calculated?
+
+URL: https://loadpr.com/guide/how-to-calculate-1rm/
+
+Updated 2026-10-25
+
+**Short answer: a 1RM is calculated by putting a set you lifted for a few reps into a formula that estimates your one-rep max.** The four common formulas are Epley, Brzycki, Lombardi and O'Conner. For 100 kg lifted 5 times they give 116.67, 112.5, 117.46 and 112.5 kg. They agree closely at low reps and drift apart as the reps go up.
+
+### Example: one set of 5, four formulas
+
+Say you squat 100 kg for 5 reps. Here is each formula worked through for that set:
+
+| Formula | Equation | 100 kg for 5 reps |
+|---|---|---|
+| Epley | weight × (1 + reps ÷ 30) | 100 × (1 + 5 ÷ 30) = 116.67 kg |
+| Brzycki | weight × 36 ÷ (37 − reps) | 100 × 36 ÷ 32 = 112.5 kg |
+| Lombardi | weight × reps to the power 0.1 | 100 × 5 to the power 0.1 = 117.46 kg |
+| O'Conner | weight × (1 + reps ÷ 40) | 100 × (1 + 5 ÷ 40) = 112.5 kg |
+
+So the estimate for this one set lands between 112.5 and 117.46 kg, depending on the formula. None of them is wrong: each is a different fit to how many reps people manage as the weight gets heavier. To run your own set through all four at once, use the [1RM calculator](https://loadpr.com/1rm-calculator/).
+
+### Why the formulas split apart above about 10 reps
+
+Here is the same 100 kg lifted for 10 and 15 reps:
+
+| Formula | 10 reps | 15 reps |
+|---|---|---|
+| Epley | 133.33 kg | 150 kg |
+| Brzycki | 133.33 kg | 163.64 kg |
+| Lombardi | 125.89 kg | 131.1 kg |
+| O'Conner | 125 kg | 137.5 kg |
+
+At 5 reps the four answers stay between 112.5 and 117.46 kg. At 15 reps they run from 131.1 kg (Lombardi) to 163.64 kg (Brzycki). Brzycki climbs fastest because its divisor, 37 minus the reps, shrinks as the reps rise. Lombardi climbs slowest because a power of 0.1 grows very little. Epley and O'Conner add a fixed share per rep, one thirtieth and one fortieth.
+
+The bigger reason is the lifter. A long set tests endurance as much as strength, and two people with the same max can get very different rep counts with the same weight. Every formula is an average, and the further a set is from a single, the less any average says about you.
+
+### Picking one formula and keeping it
+
+Epley and Brzycki are the most widely used, and at 10 reps they give the same answer: 133.33 kg for 100 kg. Below 10 reps Brzycki is the more cautious of the two; above 10 it is the more generous. Whichever you choose, the habits below matter more than the choice:
+
+- **Use a hard set of about 3 to 5 reps.** Low-rep sets give the closest estimates.
+- **Count only full reps.** A rep cut short or helped by a spotter inflates the result.
+- **Stay with the same formula.** Your estimates then compare from month to month, even if the formula is a little high or low for you.
+
+### The formulas run backwards: rep max charts
+
+A 1RM formula also works the other way. Instead of turning a set into a max, it turns a max into the share of it you can lift for each rep count. By Epley, 5 reps is about 85.7% of a 1RM. That is what a [rep max chart](https://loadpr.com/guide/rep-max-chart/) lists, from 1 to 12 reps.
+
+### Estimate or test?
+
+An estimate costs nothing: it comes from a set you were doing anyway. A test gives the real number for that day, but it takes a full session, careful warm-ups and a spotter or safety arms. Most lifters estimate between tests and test now and then, for example at the end of a training block. When you do test, [how to test your 1RM safely](https://loadpr.com/guide/how-to-test-your-1rm/) walks through the attempts.
+
+### How LoadPR estimates your 1RM
+
+The LoadPR app estimates a 1RM from your logged sets with the Epley formula by default. With LoadPR+ you can pick another formula, such as Brzycki, and the estimate appears as its own line on the full progress chart. The app keeps your current PR separate from the estimate: the current PR is the heaviest weight you have logged, not a formula result. More in [PR tracking](https://loadpr.com/features/pr-tracking/).
+
+### Mistakes when calculating a 1RM
+
+- **Estimating from a set of 12 or more.** At 15 reps the formulas are more than 30 kg apart for a 100 kg set.
+- **Using a set that was not close to failure.** If you could have done 3 more reps, the formula underestimates you.
+- **Switching formulas between months.** A jump from 112.5 to 117.46 kg can be the formula, not your strength.
+- **Mixing units.** Estimate in the unit you lifted in, then convert if you need to.
+- **Treating the estimate as a weight to hit.** It is a planning number for setting training loads.
+
+### Sources
+
+- [One-repetition maximum: estimation formulas (Wikipedia)](https://en.wikipedia.org/wiki/One-repetition_maximum)
+
+### FAQ
+
+**What is the most accurate 1RM formula?**
+No formula is right for everyone. Epley and Brzycki are the most used and agree closely at low reps: for 100 kg lifted 5 times they give 116.67 kg and 112.5 kg.
+
+**What is the Epley formula?**
+1RM = weight × (1 + reps ÷ 30). For 100 kg lifted 5 times it estimates a 1RM of 116.67 kg.
+
+**What is the Brzycki formula?**
+1RM = weight × 36 ÷ (37 − reps). For 100 kg lifted 5 times it estimates a 1RM of 112.5 kg.
+
+**Why do 1RM formulas give different answers?**
+Each one is a different fit to how reps drop as the weight rises. For 100 kg lifted 10 times, O'Conner gives 125 kg and Epley gives 133.33 kg.
+
+**How many reps give the best 1RM estimate?**
+A hard set of about 3 to 5 reps. At 15 reps the four common formulas spread from 131.1 kg to 163.64 kg for a 100 kg set.
+
+---
+
+## What percentage of your 1RM can you lift for each rep count?
+
+URL: https://loadpr.com/guide/rep-max-chart/
+
+Updated 2026-10-25
+
+**Short answer: a rep max chart turns a rep count into a percentage of your 1RM.** By the Epley formula you can lift about 85.7% of your 1RM for 5 reps and 75% for 10. By Brzycki, 5 reps is 88.9% and 10 reps is also 75%. A single is 100% by definition.
+
+### Example: sets of 5 from a 140 kg max
+
+Your squat max is 140 kg and the plan calls for a hard set of 5. The chart gives 85.7% for 5 reps by Epley:
+
+- 140 × 85.7% = 119.98 kg
+- With kilo plates on a 20 kg bar, the nearest loads are **120 kg** (25 + 25 on each side) and 117.5 kg below it.
+
+For a 315 lb bench max the same row gives 315 × 85.7% = 269.96 lb. The nearest loads are **270 lb** (45, 45, 10, 10 and 2.5 on each side) and 265 lb. For any other max, the [1RM percentage calculator](https://loadpr.com/1rm-percentage-calculator/) does the multiplying and the rounding.
+
+### Rep max chart, 1 to 12 reps
+
+The percentage of your 1RM you can lift for each number of reps, taken to the last rep you can complete:
+
+| Reps | Epley | Brzycki |
+|---|---|---|
+| 1 | 100% | 100% |
+| 2 | 93.7% | 97.2% |
+| 3 | 90.9% | 94.4% |
+| 4 | 88.2% | 91.7% |
+| 5 | 85.7% | 88.9% |
+| 6 | 83.3% | 86.1% |
+| 7 | 81.1% | 83.3% |
+| 8 | 78.9% | 80.6% |
+| 9 | 76.9% | 77.8% |
+| 10 | 75% | 75% |
+| 11 | 73.2% | 72.2% |
+| 12 | 71.4% | 69.4% |
+
+The chart stops at 12 reps because past that point the formulas disagree more and more, and a percentage says little about a set of 15 or 20.
+
+### How to read the chart
+
+Find the number of reps you plan to do, read the percentage across, and multiply it by your 1RM. Then round to a weight your plates can make. The chart describes a set taken to the last rep you can manage. If your program wants reps left in the tank, use a lower percentage than the chart shows for that rep count.
+
+The chart is a 1RM formula run backwards. The guide [how 1RM is calculated](https://loadpr.com/guide/how-to-calculate-1rm/) shows the formulas themselves.
+
+### Epley vs Brzycki on the chart
+
+The two columns meet at 10 reps, where both say 75%. Below 10 reps Brzycki gives the higher percentage, so it expects you to handle more weight for the same reps. Above 10 it gives the lower one. For the 5-rep example the difference looks like this:
+
+| 5 reps from a | Epley (85.7%) | Brzycki (88.9%) |
+|---|---|---|
+| 140 kg max | 119.98 kg, load 120 kg | 124.46 kg, load 125 kg |
+| 315 lb max | 269.96 lb, load 270 lb | 280.04 lb, load 280 lb |
+
+Neither column is the true one. If the Epley weights feel easy for you at 5 reps, the Brzycki column may fit you better, and the other way round. Pick the one that matches what you actually do in training and stay with it.
+
+### Why a single is 100%
+
+A one-rep max is the weight you can lift once, so 1 rep is 100% of it in every column. The Epley equation, taken literally, puts a single slightly above the weight lifted: 100 kg for 1 rep comes to 103.33 kg. This chart does not use that row, and fixes 1 rep at 100%.
+
+If you want a real number for the top of the chart instead of an estimate, [how to test your 1RM safely](https://loadpr.com/guide/how-to-test-your-1rm/) lays out a test day.
+
+### Mistakes with a rep max chart
+
+- **Treating the percentages as exact.** They are averages. Your own rep counts at 85% may be one or two off.
+- **Using a max that is out of date.** A percentage of an old 1RM gives old weights.
+- **Forgetting to round.** 119.98 kg cannot go on the bar; 120 kg can.
+- **Mixing units.** Take the percentage of a kg max in kg, and of a lb max in lb.
+- **Reading the chart for every set.** The chart is for sets to the last rep. Most working sets stop short of that.
+
+### Sources
+
+- [One-repetition maximum: estimation formulas (Wikipedia)](https://en.wikipedia.org/wiki/One-repetition_maximum)
+
+### FAQ
+
+**What percentage of 1RM is 5 reps?**
+About 85.7% by Epley and 88.9% by Brzycki. For a 140 kg max that is 119.98 kg by Epley, so load 120 kg.
+
+**What percentage of 1RM is 10 reps?**
+75% by both Epley and Brzycki. For a 315 lb max that is 236.25 lb, so load 235 lb or 240 lb.
+
+**What percentage of 1RM is 3 reps?**
+About 90.9% by Epley and 94.4% by Brzycki. A set of 3 sits close to your max.
+
+**What percentage of 1RM is 8 reps?**
+About 78.9% by Epley and 80.6% by Brzycki, a little under four fifths of your max.
+
+**Why is 1 rep 100% on a rep max chart?**
+A single at your max is your 1RM by definition, so 1 rep is 100% in every column, even though Epley's equation would give 103.33 kg for 100 kg lifted once.
+
+---
+
+## How do you test your 1RM safely?
+
+URL: https://loadpr.com/guide/how-to-test-your-1rm/
+
+Updated 2026-10-25
+
+**Short answer: warm up, then work up to your max in jumps that get smaller as the bar gets heavier, with a spotter or safety arms in place.** A simple progression is 50%, 70%, 80%, 90% and 95% of the max you plan to hit, then 100%. For a planned 140 kg squat that is 70, 97.5, 112.5, 125, 132.5 and 140 kg.
+
+### Example: a test day for a 140 kg squat
+
+Pick a planned max first: a recent best single, or an estimate from a hard set of 3 to 5 (see [how 1RM is calculated](https://loadpr.com/guide/how-to-calculate-1rm/)). Then take each percentage of it and round to a weight your plates can make:
+
+| Set | % of planned max | Weight | Reps |
+|---|---|---|---|
+| 1 | 50% | 70 kg | 5 |
+| 2 | 70% | 97.5 kg | 3 |
+| 3 | 80% | 112.5 kg | 1 |
+| 4 | 90% | 125 kg | 1 |
+| 5 | 95% | 132.5 kg | 1 |
+| 6 | 100% | 140 kg | 1 |
+
+The exact 70% of 140 kg is 98 kg, and 97.5 kg is the nearest weight with kilo plates on a 20 kg bar. Every row is rounded the same way. The reps are a common pattern: a few reps while the bar is light, then singles so you save your energy for the top.
+
+### Example: a test day for a 315 lb bench press
+
+The same percentages of a planned 315 lb max, rounded to weights you can load with pound plates on a 45 lb bar:
+
+| Set | % of planned max | Weight | Reps |
+|---|---|---|---|
+| 1 | 50% | 160 lb | 5 |
+| 2 | 70% | 220 lb | 3 |
+| 3 | 80% | 250 lb | 1 |
+| 4 | 90% | 285 lb | 1 |
+| 5 | 95% | 300 lb | 1 |
+| 6 | 100% | 315 lb | 1 |
+
+The top attempt is three 45 lb plates on each side of the bar. To see the plates for any of the other sets, enter the weight in the [plate calculator](https://loadpr.com/plate-calculator/).
+
+### Before you test
+
+- **Come in rested.** Test after a lighter week or at the end of a training block, not after a hard session.
+- **Decide what counts.** Squat depth, a pause on the chest for the bench, lockout on the deadlift. Hold every attempt to the same standard you will use next time.
+- **Use the same setup.** Belt or no belt, the same bar and the same unit. A max belongs to its conditions.
+- **Warm up your body before the bar.** A few minutes of easy movement, then the first set of the table.
+
+### Safety: spotters, safety arms and missing a rep
+
+A heavy single can fail without warning, so plan the miss before you lift.
+
+- **Squat inside a rack** with the safety arms set just below the bottom of your squat. If you miss, sit down onto them.
+- **Bench with a spotter** who knows when to take the bar, or with safety arms set just below your chest. Never test a bench max alone without them.
+- **On the deadlift**, a miss is simply putting the bar down. Keep the area around the platform clear.
+- **Stop if something hurts.** A sharp pain is a reason to end the session, not to take the next attempt.
+
+### Choosing the last jump
+
+The 95% single tells you a lot. If it moved fast, take your planned max. If it was slow or your form slipped, stop there or take a smaller final jump, and count the 95% single as the day's result. If you miss the max, try it once more at most; a third try at the same weight rarely goes better than the second.
+
+### After the test
+
+A max you lifted is your 1-rep PR for that lift. In the LoadPR app, log it as an entry with 1 rep: if it is your heaviest entry for the lift, it becomes your current PR, and the percentage wheel can work from it. See [PR tracking](https://loadpr.com/features/pr-tracking/). To set training weights from your new max for other rep counts, use the [rep max chart](https://loadpr.com/guide/rep-max-chart/).
+
+### Mistakes on test day
+
+- **Too many warm-up reps.** Sets of 5 near the top tire you before the single that matters.
+- **A big last jump.** Going from 90% straight to a new max is how attempts get missed.
+- **No plan for a miss.** Set the safety arms or brief the spotter before the first heavy single, not after.
+- **Changing the standard.** A higher squat or a bounced bench gives a bigger number that you cannot repeat.
+- **Testing too often.** Between tests, estimate your max from a hard set instead.
+
+### FAQ
+
+**How do you warm up for a 1RM test?**
+Work up through lighter sets to singles. For a planned 140 kg squat: 70 kg for 5, 97.5 kg for 3, then singles at 112.5, 125 and 132.5 kg before 140 kg.
+
+**How many sets does a 1RM test take?**
+In this pattern, six: 50%, 70%, 80%, 90% and 95% of the planned max, then 100%. For a 315 lb plan that ends 285, 300 and 315 lb.
+
+**What should my last warm-up be before a 315 lb max?**
+95% of 315 lb is 299.25 lb, so load 300 lb (45, 45, 35 and 2.5 on each side), then take 315 lb.
+
+**Should I test my 1RM or estimate it?**
+Estimate between tests and test now and then. 100 kg for 5 reps already gives an estimated 116.67 kg by Epley without a max attempt.
+
+**Do I need a spotter to test my 1RM?**
+For the bench press, yes, or safety arms set just below your chest. Even the 90% single of a 140 kg plan, 125 kg, can stall without warning.
+
+---
+
+## How many warm-up sets before squat, bench and deadlift?
+
+URL: https://loadpr.com/guide/warm-up-sets/
+
+Updated 2026-10-25
+
+**Short answer: most lifters do 3 to 5 warm-up sets before a heavy squat, bench press or deadlift, and more as the work set gets heavier.** A simple ramp is four sets: 40% of your work set for 5 reps, 60% for 5, 75% for 3 and 85% for 2. Before 315 lb that is 125, 190, 235 and 270 lb. Before 140 kg it is 55, 85, 105 and 120 kg.
+
+### Example: warming up for 315 lb
+
+Your top set today is 315 lb. Take each percentage of 315 lb and round it to the nearest 5 lb, a weight you can load with pound plates on a 45 lb bar:
+
+| Step | Weight × reps | Plates on each side |
+|---|---|---|
+| 40% | 125 lb × 5 | 35, 5 |
+| 60% | 190 lb × 5 | 45, 25, 2.5 |
+| 75% | 235 lb × 3 | 45, 45, 5 |
+| 85% | 270 lb × 2 | 45, 45, 10, 10, 2.5 |
+| Work set | 315 lb | 45, 45, 45 |
+
+The exact 40% of 315 lb is 126 lb and the exact 85% is 267.75 lb; every row is rounded the same way. The [warmup calculator](https://loadpr.com/warmup-calculator/) builds this ramp for any work weight in lb or kg.
+
+### Example: warming up for 140 kg
+
+The same ramp before a 140 kg top set, rounded to the nearest 2.5 kg for kilo plates on a 20 kg bar:
+
+| Step | Weight × reps | Plates on each side |
+|---|---|---|
+| 40% | 55 kg × 5 | 15, 2.5 |
+| 60% | 85 kg × 5 | 25, 5, 2.5 |
+| 75% | 105 kg × 3 | 25, 15, 2.5 |
+| 85% | 120 kg × 2 | 25, 25 |
+| Work set | 140 kg | 25, 25, 10 |
+
+Here the exact values are 56, 84, 105 and 119 kg. Rounding moves each set by 1 kg at most, which makes no difference to how the warm-up feels.
+
+### Why the reps drop as the weight rises
+
+Warm-up sets get you ready for the work set; they should not tire you before it. The light sets get more reps because they cost almost nothing and let you practise the movement. Near the top the reps drop to 3 and then 2, so you feel a heavy bar in your hands without spending the energy the work set needs. The jumps in this ramp stay between 10 and 20 percentage points: 40 to 60, 60 to 75, 75 to 85, then 85 to 100.
+
+### Squat, bench press and deadlift
+
+- **Squat.** Hips, knees and ankles all have to move through a full range, so many lifters do a set or two with the empty bar before the first loaded set. The ramp then works as written.
+- **Bench press.** The shoulders and elbows take the load. Touch the chest on every warm-up rep the same way you will on the work set, so the groove is set before the weight is heavy.
+- **Deadlift.** The bar starts on the floor, and an empty bar sits too low to pull from with a normal setup. Most lifters start with one full-size plate on each side: 135 lb with 45 lb plates or 60 kg with 20 kg plates. Before a 315 lb deadlift, the 40% step (125 lb) is lighter than that, so start at 135 lb and go on to 190, 235 and 270 lb.
+
+### Light and heavy work sets
+
+The right number of warm-up sets follows the work weight. For a light work set, the first steps fall at or near the empty bar. Before 95 lb the ramp gives 40, 55, 70 and 80 lb, and 40 lb is less than a 45 lb bar, so use the bar for that step. Before 60 kg it gives 25, 35, 45 and 50 kg, and 25 kg is only 5 kg over a 20 kg bar. Two or three sets are plenty there.
+
+For a heavy work set the gap at the top grows. From 85% to the work set is 45 lb (270 to 315 lb) or 20 kg (120 to 140 kg). That is fine for a set of several reps. Before a heavy single or a max attempt, add singles above 85%; [how to test your 1RM safely](https://loadpr.com/guide/how-to-test-your-1rm/) lays them out.
+
+### Loading each warm-up set
+
+Every warm-up set is a new weight to load, which is where most of the plate math in a session happens. The [plate calculator](https://loadpr.com/plate-calculator/) shows the plates on each side for any of the weights above. The LoadPR app does not plan warm-up sets for you. You type a weight and it draws one side of the bar with the plates to put on, so you can enter each warm-up weight in turn. More in [plate loading](https://loadpr.com/features/plate-loading/).
+
+### Mistakes with warm-up sets
+
+- **Too many reps near the top.** Sets of 5 or more at 85% tire you before the set that matters.
+- **One big jump.** Going from the empty bar straight to the work set skips the practice at a heavy weight.
+- **Taking the percentages from your 1RM.** This ramp is a percentage of today's work set, not of your max.
+- **Loading the exact number.** 126 lb cannot be made with standard pound plates on a 45 lb bar; 125 lb can.
+- **The same warm-up for every lift.** A deadlift starts from a plate on each side, not from the empty bar.
+
+### FAQ
+
+**How many warm-up sets should I do?**
+Usually 3 to 5. A simple ramp is four: 40%, 60%, 75% and 85% of the work set. Before 315 lb that is 125, 190, 235 and 270 lb.
+
+**How many warm-up sets before a 140 kg squat?**
+Four loaded sets in this ramp, after the empty bar if you like: 55 kg for 5, 85 kg for 5, 105 kg for 3 and 120 kg for 2.
+
+**How should I warm up for deadlifts?**
+Start with one full-size plate on each side, 135 lb or 60 kg, then ramp. Before 315 lb that means 135, 190, 235 and 270 lb.
+
+**Do warm-up sets count as working sets?**
+No. They prepare you for the work set and should leave you fresh. The last one in this ramp is 85% for 2: 270 lb before a 315 lb set.
+
+**How many reps should each warm-up set have?**
+Fewer as the bar gets heavier. This ramp uses 5, 5, 3 and 2 reps at 40%, 60%, 75% and 85% of the work set.
+
+---
+
+## What is the training max in 5/3/1?
+
+URL: https://loadpr.com/guide/531-training-max/
+
+Updated 2026-10-28
+
+**Short answer: in 5/3/1 the training max (TM) is 90% of your 1RM, and every percentage in the program is taken from the training max, not from your max.** A 455 lb deadlift max gives a 409.5 lb training max, so the 85% set is 350 lb, not 386.75 lb. Later versions of Jim Wendler's program often set the training max at 85% of the 1RM instead.
+
+### Example: the 85% set from a 455 lb deadlift
+
+Your deadlift max is 455 lb and week 1 calls for a top set at 85%. Work it out in three steps:
+
+- Take 90% of the 1RM: 455 × 90% = **409.5 lb**. That is your training max.
+- Take the week's percentage of the training max: 409.5 × 85% = 348.08 lb.
+- Round to a weight you can load: **350 lb**, which is three 45s, a 10, a 5 and a 2.5 on each side of a 45 lb bar.
+
+Taking 85% of the 455 lb max directly gives 386.75 lb. The arithmetic is fine, but the base is wrong: 5/3/1 never asks for a percentage of your true max. That is why its weights look lower than many lifters expect.
+
+### Every 5/3/1 week from a 409.5 lb training max
+
+The original program runs four weeks. The last set of weeks 1 to 3 is a plus set: as many good reps as you can. Each weight below is the percentage of the 409.5 lb training max, rounded to the nearest load with pound plates on a 45 lb bar:
+
+| Week | Set 1 | Set 2 | Set 3 |
+|---|---|---|---|
+| 1 (5s) | 65% × 5: 265 lb | 75% × 5: 305 lb | 85% × 5+: 350 lb |
+| 2 (3s) | 70% × 3: 285 lb | 80% × 3: 330 lb | 90% × 3+: 370 lb |
+| 3 (5/3/1) | 75% × 5: 305 lb | 85% × 3: 350 lb | 95% × 1+: 390 lb |
+| 4 (deload) | 40% × 5: 165 lb | 50% × 5: 205 lb | 60% × 5: 245 lb |
+
+The heaviest set of the cycle, 95% in week 3, is 389.03 lb exact and 390 lb on the bar, still well under the 455 lb max. That is the point: the training max keeps every set submaximal so you can add weight cycle after cycle. For any other max, the [5/3/1 calculator](https://loadpr.com/531-calculator/) builds all four weeks from your 1RM, with the plates for every set.
+
+### Training max at 90% or 85%?
+
+The original 5/3/1 uses 90% of your 1RM. Wendler's later books often recommend 85%, which lowers every set and leaves more reps in each plus set. The same 455 lb max under both:
+
+|  | TM at 90% | TM at 85% |
+|---|---|---|
+| Training max | 409.5 lb | 386.75 lb |
+| Week 1, 85% set | 348.08 lb, load 350 lb | 328.74 lb, load 330 lb |
+| Week 2, 90% set | 368.55 lb, load 370 lb | 348.08 lb, load 350 lb |
+| Week 3, 95% set | 389.03 lb, load 390 lb | 367.41 lb, load 365 lb |
+
+Use the percentage your version of the program is written for. If the 90% version leaves you grinding out the minimum reps on the plus sets, 85% is the more conservative choice.
+
+### Training max vs 1RM
+
+A [1RM](https://loadpr.com/guide/what-is-1rm/) is the heaviest weight you can lift once. A training max is a planning number set below it on purpose. You never test the training max and you are not meant to lift it for a single; it only exists so the program's percentages land on weights you can handle for the prescribed reps. Your 1RM can go up while the training max climbs slowly and steadily, and that gap is by design.
+
+### How to calculate your training max without testing
+
+You don't need a fresh max-out. Estimate the 1RM from a hard set of 3 to 5 reps, then take 90% of the estimate. Say you deadlift 385 lb for 5:
+
+- Epley estimate: 385 × (1 + 5 ÷ 30) = **449.17 lb**
+- Training max: 449.17 × 90% = **404.25 lb**
+
+The [1RM calculator](https://loadpr.com/1rm-calculator/) gives the estimate from any set, and [how 1RM is calculated](https://loadpr.com/guide/how-to-calculate-1rm/) compares the formulas.
+
+### How much to add to the training max each cycle
+
+After each cycle the original program adds 5 lb (2.5 kg) to the training max for the bench press and overhead press, and 10 lb (5 kg) for the squat and deadlift. The weight goes on the training max itself, not on your 1RM. If you add it to the 1RM and recompute 90%, the training max grows by less than the planned amount each cycle.
+
+| Deadlift | Training max | Week 1, 85% set |
+|---|---|---|
+| Cycle 1 | 409.5 lb | 348.08 lb, load 350 lb |
+| Cycle 2 (+10 lb) | 419.5 lb | 356.58 lb, load 355 lb |
+
+### The same in kilos: a 140 kg squat
+
+A 140 kg squat max gives a training max of 140 × 90% = **126 kg**. Rounded to kilo plates on a 20 kg bar:
+
+| Week | Set 1 | Set 2 | Set 3 |
+|---|---|---|---|
+| 1 | 65%: 82.5 kg | 75%: 95 kg | 85%: 107.5 kg |
+| 2 | 70%: 87.5 kg | 80%: 100 kg | 90%: 112.5 kg |
+| 3 | 75%: 95 kg | 85%: 107.5 kg | 95%: 120 kg |
+
+With the training max at 85% instead, it is 119 kg. Next cycle the squat training max goes up 5 kg, from 126 to 131 kg, and the week 1 top set moves from 107.1 kg exact (load 107.5 kg) to 111.35 kg exact (load 112.5 kg).
+
+### Loading 5/3/1 sets in LoadPR
+
+LoadPR does not plan 5/3/1 cycles for you, but its percentage wheel works from any weight you type, not only from a logged PR. Type your training max, turn the wheel to the week's percentage and it shows a weight you can load with the plates for one side of the bar. The wheel runs from 50% to 120% in 5% steps, so for the 40% deload set use the [plate calculator](https://loadpr.com/plate-calculator/). More in [percentages of your PR](https://loadpr.com/features/percentages/).
+
+### Mistakes with the training max
+
+- **Taking percentages from the 1RM.** 85% of a 455 lb max is 386.75 lb; the program wants 85% of the 409.5 lb training max, 350 lb.
+- **Adding the cycle increase to the 1RM.** Add 5 or 10 lb to the training max itself.
+- **Setting the training max from an old or hopeful max.** A too-high training max makes the plus sets grind. Use a recent max or an estimate from a hard set.
+- **Loading the exact number.** 348.08 lb can't go on a bar; 350 lb can.
+- **Mixing units.** Keep the max, the training max and the sets in the same unit.
+
+### Sources
+
+- [Jim Wendler, “5/3/1 for a Beginner” (JimWendler.com)](https://www.jimwendler.com/blogs/jimwendler-com/101065094-5-3-1-for-a-beginner)
+
+### FAQ
+
+**What is a training max in 5/3/1?**
+A planning number set below your 1RM, 90% of it in the original program. All the program's percentages come from it: a 455 lb max gives a 409.5 lb training max.
+
+**Is the 5/3/1 training max 90% or 85%?**
+The original program uses 90%; Wendler's later books often use 85%. For a 455 lb max that is 409.5 lb or 386.75 lb.
+
+**How do you calculate your training max?**
+Multiply your 1RM by 0.9. Without a tested max, estimate one first: 385 lb for 5 reps is about 449.17 lb by Epley, so the training max is 404.25 lb.
+
+**Why are my 5/3/1 weights lower than expected?**
+The percentages are of the training max, not your 1RM. From a 455 lb max the week 1 85% set is 350 lb, not 386.75 lb.
+
+**How much do you add to the 5/3/1 training max each cycle?**
+5 lb (2.5 kg) for bench and press, 10 lb (5 kg) for squat and deadlift, added to the training max: 409.5 lb becomes 419.5 lb.
+
+---
+
+## Why can't I load an exact weight on a barbell?
+
+URL: https://loadpr.com/guide/cant-load-exact-weight/
+
+Updated 2026-10-28
+
+**Short answer: every plate goes on both sides of the bar, so the total can only move in steps of twice your smallest plate: 5 lb steps with 2.5 lb plates, and 2.5 kg steps with 1.25 kg plates.** A target like 172 lb falls between 170 lb and 175 lb, and no mix of standard plates makes it. You load the nearest weight you can build, or add smaller plates.
+
+### Example: 80% of a 215 lb max
+
+Your program calls for 80% of a 215 lb squat. Work it out:
+
+- 215 × 80% = **172 lb**.
+- Take off the 45 lb bar: 127 lb of plates, so 63.5 lb on each side.
+- The smallest standard plate is 2.5 lb, so each side can hold 62.5 lb or 65 lb, never 63.5 lb.
+
+The two loads you can build are **170 lb** (a 45, a 10, a 5 and a 2.5 on each side) and **175 lb** (a 45 and two 10s on each side). 170 lb is 2 lb under the target and 175 lb is 3 lb over, so 170 lb is the nearest loadable weight.
+
+### The smallest jump is two of your smallest plates
+
+Whatever plates you own, the smallest change you can make to the bar is one of your lightest plates on each side:
+
+| Smallest plate | Smallest jump | Example loads |
+|---|---|---|
+| 5 lb | 10 lb | 185, 195 lb |
+| 2.5 lb | 5 lb | 170, 175 lb |
+| 1.25 lb | 2.5 lb | 170, 172.5 lb |
+| 1 lb | 2 lb | 185, 187 lb |
+| 1.25 kg | 2.5 kg | 100, 102.5 kg |
+| 0.5 kg | 1 kg | 101, 102 kg |
+
+So the question is never whether a number is "odd", only whether it sits on one of your steps. On a 45 lb bar with standard pound plates, every loadable total ends in 0 or 5.
+
+### Nearest loadable weight for common targets
+
+Targets from percentages and programs, with the loads just below and just above, using standard plates on a 45 lb or 20 kg bar:
+
+| Target | Load below (per side) | Load above (per side) |
+|---|---|---|
+| 172 lb | 170 lb (45, 10, 5, 2.5) | 175 lb (45, 10, 10) |
+| 186 lb | 185 lb (45, 25) | 190 lb (45, 25, 2.5) |
+| 191.25 lb | 190 lb (45, 25, 2.5) | 195 lb (45, 25, 5) |
+| 202.5 lb | 200 lb (45, 25, 5, 2.5) | 205 lb (45, 35) |
+| 102 kg | 100 kg (25, 15) | 102.5 kg (25, 15, 1.25) |
+| 133 kg | 132.5 kg (25, 25, 5, 1.25) | 135 kg (25, 25, 5, 2.5) |
+
+191.25 lb and 202.5 lb are 85% and 90% of 225 lb, which shows how often percentages miss the steps. The [plate calculator](https://loadpr.com/plate-calculator/) lists both neighbors for any target, with the plates for each.
+
+### Round up or round down?
+
+Taking whichever load is closer is the simplest rule, and with standard plates it is never more than half a step off: 2.5 lb or 1.25 kg. When the target sits exactly in the middle, like 202.5 lb between 200 and 205, you have to choose:
+
+- **Round down** on heavy top sets and anything near your max, where a few extra pounds can cost a rep.
+- **Round up** on lighter work, such as warm-ups and back-off sets, if you would rather not undershoot.
+- **Stay consistent.** If you always round the same way, week-to-week progress in your log still compares like with like.
+
+The [closest loadable weight](https://loadpr.com/features/closest-loadable-weight/) page explains the rule the LoadPR app uses.
+
+### No 2.5 lb plates in your gym
+
+If the smallest plate on the rack is a 5, the bar moves in 10 lb steps. A 190 lb target with 45, 25, 10 and 5 lb plates can only be 185 lb (a 45 and a 25 on each side) or 195 lb (a 45, a 25 and a 5 on each side). That gap is why missing change plates hurt most on presses, where 10 lb is a big jump. The [home gym plate calculator](https://loadpr.com/home-gym-plate-calculator/) works from the plates you actually own, so it only shows loads you can build.
+
+### Who has 1 lb plates? Microplates
+
+Small plates under 2.5 lb, often called microplates or fractional plates, are the real fix. Sizes depend on the set; common ones include 1.25 lb, 1 lb and 0.5 lb, and 0.5 kg in kilos.
+
+- With a pair of 1.25 lb plates, 172 lb becomes **172.5 lb**: a 35, a 25, a 2.5 and a 1.25 on each side.
+- With a pair of 1 lb plates the step is 2 lb, so 186 lb still is not exact: the nearest loads are 185 lb and **187 lb** (a 45, a 25 and a 1 on each side). An exact 186 lb needs half a pound more on each side.
+- In kilos, two 0.5 kg plates on each side make **102 kg** exactly: a 25, a 15 and two 0.5s on each side of a 20 kg bar.
+
+For most lifts, rounding to the nearest step is fine. Microplates matter most when the jump between sessions is small compared with the weight, as on the overhead press and bench press.
+
+### A kilo program in a pound gym
+
+Programs written in kilos rarely land on pound steps. 100 kg is 220.46 lb, and the nearest loads on a 45 lb bar are **220 lb** (a 45, a 35, a 5 and a 2.5 on each side) and 225 lb (two 45s on each side). 220 lb is less than half a pound off, closer than any kilo-to-pound rule of thumb. Convert the weight first with the [kg to lb converter](https://loadpr.com/kg-to-lb/), then round to your plates, not to the nearest 5 or 10 in your head.
+
+### Common mistakes
+
+- **Halving the gap wrong.** To move the bar by 2 lb, each side needs 1 lb, not 2 lb.
+- **Forgetting the bar.** Take the bar off the target before you split the plates between the sides.
+- **Rounding before converting.** Convert kg to lb (or back) first, then round to your plates once; rounding twice stacks two errors.
+- **Assuming the gym has every plate.** Without 2.5s or with only one pair, the steps get bigger. Count what is on the rack.
+- **Chasing the exact number.** A 2 lb difference from the target is noise for most sets; load the nearest weight and lift.
+
+### FAQ
+
+**Why can't I load an exact weight on a barbell?**
+Plates go on in pairs, so the total moves in steps of twice your smallest plate: 5 lb with 2.5 lb plates, 2.5 kg with 1.25 kg plates. 172 lb falls between 170 lb and 175 lb.
+
+**What is the smallest jump you can make on a barbell?**
+Two of your lightest plates: 5 lb with 2.5 lb plates, 2.5 lb with 1.25 lb microplates, 2.5 kg with 1.25 kg plates and 1 kg with 0.5 kg plates.
+
+**Should I round a barbell weight up or down?**
+Take the closer load. On a tie, such as 202.5 lb between 200 lb and 205 lb, round down for heavy sets near your max and stay consistent from week to week.
+
+**Do 1 lb plates let me load any weight?**
+No. A pair of 1 lb plates makes 2 lb steps, so 186 lb on a 45 lb bar becomes 185 lb or 187 lb. An exact 186 lb needs 0.5 lb more on each side.
+
+**How do I load a 100 kg program weight with pound plates?**
+100 kg is 220.46 lb. On a 45 lb bar the nearest load is 220 lb: a 45, a 35, a 5 and a 2.5 on each side.
+
+---
+
+## How do you count the weight on a barbell?
+
+URL: https://loadpr.com/guide/count-weight-on-a-barbell/
+
+Updated 2026-10-29
+
+**Short answer: add up the plates on one side, double that, then add the bar.** A 45 lb bar with a 45, a 25 and a 5 on each side is 45 + 2 × (45 + 25 + 5) = 195 lb. A properly loaded bar carries the same plates on both ends, so you only need to read one side.
+
+### Example: a 45, a 25 and a 5 on each side
+
+You walk up to a bar in a pound gym and see three plates on the near end: a 45, a 25 and a 5. Count it in three steps:
+
+- Plates on one side: 45 + 25 + 5 = 75 lb.
+- Both sides: 2 × 75 = 150 lb.
+- Add the bar: 150 + 45 = **195 lb**.
+
+The order matters only for reading: the biggest plate sits closest to the middle of the bar, and the small ones are on the outside. Read from the inside out and say the numbers as you go.
+
+### Counting in kilos
+
+The rule is the same in a kilo gym, with a 20 kg bar. A 25, a 15 and a 5 on each side:
+
+- One side: 25 + 15 + 5 = 45 kg.
+- Both sides plus the bar: 20 + 2 × 45 = **110 kg**.
+
+Different plates can make the same total: a 25 and a 20 on each side is also 110 kg. On a 15 kg women's bar the first set of plates makes 105 kg, so check which bar you have; [how much a barbell weighs](https://loadpr.com/guide/barbell-weights/) lists the common ones.
+
+### Reading competition plates by color
+
+On calibrated kilo plates the color tells you the weight before you can read the number: red 25 kg, blue 20 kg, yellow 15 kg, green 10 kg, white 5 kg. A red and a blue on each side of a 20 kg bar is 110 kg. At a meet, add the two 2.5 kg competition collars and it is **115 kg**. Pound bumpers sometimes borrow the same colors for different weights, so in a pound gym read the number on the plate. All the colors are in [Olympic plate colors](https://loadpr.com/guide/olympic-plate-colors/).
+
+### Quick reference: one side to total
+
+Standard plates on a 45 lb or 20 kg bar, no collars:
+
+| One side (lb) | Total | One side (kg) | Total |
+|---|---|---|---|
+| 45, 10 | 155 lb | 25, 15 | 100 kg |
+| 45, 25 | 185 lb | 25, 15, 5 | 110 kg |
+| 45, 25, 5 | 195 lb | 25, 20 | 110 kg |
+| 45, 35 | 205 lb | 25, 25, 10 | 140 kg |
+| 45, 25, 10 | 205 lb |  |  |
+| 45, 45, 25 | 275 lb |  |  |
+
+For bars loaded only with full plates (135, 225, 315, 405 lb), see [how much is 1 to 6 plates on each side](https://loadpr.com/guide/plates-on-each-side/).
+
+### Kilo plates in a pound gym
+
+Mixed units are where counting goes wrong. A 20 kg plate is 44.09 lb, not 45 lb, so convert every plate to one unit before you add. A 45 lb bar with one 20 kg plate on each side:
+
+- In pounds: 45 + 2 × 44.09 = **133.18 lb**, not 135 lb.
+- In kilos: the 45 lb bar is 20.41 kg, so 20.41 + 2 × 20 = **60.41 kg**.
+
+[How much a plate weighs](https://loadpr.com/guide/how-much-does-a-plate-weigh/) lists every plate in both units, and the [kg to lb converter](https://loadpr.com/kg-to-lb/) handles the totals.
+
+### Collars and the two sides
+
+Spring clips weigh little and most lifters leave them out of the count. Competition collars weigh 2.5 kg each, so they add 5 kg to the bar; see [how much barbell collars weigh](https://loadpr.com/guide/barbell-collar-weight/). If the two sides are not loaded the same, do not double one side: add both sides separately, then the bar, and fix the bar before you lift, because an uneven bar tips toward the heavy end.
+
+### Let a tool add it up
+
+[What's on the bar](https://loadpr.com/whats-on-the-bar/) does this count for you: tap the plates you see on one side, pick the bar and collars, and it shows the total in kg and lb. To go the other way, from a target weight to the plates per side, use the [plate calculator](https://loadpr.com/plate-calculator/).
+
+### Common mistakes
+
+- **Forgetting the bar.** A 45, a 25 and a 5 on each side are 150 lb of plates; the bar makes it 195 lb.
+- **Counting one side only.** Plates go on both ends, so each plate you see counts twice.
+- **Assuming every bar weighs 45 lb.** A women's bar is 15 kg (33 lb), and specialty bars vary by model.
+- **Treating a 20 kg plate as a 45.** A 20 kg plate is 44.09 lb, and over several plates the gap adds up.
+- **Reading colors in a pound gym.** Bumper colors are not a standard there; trust the number stamped on the plate.
+
+### FAQ
+
+**How do you count the weight on a barbell?**
+Add the plates on one side, double it and add the bar. A 45, a 25 and a 5 on each side of a 45 lb bar is 45 + 2 × 75 = 195 lb.
+
+**How much weight is on the bar with a 45 and a 25 on each side?**
+185 lb on a 45 lb bar: 45 + 2 × (45 + 25).
+
+**How much is a red and a blue plate on each side?**
+110 kg on a 20 kg bar, since red is 25 kg and blue is 20 kg. With two 2.5 kg competition collars it is 115 kg.
+
+**How do I count kg plates on a lb bar?**
+Convert the plates first: a 20 kg plate is 44.09 lb, so one on each side of a 45 lb bar is 133.18 lb, not 135 lb.
+
+# Tool variations
+
+## How do you turn an AMRAP set into a 1RM?
+
+URL: https://loadpr.com/1rm-calculator/amrap-to-1rm/
+
+To estimate your max from an AMRAP set, put the weight and the number of full reps into a 1RM formula. 225 lb for 8 reps gives an estimated 1RM of 285 lb by Epley, which is 225 × (1 + 8 ÷ 30), and 279.31 lb by Brzycki. Enter your own set in the calculator below.
+
+### Example: 225 lb for 8 reps
+
+Your AMRAP set is 225 lb and you get 8 full reps before the bar stops moving. Run it through the two most used formulas:
+
+- **Epley:** 225 × (1 + 8 ÷ 30) = **285 lb**
+- **Brzycki:** 225 × 36 ÷ (37 − 8) = **279.31 lb**
+
+Both are estimates of the single you could lift that day, not a weight you have lifted. Pick one formula and keep it, so the next AMRAP set compares with this one.
+
+### One weight, any number of reps: 225 lb
+
+An AMRAP set fixes the weight and lets the reps decide the estimate. Here is 225 lb at different rep counts:
+
+| Reps at 225 lb | Epley | Brzycki |
+|---|---|---|
+| 3 | 247.5 lb | 238.24 lb |
+| 5 | 262.5 lb | 253.13 lb |
+| 8 | 285 lb | 279.31 lb |
+| 10 | 300 lb | 300 lb |
+| 12 | 315 lb | 324 lb |
+
+By Epley every extra rep at 225 lb adds 7.5 lb to the estimate: 7 reps give 277.5 lb and 8 reps give 285 lb. The two formulas meet at 10 reps. Below that Brzycki is the more cautious one, above it the more generous.
+
+### The same in kilos: 100 kg for 8 reps
+
+An AMRAP set of 100 kg for 8 reps estimates **126.67 kg** by Epley and **124.14 kg** by Brzycki. Had you stopped at 5 reps with the same bar, the estimates would be 116.67 kg and 112.5 kg. Estimate in the unit you lifted in; the formulas work the same in kg and lb.
+
+### AMRAP sets in 5/3/1
+
+In 5/3/1 the last set of weeks 1 to 3 is a plus set: 85% × 5+, 90% × 3+ and 95% × 1+ of the training max, with as many good reps as you can. A plus set is an AMRAP set, so the same formulas turn it into an estimated max, and lifters often compare that estimate from cycle to cycle to see whether they are getting stronger. The program's weights themselves still come from the training max, not from this estimate: see [the 5/3/1 training max](https://loadpr.com/guide/531-training-max/), or build a whole cycle with the [5/3/1 calculator](https://loadpr.com/531-calculator/).
+
+### Getting an honest estimate from an AMRAP
+
+- **Count only full reps you finished on your own.** A rep the spotter helped with is not a rep. At 225 lb, counting it as the 8th moves the Epley estimate from 277.5 lb to 285 lb.
+- **Stop at the last good rep.** Reps with your form breaking down make a bigger number you cannot repeat next time.
+- **Keep the set under about 12 reps.** At 225 lb for 15 reps, Epley gives 337.5 lb and Brzycki 368.18 lb. The longer the set, the more it tests endurance rather than strength.
+- **Stay with one formula.** Switching formulas changes the number when your strength has not: 225 lb for 5 reps is 262.5 lb by Epley and 253.13 lb by Brzycki.
+
+The guide [how 1RM is calculated](https://loadpr.com/guide/how-to-calculate-1rm/) compares the four formulas in the calculator, and the [rep max chart](https://loadpr.com/guide/rep-max-chart/) runs them backwards, from a max to the weight for each rep count.
+
+### AMRAP sets in the LoadPR app
+
+The LoadPR app estimates a 1RM from your logged sets with the Epley formula by default. With LoadPR+ you can pick another formula, such as Brzycki. Your current PR stays separate from the estimate: it is the heaviest weight you have logged, not a formula result. More in [PR tracking](https://loadpr.com/features/pr-tracking/).
+
+### FAQ
+
+**How do I estimate my 1RM from an AMRAP set?**
+Multiply the weight by (1 + reps ÷ 30), the Epley formula. An AMRAP of 225 lb for 8 reps gives an estimated 1RM of 285 lb.
+
+**What is my max if I can do 225 lb for 5 reps?**
+About 262.5 lb by Epley and 253.13 lb by Brzycki.
+
+**What is my 1RM if I lift 100 kg for 8 reps?**
+About 126.67 kg by Epley and 124.14 kg by Brzycki.
+
+**Does a rep with a spotter's help count in an AMRAP set?**
+No. Count only reps you finished on your own. A spotted 8th rep at 225 lb would lift the Epley estimate from 277.5 lb to 285 lb.
+
+**Is a 15-rep AMRAP set good for estimating a 1RM?**
+It is less reliable than a shorter set. For 225 lb lifted 15 times, Epley gives 337.5 lb and Brzycki gives 368.18 lb.
+
+# App features
+
+## Plate loading on iPhone and Apple Watch
+
+URL: https://loadpr.com/features/plate-loading/
+
+Type a weight or pick a percentage, and LoadPR draws one side of the bar with the plates to put on it, each size in its own color. It works in pounds or kilograms, it is free to use as often as you like, and the same answer shows up on Apple Watch.
+
+### What you see
+
+The result screen has three parts. At the top is the weight you are loading, in large type, with the line that produced it underneath, such as 100% of 225 lbs. In the middle is one side of the barbell: the sleeve, the collar and then the plates, drawn bigger for heavier plates. Beside it is a short legend that counts each plate size, for example 2×45.
+
+That is all you need to load the bar. Put the plates from the drawing on one sleeve, then the same plates on the other. The weight at the top already includes the bar, so 225 lb on a 45 lb bar means 90 lb of plates on each side: two 45 lb plates.
+
+Under the drawing, LoadPR names the plate set it used, such as Standard (lbs), so you always know which bar and plates the answer assumes.
+
+### How the plates are chosen
+
+LoadPR takes the weight, removes the bar and splits what is left in two. Then it looks for plates that add up to exactly that amount per side. When more than one set of plates works, it picks the one with the most large plates, which is how most lifters load: big plates first, change plates last.
+
+The search is exact, not a quick guess, and it respects how many plates of each size the set has, so it never draws a plate that is not there. For example, 180 lb on a 45 lb bar is 67.5 lb per side: one 45, two 10s and one 2.5.
+
+Every plate size has its own color, in the drawing and in the legend, so you can match the picture to the rack at a glance. With the standard pound set:
+
+### Pounds and kilograms
+
+Pick lb or kg in Settings. In pounds, the free setup is a 45 lb bar with 45, 35, 25, 10, 5 and 2.5 lb plates. In kilograms, it is a 20 kg bar with 25, 20, 15, 10, 5, 2.5 and 1.25 kg plates.
+
+For example, 100 kg on a 20 kg bar is 40 kg per side: one 25 and one 15.
+
+The colors follow each plate's place in the set, not a competition color code. In kilograms the 25 is blue, the 20 teal, the 15 yellow, the 10 orange and the 5 red, and the small change plates are gray. The guide to Olympic plate colors below covers the colors used on competition plates.
+
+### The free plate set
+
+The free version loads from the standard set for your unit, with two of each plate per side. That covers most training: the heaviest exact load it can build is 535 lb with the pound set and 335 kg with the kilogram set.
+
+Two of each per side changes some answers compared with a gym that has a stack of 45s. 315 lb is three 45s per side when plates are unlimited, but with two 45s per side LoadPR loads it as two 45s, one 35 and one 10. Both come to 135 lb per side.
+
+If a target is heavier than the set can load, LoadPR shows the heaviest load the plates allow and adds a note with the real target, instead of quietly showing a smaller number.
+
+With LoadPR+ you set up your own gyms: the bar, the plates and how many of each the gym has. Every answer then uses the plates that are really on the rack.
+
+### When it helps
+
+Between sets, when the next weight is a number on a program and you have a minute and a half to get it on the bar. In a gym you do not know, where the plates are not the ones you are used to. When you train in pounds and the program is written in kilograms, or the other way round.
+
+### On Apple Watch and with Siri
+
+The Apple Watch app shows the same plate drawing and legend for the lift and percentage you pick with the Digital Crown. It uses the plates your iPhone uses: the standard set in the free version, your own gym with LoadPR+.
+
+You can also ask Siri: say “Calculate plates in LoadPR”, give the weight, and Siri reads out the plates for each side. The same action is in the Shortcuts app.
+
+### Free to use
+
+The plate calculator stays free. There is no daily limit and no count of how many weights you can load. The free version shows banner ads; LoadPR+ removes them and adds custom gyms, unlimited exercises and the other paid features.
+
+### FAQ
+
+**Does LoadPR show both sides of the bar?**
+No. It draws one side, because both sides take the same plates. Load what you see on one sleeve, then repeat it on the other.
+
+**Is the bar included in the weight LoadPR shows?**
+Yes. The large number is the whole bar: the bar plus the plates on both sides. 225 lb on a 45 lb bar is two 45 lb plates per side.
+
+**Why does LoadPR load 315 lb without three 45s per side?**
+The free version has two of each plate per side, so it builds 315 lb from two 45s, one 35 and one 10 per side. That is the same 135 lb per side as three 45s.
+
+**Can LoadPR use the plates my gym actually has?**
+Yes, with LoadPR+. Set up a gym with its bar, its plates and how many of each it has, and every answer uses only those plates.
+
+**What do the plate colors in LoadPR mean?**
+They tell the sizes apart at a glance. In pounds the 45 is blue, the 35 teal, the 25 yellow, the 10 orange, the 5 red and the 2.5 gray. They are not the competition color code.
+
+**Can I ask Siri which plates to load?**
+Yes. Say “Calculate plates in LoadPR” and give the weight. Siri answers with the plates for each side, using the same plates as the app.
+
+---
+
+## Closest loadable weight
+
+URL: https://loadpr.com/features/closest-loadable-weight/
+
+Programs and percentages produce numbers like 187.5 lb that the plates on the rack can't make. LoadPR does not stop at an error: it shows the closest weight you can load and the plates for it, so you can get on with the set.
+
+### Why some weights can't be loaded
+
+A barbell is loaded in pairs. Every plate goes on both sleeves, so the total always goes up by twice the plate. With the standard pound set the smallest plate is 2.5 lb, which means the total moves in 5 lb steps: 185, 190, 195. A target of 187.5 lb sits between two of those steps.
+
+In kilograms the standard set goes down to 1.25 kg plates, so the steps are 2.5 kg. A target of 102 kg falls between 100 kg and 102.5 kg.
+
+Odd targets are common. Percentages rarely land on a step: 85% of 225 lb is 191.25 lb, and 90% is 202.5 lb.
+
+### What LoadPR shows
+
+LoadPR finds the heaviest load at or below your target and the lightest load at or above it, then shows whichever is closer. When both are the same distance away, it picks the lighter one.
+
+For 187.5 lb on a 45 lb bar the two neighbors are 185 lb and 190 lb, each 2.5 lb away. LoadPR shows 185 lb: one 45 and one 25 per side. The line under the weight still says what you asked for, 100% of 187.5 lbs, so you know the bar is a little light.
+
+For 191.25 lb the neighbors are 190 lb and 195 lb. 190 lb is closer, so LoadPR shows 190 lb: one 45, one 25 and one 2.5 per side.
+
+The same rule runs on Apple Watch and in the Calculate Plates action for Siri, so all three give the same number.
+
+### Down or up
+
+Taking the nearer load means LoadPR sometimes goes a little over the target and sometimes a little under. For 202.5 lb, 200 lb and 205 lb are both 2.5 lb away, so the tie goes to the lighter 200 lb. For 203 lb, 205 lb is nearer, so LoadPR shows 205 lb: one 45 and one 35 per side.
+
+If you would rather always stay under, or always go over, use the plate calculator on this website. It lists the closest load below and the closest load above, with the plates for each.
+
+### When your plates are limited
+
+The closest weight depends on the plates you have, not only on their sizes. The free version uses the standard set with two of each plate per side, and LoadPR searches that set exactly, so it never shows a load that needs a third 45.
+
+With LoadPR+ you enter the plates your gym or garage really has, including how many of each. If a home gym has no small change plates, the steps get bigger, and LoadPR rounds to the loads those plates can make.
+
+If a target is beyond what the plates can load at all, LoadPR shows the heaviest load they allow and adds a note with the real target, so you know the bar is short.
+
+### How far off it can be
+
+With the standard plates, the closest load is never more than half a step from the target: at most 2.5 lb with the pound set and 1.25 kg with the kilogram set. For training, that gap rarely matters, and you can always type a different number if your program needs an exact load.
+
+### FAQ
+
+**Why can't I load 187.5 lb on a barbell?**
+With a 45 lb bar and plates down to 2.5 lb, the total moves in 5 lb steps, because every plate goes on both sides. 187.5 lb sits between 185 lb and 190 lb.
+
+**Does LoadPR round up or down?**
+To whichever loadable weight is closer. On a tie it takes the lighter one, so 187.5 lb becomes 185 lb and 191.25 lb becomes 190 lb.
+
+**Will the closest weight ever need plates I don't have?**
+No. LoadPR searches the plates in the set it is using, including how many of each, so every answer can be built from that set.
+
+**Can I see both the load below and the load above?**
+The app shows the closer one. The plate calculator on this website lists both, with the plates for each.
+
+**What is the smallest step in kilograms?**
+With 1.25 kg as the smallest plate, the total moves in 2.5 kg steps, such as 100 kg, 102.5 kg and 105 kg.
+
+**Does Apple Watch show the same closest weight?**
+Yes. The iPhone app, the Apple Watch app and the Calculate Plates action for Siri use the same rule and the same plates, so they agree.
+
+---
+
+## Percentages of your PR
+
+URL: https://loadpr.com/features/percentages/
+
+Most programs give the weight as a percentage. In LoadPR you turn a wheel to that percentage and get a weight you can load, with the plates for one side of the bar. The base is the current PR of the lift you pick, or any weight you type.
+
+### The percentage wheel
+
+Under the weight is a wheel of percentages from 50% to 120% in 5% steps. Swipe it or tap a value and the weight above changes at once, with the plates drawn below it.
+
+The line under the weight says what you are looking at, such as 80% of 225 lbs. The large number is a weight you can load, and the drawing shows the plates for one side.
+
+Values over 100% are there for overload work and for planning a new best. 105% of a 225 lb PR is 236.25 lb, and LoadPR shows 235 lb: two 45s and one 5 per side.
+
+### What the percentage is of
+
+When you pick a lift, the base is that lift's current PR: the heaviest weight you have logged for it, at any number of reps. If your best bench press entry is 225 lb for 3, the wheel works from 225 lb.
+
+That is not an estimated one-rep max. LoadPR does not run your sets through a formula before taking the percentage; it uses the weight you actually lifted. If your program is written from a max you tested or estimated, type that number instead.
+
+You can also skip the lift and type any weight. The wheel then works from that number, which is handy for a training max, a coach's number or a friend's lift.
+
+### Rounded to a weight you can load
+
+A percentage rarely lands on a weight the plates can make. LoadPR shows the closest weight you can load and the plates for it. On a 225 lb PR with the standard pound set:
+
+There is no rounding setting to choose. The step comes from the plates: 5 lb with the standard pound set and 2.5 kg with the kilogram set. With LoadPR+ the steps follow your own gym's plates.
+
+### Log a PR from the wheel
+
+Next to the wheel is a plus button. Tap it after a set and LoadPR opens a new PR entry with the weight on screen already filled in. Add the reps (1 to 20), the date and a note if you want, and save.
+
+If no lift is picked yet, LoadPR asks you to choose one first. When the new entry is your heaviest for that lift, it becomes the current PR, and every percentage on the wheel moves with it.
+
+### On Apple Watch
+
+The watch app has the same range. Pick a lift and turn the Digital Crown from 50% to 120% in 5% steps; it opens at 100%. The watch shows the weight to load and the plates for one side.
+
+On the watch the base is the heaviest single you have logged for the lift, that is, your heaviest entry at 1 rep. A lift with no single logged yet does not appear on the watch.
+
+The watch uses the same plates as your iPhone: the standard set in the free version, your own gym's plates with LoadPR+.
+
+### Percentages on this website
+
+The 1RM percentage calculator on this website works differently: it builds a full table from a one-rep max you enter, from 100% down to 50%, with a loadable weight for each row. Use it to plan a cycle on a laptop, and the wheel at the bar.
+
+One small difference: when a percentage falls exactly halfway between two loads, the website's table rounds up and the app takes the lighter load. 90% of 225 lb is 205 lb in the table and 200 lb in the app.
+
+### FAQ
+
+**What is the LoadPR percentage wheel based on?**
+On the selected lift's current PR, the heaviest weight you have logged for it at any number of reps. You can also type any weight and use that as the base.
+
+**Are the percentages taken from an estimated max?**
+No. LoadPR uses the heaviest weight you actually logged. If you want percentages of a tested or estimated max, type that number as the base.
+
+**Why does 85% of 225 lb show 190 lb instead of 191.25?**
+191.25 lb can't be built from the standard plates, so LoadPR shows the closest weight you can load: 190 lb, with one 45, one 25 and one 2.5 per side.
+
+**Can I pick 82.5% or another value between the steps?**
+Not on the wheel: it moves in 5% steps from 50% to 120%. For an in-between value, type the exact weight you want.
+
+**Can I go above 100% on the wheel?**
+Yes. The wheel goes up to 120%, which helps when you plan overload sets or a new PR attempt.
+
+**Which lifts appear on the Apple Watch dial?**
+Lifts with at least one logged single, that is, an entry at 1 rep. The watch uses the heaviest single as the base for its percentages.
+
+---
+
+## Gyms, bars and plates
+
+URL: https://loadpr.com/features/gyms-and-plates/
+
+Every answer in LoadPR is built from a plate setup: a bar, the plate sizes and how many of each you can put on the bar. The free version uses the standard set for pounds or kilograms. With LoadPR+ you save a setup for each gym you train in, so the calculator only uses plates that are really there.
+
+### What a gym is in LoadPR
+
+LoadPR calls a plate setup a gym. Each gym has a name, a unit (pounds or kilograms), a bar weight, the plate sizes and how many plates of each size there are. The calculator, the percentage wheel and the Apple Watch all load the bar from the gym that is selected, and its name appears under the plate drawing.
+
+The count matters as much as the sizes. A plate set that can make any weight on paper is no help when the rack has one pair of 45s. LoadPR never draws a plate the gym does not have.
+
+### The free setup
+
+The free version comes with two gyms, Standard (lbs) and Standard (kg). Pick the one for your unit. Both have two of each plate per side:
+
+That covers most training: the heaviest exact load is 535 lb with the pound set and 335 kg with the kilogram set. Two of each per side does change how some weights are built. 315 lb is two 45s, one 35 and one 10 per side instead of three 45s, which is the same 135 lb per side.
+
+### Your own gyms with LoadPR+
+
+With LoadPR+ you add a gym for each place you train: the commercial gym, the garage, the hotel gym on a work trip. For each one you set:
+
+To switch, open Plate Setup and tap the gym. If the gym is in the other unit, the calculator switches to that unit as well, so a kilogram gym never gets pound plates.
+
+### Plate counts: the plates you own
+
+In the gym editor, each plate size has the total number of plates you own, both sides together, set in steps of two. Four 45s means two per side. A count of 0 means unlimited and shows as ∞, which suits a commercial gym with a full rack.
+
+LoadPR uses those counts when it builds the bar. Take a garage gym with a 45 lb bar and one pair each of 45, 25, 10, 5 and 2.5 lb plates, and a program that asks for 245 lb. The most those plates can load is 220 lb, one of each per side. LoadPR shows 220 lb with a note that it is the heaviest load these plates allow, and the real target, so you know you are short instead of seeing a smaller number with no warning.
+
+Below that limit, the counts still shape the answer. LoadPR looks for an exact load with the plates you have, and when there is none it shows the closest weight those plates can make.
+
+### Bars and other plates
+
+Not every bar weighs 45 lb or 20 kg. Set the bar weight for each gym and every total includes it. With a 35 lb bar and the standard plates, 95 lb is one 25 and one 5 per side. With a 15 kg bar, 60 kg is one 20 and one 2.5 per side.
+
+Add Plate takes any plate weight in the gym's unit, so 15 lb plates or small change plates can be part of the setup. Each plate size has its own color in the drawing, and you can change it to match the plates in your gym.
+
+### On Apple Watch
+
+The watch uses the gym your iPhone has selected. In the free version that is the standard set for your unit; with LoadPR+ it is your own gym, with its bar, its plates and its counts. Change the gym on the iPhone and the watch gets the new plates from it.
+
+### If LoadPR+ ends
+
+Your gyms are kept. While LoadPR+ is not active, the calculator uses the standard set for the selected gym's unit. When LoadPR+ is active again, your gyms work as before.
+
+### FAQ
+
+**Which plates does the free version assume?**
+The standard set for your unit, with two of each plate per side: a 45 lb bar with 45, 35, 25, 10, 5 and 2.5 lb plates, or a 20 kg bar with 25, 20, 15, 10, 5, 2.5 and 1.25 kg plates.
+
+**How do I tell LoadPR how many plates I own?**
+With LoadPR+, open the gym in Plate Setup and set the total for each plate size, both sides together. Four 45s means two per side, and 0 means unlimited.
+
+**What happens when my plates can't make the weight?**
+If the target is more than the plates can load, LoadPR shows the heaviest load they allow and a note with the real target. Below that, it shows the closest weight the plates can make.
+
+**Can I use a bar that is not 45 lb or 20 kg?**
+Yes, with LoadPR+. Set the bar weight for each gym, for example 35 lb or 15 kg, and every total includes it.
+
+**Can I add plates the standard set does not have?**
+Yes, with LoadPR+. Tap Add Plate in the gym editor and type the plate weight in the gym's unit.
+
+**Can I change the color of a plate?**
+Yes, with LoadPR+. Each plate size in a gym has a color, and you can change it to match your plates. The drawing and its legend use that color.
+
+---
+
+## PR tracking
+
+URL: https://loadpr.com/features/pr-tracking/
+
+LoadPR keeps a list of your lifts with the best weight for each one. Log a PR with its weight, reps, date and a note, and the app keeps the whole history. The current PR then feeds the percentage wheel, and your best singles go to the Apple Watch.
+
+### Your lifts at a glance
+
+The PR tab lists your exercises. Each row shows the name of the lift, its current PR and how long ago you set it, such as Bench Press, 225 lbs, 2 weeks ago. Tap a lift to see its PR history, newest first, with the number of entries.
+
+Search the list by name, and sort it by name, by most recent or by heaviest PR.
+
+### What a PR entry holds
+
+Each entry has four parts:
+
+Entries can be in different units. LoadPR compares them by their real weight, so a 100 kg single (220.46 lb) counts as heavier than a 220 lb single.
+
+### What the current PR is
+
+The current PR of a lift is the heaviest weight you have logged for it, at any number of reps. If your heaviest bench press entry is 225 lb for 3, the current PR is 225 lb. When two entries are equally heavy, the newer one counts.
+
+That number is what the percentage wheel on the Load screen works from, so after a new best every percentage on the wheel moves up with it. The Apple Watch uses a stricter base: the heaviest single, an entry at 1 rep.
+
+### Estimated one-rep max
+
+A set of several reps also says something about your one-rep max. LoadPR estimates it with the Epley formula, written in the app as weight × (1 + 0.0333 × reps). 200 lb for 3 reps gives an estimated 1RM of 219.98 lb. A single is its own 1RM.
+
+The estimate appears on the full progress chart, a LoadPR+ feature, as its own line next to the singles you actually lifted. With LoadPR+ you can also pick another formula in Settings. By the Brzycki formula, the same 200 lb triple comes to 211.76 lb.
+
+### Three ways to log a PR
+
+On the lift's page, tap + and fill in the entry. On the Load screen, tap the plus button next to the percentage wheel after a set, and the weight on screen is already filled in. Or ask Siri: say “Log a PR for Bench Press in LoadPR”, with the name of one of your lifts, and give the weight.
+
+To fix a mistake, swipe the entry away in the history. Deleting an entry or a lift asks first, and it can be undone by shaking the iPhone.
+
+### Free and LoadPR+
+
+The free version tracks up to 5 exercises, and each one holds every PR you log. The list shows how many of the 5 you are using. LoadPR+ removes the exercise limit and adds the full progress chart, CSV export and import, iCloud sync through your own iCloud and the choice of formula.
+
+### Widgets and Siri
+
+The widgets show your records without opening the app: Top PR on the home screen or the lock screen, Recent PRs with your three latest records, and Progress Snapshot with your top lifts and their trend. Ask Siri “What's my Bench Press PR in LoadPR” and it answers with the weight and the date.
+
+### FAQ
+
+**What counts as the current PR in LoadPR?**
+The heaviest weight you have logged for the lift, at any number of reps. When two entries weigh the same, the newer one counts.
+
+**How does LoadPR estimate a one-rep max?**
+With the Epley formula by default, written in the app as weight × (1 + 0.0333 × reps). 200 lb for 3 reps is an estimated 219.98 lb. With LoadPR+ you can pick another formula.
+
+**How many reps can a PR entry have?**
+From 1 to 20. A single, an entry at 1 rep, is also what the Apple Watch uses as the base for its dial.
+
+**Can I log PRs in both kg and lb?**
+Yes. Each entry keeps its own unit, and LoadPR compares entries by their real weight when it picks the current PR.
+
+**How many exercises can I track for free?**
+Five, and each one keeps every PR you log for it. LoadPR+ removes the exercise limit.
+
+**Can I log a PR with Siri?**
+Yes. Say “Log a PR for Bench Press in LoadPR”, with the name of one of your lifts, and give the weight. If you don't say the reps, LoadPR logs 1.
+
+---
+
+## Progress charts
+
+URL: https://loadpr.com/features/progress-charts/
+
+Each lift in LoadPR has a chart of its PRs over time. The blue line is what you actually lifted for a single; the gray line is the estimated one-rep max of your sets of more than one rep. Pick a range from 7 days to all time and touch the chart to read any entry.
+
+### Two lines, one chart
+
+The full chart draws two series. Actual PR is every entry logged at 1 rep, joined by a blue line. Est. 1RM is every entry with more reps, turned into an estimated one-rep max and joined by a lighter gray line. Keeping them apart shows the difference between a max you lifted and a max a formula predicts.
+
+For example, a 225 lb single is plotted at 225 lb on the Actual PR line. A 205 lb set of 5 is plotted at 239.13 lb on the Est. 1RM line, by the app's Epley formula, weight × (1 + 0.0333 × reps). If you pick another formula in Settings, the gray line follows it.
+
+### Ranges
+
+Above the chart is a range picker: 7d, 30d, 90d, 1y and All. The chart opens on All. The header shows the best single in the range and the months the range covers, such as Nov 2024 – Aug 2026. If the range only has sets of several reps, the header shows the best estimate instead, marked Est.
+
+If a lift has PRs but none in the range you picked, the chart says there are no entries in this range. Pick a wider range.
+
+### Reading a point
+
+Touch or drag across the chart and LoadPR picks the nearest entry, marks it with a line and shows its weight, with the month and year, in the header. Estimated points are labeled Est. Tap an empty part of the chart to clear the selection.
+
+If a lift has entries in kg and in lb, the chart converts them to one unit, the unit of the lift's current PR, so every point shares one axis.
+
+### The free mini chart
+
+The free version has a mini chart on the Load screen. When you pick a lift, it shows your last 3 PRs at 1 rep, under the label PR Progress, with the latest weight on top.
+
+Tap it to open the full chart. In the free version, that tap opens the LoadPR+ screen instead.
+
+### Progress without opening the app
+
+The Progress Snapshot widget, in the large size, shows your top lifts with their PR trend. On the lock screen, the rectangular Top PR widget shows a PR with its trend.
+
+Ask Siri “Show my Bench Press progress in LoadPR” and it tells you how many PRs you have logged for the lift and your latest one.
+
+### What the chart is for
+
+A list of PRs tells you the best number. The chart tells you the direction: a line that climbs every month, a flat stretch that has lasted since spring, or an estimate from your sets of five that is running ahead of your last tested single. That last case is often the moment to test a new single.
+
+### FAQ
+
+**What is the gray line on the LoadPR chart?**
+The estimated one-rep max of your entries with more than 1 rep. The blue line is your actual singles.
+
+**Which formula does the chart use for the estimate?**
+Epley by default. With LoadPR+ you can pick another formula in Settings, and the chart follows it.
+
+**Why does my chart say there are no entries?**
+The lift has PRs, but none in the range you picked. Switch to a wider range such as 1y or All.
+
+**Is the progress chart free?**
+The mini chart of your last 3 singles is free, on the Load screen. The full chart with its ranges and the estimated 1RM line is part of LoadPR+.
+
+**Can I chart a lift logged in both kg and lb?**
+Yes. The chart converts every entry to the unit of the lift's current PR, so all points share one axis.
+
+---
+
+## Workout timer
+
+URL: https://loadpr.com/features/workout-timer/
+
+The Timer tab has four modes. Rest counts down the break between sets and is free. EMOM, HIIT and AMRAP are interval timers for conditioning work and come with LoadPR+. Each mode remembers the timers you run, so the next one is a tap away.
+
+### Rest timer, free
+
+Set the rest with two wheels, minutes from 0 to 59 and seconds in steps of 15, and tap Start. The shortest rest is 15 seconds. Until you have recents, LoadPR suggests 30 s, 1 min, 1:30, 2 min, 3 min and 5 min, and a tap on one starts it.
+
+While it runs, the countdown shows on the lock screen and in the Dynamic Island as a Live Activity, and if you allow notifications, one tells you when the time is up. You can lock the phone between sets and still see the time left.
+
+### EMOM, with LoadPR+
+
+Every minute on the minute: pick 1 to 60 rounds of one minute each and the timer runs them back to back. The screen shows the seconds left in the minute and the round, such as Round 1 of 10, and the iPhone taps at the start of each new round.
+
+The suggestions are 5, 8, 10, 12, 15 and 20 rounds.
+
+### HIIT, with LoadPR+
+
+Set the work time and the rest time, each from 5 to 120 seconds in steps of 5, and 1 to 20 rounds. LoadPR shows the total time before you start. While it runs, WORK and REST alternate in green and red, with the round below the countdown.
+
+The suggestions cover common intervals:
+
+### AMRAP, with LoadPR+
+
+As many rounds as possible: set a time from 1 to 60 minutes and start. Tap Round Complete at the end of each round. The screen counts your rounds and shows the time of the last one.
+
+When the time is up, LoadPR shows the rounds completed, your average pace, the fastest and the slowest round, and the split of every round. Like Rest, AMRAP shows on the lock screen and in the Dynamic Island while it runs, with your round count.
+
+### Recents and pins
+
+Each timer you start is saved in that mode's recents, up to 10, so you can run it again with one tap. Pin the ones you use most: pinned timers stay at the top and are never pushed off the list. Swipe a recent to remove it.
+
+### At the gym
+
+The screen stays on while a timer runs. You can switch to the Load or PR tab, for example to load the next set or log the last one, and the timer keeps going. When a timer finishes, the iPhone plays a sound.
+
+EMOM and HIIT do not have a Live Activity, so keep LoadPR open to follow their rounds. Rest and AMRAP show on the lock screen.
+
+### FAQ
+
+**Which timer modes are free?**
+Rest is free. EMOM, HIIT and AMRAP are part of LoadPR+.
+
+**Does the rest timer work with the phone locked?**
+Yes. The Rest countdown shows on the lock screen and in the Dynamic Island, and if you allow notifications, one tells you when the rest is over.
+
+**What is the shortest and longest rest I can set?**
+From 15 seconds to 59 minutes 45 seconds, in steps of 15 seconds.
+
+**What does the Tabata suggestion set?**
+The HIIT timer with 20 seconds of work and 10 seconds of rest for 8 rounds, 4 minutes in all. HIIT is part of LoadPR+.
+
+**Does the AMRAP timer count my rounds?**
+Yes. Tap Round Complete after each round. At the end LoadPR shows the rounds, your average pace, the fastest and slowest round and every split.
+
+**Does the timer keep running if I switch tabs?**
+Yes. It keeps running while you use the Load or PR tab, and the screen stays on while it runs.
+
+---
+
+## LoadPR on Apple Watch
+
+URL: https://loadpr.com/features/apple-watch/
+
+The LoadPR watch app puts the percentage dial on your wrist. Pick a lift, turn the Digital Crown to the percentage your program asks for, and read the weight to load. Tap the weight for the plates on one side of the bar. It is part of the free version.
+
+### Your lifts
+
+The watch lists your lifts from A to Z, each with its best single: the heaviest entry you have logged at 1 rep. A lift with no single yet does not appear; log a 1-rep PR on the iPhone and it shows up.
+
+The lifts and the plates come from the iPhone app. The watch keeps the last ones it received, so it does not need the iPhone in your hand at the rack.
+
+### The dial
+
+Tap a lift and the dial opens at 100% of its best single. Turn the Digital Crown and the percentage moves in 5% steps, from 50% to 120%, with a click on your wrist at each step. The large number is the weight to load, and the line below it says what it is, such as 100% of 225.
+
+Above 100% the ring and the label turn red, and the watch gives a warning tap as you cross 100%, so an overload set is never a surprise.
+
+### Plates on your wrist
+
+Tap the weight to open Plates. It draws one side of the bar with the plates in their colors, the weight, and a count of each plate, such as 1×45, 1×35 and 1×5. When the weight is the bar alone, it says Just the bar.
+
+For example, 95% of a 225 lb single is 213.75 lb. The plates can't make that, so the watch shows 215 lb, the closest load: one 45, one 35 and one 5 per side.
+
+### The same answer as the iPhone
+
+The watch rounds the same way as the iPhone, to the closest weight the plates can make, so both show the same working weight for the same base and percentage. It uses the gym your iPhone has selected: the standard plates in the free version, two of each per side, or your own gym with LoadPR+.
+
+One difference is the base. The iPhone's percentage wheel works from the lift's current PR at any reps; the watch works from the best single. If your heaviest bench press entry is 225 lb for 3 and your best single is 215 lb, the iPhone works from 225 lb and the watch from 215 lb.
+
+### Requirements
+
+The watch app needs an Apple Watch with watchOS 11 or later, paired with an iPhone that runs LoadPR on iOS 26 or later. There is nothing extra to buy for it.
+
+### When it helps
+
+At the rack, with the phone in a bag or across the room. During percentage work, where the weight changes every set. With chalk on your hands, when a turn of the crown is easier than typing a number.
+
+### FAQ
+
+**Do I need an Apple Watch to use LoadPR?**
+No. Everything works on the iPhone. The watch app adds the percentage dial and the plates on your wrist.
+
+**Which watchOS does LoadPR need?**
+watchOS 11 or later, on an Apple Watch paired with an iPhone running iOS 26 or later.
+
+**Can I log a PR on the watch?**
+No. The watch shows your lifts, the dial and the plates. Log PRs on the iPhone, or ask Siri on the iPhone.
+
+**Does the watch need my iPhone nearby?**
+Not for what it already has: it keeps the last lifts and plates it received. New PRs and a new gym reach it from the iPhone app.
+
+**Why does the watch dial turn red?**
+The percentage is above 100% of your best single. The watch also gives a warning tap as you cross 100%.
+
+**Does the watch use the same plates as my iPhone?**
+Yes. It uses the gym selected on the iPhone: the standard set in the free version, your own gym with LoadPR+.
