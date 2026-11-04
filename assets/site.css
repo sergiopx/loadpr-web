@@ -368,6 +368,9 @@ body.page-guide h1 { margin-top: 10px; }
 .crumbs li + li::before { content: "/"; margin-right: 8px; color: var(--hair); }
 .crumbs a { color: var(--muted); }
 .crumbs [aria-current] { color: var(--ink); font-weight: 500; }
+.sources { margin-top: 32px; font-size: 15px; color: var(--muted); }
+.sources h2 { font-size: 18px; }
+.sources li { margin: 6px 0; }
 .faq details { border-bottom: 1px solid var(--hair); padding: 4px 2px; }
 .faq summary { cursor: pointer; padding: 16px 0; font-weight: 600; font-size: 18px; list-style: none; position: relative; padding-right: 30px; }
 .faq summary::-webkit-details-marker { display: none; }
