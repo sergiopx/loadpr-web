@@ -9,6 +9,7 @@
   {"path":"/whats-on-the-bar/","loc":"en","type":"tool","id":"tool:plateReader","key":"plateReader","parent":null,"title":"What's on the Bar? Loaded Barbell Weight | LoadPR"},
   {"path":"/home-gym-plate-calculator/","loc":"en","type":"tool","id":"tool:homeGym","key":"homeGym","parent":null,"title":"Home Gym Plate Calculator | Use Your Own Plates | LoadPR"},
   {"path":"/531-calculator/","loc":"en","type":"tool","id":"tool:fiveThreeOne","key":"fiveThreeOne","parent":null,"title":"5/3/1 Calculator | Every Week, Plates Per Side | LoadPR"},
+  {"path":"/1rm-calculator/amrap-to-1rm/","loc":"en","type":"satellite","id":"sat:amrapTo1rm","key":"amrapTo1rm","parent":"/1rm-calculator/","title":"AMRAP Set to 1RM: Estimate Your Max | LoadPR"},
   {"path":"/guide/","loc":"en","type":"guideHub","id":"guideHub","key":null,"parent":null,"title":"Barbell & Plate Guides | LoadPR"},
   {"path":"/guide/olympic-plate-colors/","loc":"en","type":"guide","id":"guide:plateColors","key":"plateColors","parent":null,"title":"Olympic Plate Colors (IWF) | LoadPR"},
   {"path":"/guide/barbell-weights/","loc":"en","type":"guide","id":"guide:barWeights","key":"barWeights","parent":null,"title":"How Much Does a Barbell Weigh? 45 lb / 20 kg | LoadPR"},

@@ -20,6 +20,9 @@ LoadPR is an iPhone app that works out which plates to load on a barbell and tra
 - [5/3/1 Calculator | Every Week, Plates Per Side](https://loadpr.com/531-calculator/): Enter your 1RM and get all four weeks of Wendler's 5/3/1 from your training max, with warm-ups, BBB or FSL, rounded to plates you can load.
 - [Barbell Tools: Plates, 1RM, Warmups, kg to lb](https://loadpr.com/tools/): Every free LoadPR web tool on one page: plates per side, 1RM, percentages, 5/3/1, warmup sets, kg to lb, what's on the bar and home gym plates.
 
+### Tool variations
+- [AMRAP Set to 1RM: Estimate Your Max](https://loadpr.com/1rm-calculator/amrap-to-1rm/): Put the weight and the reps from your AMRAP set into a 1RM formula. 225 lb for 8 reps estimates 285 lb by Epley and 279.31 lb by Brzycki.
+
 ### App features
 - [LoadPR App Features for iPhone and Apple Watch](https://loadpr.com/features/): What LoadPR does on iPhone and Apple Watch: plate loading, gyms and plates, percentages, PR tracking, charts, timers, and what is free.
 - [Plate Loading App for iPhone: See the Bar](https://loadpr.com/features/plate-loading/): LoadPR draws one side of the barbell with the plates to load, color-coded, in lb or kg. Free to use with no limit, on iPhone and Apple Watch.
