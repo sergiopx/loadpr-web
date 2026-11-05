@@ -1428,6 +1428,105 @@ Add the plates on one side, double it and add the bar. A 45, a 25 and a 5 on eac
 **How do I count kg plates on a lb bar?**
 Convert the plates first: a 20 kg plate is 44.09 lb, so one on each side of a 45 lb bar is 133.18 lb, not 135 lb.
 
+---
+
+## How do you calculate a percentage of your max?
+
+URL: https://loadpr.com/guide/percentage-of-max/
+
+Updated 2026-11-05
+
+**Short answer: multiply your max by the percentage written as a decimal, then round to a weight you can load.** 80% of a 315 lb max is 315 × 0.80 = 252 lb, and the nearest load with standard plates on a 45 lb bar is 250 lb. For 70% multiply by 0.70, for 85% by 0.85 and for 90% by 0.90.
+
+### Example: 80% of a 315 lb max
+
+Your program calls for sets at 80% of a 315 lb bench press max. Work it out in three steps:
+
+- Write the percentage as a decimal: 80% = 0.80.
+- Multiply: 315 × 0.80 = **252 lb**.
+- Round to a weight your plates can make. With pound plates on a 45 lb bar the total moves in 5 lb steps, so 252 lb sits between 250 lb and 255 lb. 250 lb is closer: two 45s, a 10 and a 2.5 on each side.
+
+The load just above is 255 lb (two 45s, a 10 and a 5 on each side). 250 lb is 2 lb under the target and 255 lb is 3 lb over, so 250 lb is the weight to load.
+
+### 80%, 85% and 90% of the same max
+
+Most programs move between a few percentages from week to week. The same three steps for a 315 lb max, rounded to pound plates on a 45 lb bar:
+
+| Percentage | Exact | Load | Plates on each side |
+|---|---|---|---|
+| 80% | 252 lb | 250 lb | 45, 45, 10, 2.5 |
+| 85% | 267.75 lb | 270 lb | 45, 45, 10, 10, 2.5 |
+| 90% | 283.5 lb | 285 lb | 45, 45, 25, 5 |
+
+For any other max, the [1RM percentage calculator](https://loadpr.com/1rm-percentage-calculator/) lists every percentage from 100% down to 50%, each with the nearest weight you can load.
+
+### How to work out 70 percent of your max
+
+70% is 0.70, so 315 × 0.70 = 220.5 lb, and the nearest load is **220 lb**: a 45, a 35, a 5 and a 2.5 on each side. Without a calculator, work from 10%: 10% of 315 lb is 31.5 lb, so 30% is 94.5 lb, and 315 − 94.5 = 220.5 lb. The same trick gives 80%: 20% is 63 lb, and 315 − 63 = 252 lb.
+
+### Percentages of a kilo max
+
+In kilos the method is the same, but the bar moves in 2.5 kg steps with 1.25 kg plates on a 20 kg bar. For a 120 kg squat max:
+
+| Percentage | Exact | Load |
+|---|---|---|
+| 70% | 84 kg | 85 kg |
+| 80% | 96 kg | 95 kg |
+| 85% | 102 kg | 102.5 kg |
+| 90% | 108 kg | 107.5 kg |
+
+96 kg falls between 95 kg (a 25, a 10 and a 2.5 on each side) and 97.5 kg, and 95 kg is closer. 102.5 kg is a 25, a 15 and a 1.25 on each side, and 107.5 kg is a 25, a 15, a 2.5 and a 1.25.
+
+### Common maxes at 70, 80, 85 and 90%
+
+Loads rounded to the nearest weight with standard plates on a 45 lb or 20 kg bar:
+
+| Max | 70% | 80% | 85% | 90% |
+|---|---|---|---|---|
+| 225 lb | 160 lb | 180 lb | 190 lb | 205 lb |
+| 315 lb | 220 lb | 250 lb | 270 lb | 285 lb |
+| 405 lb | 285 lb | 325 lb | 345 lb | 365 lb |
+| 100 kg | 70 kg | 80 kg | 85 kg | 90 kg |
+| 120 kg | 85 kg | 95 kg | 102.5 kg | 107.5 kg |
+
+90% of 225 lb is 202.5 lb, exactly halfway between 200 lb and 205 lb. The table rounds it up; on a heavy set you may prefer 200 lb. [Why you can't load an exact weight](https://loadpr.com/guide/cant-load-exact-weight/) covers ties like this one.
+
+### A tested max, an estimate or a training max
+
+A percentage is only as good as the max you take it from. If you have not tested a [1RM](https://loadpr.com/guide/what-is-1rm/) recently, estimate one from a hard set. 225 lb for 5 reps gives an estimated 262.5 lb by Epley, and 80% of that is **210 lb**: a 45, a 35 and a 2.5 on each side. The [1RM calculator](https://loadpr.com/1rm-calculator/) gives the estimate from any set.
+
+Some programs take their percentages from a lower planning number instead of your max. 5/3/1 uses a training max of 90% of your 1RM; see [the 5/3/1 training max](https://loadpr.com/guide/531-training-max/). If your program gives reps rather than percentages, the [rep max chart](https://loadpr.com/guide/rep-max-chart/) turns a rep count into a percentage of your 1RM.
+
+### Loading percentages in LoadPR
+
+The LoadPR app has a percentage wheel that works from any weight you type, not only from a logged PR. Turn it to the percentage and it shows a weight you can load, with the plates for one side of the bar. The wheel runs from 50% to 120% in 5% steps. More in [percentages of your PR](https://loadpr.com/features/percentages/).
+
+### Common mistakes
+
+- **Multiplying by the whole number.** 80% is 0.80, not 80. 315 × 0.80 is 252 lb.
+- **Leaving out the bar.** Your max is the whole bar, plates and bar together, so the percentage is of the total too.
+- **Loading the exact number.** 252 lb can't be built with standard pound plates on a 45 lb bar; 250 lb can.
+- **Using an old max.** A percentage of last year's max gives last year's weights.
+- **Mixing units.** Take the percentage of a kg max in kg and of a lb max in lb, then convert if you have to.
+- **Confusing the training max with the 1RM.** If the program is built on a training max, take the percentages from that number.
+
+### FAQ
+
+**What is 80 percent of a 315 lb max?**
+315 × 0.80 = 252 lb. Load 250 lb: two 45s, a 10 and a 2.5 on each side of a 45 lb bar.
+
+**How do you work out 70 percent of your max?**
+Multiply your max by 0.70 and round to a loadable weight. 70% of 315 lb is 220.5 lb, so load 220 lb; 70% of 120 kg is 84 kg, so load 85 kg.
+
+**What is 85% of a 120 kg max?**
+120 × 0.85 = 102 kg. Load 102.5 kg: a 25, a 15 and a 1.25 on each side of a 20 kg bar.
+
+**Does the bar count when you take a percentage of your max?**
+Yes. The max includes the bar, so the percentage is of the total: 80% of a 315 lb max is 252 lb including the 45 lb bar, and you load 250 lb in total.
+
+**How do I use percentages without a tested 1RM?**
+Estimate the max from a hard set first. 225 lb for 5 reps is about 262.5 lb by Epley, so 80% is 210 lb.
+
 # Tool variations
 
 ## How do you turn an AMRAP set into a 1RM?
