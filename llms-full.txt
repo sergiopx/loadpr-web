@@ -1596,6 +1596,85 @@ No. Count only reps you finished on your own. A spotted 8th rep at 225 lb would 
 **Is a 15-rep AMRAP set good for estimating a 1RM?**
 It is less reliable than a shorter set. For 225 lb lifted 15 times, Epley gives 337.5 lb and Brzycki gives 368.18 lb.
 
+---
+
+## Loading kg plates in a lb gym
+
+URL: https://loadpr.com/plate-calculator/kg-plates-in-a-lb-gym/
+
+A 20 kg plate weighs 44.09 lb, not 45 lb, so kg plates on a pound bar never add up to a round pound number. Two 20 kg plates on each side of a 45 lb bar make 221.37 lb (100.41 kg), not 225 lb. Count the 45 lb bar as 20.41 kg, work in kilos, and convert the total once at the end. The calculator below opens in kg with 100 kg on a 20 kg bar.
+
+### Example: two 20 kg plates on each side of a 45 lb bar
+
+Your gym has pound bars, but the bumpers on the platform are kilo plates. You put two blue 20 kg plates on each side of a 45 lb bar. Count it in kilos first:
+
+- The bar: 45 lb is **20.41 kg**.
+- The plates: 2 × (20 + 20) = 80 kg.
+- The total: 20.41 + 80 = **100.41 kg**, which is **221.37 lb**.
+
+That is the bar most lifters would call "two plates", but it is not 225 lb. Log it as 221.37 lb, or as 100.41 kg if your program is in kilos.
+
+### 20 kg plates vs 45 lb plates on a 45 lb bar
+
+The gap grows with every pair you add, because each 20 kg plate is 44.09 lb:
+
+| Per side | With 20 kg plates | With 45 lb plates |
+|---|---|---|
+| 1 plate | 133.18 lb (60.41 kg) | 135 lb |
+| 2 plates | 221.37 lb (100.41 kg) | 225 lb |
+| 3 plates | 309.55 lb (140.41 kg) | 315 lb |
+| 4 plates | 397.74 lb (180.41 kg) | 405 lb |
+
+At four plates a side the kilo bar is 397.74 lb against 405 lb for the pound bar. That matters when you compare a lift with a PR set on pound plates.
+
+### Loading a pound target with kg plates
+
+Your program says 225 lb, and the only plates free are kilo plates. 225 lb is 102.06 kg. On a 45 lb bar (20.41 kg) with standard kg plates, the two nearest loads are:
+
+- **100.41 kg (221.37 lb)**: a 25 and a 15 on each side, or two 20s.
+- **102.91 kg (226.88 lb)**: a 25, a 15 and a 1.25 on each side.
+
+No mix of kg plates makes exactly 225 lb, so pick the closer side for your set. In the calculator, switch to kg, choose a custom bar of 20.41 kg and enter 102.06 as the target to see both options.
+
+### A kilo program on a pound bar
+
+If your program is written in kilos, load the plates as if the bar were 20 kg and remember the bar is a little heavier. For 100 kg, a 25 and a 15 on each side make 100 kg on a 20 kg bar and **100.41 kg** on a 45 lb bar. For most sets that difference doesn't matter. Just log the real total so your next PR compares like with like.
+
+### Mixing kg and lb plates on one bar
+
+When the rack runs out, you may end up with a kilo bumper and a pound plate on the same side. Convert each plate to one unit before you add. A 45 lb bar with a 20 kg bumper and a 25 lb plate on each side:
+
+- One side: 44.09 + 25 lb.
+- Total: 45 + 2 × (44.09 + 25) = **183.18 lb**, which is 83.09 kg.
+
+Load the same plates in the same order on both sides so the bar stays balanced. [What's on the bar](https://loadpr.com/whats-on-the-bar/) adds up a loaded bar for you, and [how to count the weight on a barbell](https://loadpr.com/guide/count-weight-on-a-barbell/) covers the method.
+
+### Kilo plates in pounds
+
+The plates you will meet most often in a mixed gym: a 20 kg plate is 44.09 lb and a 25 kg plate is 55.12 lb, so the red 25 is heavier than a 45 lb plate. The full list for every plate, from 1.25 kg to 45 lb, is in [how much a plate weighs](https://loadpr.com/guide/how-much-does-a-plate-weigh/), and the [kg to lb converter](https://loadpr.com/kg-to-lb/) handles any other weight.
+
+### Common mistakes
+
+- **Counting a 20 kg plate as 45 lb.** It is 44.09 lb, and with four on each side the bar is 397.74 lb, not 405 lb.
+- **Forgetting the bar is in pounds.** A 45 lb bar is 20.41 kg, not 20 kg.
+- **Rounding each plate.** Convert the total once at the end instead of rounding every plate, so the errors don't stack.
+- **Logging the program weight instead of the bar.** If you loaded 221.37 lb, log 221.37 lb, not 225 lb.
+- **Uneven sides.** A kilo plate on one side and a pound plate on the other leaves the bar off balance. Match the plates on both ends.
+
+### FAQ
+
+**Can you use kg plates on a lb bar?**
+Yes. Olympic kilo and pound plates fit the same bar; only the totals change. Two 20 kg plates on each side of a 45 lb bar make 221.37 lb (100.41 kg).
+
+**How much is two 20 kg plates on each side of a 45 lb bar?**
+221.37 lb, which is 100.41 kg: 20.41 kg of bar plus 80 kg of plates. Two 45 lb plates on each side would be 225 lb.
+
+**How do I load 225 lb with kg plates?**
+You can't make it exactly. On a 45 lb bar, a 25 and a 15 kg plate on each side make 221.37 lb, and adding a 1.25 kg plate on each side makes 226.88 lb.
+
+**Can you mix kg and lb plates on the same bar?**
+Yes, as long as both sides match. Convert each plate first: a 20 kg bumper and a 25 lb plate on each side of a 45 lb bar make 183.18 lb.
+
 # App features
 
 ## Plate loading on iPhone and Apple Watch
