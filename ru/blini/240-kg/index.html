@@ -60,8 +60,11 @@
   --btn-press: #0077ed;
   --ok: #248a3d;          /* systemGreen, accessible variant: #34c759 was 2.2:1 on white */
   --warn: #b25e00;
-  /* plate accents — identical to PLATE_COLORS.kg in presets.js */
-  --p25: #FF3B30; --p20: #0A84FF; --p15: #FFD60A; --p10: #30D158;
+  /* plate accents: the app's palette, as in PLATE_COLORS (presets.js) */
+  --p25: #3380E6; --p20: #33BFA6; --p15: #F2CC33; --p10: #F28C26;
+  --plate-small: #C7C7CC;   /* systemGray3: 2.5 and 1.25 */
+  --plate-other: #D1D1D6;   /* systemGray4: any other plate without a hue */
+  --plate-edge: rgba(255,255,255,.15); --plate-edge-w: .5;
   --band: #1c1c1e; --band-ink: #f5f5f7; --band-muted: #98989f;
   --seg-track: #ececf0;
   --seg-thumb: #ffffff;
@@ -86,8 +89,18 @@
     --blue:#2997ff; --btn:#0071e3; --btn-press:#0077ed; --ok:#30d158; --warn:#ffd60a;
     --band:#1c1c1e; --band-ink:#f5f5f7;
     --seg-track:#2c2c2e; --seg-thumb:#636366; --field:#2c2c2e; --dot-ring:rgba(255,255,255,.35);
+    --plate-small:#48484A; --plate-other:#3A3A3C; --plate-edge:rgba(255,255,255,.25); --plate-edge-w:1;
     --shadow-lg:0 24px 60px rgba(0,0,0,.6); --shadow-thumb:0 2px 6px rgba(0,0,0,.4);
   }
+}
+.on-dark {
+  --bg:#000; --bg-alt:#161617; --surface:#1d1d1f; --surface-2:#1d1d1f;
+  --border:#424245; --hair:#2c2c2e; --ink:#f5f5f7; --muted:#a1a1a6; --faint:#86868b;
+  --blue:#2997ff; --ok:#30d158; --warn:#ffd60a;
+  --seg-track:#2c2c2e; --seg-thumb:#636366; --field:#2c2c2e; --dot-ring:rgba(255,255,255,.35);
+  --plate-small:#48484A; --plate-other:#3A3A3C; --plate-edge:rgba(255,255,255,.25); --plate-edge-w:1;
+  --shadow-lg:0 24px 60px rgba(0,0,0,.6); --shadow-thumb:0 2px 6px rgba(0,0,0,.4);
+  color: var(--ink); color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -126,7 +139,7 @@ header.site {
   background: color-mix(in srgb, var(--bg) 80%, transparent);
   backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
-header.site::after { /* the plate rule: 25 red · 20 blue · 15 yellow · 10 green */
+header.site::after { /* the plate rule: the app's four biggest plates, blue · teal · yellow · orange */
   content: ""; display: block; height: 3px;
   background: linear-gradient(90deg, var(--p25) 0 25%, var(--p20) 25% 50%, var(--p15) 50% 75%, var(--p10) 75%);
 }
@@ -200,6 +213,20 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 #lp-app {
   background: var(--bg-alt); border-radius: var(--radius);
   padding: 28px; width: 100%; min-width: 0;
+  container: lp / inline-size;
+}
+/* Plate calculator: weight + unit, the plates, then the equipment. Wide panels
+   put the inputs on the left and keep the answer beside them. */
+.lp-split { display: grid; gap: 20px; grid-template-areas: "main" "out" "more"; }
+.lp-split > .lp-form-main { grid-area: main; }
+.lp-split > .lp-out { grid-area: out; margin-top: 0; }
+.lp-split > .lp-form-more { grid-area: more; }
+.lp-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(128px, auto); gap: 12px; align-items: end; }
+.lp-row .lp-seg { min-height: 50px; align-items: stretch; }
+@container lp (min-width: 720px) {
+  .lp-split { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); grid-template-areas: "main out" "more out"; grid-template-rows: auto 1fr; gap: 20px 28px; align-items: start; }
+  .lp-split > .lp-out .lp-card { padding: 28px; }
+  .lp-split .lp-diagram { max-height: 240px; margin: 0 auto; }
 }
 .lp-form { display: grid; gap: 18px; }
 .lp-field { display: grid; gap: 7px; }
@@ -248,6 +275,18 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .lp-warn { color: var(--warn); font-weight: 500; margin: 0; font-size: 15px; }
 .lp-diagram-wrap { margin: 12px 0 14px; }
 .lp-diagram { max-height: 176px; display: block; }
+.lp-diagram .plate-edge { stroke: var(--plate-edge); stroke-width: var(--plate-edge-w); }
+/* The app's figure: the bar, then a right-aligned legend column ("2×45 ●"). */
+.lp-plates { display: flex; align-items: center; gap: 12px 20px; }
+.lp-plates > .lp-diagram-wrap { flex: 1 1 0; min-width: 0; margin: 0; }
+.lp-legend { flex: 0 0 auto; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; min-width: 72px; }
+.lp-legend .lp-per-side { font-size: 12px; font-weight: 500; color: var(--faint); letter-spacing: 0; margin: 0; }
+.lp-plates .lp-legend ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; justify-items: end; }
+.lp-plates .lp-legend li { display: inline-flex; align-items: center; gap: 7px; font-size: 15px; font-weight: 500; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.lp-legend .lp-dot { width: 9px; height: 9px; }
+.bleed .lp-legend li, .scn-hero .lp-legend li { font-size: 17px; }
+.bleed .lp-plates, .scn-hero .lp-plates, .scn-example .lp-plates { max-width: 560px; margin: 0 auto; }
+.lp-card .lp-plates { margin: 10px 0 2px; }
 .lp-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 14px; color: var(--muted); }
 .lp-per-side { font-weight: 500; margin-right: 2px; }
 .lp-chip { display: inline-flex; align-items: center; gap: 8px; background: var(--surface); border-radius: var(--pill); padding: 6px 13px; font-size: 14px; font-weight: 600; color: var(--ink); box-shadow: inset 0 0 0 1px var(--hair); font-variant-numeric: tabular-nums; }
@@ -488,7 +527,23 @@ body.page-scenario h1 { margin-top: 10px; }
 .bento .tile-wide { grid-column: 1 / -1; min-height: 0; text-align: center; }
 .bento .tile-wide p { font-size: clamp(19px, 2vw, 24px); color: var(--ink); max-width: 46ch; margin: 0 auto; }
 .bento .tile-wide h3 { color: var(--muted); font-size: 17px; }
-@media (max-width: 720px) { .bento { grid-template-columns: 1fr; } .bento .tile { min-height: 0; } }
+@media (max-width: 720px) { .bento { grid-template-columns: minmax(0, 1fr); } .bento .tile { min-height: 0; } }
+/* bento pictures: engine-drawn, one per feature tile */
+.bento .viz { container-type: inline-size; overflow: hidden; height: 184px; display: flex; align-items: center; justify-content: center; margin: -4px 0 28px; border-radius: var(--radius-md); background: var(--bg); }
+.bento .viz .lp-diagram { height: 150px; width: auto; max-height: none; }
+.viz-closest { display: flex; align-items: baseline; gap: 18px; margin: 0; font-family: var(--display); font-feature-settings: "tnum" 1; }
+.viz-closest s { font-size: min(34px, 8cqi); font-weight: 500; color: var(--faint); text-decoration-thickness: 2px; }
+.viz-closest strong { font-size: min(72px, 17cqi); font-weight: 600; letter-spacing: -.04em; color: var(--ink); line-height: 1; }
+.viz-closest strong small { font-size: .3em; letter-spacing: 0; color: var(--muted); }
+.viz-arrow { align-self: center; width: 12px; height: 12px; border: solid var(--blue); border-width: 2.5px 2.5px 0 0; transform: rotate(45deg); }
+.viz-plates { list-style: none; margin: 0; padding: 0 12px; display: flex; align-items: flex-end; gap: 10px; }
+.viz-plates li { display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+.viz-plates i { width: calc(14px + min(70px, 13cqi) * var(--s)); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, var(--bg) 0 13%, transparent 14%), var(--c); box-shadow: inset 0 0 0 1px var(--plate-edge), 0 2px 8px color-mix(in srgb, var(--c) 35%, transparent); }
+.viz-watch { height: 160px; width: auto; border-radius: 40px; border: 6px solid #1c1c1e; box-shadow: 0 0 0 1px #3a3a3c, 0 12px 30px rgba(0,0,0,.25); background: #000; }
+@media (max-width: 420px) { .viz-plates { gap: 6px; } }
+/* dark band: the app gallery sits on black, like the App Store */
+.band.on-dark { background: var(--bg); box-shadow: 0 0 0 100vmax var(--bg); clip-path: inset(0 -100vmax); }
+.on-dark .shot-row img { box-shadow: 0 0 0 1px var(--hair); }
 
 /* Free vs LoadPR+: two columns of the same tile, the plus one outlined in blue */
 .plans { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; max-width: var(--textw); margin: 0 auto; }
@@ -540,10 +595,27 @@ body.page-scenario h1 { margin-top: 10px; }
 
 /* centered hero (home) */
 .hero-center { text-align: center; padding: 64px 0 0; max-width: var(--textw); margin: 0 auto; }
+.hero-center.on-dark { max-width: none; padding: 88px 0 112px; background: var(--bg); box-shadow: 0 0 0 100vmax var(--bg); clip-path: inset(0 -100vmax); }
+.hero-center.on-dark > :not(.hero-tool) { max-width: var(--textw); margin-left: auto; margin-right: auto; }
+.hero-center.on-dark h1 { font-size: clamp(44px, 7vw, 96px); letter-spacing: -.025em; line-height: 1; }
+.hero-center.on-dark .product-line { color: var(--muted); }
+.hero-center.on-dark #lp-app { box-shadow: 0 0 0 1px var(--hair), 0 40px 120px -20px rgba(41,151,255,.18); }
+/* The page starts black under the translucent header, so it reads as one dark stage. */
+body.page-home { background: linear-gradient(#000 0 400px, var(--bg) 400px); }
+.hero-center.on-dark > .intro { max-width: 38ch; }
+@media (max-width: 600px) {
+  .hero-center.on-dark { padding: 48px 0 72px; }
+  .hero-center.on-dark > .intro { font-size: 19px; }
+  .on-dark .hero-tool { margin-top: 40px; }
+  .on-dark #lp-app { padding: 16px; border-radius: 24px; }
+  .on-dark #lp-app .lp-card { padding: 18px; }
+}
+body.page-home header.site { --bg: #000; --ink: #f5f5f7; --muted: #a1a1a6; --seg-track: #2c2c2e; --surface: #1d1d1f; --surface-2: #2c2c2e; --hair: #2c2c2e; --blue: #2997ff; color-scheme: dark; }
 .hero-center .intro { margin: 0 auto 28px; max-width: 40ch; }
 .hero-center .hero-links { justify-content: center; }
 .hero-center .hero-note { margin: 14px 0 0; }
 .hero-tool { max-width: 640px; margin: 56px auto 96px; text-align: left; }
+.on-dark .hero-tool { max-width: 1040px; margin: 64px auto 0; }
 
 .page-scenario .tool-section { margin-top: 56px; }
 /* ── feature pages and hub ──────────────────────────────────────────────── */
@@ -608,7 +680,7 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
   .hero-txt > :nth-child(3), .num-hero > :nth-child(3) { animation-delay: .1s; }
   .hero-txt > :nth-child(4), .num-hero > :nth-child(4) { animation-delay: .15s; }
   #lp-app { animation: lp-rise .6s var(--ease) .12s both; }
-  .lp-diagram rect.plate { animation: lp-slide .45s var(--ease) both; animation-delay: calc(var(--i, 0) * 45ms); transform-box: fill-box; transform-origin: center; }
+  .lp-diagram .plate { animation: lp-slide .45s var(--ease) both; animation-delay: calc(var(--i, 0) * 45ms); transform-box: fill-box; transform-origin: center; }
   .lp-out > * { animation: lp-rise .3s var(--ease) both; }
 }
 @keyframes lp-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
@@ -638,8 +710,8 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
       <p class="intro">Чтобы собрать <strong>240 kg</strong> на олимпийском грифе 20 kg, повесьте на <strong>каждую сторону</strong>:</p>
     </section>
     <section class="bleed exact" aria-label="На сторону"><div class="bleed-in">
-        <svg class="lp-diagram" viewBox="0 0 268 240" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="5 блины на сторону" xmlns="http://www.w3.org/2000/svg"><defs><filter id="lp-shadow" x="-30%" y="-20%" width="160%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="rgba(0,0,0,0.20)"/></filter></defs><rect x="0" y="114" width="47" height="12" rx="6" fill="#C7C7CC"/><rect x="44" y="109" width="16" height="22" rx="5" fill="#AEAEB2"/><rect x="60.0" y="53.0" width="34" height="134.0" rx="10" class="plate" style="--i:0" fill="#30D158" filter="url(#lp-shadow)"/><rect x="100.0" y="8.0" width="34" height="224.0" rx="10" class="plate" style="--i:1" fill="#FF3B30" filter="url(#lp-shadow)"/><rect x="140.0" y="8.0" width="34" height="224.0" rx="10" class="plate" style="--i:2" fill="#FF3B30" filter="url(#lp-shadow)"/><rect x="180.0" y="8.0" width="34" height="224.0" rx="10" class="plate" style="--i:3" fill="#FF3B30" filter="url(#lp-shadow)"/><rect x="220.0" y="8.0" width="34" height="224.0" rx="10" class="plate" style="--i:4" fill="#FF3B30" filter="url(#lp-shadow)"/></svg>
-        <div class="lp-meta"><span class="lp-per-side">На сторону:</span><span class="lp-chip"><i class="lp-dot" style="background:#FF3B30"></i>4 × 25</span><span class="lp-chip"><i class="lp-dot" style="background:#30D158"></i>1 × 10</span></div>
+        <div class="lp-plates"><div class="lp-diagram-wrap"><svg class="lp-diagram" viewBox="0 0 259.3 144" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="5 блины на сторону" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="lp-wash" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity=".04"/></linearGradient><filter id="lp-glow-f28c26" x="-40%" y="-20%" width="180%" height="140%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#F28C26" flood-opacity=".3"/></filter><filter id="lp-glow-3380e6" x="-40%" y="-20%" width="180%" height="140%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#3380E6" flood-opacity=".3"/></filter></defs><rect x="0" y="66" width="15" height="12" fill="#8E8E93" fill-opacity=".4"/><rect x="15" y="60" width="12" height="24" fill="#8E8E93" fill-opacity=".7"/><g class="plate" style="--i:0" filter="url(#lp-glow-f28c26)"><rect x="31.0" y="29.6" width="28.3" height="84.9" rx="6" style="fill:#F28C26"/><rect x="31.0" y="29.6" width="28.3" height="84.9" rx="6" fill="url(#lp-wash)"/><rect x="31.0" y="29.6" width="28.3" height="84.9" rx="6" class="plate-edge" fill="none"/></g><g class="plate" style="--i:1" filter="url(#lp-glow-3380e6)"><rect x="62.3" y="3.0" width="46.0" height="138.0" rx="6" style="fill:#3380E6"/><rect x="62.3" y="3.0" width="46.0" height="138.0" rx="6" fill="url(#lp-wash)"/><rect x="62.3" y="3.0" width="46.0" height="138.0" rx="6" class="plate-edge" fill="none"/></g><g class="plate" style="--i:2" filter="url(#lp-glow-3380e6)"><rect x="111.3" y="3.0" width="46.0" height="138.0" rx="6" style="fill:#3380E6"/><rect x="111.3" y="3.0" width="46.0" height="138.0" rx="6" fill="url(#lp-wash)"/><rect x="111.3" y="3.0" width="46.0" height="138.0" rx="6" class="plate-edge" fill="none"/></g><g class="plate" style="--i:3" filter="url(#lp-glow-3380e6)"><rect x="160.3" y="3.0" width="46.0" height="138.0" rx="6" style="fill:#3380E6"/><rect x="160.3" y="3.0" width="46.0" height="138.0" rx="6" fill="url(#lp-wash)"/><rect x="160.3" y="3.0" width="46.0" height="138.0" rx="6" class="plate-edge" fill="none"/></g><g class="plate" style="--i:4" filter="url(#lp-glow-3380e6)"><rect x="209.3" y="3.0" width="46.0" height="138.0" rx="6" style="fill:#3380E6"/><rect x="209.3" y="3.0" width="46.0" height="138.0" rx="6" fill="url(#lp-wash)"/><rect x="209.3" y="3.0" width="46.0" height="138.0" rx="6" class="plate-edge" fill="none"/></g></svg></div>
+        <div class="lp-legend"><span class="lp-per-side">На сторону</span><ul><li>4×25<i class="lp-dot" style="background:#3380E6"></i></li><li>1×10<i class="lp-dot" style="background:#F28C26"></i></li></ul></div></div>
       </div></section>
     <p class="num-note">Рассчитано для стандартного набора блинов. Гриф и свой набор блинов можно изменить в калькуляторе ниже.</p>
     <nav class="stepper" aria-label="Соседние веса">

@@ -9,6 +9,6 @@ export { oneRepMax, percentTable, FORMULAS } from './onerepmax.js';
 export { fiveThreeOne, WEEKS_531, WARMUP_531, CYCLE_INCREASE, TM_PERCENTS } from './fivethreeone.js';
 export {
   KG_PLATES, LB_PLATES, KG_INVENTORY, LB_INVENTORY,
-  BAR_PRESETS, DEFAULT_BAR, IWF_COLORS, colorFor,
+  BAR_PRESETS, DEFAULT_BAR, colorFor,
 } from './presets.js';
 export { round } from './util.js';

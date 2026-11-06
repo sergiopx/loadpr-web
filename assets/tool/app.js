@@ -169,6 +169,18 @@ function chipsFor(plates, unit) {
   return chips.length ? chips : [h('span', { class: 'lp-chip lp-chip-empty' }, s.ui.empty)];
 }
 
+// The bar and its legend side by side, as in the app: one side of the bar,
+// then a right-aligned column of counts ("2×45" + the plate's dot).
+function plateFigure(plates, unit) {
+  const rows = groupPlates(plates).map((g) => h('li', {}, [`${g.count}×${fmt(g.weight)}`,
+    h('i', { class: 'lp-dot', style: `background:${colorFor(g.weight, unit)}` })]));
+  return h('div', { class: 'lp-plates' }, [
+    h('div', { class: 'lp-diagram-wrap', html: renderDiagram(plates, { unit, label: s.ui.diagramLabel }) }),
+    h('div', { class: 'lp-legend' }, [h('span', { class: 'lp-per-side' }, s.ui.perSide),
+      h('ul', {}, rows.length ? rows : [h('li', { class: 'lp-chip-empty' }, s.ui.empty)])]),
+  ]);
+}
+
 function resultCard(plates, achieved, label, cls, unit, extra = null) {
   return h('div', { class: `lp-card ${cls}` }, [
     h('div', { class: 'lp-card-head' }, [
@@ -176,8 +188,7 @@ function resultCard(plates, achieved, label, cls, unit, extra = null) {
       h('strong', { class: 'lp-weight-big' }, [`${fmt(achieved)} `, h('span', { class: 'lp-unit' }, unit)]),
     ]),
     extra,
-    h('div', { class: 'lp-diagram-wrap', html: renderDiagram(plates, { unit, label: s.ui.diagramLabel }) }),
-    h('div', { class: 'lp-meta' }, [h('span', { class: 'lp-per-side' }, `${s.ui.perSide}`), ...chipsFor(plates, unit)]),
+    plateFigure(plates, unit),
   ]);
 }
 
@@ -217,13 +228,20 @@ function mountPlateCalc(root) {
     out.append(...nearCards(near, st.unit));
   }
 
-  root.append(h('div', { class: 'lp-form' }, [
-    field(s.ui.targetWeight, target),
-    field(s.ui.unit, unitToggle(st, () => remount(root, mountPlateCalc))),
-    field(s.ui.bar, barSelect(st, compute)),
-    field(s.ui.collar, collarInput(st, compute)),
-    h('details', { class: 'lp-inv' }, [h('summary', {}, s.ui.inventory), inventoryGrid(st, compute)]),
-  ]), out);
+  // Answer first: the weight and unit, then the plates, then the equipment.
+  // .lp-split turns into two columns (inputs | plates) when the panel is wide.
+  root.append(h('div', { class: 'lp-split' }, [
+    h('div', { class: 'lp-form lp-form-main' }, [h('div', { class: 'lp-row' }, [
+      field(s.ui.targetWeight, target),
+      field(s.ui.unit, unitToggle(st, () => remount(root, mountPlateCalc))),
+    ])]),
+    out,
+    h('div', { class: 'lp-form lp-form-more' }, [
+      field(s.ui.bar, barSelect(st, compute)),
+      field(s.ui.collar, collarInput(st, compute)),
+      h('details', { class: 'lp-inv' }, [h('summary', {}, s.ui.inventory), inventoryGrid(st, compute)]),
+    ]),
+  ]));
   compute();
 }
 

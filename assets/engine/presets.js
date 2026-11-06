@@ -4,16 +4,13 @@
 export const KG_PLATES = [25, 20, 15, 10, 5, 2.5, 1.25];
 export const LB_PLATES = [45, 35, 25, 10, 5, 2.5];
 
-// Plate colors matching the LoadPR iOS app's palette (iOS system colors).
-// lb follows the app exactly (45 blue, 35 green, 5 red); kg keeps the IWF
-// competition hues but in the app's brighter iOS tones. Keyed per unit.
+// The app's palette (Shared/PlateColors.swift): the same hues for lb and kg by
+// size rank. Plates with no hue of their own use the app's system grays, as CSS
+// variables so they follow light and dark like UIColor.systemGray3/4.
 export const PLATE_COLORS = {
-  lb: { 45: '#0A84FF', 35: '#30D158', 25: '#FFD60A', 10: '#FF9F0A', 5: '#FF3B30', 2.5: '#8E8E93', 1.25: '#AEAEB2' },
-  kg: { 25: '#FF3B30', 20: '#0A84FF', 15: '#FFD60A', 10: '#30D158', 5: '#AEAEB2', 2.5: '#1C1C1E', 1.25: '#8E8E93', 1: '#30D158', 0.5: '#AEAEB2', 0.25: '#8E8E93' },
+  lb: { 45: '#3380E6', 35: '#33BFA6', 25: '#F2CC33', 10: '#F28C26', 5: '#E64040', 2.5: 'var(--plate-small)', 1.25: 'var(--plate-small)' },
+  kg: { 25: '#3380E6', 20: '#33BFA6', 15: '#F2CC33', 10: '#F28C26', 5: '#E64040', 2.5: 'var(--plate-small)', 1.25: 'var(--plate-small)' },
 };
-
-// Back-compat alias (kg competition colors).
-export const IWF_COLORS = PLATE_COLORS.kg;
 
 // Bar presets by unit. Weight is the bar's own mass.
 export const BAR_PRESETS = {
@@ -37,5 +34,5 @@ export const LB_INVENTORY = LB_PLATES.map((weight) => ({ weight }));
 
 export function colorFor(weight, unit = 'kg') {
   const map = PLATE_COLORS[unit] || PLATE_COLORS.kg;
-  return map[weight] || '#8E8E93';
+  return map[weight] || 'var(--plate-other)';
 }
