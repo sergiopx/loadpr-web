@@ -58,7 +58,7 @@
   --blue: #0066cc;        /* link blue */
   --btn: #0071e3;         /* button blue */
   --btn-press: #0077ed;
-  --ok: #34c759;          /* systemGreen */
+  --ok: #248a3d;          /* systemGreen, accessible variant: #34c759 was 2.2:1 on white */
   --warn: #b25e00;
   /* plate accents — identical to PLATE_COLORS.kg in presets.js */
   --p25: #FF3B30; --p20: #0A84FF; --p15: #FFD60A; --p10: #30D158;
@@ -217,8 +217,8 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .lp-bar-group input { flex: 0 0 104px; }
 .lp-form input:disabled, .lp-form select:disabled, .lp-seg-btn:disabled { opacity: .5; cursor: not-allowed; }
 
-.lp-seg { display: inline-flex; background: var(--hair); border-radius: var(--pill); padding: 3px; gap: 2px; }
-.lp-seg-btn { border: 0; background: transparent; color: var(--ink); padding: 9px 24px; border-radius: var(--pill); font-size: 15px; font-weight: 600; cursor: pointer; letter-spacing: -.01em; font-family: inherit; transition: background .2s, box-shadow .2s, color .2s; }
+.lp-seg { display: flex; background: var(--hair); border-radius: var(--pill); padding: 3px; gap: 2px; }
+.lp-seg-btn { border: 0; background: transparent; color: var(--ink); padding: 9px 24px; border-radius: var(--pill); font-size: 15px; font-weight: 600; cursor: pointer; letter-spacing: -.01em; font-family: inherit; transition: background .2s, box-shadow .2s, color .2s; flex: 1 1 0; min-height: 40px; }
 .lp-seg-btn:hover { color: var(--blue); }
 .lp-seg-btn.on { background: var(--seg-thumb); box-shadow: var(--shadow-thumb); color: var(--ink); }
 
@@ -405,10 +405,11 @@ main > .wrap > .prose.hub .lede { margin: 0 auto; max-width: 46ch; }
 .support { margin-top: 64px; }
 .support h2:first-child { margin-top: 0; }
 body.page-guide h1 { margin-top: 10px; }
-.crumbs { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 13px; color: var(--faint); margin: 36px 0 24px; padding: 0; list-style: none; }
+.crumbs { display: flex; flex-wrap: nowrap; min-width: 0; gap: 8px; align-items: center; font-size: 13px; color: var(--faint); margin: 36px 0 24px; padding: 0; list-style: none; }
 .crumbs li + li::before { content: "/"; margin-right: 8px; color: var(--hair); }
 .crumbs a { color: var(--muted); }
-.crumbs [aria-current] { color: var(--ink); font-weight: 500; }
+.crumbs li { flex: 0 0 auto; white-space: nowrap; }
+.crumbs [aria-current] { color: var(--ink); font-weight: 500; flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 .sources { margin-top: 32px; font-size: 15px; color: var(--muted); }
 .sources h2 { font-size: 18px; }
 .sources li { margin: 6px 0; }
@@ -467,8 +468,9 @@ body.page-scenario h1 { margin-top: 10px; }
 .tool-tile:not(:has(img)) { padding-top: 28px; }
 .tile-t { font-family: var(--display); font-size: 21px; font-weight: 600; letter-spacing: -.01em; }
 .tile-d { color: var(--muted); font-size: 15px; line-height: 1.45; }
+@media (min-width: 1100px) { .tile-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; } .tool-tile .tile-t, .tool-tile .tile-d { padding: 0 22px; } .tool-tile .tile-t { font-size: 19px; } }
 @media (max-width: 960px) { .tile-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 600px) { .tile-grid { grid-template-columns: 1fr; } .tile { padding: 28px; } }
+@media (max-width: 600px) { .tile-grid { grid-template-columns: 1fr; } .tile:not(.tool-tile) { padding: 28px; } .tool-tile .tile-t, .tool-tile .tile-d { padding: 0 24px; } }
 
 /* steps: a real sequence, so it is numbered */
 .steps { list-style: none; counter-reset: step; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; }
@@ -494,6 +496,8 @@ body.page-scenario h1 { margin-top: 10px; }
 .plan li { padding: 11px 0 11px 30px; border-top: 1px solid var(--hair); position: relative; font-size: 17px; }
 .plan li::before { content: ""; position: absolute; left: 4px; top: 17px; width: 11px; height: 6px; border: solid var(--ok); border-width: 0 0 2px 2px; transform: rotate(-45deg); }
 .plan li:first-child { border-top: 0; }
+.plan li a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: .22em; text-decoration-thickness: 1px; }
+.plan li a:hover { color: var(--blue); text-decoration-color: currentColor; }
 .plan.plus { box-shadow: inset 0 0 0 2px var(--btn); }
 .plan h3 { font-size: 28px; }
 @media (max-width: 720px) { .plans { grid-template-columns: 1fr; } }
@@ -560,6 +564,11 @@ body.page-scenario h1 { margin-top: 10px; }
 /* ── footer: Apple's directory — small gray type, quiet columns ────────── */
 footer.site { background: var(--bg-alt); padding: 32px 0 24px; color: var(--muted); font-size: 12px; line-height: 1.33; letter-spacing: -.01em; }
 main + footer.site { border-top: 0; }
+main:has(.cta:last-child) + footer.site { padding-top: 0; }
+main:has(.cta:last-child) + footer.site .cols { border-top: 1px solid var(--border); padding-top: 32px; }
+footer.site .foot-langs { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 0 20px; align-items: baseline; }
+footer.site .foot-langs strong { flex: 0 0 100%; }
+footer.site .foot-langs a[aria-current] { color: var(--ink); font-weight: 600; }
 footer.site .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 24px 32px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
 footer.site .cols strong { display: block; color: var(--ink); font-size: 12px; font-weight: 600; margin-bottom: 8px; }
 footer.site a { color: color-mix(in srgb, var(--ink) 72%, transparent); display: block; padding: 4px 0; }
@@ -654,7 +663,7 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
       <div><strong>Tools</strong><a href="/nl/tools/">Alle tools</a><a href="/nl/schijven-calculator/">Schijvencalculator</a><a href="/nl/1rm-calculator/">1RM-calculator</a><a href="/nl/warming-up-calculator/">Warming-up</a><a href="/nl/kg-naar-lb/">kg ↔ lb omrekenen</a><a href="/nl/1rm-percentage-calculator/">1RM-percentages</a><a href="/nl/gewicht-op-de-stang/">Gewicht op de stang</a><a href="/nl/thuisgym-schijven-calculator/">Thuisgym-schijven</a><a href="/nl/531-calculator/">5/3/1-calculator</a></div>
       <div><strong>Populaire gewichten</strong><a href="/nl/schijven/60-kg/">60 kg</a><a href="/nl/schijven/80-kg/">80 kg</a><a href="/nl/schijven/100-kg/">100 kg</a><a href="/nl/schijven/120-kg/">120 kg</a><a href="/nl/schijven/140-kg/">140 kg</a><a href="/nl/schijven/160-kg/">160 kg</a><a href="/nl/schijven/180-kg/">180 kg</a><a href="/nl/schijven/200-kg/">200 kg</a></div>
       <div><strong>LoadPR</strong><a href="/about/">Over LoadPR</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a><a href="/terms/">Voorwaarden</a></div>
-      <div><strong>Taal</strong><a href="https://loadpr.com/" hreflang="en" lang="en">English</a><a href="https://loadpr.com/es/discos/167.5-kg/" hreflang="es" lang="es">Español</a><a href="https://loadpr.com/fr/disques/167.5-kg/" hreflang="fr" lang="fr">Français</a><a href="https://loadpr.com/de/hantelscheiben/167.5-kg/" hreflang="de" lang="de">Deutsch</a><a href="https://loadpr.com/it/dischi/167.5-kg/" hreflang="it" lang="it">Italiano</a><a href="https://loadpr.com/pt/anilhas/167.5-kg/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="https://loadpr.com/nl/schijven/167.5-kg/" hreflang="nl" lang="nl" aria-current="true">Nederlands</a><a href="https://loadpr.com/pl/talerze/167.5-kg/" hreflang="pl" lang="pl">Polski</a><a href="https://loadpr.com/sv/skivor/167.5-kg/" hreflang="sv" lang="sv">Svenska</a><a href="https://loadpr.com/tr/plaka/167.5-kg/" hreflang="tr" lang="tr">Türkçe</a><a href="https://loadpr.com/ru/blini/167.5-kg/" hreflang="ru" lang="ru">Русский</a><a href="https://loadpr.com/ja/plate/167.5-kg/" hreflang="ja" lang="ja">日本語</a><a href="https://loadpr.com/ko/wonpan/167.5-kg/" hreflang="ko" lang="ko">한국어</a><a href="https://loadpr.com/zh-hans/guapian/167.5-kg/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="https://loadpr.com/zh-hant/gangpian/167.5-kg/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></div>
+      <div class="foot-langs"><strong>Taal</strong><a href="https://loadpr.com/" hreflang="en" lang="en">English</a><a href="https://loadpr.com/es/discos/167.5-kg/" hreflang="es" lang="es">Español</a><a href="https://loadpr.com/fr/disques/167.5-kg/" hreflang="fr" lang="fr">Français</a><a href="https://loadpr.com/de/hantelscheiben/167.5-kg/" hreflang="de" lang="de">Deutsch</a><a href="https://loadpr.com/it/dischi/167.5-kg/" hreflang="it" lang="it">Italiano</a><a href="https://loadpr.com/pt/anilhas/167.5-kg/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a><a href="https://loadpr.com/nl/schijven/167.5-kg/" hreflang="nl" lang="nl" aria-current="true">Nederlands</a><a href="https://loadpr.com/pl/talerze/167.5-kg/" hreflang="pl" lang="pl">Polski</a><a href="https://loadpr.com/sv/skivor/167.5-kg/" hreflang="sv" lang="sv">Svenska</a><a href="https://loadpr.com/tr/plaka/167.5-kg/" hreflang="tr" lang="tr">Türkçe</a><a href="https://loadpr.com/ru/blini/167.5-kg/" hreflang="ru" lang="ru">Русский</a><a href="https://loadpr.com/ja/plate/167.5-kg/" hreflang="ja" lang="ja">日本語</a><a href="https://loadpr.com/ko/wonpan/167.5-kg/" hreflang="ko" lang="ko">한국어</a><a href="https://loadpr.com/zh-hans/guapian/167.5-kg/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="https://loadpr.com/zh-hant/gangpian/167.5-kg/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></div>
     </div>
     <div class="priv">Geen cookies. Geen tracking. Je gegevens blijven op je apparaat.</div>
   </div></footer>
