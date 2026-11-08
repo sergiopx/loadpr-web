@@ -25,6 +25,7 @@ The complete English text of every tool, guide and app feature page, with tables
 - **Why can't I load an exact weight on a barbell?** Every plate goes on both sides of the bar, so the total can only move in steps of twice your smallest plate: 5 lb steps with 2.5 lb plates, and 2.5 kg steps with 1.25 kg plates. A target like 172 lb falls between 170 lb and 175 lb, and no mix of standard plates makes it.
 - **How do you count the weight on a barbell?** Add up the plates on one side, double that, then add the bar. A 45 lb bar with a 45, a 25 and a 5 on each side is 45 + 2 × \(45 + 25 + 5\) = 195 lb.
 - **How do you calculate a percentage of your max?** Multiply your max by the percentage written as a decimal, then round to a weight you can load. 80% of a 315 lb max is 315 × 0.80 = 252 lb, and the nearest load with standard plates on a 45 lb bar is 250 lb.
+- **How much does a Smith machine bar weigh?** It depends on the machine. Many Smith machine bars weigh about 15–25 lb \(7–11 kg\), and counterbalanced models can feel lighter still.
 
 ## English (en)
 
@@ -76,6 +77,7 @@ The complete English text of every tool, guide and app feature page, with tables
 - [Why Can't I Load an Exact Weight on a Barbell?](https://loadpr.com/guide/cant-load-exact-weight/): The bar moves in steps of twice your smallest plate: 5 lb with 2.5s, 2.5 kg with 1.25s. How to round 172 lb or 102 kg, and when microplates help.
 - [How to Count the Weight on a Barbell](https://loadpr.com/guide/count-weight-on-a-barbell/): Bar plus twice the plates on one side: a 45, 25 and 5 per side on a 45 lb bar is 195 lb. Examples in lb and kg, colors, collars and mixed plates.
 - [How to Calculate a Percentage of Your Max \(1RM\)](https://loadpr.com/guide/percentage-of-max/): Multiply your max by the percentage as a decimal, then round to a loadable weight: 80% of 315 lb is 252 lb, so load 250 lb. Tables in lb and kg.
+- [How Much Does a Smith Machine Bar Weigh? Lb & Kg](https://loadpr.com/guide/smith-machine-bar-weight/): It depends on the model: many Smith bars are about 15–25 lb \(7–11 kg\) and counterbalanced ones feel lighter. Find yours and log it the same way.
 
 ### Plate charts by weight
 - [How many plates for 95 to 495 lb (10 pages, one per weight)](https://loadpr.com/how-many-plates/95-lb/): URL pattern https://loadpr.com/how-many-plates/<weight>-lb/

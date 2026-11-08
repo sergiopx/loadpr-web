@@ -536,7 +536,7 @@ They fit the 2-inch bar used in Olympic weightlifting. In most gyms the name jus
 
 URL: https://loadpr.com/guide/barbell-collar-weight/
 
-Updated 2026-10-25
+Updated 2026-11-08
 
 **Short answer: a competition collar weighs 2.5 kg (5.51 lb), so a pair adds 5 kg (11.02 lb) to the bar.** That is the collar used in weightlifting and powerlifting meets, where it counts toward the weight on the bar. The spring clips and lock-jaw collars in most gyms are much lighter, and their exact weight depends on the model.
 
@@ -574,7 +574,7 @@ In competition they do. At IWF weightlifting and IPF powerlifting meets the bar 
 | 2 × 25 kg | 120 kg | 125 kg |
 | 3 × 25 kg | 170 kg | 175 kg |
 
-In training it is your choice. Light spring clips change the total so little that most lifters leave them out. What matters is doing the same thing every time, so that a number in your log means the same load next month.
+In training it is your choice. Light spring clips change the total so little that most lifters leave them out. What matters is doing the same thing every time, so that a number in your log means the same load next month. The same goes for the bar on a machine, where the starting weight changes from model to model: see [how much a Smith machine bar weighs](https://loadpr.com/guide/smith-machine-bar-weight/).
 
 ### Collars in a pound gym
 
@@ -711,7 +711,7 @@ A 1RM you have actually lifted is your 1-rep PR. A PR can also be for more reps,
 
 URL: https://loadpr.com/guide/what-is-a-pr/
 
-Updated 2026-10-25
+Updated 2026-11-08
 
 **Short answer: PR stands for personal record, the best you have ever done on a lift.** In the weight room it usually means the heaviest weight you have lifted for a given number of reps. Some lifters say PB, for personal best; it means the same. To “hit a PR” is to beat your old best.
 
@@ -733,7 +733,7 @@ A **weight PR** is the heaviest weight you have lifted on a lift, at any reps. M
 
 ### How to find your PR
 
-Look back through your log for the lift and find the heaviest weight. That is your PR, and the reps next to it say which kind it is. If you have no log, your PR is the heaviest weight you are sure you lifted with full reps. Write down the conditions too, such as belt, paused or competition, because a paused bench and a touch-and-go bench are not the same lift.
+Look back through your log for the lift and find the heaviest weight. That is your PR, and the reps next to it say which kind it is. If you have no log, your PR is the heaviest weight you are sure you lifted with full reps. Write down the conditions too, such as belt, paused or competition, because a paused bench and a touch-and-go bench are not the same lift. A Smith machine squat is not the same lift as a barbell squat either, and its bar weight depends on the machine: see [how much a Smith machine bar weighs](https://loadpr.com/guide/smith-machine-bar-weight/).
 
 ### Gym PRs and meet PRs
 
@@ -1530,6 +1530,83 @@ Yes. The max includes the bar, so the percentage is of the total: 80% of a 315 l
 
 **How do I use percentages without a tested 1RM?**
 Estimate the max from a hard set first. 225 lb for 5 reps is about 262.5 lb by Epley, so 80% is 210 lb.
+
+---
+
+## How much does a Smith machine bar weigh?
+
+URL: https://loadpr.com/guide/smith-machine-bar-weight/
+
+Updated 2026-11-08
+
+**Short answer: it depends on the machine. Many Smith machine bars weigh about 15–25 lb (7–11 kg), and counterbalanced models can feel lighter still.** There is no standard like the 45 lb (20 kg) Olympic bar. Many machines print the bar's starting weight on a label on the frame; if yours does, that is the number to count. If it doesn't, pick one way of counting and keep it.
+
+### Example: one 45 lb plate on each side
+
+Say the label on the machine gives the bar as 15 lb, and you put one 45 lb plate on each side:
+
+- 15 + 2 × 45 = **105 lb**
+- The same plates on a 45 lb Olympic bar make 135 lb, so the Smith set is 30 lb lighter on paper.
+
+The gap stays the same as you add plates. Two 45s on each side are 195 lb on that Smith bar and 225 lb on an Olympic bar. That is why a Smith machine number and a free barbell number are not the same lift, even with the same plates on.
+
+### Same plates, different bars
+
+| Plates on each side | Plates only | 15 lb Smith bar | 45 lb Olympic bar |
+|---|---|---|---|
+| 1 × 45 lb | 90 lb | 105 lb | 135 lb |
+| 2 × 45 lb | 180 lb | 195 lb | 225 lb |
+
+A 15 lb bar is only an example. If your machine's label says 25 lb, two 45s on each side come to 205 lb.
+
+### Does the Smith machine bar count?
+
+Yes, in the same way a barbell counts: whatever the bar weighs is part of the load you move. The catch is that on a Smith machine the bar's real weight and the weight you feel can be different. What you should count is the bar's starting weight, the number on the label, not the weight of the steel itself.
+
+If you can't find out what the bar weighs, log the plates only. One 45 lb plate on each side is then 90 lb. It understates the load, but it is honest and repeatable, and that is what a log needs.
+
+### Counterbalanced vs not counterbalanced
+
+A **counterbalanced** Smith machine has a counterweight or a cable system that offsets part of the bar's weight, so an empty bar feels lighter than the steel in it. Some of them feel close to nothing. A machine **without a counterbalance** gives you the bar's full weight, the way a free barbell does. Which kind you have depends on the model, and two Smith machines in the same gym can differ.
+
+You can usually tell by looking at the frame: a counterbalanced machine has a weight stack, cables or pulleys connected to the bar. If there is nothing attached to the bar but the guide rails, it is probably not counterbalanced.
+
+### How to find your Smith bar's weight
+
+- **Read the label.** Many machines have a sticker or plate on the frame giving the bar's starting weight.
+- **Check the maker's listing.** The model name is usually on the frame, and the product page or manual often states the bar weight.
+- **Ask the staff.** Gyms often know the number for their own machines.
+- **Measure it roughly.** Hook a hanging luggage scale under the bar and lift the empty bar with it. The reading is close to the starting weight you feel, friction included.
+
+None of these works? Use the plates-only rule above.
+
+### Smith machine bar weight in kg
+
+In a kilo gym it works the same. If the label gives the bar as 10 kg and you load one 20 kg plate on each side, the total is 10 + 2 × 20 = **50 kg**. The same plates make 60 kg on a 20 kg Olympic bar, or 40 kg if you count plates only. If the label is in pounds, the [kg ↔ lb converter](https://loadpr.com/kg-to-lb/) turns it into kilos: 15 lb is 6.8 kg and 25 lb is 11.34 kg.
+
+### How to log Smith machine lifts consistently
+
+Keep Smith lifts separate from their barbell versions in your log: a Smith squat and a barbell squat each get their own records. Then choose one rule, either the label weight plus plates or plates only, and use it every time. If you train in more than one gym, note which machine you used, because the bar weight changes with the model. How records are counted is covered in [what a PR is in the gym](https://loadpr.com/guide/what-is-a-pr/).
+
+To work out the plates for a target, pick "Custom" as the bar in the [plate calculator](https://loadpr.com/plate-calculator/) and type the Smith bar's weight. To add up what is already loaded, [what's on the bar](https://loadpr.com/whats-on-the-bar/) does the reverse. Free barbells, EZ bars and trap bars are listed in [how much a barbell weighs](https://loadpr.com/guide/barbell-weights/).
+
+### Common mistakes
+
+- **Counting the Smith bar as 45 lb.** That is the Olympic bar. A Smith bar depends on the model and is often much lighter.
+- **Comparing Smith numbers with barbell numbers.** With one 45 per side, a 15 lb Smith bar is 105 lb and an Olympic bar is 135 lb.
+- **Switching rules.** Counting the bar one week and plates only the next makes your log look like a 15 or 25 lb jump that never happened.
+- **Assuming every Smith machine is the same.** Counterbalanced and non-counterbalanced machines feel different, even in the same gym.
+
+### FAQ
+
+**Does the Smith machine bar count toward the weight?**
+Count its starting weight if you know it: a 15 lb Smith bar with one 45 lb plate on each side is 105 lb. If you don't know it, log plates only (90 lb) and count the same way every time.
+
+**How much does a Smith machine bar weigh in kg?**
+It depends on the model; many are about 7–11 kg, and counterbalanced ones feel lighter. A 10 kg Smith bar with one 20 kg plate on each side is 50 kg.
+
+**How do I find the weight of a Smith machine bar without a label?**
+Check the maker's listing for the model, ask the gym staff, or lift the empty bar with a hanging luggage scale. If none works, log plates only: one 45 lb plate per side is 90 lb.
 
 # Tool variations
 
