@@ -647,6 +647,9 @@ footer.site a { color: color-mix(in srgb, var(--ink) 72%, transparent); display:
 footer.site a:hover { color: var(--ink); text-decoration: underline; }
 footer.site .brand { font-size: 17px; margin-bottom: 6px; gap: 8px; }
 footer.site .brand .mark { width: 24px; height: 24px; border-radius: 6px; }
+/* The studio credit, as on every Cardon Studio site: quiet, underlined, 44px tap height. */
+footer.site .made-by { margin: 4px 0 0; }
+footer.site .made-by a { display: inline-flex; align-items: center; min-height: 44px; padding: 0; text-decoration: underline; text-underline-offset: 4px; }
 footer.site .priv { font-size: 12px; color: var(--muted); padding-top: 16px; margin-top: 0; }
 /* Phones: two columns, brand across both; links get >= 24px targets (WCAG 2.2 2.5.8). */
 @media (max-width: 720px) {
@@ -731,7 +734,7 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
   </div></main>
   <footer class="site"><div class="wrap">
     <div class="cols">
-      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — calculadora de discos y seguimiento de PR</div></div>
+      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — calculadora de discos y seguimiento de PR</div><p class="made-by">Sitio por <a href="https://cardonstudio.com/es/web-design/">Cardon Studio</a></p></div>
       <div><strong>Herramientas</strong><a href="/es/herramientas/">Todas las herramientas</a><a href="/es/calculadora-de-discos/">Calculadora de discos</a><a href="/es/calculadora-1rm/">Calculadora 1RM</a><a href="/es/calculadora-calentamiento/">Calentamiento</a><a href="/es/conversor-kg-lb/">Conversor kg ↔ lb</a><a href="/es/calculadora-porcentajes-1rm/">Porcentajes 1RM</a><a href="/es/cuanto-pesa-la-barra-cargada/">Barra cargada</a><a href="/es/calculadora-discos-casa/">Discos en casa</a><a href="/es/calculadora-531/">Calculadora 5/3/1</a></div>
       <div><strong>Guías</strong><a href="/es/guia/">Todas las guías</a><a href="/es/guia/colores-discos-olimpicos/">Colores de los discos olímpicos: la guía completa</a><a href="/es/guia/peso-de-barras/">¿Cuánto pesa una barra Z y una barra de gimnasio?</a><a href="/es/guia/equivalencias-kg-lb/">¿Cuánto es 100 kg en libras? Equivalencias kg ↔ lb</a></div>
       <div><strong>Pesos populares</strong><a href="/es/discos/60-kg/">60 kg</a><a href="/es/discos/80-kg/">80 kg</a><a href="/es/discos/100-kg/">100 kg</a><a href="/es/discos/120-kg/">120 kg</a><a href="/es/discos/140-kg/">140 kg</a><a href="/es/discos/160-kg/">160 kg</a><a href="/es/discos/180-kg/">180 kg</a><a href="/es/discos/200-kg/">200 kg</a></div>

@@ -649,6 +649,9 @@ footer.site a { color: color-mix(in srgb, var(--ink) 72%, transparent); display:
 footer.site a:hover { color: var(--ink); text-decoration: underline; }
 footer.site .brand { font-size: 17px; margin-bottom: 6px; gap: 8px; }
 footer.site .brand .mark { width: 24px; height: 24px; border-radius: 6px; }
+/* The studio credit, as on every Cardon Studio site: quiet, underlined, 44px tap height. */
+footer.site .made-by { margin: 4px 0 0; }
+footer.site .made-by a { display: inline-flex; align-items: center; min-height: 44px; padding: 0; text-decoration: underline; text-underline-offset: 4px; }
 footer.site .priv { font-size: 12px; color: var(--muted); padding-top: 16px; margin-top: 0; }
 /* Phones: two columns, brand across both; links get >= 24px targets (WCAG 2.2 2.5.8). */
 @media (max-width: 720px) {
@@ -729,7 +732,7 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
   </div></main>
   <footer class="site"><div class="wrap">
     <div class="cols">
-      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — calculateur de disques et suivi des PR</div></div>
+      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — calculateur de disques et suivi des PR</div><p class="made-by">Site par <a href="https://cardonstudio.com/fr/web-design/">Cardon Studio</a></p></div>
       <div><strong>Outils</strong><a href="/fr/outils/">Tous les outils</a><a href="/fr/calculateur-de-disques/">Calculateur de disques</a><a href="/fr/calculateur-1rm/">Calculateur 1RM</a><a href="/fr/calculateur-echauffement/">Échauffement</a><a href="/fr/convertisseur-kg-lb/">Convertisseur kg ↔ lb</a><a href="/fr/calculateur-pourcentage-1rm/">Pourcentages 1RM</a><a href="/fr/poids-sur-la-barre/">Barre chargée</a><a href="/fr/calculateur-disques-maison/">Disques maison</a><a href="/fr/calculateur-531/">Calculateur 5/3/1</a></div>
       <div><strong>Guides</strong><a href="/fr/guide/">Tous les guides</a><a href="/fr/guide/couleurs-disques-olympiques/">Couleurs des disques olympiques : le guide complet</a><a href="/fr/guide/poids-des-barres/">Combien pèse une barre ? Tous les types</a><a href="/fr/guide/equivalences-kg-lb/">Équivalences kg ↔ lb pour la salle</a></div>
       <div><strong>Charges courantes</strong><a href="/fr/disques/60-kg/">60 kg</a><a href="/fr/disques/80-kg/">80 kg</a><a href="/fr/disques/100-kg/">100 kg</a><a href="/fr/disques/120-kg/">120 kg</a><a href="/fr/disques/140-kg/">140 kg</a><a href="/fr/disques/160-kg/">160 kg</a><a href="/fr/disques/180-kg/">180 kg</a><a href="/fr/disques/200-kg/">200 kg</a></div>

@@ -649,6 +649,9 @@ footer.site a { color: color-mix(in srgb, var(--ink) 72%, transparent); display:
 footer.site a:hover { color: var(--ink); text-decoration: underline; }
 footer.site .brand { font-size: 17px; margin-bottom: 6px; gap: 8px; }
 footer.site .brand .mark { width: 24px; height: 24px; border-radius: 6px; }
+/* The studio credit, as on every Cardon Studio site: quiet, underlined, 44px tap height. */
+footer.site .made-by { margin: 4px 0 0; }
+footer.site .made-by a { display: inline-flex; align-items: center; min-height: 44px; padding: 0; text-decoration: underline; text-underline-offset: 4px; }
 footer.site .priv { font-size: 12px; color: var(--muted); padding-top: 16px; margin-top: 0; }
 /* Phones: two columns, brand across both; links get >= 24px targets (WCAG 2.2 2.5.8). */
 @media (max-width: 720px) {
@@ -729,7 +732,7 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
   </div></main>
   <footer class="site"><div class="wrap">
     <div class="cols">
-      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — калькулятор блинов и трекер PR</div></div>
+      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — калькулятор блинов и трекер PR</div><p class="made-by">Сайт создан <a href="https://cardonstudio.com/web-design/">Cardon Studio</a></p></div>
       <div><strong>Инструменты</strong><a href="/ru/instrumenty/">Все инструменты</a><a href="/ru/kalkulyator-blinov/">Калькулятор блинов</a><a href="/ru/1rm-kalkulyator/">Калькулятор 1RM</a><a href="/ru/razminochnye-podhody/">Разминка</a><a href="/ru/kg-v-funty/">Конвертер kg ↔ lb</a><a href="/ru/procenty-ot-1rm/">Проценты от 1RM</a><a href="/ru/ves-shtangi/">Вес собранной штанги</a><a href="/ru/blini-dlya-domashnego-zala/">Блины для домашнего зала</a><a href="/ru/kalkulyator-531/">Калькулятор 5/3/1</a></div>
       <div><strong>Популярные веса</strong><a href="/ru/blini/60-kg/">60 kg</a><a href="/ru/blini/80-kg/">80 kg</a><a href="/ru/blini/100-kg/">100 kg</a><a href="/ru/blini/120-kg/">120 kg</a><a href="/ru/blini/140-kg/">140 kg</a><a href="/ru/blini/160-kg/">160 kg</a><a href="/ru/blini/180-kg/">180 kg</a><a href="/ru/blini/200-kg/">200 kg</a></div>
       <div><strong>LoadPR</strong><a href="/about/">О LoadPR</a><a href="/support/">Поддержка</a><a href="/privacy/">Конфиденциальность</a><a href="/terms/">Условия</a></div>

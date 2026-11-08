@@ -649,6 +649,9 @@ footer.site a { color: color-mix(in srgb, var(--ink) 72%, transparent); display:
 footer.site a:hover { color: var(--ink); text-decoration: underline; }
 footer.site .brand { font-size: 17px; margin-bottom: 6px; gap: 8px; }
 footer.site .brand .mark { width: 24px; height: 24px; border-radius: 6px; }
+/* The studio credit, as on every Cardon Studio site: quiet, underlined, 44px tap height. */
+footer.site .made-by { margin: 4px 0 0; }
+footer.site .made-by a { display: inline-flex; align-items: center; min-height: 44px; padding: 0; text-decoration: underline; text-underline-offset: 4px; }
 footer.site .priv { font-size: 12px; color: var(--muted); padding-top: 16px; margin-top: 0; }
 /* Phones: two columns, brand across both; links get >= 24px targets (WCAG 2.2 2.5.8). */
 @media (max-width: 720px) {
@@ -729,7 +732,7 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
   </div></main>
   <footer class="site"><div class="wrap">
     <div class="cols">
-      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — calcolatore dischi e tracker dei PR</div></div>
+      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — calcolatore dischi e tracker dei PR</div><p class="made-by">Sito realizzato da <a href="https://cardonstudio.com/web-design/">Cardon Studio</a></p></div>
       <div><strong>Strumenti</strong><a href="/it/strumenti/">Tutti gli strumenti</a><a href="/it/calcolatore-dischi/">Calcolatore dischi</a><a href="/it/calcolo-massimale-1rm/">Calcolo 1RM</a><a href="/it/calcolo-riscaldamento/">Riscaldamento</a><a href="/it/convertitore-kg-lb/">Convertitore kg ↔ lb</a><a href="/it/percentuali-massimale/">Percentuali 1RM</a><a href="/it/peso-sul-bilanciere/">Peso sul bilanciere</a><a href="/it/dischi-palestra-in-casa/">Dischi per la palestra di casa</a><a href="/it/calcolatore-531/">Calcolatore 5/3/1</a></div>
       <div><strong>Pesi popolari</strong><a href="/it/dischi/60-kg/">60 kg</a><a href="/it/dischi/80-kg/">80 kg</a><a href="/it/dischi/100-kg/">100 kg</a><a href="/it/dischi/120-kg/">120 kg</a><a href="/it/dischi/140-kg/">140 kg</a><a href="/it/dischi/160-kg/">160 kg</a><a href="/it/dischi/180-kg/">180 kg</a><a href="/it/dischi/200-kg/">200 kg</a></div>
       <div><strong>LoadPR</strong><a href="/about/">Chi siamo</a><a href="/support/">Assistenza</a><a href="/privacy/">Privacy</a><a href="/terms/">Termini</a></div>

@@ -649,6 +649,9 @@ footer.site a { color: color-mix(in srgb, var(--ink) 72%, transparent); display:
 footer.site a:hover { color: var(--ink); text-decoration: underline; }
 footer.site .brand { font-size: 17px; margin-bottom: 6px; gap: 8px; }
 footer.site .brand .mark { width: 24px; height: 24px; border-radius: 6px; }
+/* The studio credit, as on every Cardon Studio site: quiet, underlined, 44px tap height. */
+footer.site .made-by { margin: 4px 0 0; }
+footer.site .made-by a { display: inline-flex; align-items: center; min-height: 44px; padding: 0; text-decoration: underline; text-underline-offset: 4px; }
 footer.site .priv { font-size: 12px; color: var(--muted); padding-top: 16px; margin-top: 0; }
 /* Phones: two columns, brand across both; links get >= 24px targets (WCAG 2.2 2.5.8). */
 @media (max-width: 720px) {
@@ -729,7 +732,7 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
   </div></main>
   <footer class="site"><div class="wrap">
     <div class="cols">
-      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — skivkalkylator och PR-logg</div></div>
+      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — skivkalkylator och PR-logg</div><p class="made-by">Webbplats av <a href="https://cardonstudio.com/web-design/">Cardon Studio</a></p></div>
       <div><strong>Verktyg</strong><a href="/sv/verktyg/">Alla verktyg</a><a href="/sv/skivkalkylator/">Skivkalkylator</a><a href="/sv/1rm-kalkylator/">1RM-kalkylator</a><a href="/sv/uppvarmning-kalkylator/">Uppvärmning</a><a href="/sv/kg-till-pund/">kg ↔ lb-omvandlare</a><a href="/sv/1rm-procent/">1RM-procent</a><a href="/sv/vikt-pa-stangen/">Vikt på stången</a><a href="/sv/hemmagym-skivor/">Skivor för hemmagym</a><a href="/sv/531-kalkylator/">5/3/1-kalkylator</a></div>
       <div><strong>Populära vikter</strong><a href="/sv/skivor/60-kg/">60 kg</a><a href="/sv/skivor/80-kg/">80 kg</a><a href="/sv/skivor/100-kg/">100 kg</a><a href="/sv/skivor/120-kg/">120 kg</a><a href="/sv/skivor/140-kg/">140 kg</a><a href="/sv/skivor/160-kg/">160 kg</a><a href="/sv/skivor/180-kg/">180 kg</a><a href="/sv/skivor/200-kg/">200 kg</a></div>
       <div><strong>LoadPR</strong><a href="/about/">Om LoadPR</a><a href="/support/">Support</a><a href="/privacy/">Integritet</a><a href="/terms/">Villkor</a></div>

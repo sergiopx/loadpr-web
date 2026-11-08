@@ -647,6 +647,9 @@ footer.site a { color: color-mix(in srgb, var(--ink) 72%, transparent); display:
 footer.site a:hover { color: var(--ink); text-decoration: underline; }
 footer.site .brand { font-size: 17px; margin-bottom: 6px; gap: 8px; }
 footer.site .brand .mark { width: 24px; height: 24px; border-radius: 6px; }
+/* The studio credit, as on every Cardon Studio site: quiet, underlined, 44px tap height. */
+footer.site .made-by { margin: 4px 0 0; }
+footer.site .made-by a { display: inline-flex; align-items: center; min-height: 44px; padding: 0; text-decoration: underline; text-underline-offset: 4px; }
 footer.site .priv { font-size: 12px; color: var(--muted); padding-top: 16px; margin-top: 0; }
 /* Phones: two columns, brand across both; links get >= 24px targets (WCAG 2.2 2.5.8). */
 @media (max-width: 720px) {
@@ -731,7 +734,7 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
   </div></main>
   <footer class="site"><div class="wrap">
     <div class="cols">
-      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — プレート計算とPR記録</div></div>
+      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — プレート計算とPR記録</div><p class="made-by">サイト制作: <a href="https://cardonstudio.com/web-design/">Cardon Studio</a></p></div>
       <div><strong>ツール</strong><a href="/ja/tools/">すべてのツール</a><a href="/ja/plate-keisan/">プレート計算</a><a href="/ja/1rm-keisan/">1RM計算</a><a href="/ja/warmup-keisan/">ウォームアップ</a><a href="/ja/kg-lb-henkan/">kg ↔ lb 換算</a><a href="/ja/1rm-percent-hyo/">1RMパーセンテージ</a><a href="/ja/bar-no-juryo/">バーの重量を読む</a><a href="/ja/home-gym-plate-keisan/">ホームジムのプレート</a><a href="/ja/531-keisan/">5/3/1計算</a></div>
       <div><strong>よく使われる重量</strong><a href="/ja/plate/60-kg/">60 kg</a><a href="/ja/plate/80-kg/">80 kg</a><a href="/ja/plate/100-kg/">100 kg</a><a href="/ja/plate/120-kg/">120 kg</a><a href="/ja/plate/140-kg/">140 kg</a><a href="/ja/plate/160-kg/">160 kg</a><a href="/ja/plate/180-kg/">180 kg</a><a href="/ja/plate/200-kg/">200 kg</a></div>
       <div><strong>LoadPR</strong><a href="/about/">LoadPRについて</a><a href="/support/">サポート</a><a href="/privacy/">プライバシー</a><a href="/terms/">利用規約</a></div>

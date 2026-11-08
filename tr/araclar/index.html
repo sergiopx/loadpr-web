@@ -649,6 +649,9 @@ footer.site a { color: color-mix(in srgb, var(--ink) 72%, transparent); display:
 footer.site a:hover { color: var(--ink); text-decoration: underline; }
 footer.site .brand { font-size: 17px; margin-bottom: 6px; gap: 8px; }
 footer.site .brand .mark { width: 24px; height: 24px; border-radius: 6px; }
+/* The studio credit, as on every Cardon Studio site: quiet, underlined, 44px tap height. */
+footer.site .made-by { margin: 4px 0 0; }
+footer.site .made-by a { display: inline-flex; align-items: center; min-height: 44px; padding: 0; text-decoration: underline; text-underline-offset: 4px; }
 footer.site .priv { font-size: 12px; color: var(--muted); padding-top: 16px; margin-top: 0; }
 /* Phones: two columns, brand across both; links get >= 24px targets (WCAG 2.2 2.5.8). */
 @media (max-width: 720px) {
@@ -729,7 +732,7 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
   </div></main>
   <footer class="site"><div class="wrap">
     <div class="cols">
-      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — plaka hesaplayıcı ve PR takibi</div></div>
+      <div class="foot-brand"><span class="brand"><img class="mark" src="/assets/icon/icon-64.png" width="36" height="36" alt="" decoding="async"><span>Load<b>PR</b></span></span><div>LoadPR — plaka hesaplayıcı ve PR takibi</div><p class="made-by">Web sitesi: <a href="https://cardonstudio.com/web-design/">Cardon Studio</a></p></div>
       <div><strong>Araçlar</strong><a href="/tr/araclar/">Tüm araçlar</a><a href="/tr/plaka-hesaplama/">Plaka hesaplama</a><a href="/tr/1rm-hesaplama/">1RM hesaplama</a><a href="/tr/isinma-hesaplama/">Isınma</a><a href="/tr/kg-lb-cevirici/">kg ↔ lb çevirici</a><a href="/tr/1rm-yuzde-hesaplama/">1RM yüzdeleri</a><a href="/tr/bardaki-agirlik/">Bardaki ağırlık</a><a href="/tr/ev-salonu-plaka-hesaplama/">Ev salonu plakaları</a><a href="/tr/531-hesaplama/">5/3/1 hesaplayıcı</a></div>
       <div><strong>Popüler ağırlıklar</strong><a href="/tr/plaka/60-kg/">60 kg</a><a href="/tr/plaka/80-kg/">80 kg</a><a href="/tr/plaka/100-kg/">100 kg</a><a href="/tr/plaka/120-kg/">120 kg</a><a href="/tr/plaka/140-kg/">140 kg</a><a href="/tr/plaka/160-kg/">160 kg</a><a href="/tr/plaka/180-kg/">180 kg</a><a href="/tr/plaka/200-kg/">200 kg</a></div>
       <div><strong>LoadPR</strong><a href="/about/">Hakkında</a><a href="/support/">Destek</a><a href="/privacy/">Gizlilik</a><a href="/terms/">Koşullar</a></div>

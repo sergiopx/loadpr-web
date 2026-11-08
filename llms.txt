@@ -81,7 +81,7 @@ The complete English text of every tool, guide and app feature page, with tables
 - [How many plates for 95 to 495 lb (10 pages, one per weight)](https://loadpr.com/how-many-plates/95-lb/): URL pattern https://loadpr.com/how-many-plates/<weight>-lb/
 
 ### About
-- [About LoadPR](https://loadpr.com/about/): LoadPR is an iPhone plate calculator and PR tracker, plus free web calculators for loading a barbell. Built by an independent developer.
+- [About LoadPR](https://loadpr.com/about/): LoadPR is an iPhone plate calculator and PR tracker, plus free web calculators for loading a barbell. Built by Sergio Ponce at Cardon Studio.
 
 ### Support
 - [LoadPR Support: purchases, sync and bugs](https://loadpr.com/support/): Get help with the LoadPR iPhone and Apple Watch app: restore or cancel LoadPR+, iCloud sync, CSV export, where your data lives, and how to report a bug.
