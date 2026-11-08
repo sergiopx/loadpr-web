@@ -192,7 +192,11 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://loadpr.com/es/guia/equivalencias-kg-lb/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://loadpr.com/fr/guide/equivalences-kg-lb/"/>
   </url>
-  <url><loc>https://loadpr.com/guide/plates-on-each-side/</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://loadpr.com/guide/plates-on-each-side/</loc><lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loadpr.com/guide/plates-on-each-side/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://loadpr.com/es/guia/discos-por-lado/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loadpr.com/fr/guide/disques-par-cote/"/>
+  </url>
   <url><loc>https://loadpr.com/guide/how-much-does-a-plate-weigh/</loc><lastmod>2026-10-25</lastmod></url>
   <url><loc>https://loadpr.com/guide/olympic-vs-standard-plates/</loc><lastmod>2026-10-25</lastmod></url>
   <url><loc>https://loadpr.com/guide/barbell-collar-weight/</loc><lastmod>2026-10-25</lastmod></url>
@@ -405,6 +409,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://loadpr.com/guide/kg-to-lb-equivalents/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://loadpr.com/es/guia/equivalencias-kg-lb/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://loadpr.com/fr/guide/equivalences-kg-lb/"/>
+  </url>
+  <url><loc>https://loadpr.com/es/guia/discos-por-lado/</loc><lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loadpr.com/guide/plates-on-each-side/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://loadpr.com/es/guia/discos-por-lado/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loadpr.com/fr/guide/disques-par-cote/"/>
   </url>
   <url><loc>https://loadpr.com/es/discos/40-kg/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://loadpr.com/es/discos/40-kg/"/>
@@ -2275,6 +2284,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://loadpr.com/guide/kg-to-lb-equivalents/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://loadpr.com/es/guia/equivalencias-kg-lb/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://loadpr.com/fr/guide/equivalences-kg-lb/"/>
+  </url>
+  <url><loc>https://loadpr.com/fr/guide/disques-par-cote/</loc><lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loadpr.com/guide/plates-on-each-side/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://loadpr.com/es/guia/discos-por-lado/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://loadpr.com/fr/guide/disques-par-cote/"/>
   </url>
   <url><loc>https://loadpr.com/fr/disques/40-kg/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://loadpr.com/es/discos/40-kg/"/>
