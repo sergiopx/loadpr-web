@@ -282,7 +282,7 @@ About 102 kg.
 
 URL: https://loadpr.com/guide/plates-on-each-side/
 
-Updated 2026-10-25
+Updated 2026-11-09
 
 **Short answer: with a 45 lb bar and 45 lb plates, 1 plate on each side is 135 lb, 2 plates are 225 lb, 3 plates are 315 lb, 4 plates are 405 lb, 5 plates are 495 lb and 6 plates are 585 lb.** In the gym, "a plate" means one 45 lb plate (a 20 kg plate in a kilo gym), and lifters count the plates on one side of the bar. In kilos, 2 plates on each side of a 20 kg bar is 100 kg.
 
@@ -341,7 +341,7 @@ Mixed plates work too: one 45 and one 25 on each side is 185 lb, and two 45s and
 
 ### Bench press: how much is 2 plates?
 
-Bench, squat and deadlift use the same 45 lb bar in most gyms, so the numbers do not change: a 2 plate bench is 225 lb and a 3 plate squat is 315 lb. A 1 plate bench is 135 lb. If your bench bar weighs something else, use its weight instead of 45 lb; [how much a barbell weighs](https://loadpr.com/guide/barbell-weights/) lists the common bars.
+Bench, squat and deadlift use the same 45 lb bar in most gyms, so the numbers do not change: a 2 plate bench is 225 lb and a 3 plate squat is 315 lb. A 1 plate bench is 135 lb. If your bench bar weighs something else, use its weight instead of 45 lb; [how much a barbell weighs](https://loadpr.com/guide/barbell-weights/) lists the common bars. On a plate-loaded leg press the sled takes the place of the bar, so two plates on each side are 180 lb plus the sled; see [how much a leg press weighs without plates](https://loadpr.com/guide/leg-press-sled-weight/).
 
 ### Common mistakes
 
@@ -378,7 +378,7 @@ The tables on this page are plain arithmetic, with as many 45s as the load needs
 
 URL: https://loadpr.com/guide/how-much-does-a-plate-weigh/
 
-Updated 2026-10-25
+Updated 2026-11-09
 
 **Short answer: the big plate in most gyms weighs 45 lb, which is 20.41 kg. In a kilo gym the matching plate is 20 kg, which is 44.09 lb.** When lifters say "a plate" they mean one of these. A plate weighs what is stamped on it, and the tables below give every common plate in both units.
 
@@ -420,7 +420,7 @@ The 25 kg plate (55.12 lb) is heavier than a 45 lb plate, which surprises lifter
 
 ### A plate's weight vs the bar total
 
-The number on a plate is the weight of that one plate, not the weight on the bar. The load you lift is the bar plus every plate on both ends, so a pair of 45 lb plates adds 90 lb to the bar, and a pair of 20 kg plates adds 40 kg. For bar totals with 1 to 6 plates on each side, see [how much is 1 to 6 plates on each side](https://loadpr.com/guide/plates-on-each-side/).
+The number on a plate is the weight of that one plate, not the weight on the bar. The load you lift is the bar plus every plate on both ends, so a pair of 45 lb plates adds 90 lb to the bar, and a pair of 20 kg plates adds 40 kg. For bar totals with 1 to 6 plates on each side, see [how much is 1 to 6 plates on each side](https://loadpr.com/guide/plates-on-each-side/). On a machine, the starting weight replaces the bar: [how much a leg press weighs without plates](https://loadpr.com/guide/leg-press-sled-weight/) shows how to count the sled.
 
 ### Bumper plates vs iron plates
 
@@ -1607,6 +1607,87 @@ It depends on the model; many are about 7–11 kg, and counterbalanced ones feel
 
 **How do I find the weight of a Smith machine bar without a label?**
 Check the maker's listing for the model, ask the gym staff, or lift the empty bar with a hanging luggage scale. If none works, log plates only: one 45 lb plate per side is 90 lb.
+
+---
+
+## How much does a leg press weigh without plates?
+
+URL: https://loadpr.com/guide/leg-press-sled-weight/
+
+Updated 2026-11-09
+
+**Short answer: it depends on the model. There is no standard leg press sled weight like the 45 lb (20 kg) barbell.** Many plate-loaded leg presses give the sled's starting weight on a label on the frame, and that is the number to count. Add it to the plates on both sides: a 100 lb sled with two 45 lb plates on each side is 280 lb.
+
+### Example: a 100 lb sled with two 45s on each side
+
+Say the label on your leg press gives the sled's starting weight as 100 lb, and you load two 45 lb plates on each side:
+
+- Plates on one side: 45 + 45 = 90 lb.
+- Both sides: 2 × 90 = 180 lb.
+- Add the sled: 180 + 100 = **280 lb**.
+
+It is the same count as a barbell, with the sled in place of the bar. 100 lb is only an example; use the number on your machine.
+
+### Leg press totals: plates only vs with the sled
+
+| 45 lb plates on each side | Plates only | 100 lb sled |
+|---|---|---|
+| 1 | 90 lb | 190 lb |
+| 2 | 180 lb | 280 lb |
+| 3 | 270 lb | 370 lb |
+| 4 | 360 lb | 460 lb |
+
+If your sled's label gives another number, add that number to the plates-only column.
+
+### Do you count the leg press sled?
+
+Yes, if you know what it weighs: the sled moves with the plates, so it is part of the load, the way a bar is. If you don't know its weight, log plates only. Two 45s on each side are then 180 lb. It understates the load, but it is repeatable, and that is what a log needs.
+
+Whichever rule you pick, keep it. Counting the sled one week and plates only the next makes your log jump by the whole sled weight without you getting any stronger.
+
+### Why a leg press number is not a squat number
+
+On an angled leg press the sled runs up rails set at an incline, so your legs do not push against the full weight on it, and the rollers add some friction of their own. How much that changes the load you feel depends on the angle and on the machine. So 280 lb on a leg press is not comparable with a 280 lb squat, or even with 280 lb on another brand's leg press. Track each machine as its own lift, the way you would a [Smith machine](https://loadpr.com/guide/smith-machine-bar-weight/).
+
+### How to find a plate-loaded machine's starting weight
+
+- **Read the label.** Leg presses, hack squats and other plate-loaded machines often state their starting weight on a sticker or plate on the frame.
+- **Check the maker's listing.** The model name is usually on the frame, and the product page or manual often gives the starting weight.
+- **Ask the staff.** Gyms often know the number for their own machines.
+
+None of these works? Use the plates-only rule above.
+
+### Plates for a target on the leg press
+
+Reverse plate math works the same as on a barbell: take the sled off the target, halve what is left, and load that on each side. For 400 lb on a 100 lb sled, 400 − 100 = 300 lb of plates, or 150 lb on each side: **three 45s, a 10 and a 5**.
+
+An odd starting weight such as 103 lb means round targets often can't be loaded exactly. Two 45s on each side of a 103 lb sled make 283 lb. For 300 lb, the sled leaves 197 lb of plates, 98.5 lb a side, so the nearest loads are 298 lb (two 45s, a 5 and a 2.5 on each side) and 303 lb (two 45s and a 10 on each side). [Why you can't load an exact weight](https://loadpr.com/guide/cant-load-exact-weight/) explains these steps. To skip the arithmetic, pick "Custom" as the bar in the [plate calculator](https://loadpr.com/plate-calculator/) and type the sled's weight.
+
+### Leg press weight in kg
+
+In a kilo gym it works the same. If the label gives the sled as 50 kg and you load two 20 kg plates on each side, the total is 50 + 2 × 40 = **130 kg**, or 80 kg if you count plates only. For 150 kg on that sled, put a 25 and a 25 on each side. If the label is in pounds, the [kg ↔ lb converter](https://loadpr.com/kg-to-lb/) turns it into kilos: 100 lb is 45.36 kg and 103 lb is 46.72 kg.
+
+### Common mistakes
+
+- **Counting the sled as 45 lb.** That is the Olympic bar. A leg press sled depends on the model.
+- **Counting one side only.** Plates go on both sides, so two 45s on each side are 180 lb of plates, not 90 lb.
+- **Switching rules.** Counting the sled one week and plates only the next makes a jump in your log that never happened.
+- **Comparing machines.** Two leg presses with the same plates can have different sleds and angles; keep a record for each one.
+- **Comparing the leg press with the squat.** The angle and the sled make the numbers different lifts.
+
+### FAQ
+
+**Do you count the leg press sled in the total?**
+Yes, if you know its starting weight: a 100 lb sled with two 45 lb plates on each side is 280 lb. If you don't know it, log plates only (180 lb) and count the same way every time.
+
+**What is the starting weight of a leg press?**
+It depends on the model; there is no standard. Read the label on the frame or the maker's listing, then add the plates: a 100 lb sled with one 45 lb plate on each side is 190 lb.
+
+**How do I find the starting weight of a plate-loaded machine?**
+Look for a label on the frame, check the maker's listing for the model or ask the gym staff. If none works, log plates only: one 45 lb plate on each side is 90 lb.
+
+**How do I work out the plates for a target on a leg press?**
+Subtract the sled, then halve the rest. For 400 lb on a 100 lb sled, 300 lb of plates means 150 lb on each side: three 45s, a 10 and a 5.
 
 # Tool variations
 
