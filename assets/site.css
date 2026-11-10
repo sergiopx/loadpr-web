@@ -231,6 +231,17 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .lp-weight-big .lp-unit { font-size: .38em; font-weight: 600; color: var(--muted); letter-spacing: 0; }
 .lp-badge { font-size: 14px; letter-spacing: -.01em; color: var(--muted); font-weight: 600; align-self: center; }
 .lp-exact .lp-badge { color: var(--ok); }
+/* Embed code on tool pages, and the iframe document itself (/embed/<tool>/). */
+.embed-code { margin: 32px 0 0; padding: 16px 20px; background: var(--bg-alt); border-radius: var(--radius); font-size: 15px; }
+.embed-code summary { cursor: pointer; font-weight: 600; min-height: 28px; }
+.embed-code p { margin: 12px 0; color: var(--muted); }
+.embed-code textarea { width: 100%; font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; padding: 12px; border: 1px solid var(--hair); border-radius: 12px; background: var(--bg); color: var(--ink); resize: vertical; }
+body.page-embed { margin: 0; padding: 12px; }
+body.page-embed #lp-app { padding: 20px; animation: none; }
+.embed-credit { display: flex; flex-wrap: wrap; gap: 6px 20px; justify-content: space-between; margin: 12px 4px 0; font-size: 14px; }
+.embed-credit a { color: var(--blue); font-weight: 600; text-decoration: none; }
+.lp-share { align-self: flex-start; border: 0; background: transparent; color: var(--blue); padding: 10px 0; min-height: 44px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+.lp-share:hover { text-decoration: underline; }
 .lp-warn { color: var(--warn); font-weight: 500; margin: 0; font-size: 15px; }
 .lp-diagram-wrap { margin: 12px 0 14px; }
 .lp-diagram { max-height: 176px; display: block; }

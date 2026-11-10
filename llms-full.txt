@@ -24,7 +24,7 @@ A barbell is loaded symmetrically: every plate you put on one side goes on the o
 
 ### Olympic plate colors
 
-Under the IWF standard, competition plates follow a color code: **25 kg red, 20 kg blue, 15 kg yellow, 10 kg green**. Our diagram uses the same colors so you can read a load at a glance.
+Under the IWF standard, competition plates follow a color code: **25 kg red, 20 kg blue, 15 kg yellow, 10 kg green**. Our diagram uses the LoadPR app's own colors instead (25 kg blue, 20 kg teal, 15 kg yellow, 10 kg orange), so it matches what you see in the app.
 
 ---
 

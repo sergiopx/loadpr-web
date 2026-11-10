@@ -19,6 +19,28 @@ const STORE_KEY = 'loadpr';
 // as usual.
 let preset = cfg.preset || null;
 
+// ── shareable links ─────────────────────────────────────────────────────────
+// A tool's current case can travel in the URL: /plate-calculator/?w=140&u=kg
+// (&bar=olympic_w), /1rm-calculator/?w=100&r=5. The page's canonical stays the
+// bare URL, so these never become separate indexed pages. Retired weight pages
+// 301 to such a link (build.js 3b). Values are read through Number() or matched
+// against known ids, never written to the DOM as markup. An embed shares links
+// to the tool page, not to its own frame URL (cfg.sharePath).
+function urlParams() {
+  try { return new URLSearchParams(location.search); } catch { return new URLSearchParams(); }
+}
+// The plate calculator treats a shared load like a satellite's preset: it shows
+// first, the visitor's saved equipment is untouched until they type.
+if (!preset && cfg.tool === 'plateCalc') {
+  const q = urlParams();
+  const target = Number(q.get('w'));
+  const unit = q.get('u');
+  if (target > 0 && target <= 1000 && (unit === 'kg' || unit === 'lb')) {
+    const barId = BAR_PRESETS[unit].some((b) => b.id === q.get('bar')) ? q.get('bar') : 'olympic_m';
+    preset = { unit, target, barId };
+  }
+}
+
 // ── tiny DOM helper ────────────────────────────────────────────────────────
 // `value` is set as a property after the children, so a <select> picks it up.
 function h(tag, attrs = {}, children = []) {
@@ -75,6 +97,25 @@ function holdPreset(root, onRelease) {
     onRelease();
   };
   for (const t of ['input', 'change', 'click']) root.addEventListener(t, release, true);
+}
+
+// "Copy link" for the case on screen. params() returns the query values, or
+// null when there is nothing to share. The label confirms only a real copy;
+// without clipboard access the link goes to the address bar instead.
+function shareButton(params) {
+  const btn = h('button', { type: 'button', class: 'lp-share', onclick: async () => {
+    const p = params();
+    if (!p || typeof location === 'undefined') return;
+    const url = `${location.origin}${cfg.sharePath || location.pathname}?${new URLSearchParams(p)}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      btn.textContent = s.ui.linkCopied;
+      setTimeout(() => { btn.textContent = s.ui.copyLink; }, 2000);
+    } catch {
+      if (!cfg.embed) try { history.replaceState(null, '', url); } catch {}
+    }
+  } }, s.ui.copyLink);
+  return btn;
 }
 
 // Re-render a widget from saved state (after a unit switch).
@@ -234,7 +275,8 @@ function mountPlateCalc(root) {
     h('div', { class: 'lp-form lp-form-main' }, [h('div', { class: 'lp-row' }, [
       field(s.ui.targetWeight, target),
       field(s.ui.unit, unitToggle(st, () => remount(root, mountPlateCalc))),
-    ])]),
+    ]), shareButton(() => (Number(target.value) > 0
+      ? { w: target.value, u: st.unit, ...(st.barId !== 'olympic_m' && st.barId !== 'custom' && { bar: st.barId }) } : null))]),
     out,
     h('div', { class: 'lp-form lp-form-more' }, [
       field(s.ui.bar, barSelect(st, compute)),
@@ -250,8 +292,12 @@ function mountOneRepMax(root) {
   const t = s.tools.oneRepMax;
   const out = h('div', { class: 'lp-out' });
   const st = loadState();
-  const weight = h('input', { type: 'number', step: '0.5', min: '0', inputmode: 'decimal', value: st.ormW ?? exampleTarget(cfg.unitDefault) });
-  const reps = h('input', { type: 'number', min: '1', max: '20', value: st.ormR || '5' });
+  // A shared link (?w=100&r=5) wins over the saved case.
+  const q = urlParams();
+  const shared = Number(q.get('w')) > 0 && Number(q.get('w')) <= 1000 && Number(q.get('r')) >= 1 && Number(q.get('r')) <= 20
+    ? { w: String(Number(q.get('w'))), r: String(Math.round(Number(q.get('r')))) } : null;
+  const weight = h('input', { type: 'number', step: '0.5', min: '0', inputmode: 'decimal', value: shared?.w ?? st.ormW ?? exampleTarget(cfg.unitDefault) });
+  const reps = h('input', { type: 'number', min: '1', max: '20', value: shared?.r || st.ormR || '5' });
   const formula = h('select', {}, Object.keys(t.formulas).map((k) => h('option', { value: k }, t.formulas[k])));
   const go = () => {
     const w = Number(weight.value), r = Number(reps.value);
@@ -273,6 +319,7 @@ function mountOneRepMax(root) {
   formula.addEventListener('change', go);
   root.append(h('div', { class: 'lp-form' }, [
     field(t.workingWeight || s.ui.targetWeight, weight), field(t.reps, reps), field(t.formula, formula),
+    shareButton(() => (Number(weight.value) > 0 && Number(reps.value) >= 1 ? { w: weight.value, r: reps.value } : null)),
   ]), out);
   go();
 }
@@ -591,7 +638,7 @@ const WIDGETS = {
 };
 
 function boot() {
-  languageSuggestion();
+  if (!cfg.embed) languageSuggestion(); // an embed speaks its host page's language
   galleryArrows();
   const root = document.getElementById('lp-app');
   if (!root) return;
