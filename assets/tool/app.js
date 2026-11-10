@@ -334,14 +334,16 @@ function mountPercentTable(root) {
   const out = h('div', { class: 'lp-out' });
   const pctSelect = (value) => h('select', { value: String(value) },
     PCT_OPTIONS.map((p) => h('option', { value: String(p) }, `${p}%`)));
-  const orm = h('input', { type: 'number', step: '0.5', min: '0', inputmode: 'decimal', value: saved.pctOrm || '' });
+  // A first visit opens on a worked example, like the plate calculator; it is
+  // saved only once typed, and a max the visitor cleared stays cleared ('').
+  const orm = h('input', { type: 'number', step: '0.5', min: '0', inputmode: 'decimal', value: saved.pctOrm ?? exampleTarget(st.unit) });
   const from = pctSelect(saved.pctFrom || 100);
   const to = pctSelect(saved.pctTo || 50);
   const step = h('select', { value: String(saved.pctStep || 5) },
     [5, 2.5].map((v) => h('option', { value: String(v) }, `${fmt(v)}%`)));
 
   const go = () => {
-    saveState({ pctOrm: orm.value, pctFrom: from.value, pctTo: to.value, pctStep: step.value });
+    saveState({ pctFrom: from.value, pctTo: to.value, pctStep: step.value });
     out.innerHTML = '';
     const w = Number(orm.value);
     if (!w || w < 0) return;
@@ -354,7 +356,7 @@ function mountPercentTable(root) {
       ]))),
     ]))));
   };
-  orm.addEventListener('input', go);
+  orm.addEventListener('input', () => { saveState({ pctOrm: orm.value }); go(); });
   [from, to, step].forEach((el) => el.addEventListener('change', go));
   root.append(h('div', { class: 'lp-form' }, [
     field(t.oneRm, orm),

@@ -272,6 +272,13 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .lp-weight-big .lp-unit { font-size: .38em; font-weight: 600; color: var(--muted); letter-spacing: 0; }
 .lp-badge { font-size: 14px; letter-spacing: -.01em; color: var(--muted); font-weight: 600; align-self: center; }
 .lp-exact .lp-badge { color: var(--ok); }
+/* Static 1RM percentage chart under the tool. */
+.pct-chart { margin: 56px auto 0; max-width: 860px; }
+.pct-chart h2 { font-size: clamp(24px, 3vw, 32px); margin: 0 0 16px; }
+.pct-chart .lp-table-wrap { background: var(--bg-alt); border-radius: var(--radius); padding: 8px 12px; }
+.pct-chart .lp-table th[scope="row"] { color: var(--ink); }
+.pct-chart .lp-table tbody tr:last-child th { border-bottom: 0; }
+.pct-chart .lp-table td, .pct-chart .lp-table th { white-space: nowrap; }
 /* Embed code on tool pages, and the iframe document itself (/embed/<tool>/). */
 .embed-code { margin: 32px 0 0; padding: 16px 20px; background: var(--bg-alt); border-radius: var(--radius); font-size: 15px; }
 .embed-code summary { cursor: pointer; font-weight: 600; min-height: 28px; }
@@ -350,10 +357,14 @@ body.page-embed #lp-app { padding: 20px; animation: none; }
 .lp-totals .lp-more { background: transparent; box-shadow: none; color: var(--muted); }
 @media (max-width: 420px) { .lp-step-grid, .lp-inv-grid { grid-template-columns: 1fr; } }
 
-.lp-langbar { display: flex; align-items: center; gap: 12px; justify-content: center; flex-wrap: wrap; background: var(--surface-2); color: var(--ink); padding: 10px 16px; font-size: 14px; border-bottom: 1px solid var(--hair); }
+/* Pinned to the bottom edge: it arrives after first paint, and in the flow it pushed the whole page down (CLS). */
+.lp-langbar { position: fixed; inset: auto 0 0 0; z-index: 60; display: flex; align-items: center; gap: 12px; justify-content: center; flex-wrap: wrap; background: var(--surface-2); color: var(--ink); padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); font-size: 14px; border-top: 1px solid var(--hair); box-shadow: 0 -8px 24px rgba(0,0,0,.08); }
 .lp-btn-sm { background: var(--blue); color: #fff; border: 0; padding: 7px 16px; border-radius: var(--pill); font-weight: 500; font-size: 13px; cursor: pointer; font-family: inherit; }
 .lp-btn-sm.ghost { background: transparent; color: var(--blue); }
 #lp-app:not(.lp-ready) .lp-form { opacity: .55; }
+/* Hold the widget's first-visit height until it mounts (config/tool-heights.json), so the page under it doesn't jump. */
+#lp-app:not(.lp-ready) { min-height: var(--lp-h, 0); }
+@media (min-width: 900px) { #lp-app:not(.lp-ready) { min-height: var(--lp-h-wide, var(--lp-h, 0)); } }
 
 /* ── programmatic hero: the number is the page ───────────────────────────── */
 .num-hero { padding-top: 40px; text-align: center; }
@@ -734,7 +745,7 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
     </nav>
     <section class="nearby"><h2>Cargas cercanas</h2><div class="nearby-grid"><a href="/es/discos/240-kg/"><strong>240 kg</strong><span>¿Cuántos discos para 240 kg?</span></a><a href="/es/discos/250-kg/"><strong>250 kg</strong><span>¿Cuántos discos para 250 kg?</span></a><a href="/es/discos/290-kg/"><strong>290 kg</strong><span>¿Cuántos discos para 290 kg?</span></a><a href="/es/discos/300-kg/"><strong>300 kg</strong><span>¿Cuántos discos para 300 kg?</span></a></div></section>
     <section class="tool-section"><h2>Prueba con tu propio peso y tus discos:</h2>
-    <div id="lp-app"><noscript><p>Calcula discos, guarda tus barras y sigue tus PR desde el móvil. <a href="https://apps.apple.com/app/apple-store/id6768525538?pt=128893237&amp;ct=es-discos-270-kg-hero&amp;mt=8">Descargar en el App Store</a></p></noscript></div></section>
+    <div id="lp-app" style="--lp-h:735px;--lp-h-wide:753px"><noscript><p>Calcula discos, guarda tus barras y sigue tus PR desde el móvil. <a href="https://apps.apple.com/app/apple-store/id6768525538?pt=128893237&amp;ct=es-discos-270-kg-hero&amp;mt=8">Descargar en el App Store</a></p></noscript></div></section>
     <section class="related-guides" aria-labelledby="rg-h"><h2 id="rg-h">Guías relacionadas</h2><ul class="guide-list"><li><a class="guide-card" href="/es/guia/peso-de-barras/"><span class="guide-card-t">¿Cuánto pesa una barra Z y una barra de gimnasio?</span><span class="guide-card-d">La barra Z (EZ o W) pesa 7–11 kg (15–25 lb): unos 10 kg la olímpica y 7 kg la normal. La barra olímpica del gym pesa 20 kg (45 lb). Tabla en kg y lb.</span></a></li><li><a class="guide-card" href="/es/guia/discos-por-lado/"><span class="guide-card-t">¿Cuántos kilos son 1, 2, 3 o más discos por lado?</span><span class="guide-card-d">1 disco de 20 kg por lado son 60 kg, 2 discos 100 kg, 3 discos 140 kg y 4 discos 180 kg con barra de 20 kg. En libras, 2 discos por lado son 225 lb.</span></a></li><li><a class="guide-card" href="/es/guia/colores-discos-olimpicos/"><span class="guide-card-t">Colores de los discos olímpicos: la guía completa</span><span class="guide-card-d">Qué significa cada color de disco olímpico según la IWF: 25 kg rojo, 20 kg azul, 15 kg amarillo, 10 kg verde y las placas de cambio.</span></a></li></ul></section>
     <nav class="related" aria-label="Herramientas"><a href="/es/calculadora-de-discos/">Calculadora de discos</a><a href="/es/calculadora-1rm/">Calculadora 1RM</a><a href="/es/calculadora-calentamiento/">Calentamiento</a><a href="/es/conversor-kg-lb/">Conversor kg ↔ lb</a><a href="/es/calculadora-porcentajes-1rm/">Porcentajes 1RM</a><a href="/es/cuanto-pesa-la-barra-cargada/">Barra cargada</a><a href="/es/calculadora-discos-casa/">Discos en casa</a><a href="/es/calculadora-531/">Calculadora 5/3/1</a></nav>
     <aside class="cta"><div class="cta-in">

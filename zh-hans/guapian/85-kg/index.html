@@ -272,6 +272,13 @@ main > .wrap > :last-child:not(.cta) { margin-bottom: 80px; }
 .lp-weight-big .lp-unit { font-size: .38em; font-weight: 600; color: var(--muted); letter-spacing: 0; }
 .lp-badge { font-size: 14px; letter-spacing: -.01em; color: var(--muted); font-weight: 600; align-self: center; }
 .lp-exact .lp-badge { color: var(--ok); }
+/* Static 1RM percentage chart under the tool. */
+.pct-chart { margin: 56px auto 0; max-width: 860px; }
+.pct-chart h2 { font-size: clamp(24px, 3vw, 32px); margin: 0 0 16px; }
+.pct-chart .lp-table-wrap { background: var(--bg-alt); border-radius: var(--radius); padding: 8px 12px; }
+.pct-chart .lp-table th[scope="row"] { color: var(--ink); }
+.pct-chart .lp-table tbody tr:last-child th { border-bottom: 0; }
+.pct-chart .lp-table td, .pct-chart .lp-table th { white-space: nowrap; }
 /* Embed code on tool pages, and the iframe document itself (/embed/<tool>/). */
 .embed-code { margin: 32px 0 0; padding: 16px 20px; background: var(--bg-alt); border-radius: var(--radius); font-size: 15px; }
 .embed-code summary { cursor: pointer; font-weight: 600; min-height: 28px; }
@@ -350,10 +357,14 @@ body.page-embed #lp-app { padding: 20px; animation: none; }
 .lp-totals .lp-more { background: transparent; box-shadow: none; color: var(--muted); }
 @media (max-width: 420px) { .lp-step-grid, .lp-inv-grid { grid-template-columns: 1fr; } }
 
-.lp-langbar { display: flex; align-items: center; gap: 12px; justify-content: center; flex-wrap: wrap; background: var(--surface-2); color: var(--ink); padding: 10px 16px; font-size: 14px; border-bottom: 1px solid var(--hair); }
+/* Pinned to the bottom edge: it arrives after first paint, and in the flow it pushed the whole page down (CLS). */
+.lp-langbar { position: fixed; inset: auto 0 0 0; z-index: 60; display: flex; align-items: center; gap: 12px; justify-content: center; flex-wrap: wrap; background: var(--surface-2); color: var(--ink); padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); font-size: 14px; border-top: 1px solid var(--hair); box-shadow: 0 -8px 24px rgba(0,0,0,.08); }
 .lp-btn-sm { background: var(--blue); color: #fff; border: 0; padding: 7px 16px; border-radius: var(--pill); font-weight: 500; font-size: 13px; cursor: pointer; font-family: inherit; }
 .lp-btn-sm.ghost { background: transparent; color: var(--blue); }
 #lp-app:not(.lp-ready) .lp-form { opacity: .55; }
+/* Hold the widget's first-visit height until it mounts (config/tool-heights.json), so the page under it doesn't jump. */
+#lp-app:not(.lp-ready) { min-height: var(--lp-h, 0); }
+@media (min-width: 900px) { #lp-app:not(.lp-ready) { min-height: var(--lp-h-wide, var(--lp-h, 0)); } }
 
 /* ── programmatic hero: the number is the page ───────────────────────────── */
 .num-hero { padding-top: 40px; text-align: center; }
@@ -734,7 +745,7 @@ body.page-legal h1 { font-size: clamp(30px, 5vw, 48px); margin-top: 48px; }
     </nav>
     <section class="nearby"><h2>相近重量</h2><div class="nearby-grid"><a href="/zh-hans/guapian/70-kg/"><strong>70 kg</strong><span>70 kg 需要挂几片杠铃片？</span></a><a href="/zh-hans/guapian/75-kg/"><strong>75 kg</strong><span>75 kg 需要挂几片杠铃片？</span></a><a href="/zh-hans/guapian/95-kg/"><strong>95 kg</strong><span>95 kg 需要挂几片杠铃片？</span></a><a href="/zh-hans/guapian/100-kg/"><strong>100 kg</strong><span>100 kg 需要挂几片杠铃片？</span></a></div></section>
     <section class="tool-section"><h2>用你自己的重量和杠铃片试试：</h2>
-    <div id="lp-app"><noscript><p>在手机上计算杠铃片、保存你的杠铃杆，并记录你的 PR。 <a href="https://apps.apple.com/app/apple-store/id6768525538?pt=128893237&amp;ct=zh-hans-guapian-85-kg-hero&amp;mt=8">在 App Store 下载</a></p></noscript></div></section>
+    <div id="lp-app" style="--lp-h:735px;--lp-h-wide:753px"><noscript><p>在手机上计算杠铃片、保存你的杠铃杆，并记录你的 PR。 <a href="https://apps.apple.com/app/apple-store/id6768525538?pt=128893237&amp;ct=zh-hans-guapian-85-kg-hero&amp;mt=8">在 App Store 下载</a></p></noscript></div></section>
     
     <nav class="related" aria-label="工具"><a href="/zh-hans/gangling-pian-jisuanqi/">杠铃片计算器</a><a href="/zh-hans/1rm-jisuanqi/">1RM 计算器</a><a href="/zh-hans/reshen-zu-jisuan/">热身</a><a href="/zh-hans/gongjin-bang-huansuan/">kg ↔ lb 换算</a><a href="/zh-hans/1rm-baifenbi/">1RM 百分比</a><a href="/zh-hans/gangling-zhongliang/">杠上有多重</a><a href="/zh-hans/jiating-jianshen-gangling-pian/">家庭健身房杠铃片</a><a href="/zh-hans/531-jisuanqi/">5/3/1 计算器</a></nav>
     <aside class="cta"><div class="cta-in">
