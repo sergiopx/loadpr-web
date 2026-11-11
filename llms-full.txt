@@ -1135,7 +1135,7 @@ Fewer as the bar gets heavier. This ramp uses 5, 5, 3 and 2 reps at 40%, 60%, 75
 
 URL: https://loadpr.com/guide/531-training-max/
 
-Updated 2026-10-28
+Updated 2026-11-11
 
 **Short answer: in 5/3/1 the training max (TM) is 90% of your 1RM, and every percentage in the program is taken from the training max, not from your max.** A 455 lb deadlift max gives a 409.5 lb training max, so the 85% set is 350 lb, not 386.75 lb. Later versions of Jim Wendler's program often set the training max at 85% of the 1RM instead.
 
@@ -1217,7 +1217,7 @@ LoadPR does not plan 5/3/1 cycles for you, but its percentage wheel works from a
 
 - **Taking percentages from the 1RM.** 85% of a 455 lb max is 386.75 lb; the program wants 85% of the 409.5 lb training max, 350 lb.
 - **Adding the cycle increase to the 1RM.** Add 5 or 10 lb to the training max itself.
-- **Setting the training max from an old or hopeful max.** A too-high training max makes the plus sets grind. Use a recent max or an estimate from a hard set.
+- **Setting the training max from an old or hopeful max.** A too-high training max makes the plus sets grind. Use a recent max or an estimate from a hard set, and if you already miss the minimum reps, [lower your 5/3/1 training max](https://loadpr.com/guide/lower-531-training-max/) by 10%.
 - **Loading the exact number.** 348.08 lb can't go on a bar; 350 lb can.
 - **Mixing units.** Keep the max, the training max and the sets in the same unit.
 
@@ -1241,6 +1241,79 @@ The percentages are of the training max, not your 1RM. From a 455 lb max the wee
 
 **How much do you add to the 5/3/1 training max each cycle?**
 5 lb (2.5 kg) for bench and press, 10 lb (5 kg) for squat and deadlift, added to the training max: 409.5 lb becomes 419.5 lb.
+
+---
+
+## When should you lower your 5/3/1 training max?
+
+URL: https://loadpr.com/guide/lower-531-training-max/
+
+Updated 2026-11-11
+
+**Short answer: lower your 5/3/1 training max when you miss the minimum reps on a plus set (5 in week 1, 3 in week 2, 1 in week 3) or when you come back from a break, and the usual reset is 10%: multiply the training max by 0.9.** A 225 lb bench training max becomes 202.5 lb, and from there you add 5 lb per cycle as before.
+
+### Example: resetting a 225 lb bench training max
+
+Your bench training max is 225 lb. In week 3 the 95% set is 213.75 lb, loaded as 215 lb, and you can't get the single. Reset it in three steps:
+
+- Cut the training max by 10%: 225 × 90% = **202.5 lb**.
+- Build the next cycle from 202.5 lb. Week 1's 85% plus set is 172.13 lb, loaded as **170 lb**: a 45, a 10, a 5 and a 2.5 on each side of a 45 lb bar.
+- After the cycle, add the normal 5 lb: the training max becomes 207.5 lb.
+
+Before the reset, the same week 1 set was 191.25 lb, loaded as 190 lb. Starting lighter gives you room to beat the minimum reps again instead of grinding at your limit every week.
+
+### Missed reps on 5/3/1: when it is time to reset
+
+Every plus set has a minimum: 5 reps at 85% in week 1, 3 reps at 90% in week 2 and 1 rep at 95% in week 3. As long as you hit it, the training max still fits and you keep adding weight. When you miss it, the training max has outrun your strength, and adding another 5 or 10 lb only makes the next cycle harder. The common fix is to take 10% off that lift's training max and build back up.
+
+Reset only the lift that stalled. If your bench missed its reps but your squat and deadlift hit theirs, the squat and deadlift keep their normal increases.
+
+### 5/3/1 after a break
+
+After a holiday, an illness or a few missed weeks you don't need to test a new max. Two quick ways to pick a restart training max:
+
+- **Cut the old training max by 10%:** 225 × 90% = 202.5 lb.
+- **Estimate from your first hard set back:** say you bench 185 lb for 5. The Epley estimate is 185 × (1 + 5 ÷ 30) = 215.83 lb, and 90% of that is 194.25 lb.
+
+Start from the lower of the two, here 194.25 lb. If it turns out too light, the plus sets will show it: you'll beat the minimum reps easily and the training max climbs with every cycle anyway. The [1RM calculator](https://loadpr.com/1rm-calculator/) gives the estimate from any set.
+
+### Top sets before and after a 10% reset
+
+The plus set of each week from the old 225 lb training max and from the reset 202.5 lb one, rounded to pound plates on a 45 lb bar:
+
+| Plus set | TM 225 lb | TM 202.5 lb |
+|---|---|---|
+| Week 1, 85% × 5+ | 191.25 lb, load 190 lb | 172.13 lb, load 170 lb |
+| Week 2, 90% × 3+ | 202.5 lb, load 205 lb | 182.25 lb, load 180 lb |
+| Week 3, 95% × 1+ | 213.75 lb, load 215 lb | 192.38 lb, load 190 lb |
+
+To get every set of the new cycle with the plates, open the [5/3/1 calculator](https://loadpr.com/531-calculator/), choose "I entered my training max" and type 202.5.
+
+### The same reset in kilos: a 140 kg squat training max
+
+Cut 10%: 140 × 90% = **126 kg**. With kilo plates on a 20 kg bar, week 1's 85% set drops from 119 kg (load 120 kg) to 107.1 kg (load 107.5 kg), and week 3's 95% single from 133 kg (load 132.5 kg) to 119.7 kg (load 120 kg). After the cycle the squat training max goes up the usual 5 kg, to 131 kg.
+
+### Mistakes when lowering the training max
+
+- **Taking the 10% off your 1RM.** The reset applies to the training max you have been using: 225 lb becomes 202.5 lb.
+- **Resetting every lift.** Only the lift that missed its minimum reps goes down.
+- **Skipping the increase after a reset.** Keep adding 5 lb (2.5 kg) to bench and press and 10 lb (5 kg) to squat and deadlift each cycle.
+- **Resetting the same lift cycle after cycle.** That points to a training max set too high from the start; the [5/3/1 training max guide](https://loadpr.com/guide/531-training-max/) compares the 90% and 85% versions.
+- **Loading the exact number.** 172.13 lb can't go on a bar; 170 lb can.
+
+### FAQ
+
+**How much do you lower the 5/3/1 training max when you reset?**
+The usual reset is 10%: multiply the training max by 0.9. A 225 lb training max becomes 202.5 lb, and week 1's 85% set drops from 190 lb to 170 lb on the bar.
+
+**What should you do after missing reps on a 5/3/1 plus set?**
+If you miss the minimum (5, 3 or 1 reps), lower that lift's training max by 10% and build back up: 225 lb becomes 202.5 lb, then 207.5 lb after the next cycle.
+
+**How do you restart 5/3/1 after a break?**
+Cut the old training max by 10%, or estimate a 1RM from your first hard set and take 90%, and start from the lower number. 185 lb for 5 gives about 215.83 lb, so a 194.25 lb training max.
+
+**Do you reset every lift when one stalls in 5/3/1?**
+No. Lower only the lift that missed its reps; the others keep adding 5 lb (2.5 kg) or 10 lb (5 kg) each cycle.
 
 ---
 
