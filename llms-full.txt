@@ -871,7 +871,7 @@ A hard set of about 3 to 5 reps. At 15 reps the four common formulas spread from
 
 URL: https://loadpr.com/guide/rep-max-chart/
 
-Updated 2026-10-25
+Updated 2026-11-16
 
 **Short answer: a rep max chart turns a rep count into a percentage of your 1RM.** By the Epley formula you can lift about 85.7% of your 1RM for 5 reps and 75% for 10. By Brzycki, 5 reps is 88.9% and 10 reps is also 75%. A single is 100% by definition.
 
@@ -907,7 +907,7 @@ The chart stops at 12 reps because past that point the formulas disagree more an
 
 ### How to read the chart
 
-Find the number of reps you plan to do, read the percentage across, and multiply it by your 1RM. Then round to a weight your plates can make. The chart describes a set taken to the last rep you can manage. If your program wants reps left in the tank, use a lower percentage than the chart shows for that rep count.
+Find the number of reps you plan to do, read the percentage across, and multiply it by your 1RM. Then round to a weight your plates can make. The chart describes a set taken to the last rep you can manage. If your program wants reps left in the tank, use a lower percentage than the chart shows for that rep count. 5/3/1's [Boring But Big percentages](https://loadpr.com/531-calculator/boring-but-big-percentages/) are an example: sets of 10 at 50% of the training max, which is 45% of a 1RM when the training max is 90% of it, far below the 75% the chart gives for 10 reps.
 
 The chart is a 1RM formula run backwards. The guide [how 1RM is calculated](https://loadpr.com/guide/how-to-calculate-1rm/) shows the formulas themselves.
 
@@ -1909,6 +1909,87 @@ You can't make it exactly. On a 45 lb bar, a 25 and a 15 kg plate on each side m
 
 **Can you mix kg and lb plates on the same bar?**
 Yes, as long as both sides match. Convert each plate first: a 20 kg bumper and a 25 lb plate on each side of a 45 lb bar make 183.18 lb.
+
+---
+
+## What percentage is Boring But Big in 5/3/1?
+
+URL: https://loadpr.com/531-calculator/boring-but-big-percentages/
+
+Boring But Big (BBB) is 5 sets of 10 reps at 50% of your 5/3/1 training max, done after the main sets of the day. With a 315 lb squat max the training max is 283.5 lb, so every BBB set is 141.75 lb exact, loaded as 140 lb: a 45 and a 2.5 on each side of a 45 lb bar. The calculator below adds the BBB sets to every week when you pick Boring But Big as the supplemental work.
+
+### Example: BBB weights from a 315 lb squat
+
+Your squat max is 315 lb. Work out the BBB weight in three steps:
+
+- Take the training max, 90% of the 1RM: 315 × 90% = **283.5 lb**.
+- Take 50% of the training max: 283.5 × 50% = 141.75 lb.
+- Round to a weight you can load: **140 lb**, a 45 and a 2.5 on each side of a 45 lb bar.
+
+That is 5 sets of 10 at 140 lb, 50 reps in all, after the main sets. The BBB weight stays the same in weeks 1, 2 and 3 while the main sets change:
+
+| Week | Top set | BBB |
+|---|---|---|
+| 1 (5s) | 85% × 5+: 240 lb | 5 × 10 at 140 lb |
+| 2 (3s) | 90% × 3+: 255 lb | 5 × 10 at 140 lb |
+| 3 (5/3/1) | 95% × 1+: 270 lb | 5 × 10 at 140 lb |
+| 4 (deload) | 60% × 5: 170 lb | none |
+
+The deload week keeps only its three light sets, with no supplemental work.
+
+### BBB at 50, 60 and 70%
+
+Some versions of Boring But Big raise the percentage over consecutive cycles, for example 50%, then 60%, then 70% of the training max, so the 5 sets of 10 get heavier while the main work goes on. Use the percentage your version of the program prescribes. From the same 283.5 lb training max, rounded to pound plates on a 45 lb bar:
+
+| BBB at | Exact weight | Load | Plates on each side |
+|---|---|---|---|
+| 50% of TM | 141.75 lb | 140 lb | 45, 2.5 |
+| 60% of TM | 170.1 lb | 170 lb | 45, 10, 5, 2.5 |
+| 70% of TM | 198.45 lb | 200 lb | 45, 25, 5, 2.5 |
+
+The 5/3/1 calculator below uses 50%. For 60% or 70%, type your training max into the [1RM percentage calculator](https://loadpr.com/1rm-percentage-calculator/) and read the row you need.
+
+### The same in kilos: a 140 kg squat
+
+A 140 kg squat max gives a training max of 140 × 90% = **126 kg**. With kilo plates on a 20 kg bar:
+
+| BBB at | Exact weight | Load | Plates on each side |
+|---|---|---|---|
+| 50% of TM | 63 kg | 62.5 kg | 20, 1.25 |
+| 60% of TM | 75.6 kg | 75 kg | 25, 2.5 |
+| 70% of TM | 88.2 kg | 87.5 kg | 25, 5, 2.5, 1.25 |
+
+After the cycle the squat training max goes up 5 kg to 131 kg, and the BBB sets are worked out again from the new number.
+
+### Training max at 85%
+
+If you set the training max at 85% of your 1RM, as Wendler's later books often do, the BBB sets come out lighter too. From the same 315 lb squat the training max is 267.75 lb, and 50% of it is 133.88 lb, loaded as **135 lb**: one 45 on each side. The [5/3/1 training max guide](https://loadpr.com/guide/531-training-max/) compares the 90% and 85% versions.
+
+### Boring But Big vs First Set Last
+
+Both are supplemental work after the main sets. Boring But Big is 5 sets of 10 at a fixed percentage of the training max, so it adds volume at a light weight. First Set Last repeats the first working set of the week for 5 sets of 5: 65% in week 1, 70% in week 2 and 75% in week 3, so it is heavier but has half the reps. From the 283.5 lb training max, week 1 FSL is 5 × 5 at 185 lb against BBB's 5 × 10 at 140 lb. Neither runs in the deload week.
+
+### Common mistakes with BBB
+
+- **Taking 50% of the 1RM.** 50% of a 315 lb max is 157.5 lb, loaded as 160 lb, 20 lb heavier than the program's 140 lb. BBB comes from the training max.
+- **Raising the BBB weight every week.** The main sets climb from week 1 to week 3; the BBB weight stays the same until the training max changes.
+- **Doing BBB in the deload week.** The deload is only its three light sets.
+- **Loading the exact number.** 141.75 lb can't go on a bar; 140 lb can.
+- **Keeping an old training max.** When the training max goes up after a cycle, work the BBB sets out again from it. If the main sets stall instead, [lower the training max](https://loadpr.com/guide/lower-531-training-max/) and the BBB weight drops with it.
+
+### FAQ
+
+**What percentage is Boring But Big?**
+5 sets of 10 at 50% of the 5/3/1 training max. From a 315 lb squat max the training max is 283.5 lb, so BBB is 141.75 lb, loaded as 140 lb.
+
+**Is Boring But Big a percentage of the training max or the 1RM?**
+Of the training max. 50% of a 315 lb max would be 157.5 lb; 50% of its 283.5 lb training max is 141.75 lb, loaded as 140 lb.
+
+**What are the BBB weights for a 140 kg squat?**
+The training max is 126 kg, so 50% is 63 kg, loaded as 62.5 kg. At 60% it is 75 kg and at 70% it is 87.5 kg on the bar.
+
+**Do you do Boring But Big in the deload week?**
+No. The deload week keeps only its three light sets at 40%, 50% and 60% of the training max: 115, 140 and 170 lb from a 283.5 lb training max.
 
 # App features
 

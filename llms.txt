@@ -48,6 +48,7 @@ The complete English text of every tool, guide and app feature page, with tables
 ### Tool variations
 - [AMRAP Set to 1RM: Estimate Your Max](https://loadpr.com/1rm-calculator/amrap-to-1rm/): Put the weight and the reps from your AMRAP set into a 1RM formula. 225 lb for 8 reps estimates 285 lb by Epley and 279.31 lb by Brzycki.
 - [Kg Plates in a Lb Gym: Plate Calculator](https://loadpr.com/plate-calculator/kg-plates-in-a-lb-gym/): A 20 kg plate is 44.09 lb, so two per side on a 45 lb bar make 221.37 lb, not 225. Convert every plate, then load kg plates with the calculator.
+- [Boring But Big Percentages: 5x10 at 50% TM](https://loadpr.com/531-calculator/boring-but-big-percentages/): Boring But Big is 5 sets of 10 at 50% of your 5/3/1 training max. A 315 lb squat max gives a 283.5 lb TM, so BBB sets are 141.75 lb, loaded as 140 lb.
 
 ### App features
 - [LoadPR App Features for iPhone and Apple Watch](https://loadpr.com/features/): What LoadPR does on iPhone and Apple Watch: plate loading, gyms and plates, percentages, PR tracking, charts, timers, and what is free.
