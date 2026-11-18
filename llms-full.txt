@@ -1321,7 +1321,7 @@ No. Lower only the lift that missed its reps; the others keep adding 5 lb (2.5 k
 
 URL: https://loadpr.com/guide/cant-load-exact-weight/
 
-Updated 2026-10-28
+Updated 2026-11-18
 
 **Short answer: every plate goes on both sides of the bar, so the total can only move in steps of twice your smallest plate: 5 lb steps with 2.5 lb plates, and 2.5 kg steps with 1.25 kg plates.** A target like 172 lb falls between 170 lb and 175 lb, and no mix of standard plates makes it. You load the nearest weight you can build, or add smaller plates.
 
@@ -1363,7 +1363,7 @@ Targets from percentages and programs, with the loads just below and just above,
 | 102 kg | 100 kg (25, 15) | 102.5 kg (25, 15, 1.25) |
 | 133 kg | 132.5 kg (25, 25, 5, 1.25) | 135 kg (25, 25, 5, 2.5) |
 
-191.25 lb and 202.5 lb are 85% and 90% of 225 lb, which shows how often percentages miss the steps. The [plate calculator](https://loadpr.com/plate-calculator/) lists both neighbors for any target, with the plates for each.
+191.25 lb and 202.5 lb are 85% and 90% of 225 lb, which shows how often percentages miss the steps, and programs add more of them: [5/3/1 First Set Last and Joker sets](https://loadpr.com/531-calculator/fsl-and-joker-sets/) are each a percentage of the training max, rounded the same way. The [plate calculator](https://loadpr.com/plate-calculator/) lists both neighbors for any target, with the plates for each.
 
 ### Round up or round down?
 
@@ -1990,6 +1990,93 @@ The training max is 126 kg, so 50% is 63 kg, loaded as 62.5 kg. At 60% it is 75 
 
 **Do you do Boring But Big in the deload week?**
 No. The deload week keeps only its three light sets at 40%, 50% and 60% of the training max: 115, 140 and 170 lb from a 283.5 lb training max.
+
+---
+
+## How do First Set Last and Joker sets work in 5/3/1?
+
+URL: https://loadpr.com/531-calculator/fsl-and-joker-sets/
+
+First Set Last (FSL) is supplemental work in 5/3/1: after the main sets you go back to the first working set of the week and repeat it, most often for 5 sets of 5, at 65% of the training max in week 1, 70% in week 2 and 75% in week 3. Joker sets are optional heavier sets after the top set, in jumps of about 5 to 10% of the training max, for the same reps as the top set. From a 405 lb deadlift max the training max is 364.5 lb, so week 1 FSL is 5 × 5 at 235 lb, and a Joker single at 100% in week 3 is 365 lb. The calculator below adds the FSL sets to every week when you pick First Set Last as the supplemental work.
+
+### Example: FSL weights from a 405 lb deadlift
+
+Your deadlift max is 405 lb. Work out the First Set Last weight in three steps:
+
+- Take the training max, 90% of the 1RM: 405 × 90% = **364.5 lb**.
+- Take the week's first-set percentage of the training max: in week 1, 364.5 × 65% = 236.93 lb.
+- Round to a weight you can load: **235 lb**, two 45s and a 5 on each side of a 45 lb bar.
+
+Unlike Boring But Big, the FSL weight changes every week, because the first set of each week changes:
+
+| Week | First set | FSL | Plates on each side |
+|---|---|---|---|
+| 1 (5s) | 65%: 236.93 lb | 5 × 5 at 235 lb | 45, 45, 5 |
+| 2 (3s) | 70%: 255.15 lb | 5 × 5 at 255 lb | 45, 45, 10, 5 |
+| 3 (5/3/1) | 75%: 273.38 lb | 5 × 5 at 275 lb | 45, 45, 25 |
+| 4 (deload) | none | none | none |
+
+In weeks 2 and 3 the FSL sets are 5 reps, even though the first set of week 2 is done for 3. Some versions of the program change the sets and reps of FSL; the weight is always the first set's percentage.
+
+### What Joker sets are
+
+Joker sets are extra sets after the last main set, added only on days when the top set moves fast and feels easy. Each one is heavier than the set before it, and you do the same reps as the week's top set: triples in the 3s week, singles in the 5/3/1 week, where most versions use them. You stop as soon as the bar slows down or your form changes, so a day can have one Joker set, a few or none. They are optional, and they never change the training max: that still goes up by the normal 5 or 10 lb after the cycle.
+
+### Joker set weights from a 364.5 lb training max
+
+Jumps of 5% of the training max, rounded to pound plates on a 45 lb bar:
+
+| Set | Exact weight | Load | Plates on each side |
+|---|---|---|---|
+| Week 2 top set, 90% × 3+ | 328.05 lb | 330 lb | 45, 45, 45, 5, 2.5 |
+| Joker, 95% × 3 | 346.28 lb | 345 lb | 45, 45, 45, 10, 5 |
+| Joker, 100% × 3 | 364.5 lb | 365 lb | 45, 45, 45, 25 |
+| Week 3 top set, 95% × 1+ | 346.28 lb | 345 lb | 45, 45, 45, 10, 5 |
+| Joker, 100% × 1 | 364.5 lb | 365 lb | 45, 45, 45, 25 |
+| Joker, 105% × 1 | 382.73 lb | 385 lb | 45, 45, 45, 35 |
+
+Even the 105% single, 385 lb, is still 20 lb under the 405 lb max. For other percentages, type your training max into the [1RM percentage calculator](https://loadpr.com/1rm-percentage-calculator/) and read the row you need.
+
+### The order of a day with Joker sets and FSL
+
+Joker sets come straight after the main sets, and FSL comes last. Week 3 of the deadlift from the 364.5 lb training max:
+
+- Warm-ups: 145 lb × 5, 180 lb × 5, 220 lb × 3.
+- Main sets: 275 lb × 5, 310 lb × 3, 345 lb × 1+.
+- Joker sets, if the single was fast: 365 lb × 1, then 385 lb × 1.
+- First Set Last: 5 × 5 at 275 lb.
+
+Doing FSL before the Joker sets would tire you for the heavy singles, which is why it goes at the end.
+
+### The same in kilos: a 140 kg squat
+
+A 140 kg squat max gives a training max of 140 × 90% = **126 kg**. With kilo plates on a 20 kg bar, FSL is 5 × 5 at 82.5 kg in week 1 (exact 81.9 kg), 87.5 kg in week 2 (88.2 kg) and 95 kg in week 3 (94.5 kg). Week 3's top single at 95% is 120 kg, and Joker singles at 100% and 105% are 125 kg (25, 25 and 2.5 on each side) and 132.5 kg (exact 132.3 kg).
+
+### FSL vs Boring But Big
+
+Both are supplemental work done after the main sets. From the same 364.5 lb training max, week 1 FSL is 5 × 5 at 235 lb, while [Boring But Big](https://loadpr.com/531-calculator/boring-but-big-percentages/) is 5 × 10 at 50%, 182.25 lb exact, loaded as 180 lb. FSL is heavier with half the reps; BBB adds more volume at a light weight. Neither runs in the deload week.
+
+### Common mistakes with FSL and Joker sets
+
+- **Taking FSL from the 1RM.** 65% of a 405 lb max is 263.25 lb, loaded as 265 lb, 30 lb more than the program's 235 lb. FSL comes from the training max.
+- **Keeping week 1's FSL weight all cycle.** It follows the first set: 235, 255 and 275 lb from a 364.5 lb training max.
+- **Doing Joker sets after a slow top set.** They are for days when the top set was easy. After a grinding single, go straight to FSL.
+- **Raising the training max from a Joker single.** A 385 lb single doesn't change the 364.5 lb training max; add the normal increase after the cycle.
+- **Loading the exact number.** 382.73 lb can't go on a bar; 385 lb can.
+
+### FAQ
+
+**What is First Set Last in 5/3/1?**
+Supplemental work that repeats the first working set of the week, most often for 5 sets of 5: 65%, 70% and 75% of the training max in weeks 1 to 3. From a 364.5 lb training max that is 235, 255 and 275 lb.
+
+**What percentage are 5/3/1 Joker sets?**
+Jumps of about 5 to 10% of the training max above the top set, for the same reps. After a 95% single from a 364.5 lb training max, Joker singles at 100% and 105% are 365 lb and 385 lb.
+
+**Do Joker sets come before or after First Set Last?**
+Before. The order is warm-ups, main sets, Joker sets, then FSL: in week 3 from a 364.5 lb training max, 345 lb × 1+, Jokers at 365 and 385 lb, then 5 × 5 at 275 lb.
+
+**What are the FSL weights for a 140 kg squat?**
+The training max is 126 kg, so FSL is 5 × 5 at 82.5 kg in week 1, 87.5 kg in week 2 and 95 kg in week 3, on a 20 kg bar.
 
 # App features
 
