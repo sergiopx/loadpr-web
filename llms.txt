@@ -28,6 +28,7 @@ The complete English text of every tool, guide and app feature page, with tables
 - **How do you calculate a percentage of your max?** Multiply your max by the percentage written as a decimal, then round to a weight you can load. 80% of a 315 lb max is 315 × 0.80 = 252 lb, and the nearest load with standard plates on a 45 lb bar is 250 lb.
 - **How much does a Smith machine bar weigh?** It depends on the machine. Many Smith machine bars weigh about 15–25 lb \(7–11 kg\), and counterbalanced models can feel lighter still.
 - **How much does a leg press weigh without plates?** It depends on the model. There is no standard leg press sled weight like the 45 lb \(20 kg\) barbell.
+- **How many reps do you need to beat your PR?** To beat an estimated max you need more reps than 30 × \(max ÷ weight − 1\), so take the first whole number above that. If your best set is 225 lb for 5, an estimated 262.5 lb by the Epley formula, then 235 lb for 4 reps beats it \(266.33 lb\) and 235 lb for 3 does not \(258.5 lb\).
 
 ## English (en)
 
@@ -84,6 +85,7 @@ The complete English text of every tool, guide and app feature page, with tables
 - [How to Calculate a Percentage of Your Max \(1RM\)](https://loadpr.com/guide/percentage-of-max/): Multiply your max by the percentage as a decimal, then round to a loadable weight: 80% of 315 lb is 252 lb, so load 250 lb. Tables in lb and kg.
 - [How Much Does a Smith Machine Bar Weigh? Lb & Kg](https://loadpr.com/guide/smith-machine-bar-weight/): It depends on the model: many Smith bars are about 15–25 lb \(7–11 kg\) and counterbalanced ones feel lighter. Find yours and log it the same way.
 - [How Much Does a Leg Press Weigh Without Plates?](https://loadpr.com/guide/leg-press-sled-weight/): It depends on the model: read the label on the frame. Then add the plates: a 100 lb sled with two 45s per side is 280 lb. Angle and logging tips.
+- [How Many Reps to Beat Your PR? The Formula](https://loadpr.com/guide/reps-to-beat-your-pr/): To beat an estimated max you need more than 30 × \(max ÷ weight − 1\) reps. A 225 lb × 5 best \(262.5 lb\) falls to 235 lb × 4. Table and 5/3/1 examples.
 
 ### Plate charts by weight
 - [How many plates for 95 to 495 lb (10 pages, one per weight)](https://loadpr.com/how-many-plates/95-lb/): URL pattern https://loadpr.com/how-many-plates/<weight>-lb/

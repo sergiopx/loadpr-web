@@ -625,7 +625,7 @@ The weight of one collar, such as 2.5 for competition collars in kg. The calcula
 
 URL: https://loadpr.com/guide/what-is-1rm/
 
-Updated 2026-10-25
+Updated 2026-11-20
 
 **Short answer: 1RM means one-repetition maximum, the heaviest weight you can lift for one full rep with good form.** It is sometimes typed 1 RPM or 1 rm, but it is the same thing. Strength programs use it as a reference point: a workout of 5 sets at 80% means 80% of your 1RM for that lift.
 
@@ -653,7 +653,7 @@ A tested max is real, but it costs a session and needs a spotter or safety arms.
 
 ### 1RM vs a rep PR
 
-A 1RM is a single. A rep PR is the most you have lifted for some other number of reps, such as your best set of 5. Both are personal records, and a rep PR can be turned into an estimated 1RM like the example above. The guide [what is a PR in the gym](https://loadpr.com/guide/what-is-a-pr/) covers rep PRs and weight PRs in full.
+A 1RM is a single. A rep PR is the most you have lifted for some other number of reps, such as your best set of 5. Both are personal records, and a rep PR can be turned into an estimated 1RM like the example above. The same formula also tells you [how many reps you need to beat your PR](https://loadpr.com/guide/reps-to-beat-your-pr/) at a given weight. The guide [what is a PR in the gym](https://loadpr.com/guide/what-is-a-pr/) covers rep PRs and weight PRs in full.
 
 ### What LoadPR calls your current PR
 
@@ -784,7 +784,7 @@ The heaviest weight you have lifted on a lift at any reps. In a log with 225 lb 
 
 URL: https://loadpr.com/guide/how-to-calculate-1rm/
 
-Updated 2026-10-25
+Updated 2026-11-20
 
 **Short answer: a 1RM is calculated by putting a set you lifted for a few reps into a formula that estimates your one-rep max.** The four common formulas are Epley, Brzycki, Lombardi and O'Conner. For 100 kg lifted 5 times they give 116.67, 112.5, 117.46 and 112.5 kg. They agree closely at low reps and drift apart as the reps go up.
 
@@ -826,7 +826,7 @@ Epley and Brzycki are the most widely used, and at 10 reps they give the same an
 
 ### The formulas run backwards: rep max charts
 
-A 1RM formula also works the other way. Instead of turning a set into a max, it turns a max into the share of it you can lift for each rep count. By Epley, 5 reps is about 85.7% of a 1RM. That is what a [rep max chart](https://loadpr.com/guide/rep-max-chart/) lists, from 1 to 12 reps.
+A 1RM formula also works the other way. Instead of turning a set into a max, it turns a max into the share of it you can lift for each rep count. By Epley, 5 reps is about 85.7% of a 1RM. That is what a [rep max chart](https://loadpr.com/guide/rep-max-chart/) lists, from 1 to 12 reps. Solved for the reps instead, the same formula gives the [reps needed to beat an estimated max](https://loadpr.com/guide/reps-to-beat-your-pr/) with the weight on the bar.
 
 ### Estimate or test?
 
@@ -1761,6 +1761,115 @@ Look for a label on the frame, check the maker's listing for the model or ask th
 
 **How do I work out the plates for a target on a leg press?**
 Subtract the sled, then halve the rest. For 400 lb on a 100 lb sled, 300 lb of plates means 150 lb on each side: three 45s, a 10 and a 5.
+
+---
+
+## How many reps do you need to beat your PR?
+
+URL: https://loadpr.com/guide/reps-to-beat-your-pr/
+
+Updated 2026-11-20
+
+**Short answer: to beat an estimated max you need more reps than 30 × (max ÷ weight − 1), so take the first whole number above that.** If your best set is 225 lb for 5, an estimated 262.5 lb by the Epley formula, then 235 lb for 4 reps beats it (266.33 lb) and 235 lb for 3 does not (258.5 lb). At the same weight it is simpler: one more rep than last time is a PR.
+
+### Example: reps at 235 lb to beat 225 lb for 5
+
+Your best bench set is 225 lb for 5 and today the bar is loaded to 235 lb, two 45s and a 5 on each side. Work out the reps to beat before you lie down:
+
+- Find the mark to beat. By Epley, 225 × (1 + 5 ÷ 30) = **262.5 lb**.
+- Take today's weight off it: 262.5 − 235 = 27.5 lb. That is the gap the reps have to cover.
+- Each rep at 235 lb adds one thirtieth of the bar to the estimate: 235 ÷ 30 = 7.83 lb.
+- Divide the gap by the step: 27.5 ÷ 7.83 = 3.51 reps. You can't do half a rep, so the answer is **4 reps**.
+
+Check it both ways: 235 lb for 3 estimates 258.5 lb, short of the mark, and 235 lb for 4 estimates 266.33 lb, a new best by 3.83 lb.
+
+### The formula for the reps needed for a rep PR
+
+The Epley formula estimates a max as weight × (1 + reps ÷ 30). Turn it round and it gives the reps at which a weight exactly matches a max:
+
+- reps to match = 30 × (max ÷ weight − 1)
+- or, in the steps above: (max − weight) ÷ (weight ÷ 30)
+
+To _beat_ the max you need the first whole number above that result. Usually that means rounding up: 3.51 becomes 4. When the result is already a whole number, that many reps only ties the mark and you need one more. 225 lb for 10 estimates exactly 300 lb, so against a 300 lb mark it takes 11 reps at 225 lb to set a new one.
+
+The [1RM calculator](https://loadpr.com/1rm-calculator/) gives the estimate for any set, so you can also find the number by trying rep counts until the estimate passes your mark.
+
+### Reps to beat a 300 lb estimated max
+
+The heavier the bar, the fewer reps it takes. Against an estimated max of 300 lb, by Epley:
+
+| Weight on the bar | One rep short | Reps to beat 300 lb |
+|---|---|---|
+| 225 lb | 10 reps: 300 lb (a tie) | 11 reps : 307.5 lb |
+| 245 lb | 6 reps: 294 lb | 7 reps : 302.17 lb |
+| 255 lb | 5 reps: 297.5 lb | 6 reps : 306 lb |
+| 265 lb | 3 reps: 291.5 lb | 4 reps : 300.33 lb |
+| 275 lb | 2 reps: 293.33 lb | 3 reps : 302.5 lb |
+| 285 lb | 1 rep: 294.5 lb | 2 reps : 304 lb |
+
+265 lb for 4 beats the mark by only 0.33 lb. A margin that small is inside the error of any formula, so treat it as matching your best rather than as proof you got stronger.
+
+### 5/3/1: reps to beat on the plus set
+
+In 5/3/1 the last set of weeks 1 to 3 is a plus set, as many good reps as you can, which makes it the natural place to chase an estimated max. Take a 455 lb deadlift max with a 409.5 lb training max. In week 1 you pull the 85% set, 350 lb, for 8 reps: an estimated 443.33 lb. That is now the number to beat for the rest of the cycle:
+
+| Plus set | Weight | One rep short | Reps to beat 443.33 lb |
+|---|---|---|---|
+| Week 2, 90% × 3+ | 370 lb | 5 reps: 431.67 lb | 6 reps : 444 lb |
+| Week 3, 95% × 1+ | 390 lb | 4 reps: 442 lb | 5 reps : 455 lb |
+
+Both targets sit well above the reps the program asks for, 3 and 1. Missing the reps to beat is not a failed set; it only means that set was not a record. The weights come from [the 5/3/1 training max](https://loadpr.com/guide/531-training-max/), and the [5/3/1 calculator](https://loadpr.com/531-calculator/) lists every plus set of a cycle with its plates. For turning the set you actually did into an estimate, see [AMRAP set to 1RM](https://loadpr.com/1rm-calculator/amrap-to-1rm/).
+
+### What counts as an estimated 1RM PR
+
+There are three records a set can break, and the reps needed differ for each:
+
+- **A rep PR at the same weight.** If your best at 235 lb is 3 reps, 4 reps is a PR. No formula needed.
+- **A weight PR.** Any full rep with more weight than you have ever lifted. One rep is enough.
+- **An estimated 1RM PR.** A set whose estimate is higher than the estimate from any earlier set, even with a different weight and rep count. This is the one the formula on this page is for.
+
+An estimated 1RM PR can pass a max you have really lifted. Against a tested 315 lb single, 275 lb for 4 estimates 311.67 lb and 275 lb for 5 estimates 320.83 lb. Five reps puts the estimate above 315 lb, but it does not mean you have lifted 320 lb; the single stays your weight PR until you load more. [What a PR is in the gym](https://loadpr.com/guide/what-is-a-pr/) covers the different kinds of record.
+
+### The same in kilos
+
+The formula does not care about the unit. Your best squat set is 100 kg for 5, an estimated 116.67 kg, and today you have 105 kg on the bar: a 25, a 15 and a 2.5 on each side. 105 kg for 3 estimates 115.5 kg and 105 kg for 4 estimates **119 kg**, so the number to beat is 4 reps. Keep the mark and the set in the same unit.
+
+### Does the formula change the answer?
+
+Sometimes by a rep, so use the same formula for the mark and for the new set. With Brzycki, 225 lb for 5 is an estimated 253.13 lb. At 235 lb, 3 reps give 248.82 lb and 4 reps give 256.36 lb, so the answer is 4 reps here too. What you must not do is take the mark from one formula and the new set from another: 235 lb for 4 by Brzycki (256.36 lb) looks like it falls short of the 262.5 lb Epley mark when it is in fact a better set. [How 1RM is calculated](https://loadpr.com/guide/how-to-calculate-1rm/) shows the formulas side by side.
+
+### Estimated maxes in the LoadPR app
+
+The LoadPR app estimates a 1RM from your logged sets with the Epley formula by default, the same formula as the examples on this page. It keeps the estimate apart from your current PR, which is the heaviest weight you have logged at any reps. With LoadPR+ the estimate appears as its own line on the full progress chart, so you can see the mark your next set has to pass. More in [PR tracking](https://loadpr.com/features/pr-tracking/).
+
+### Mistakes when chasing a rep PR
+
+- **Rounding down.** 3.51 reps means 4. Three reps at 235 lb is 258.5 lb, under the 262.5 lb mark.
+- **Counting a tie as a PR.** 225 lb for 10 is exactly 300 lb. It matches a 300 lb mark; 11 reps beats it.
+- **Counting reps that were not full reps.** A rep cut short or helped by a spotter adds 7.83 lb to a 235 lb estimate that you did not earn.
+- **Chasing it with a very long set.** Estimates get rough past about 10 reps. A record from a set of 15 says more about endurance than about your max.
+- **Grinding for the number.** If the last rep needs your form to break down, stop. The reps to beat are a target for a good day, not a requirement for every session.
+
+### Sources
+
+- [One-repetition maximum: estimation formulas (Wikipedia)](https://en.wikipedia.org/wiki/One-repetition_maximum)
+
+### FAQ
+
+**How many reps do I need to beat my PR?**
+More than 30 × (max ÷ weight − 1) by the Epley formula. To beat 225 lb for 5 (an estimated 262.5 lb) with 235 lb on the bar, you need 4 reps, which estimates 266.33 lb.
+
+**What is an estimated 1RM PR?**
+A set whose estimated max is higher than the estimate from any earlier set. 235 lb for 4 (266.33 lb) is an estimated 1RM PR over 225 lb for 5 (262.5 lb), even though the reps went down.
+
+**How many reps beat my max on a 5/3/1 plus set?**
+It depends on the mark and the weight. To beat an estimated 443.33 lb (350 lb for 8), you need 6 reps at 370 lb (444 lb) or 5 reps at 390 lb (455 lb).
+
+**Is matching my estimated max a PR?**
+No, it is a tie. 225 lb for 10 estimates exactly 300 lb, so against a 300 lb mark you need 11 reps (307.5 lb) for a new record.
+
+**How many reps at 105 kg beat 100 kg for 5?**
+4 reps. 100 kg for 5 estimates 116.67 kg by Epley; 105 kg for 3 gives 115.5 kg and 105 kg for 4 gives 119 kg.
 
 # Tool variations
 
