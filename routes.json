@@ -57,7 +57,7 @@
   {"path":"/es/calculadora-531/","loc":"es","type":"tool","id":"tool:fiveThreeOne","key":"fiveThreeOne","parent":null,"title":"Calculadora 5/3/1 | Cada semana y discos por lado | LoadPR"},
   {"path":"/es/guia/","loc":"es","type":"guideHub","id":"guideHub","key":null,"parent":null,"title":"Guías de barras y discos | LoadPR"},
   {"path":"/es/guia/colores-discos-olimpicos/","loc":"es","type":"guide","id":"guide:plateColors","key":"plateColors","parent":null,"title":"Colores de los discos olímpicos (IWF) | LoadPR"},
-  {"path":"/es/guia/peso-de-barras/","loc":"es","type":"guide","id":"guide:barWeights","key":"barWeights","parent":null,"title":"¿Cuánto pesa la barra Z, EZ y olímpica? kg y lb | LoadPR"},
+  {"path":"/es/guia/peso-de-barras/","loc":"es","type":"guide","id":"guide:barWeights","key":"barWeights","parent":null,"title":"¿Cuánto pesa la barra Z? De 7 a 11 kg (EZ y W) | LoadPR"},
   {"path":"/es/guia/equivalencias-kg-lb/","loc":"es","type":"guide","id":"guide:kgLbEquiv","key":"kgLbEquiv","parent":null,"title":"100 kg en libras (220,46 lb) y tabla kg ↔ lb | LoadPR"},
   {"path":"/es/guia/discos-por-lado/","loc":"es","type":"guide","id":"guide:platesEachSide","key":"platesEachSide","parent":null,"title":"¿Cuántos kilos son 1 a 6 discos por lado? | LoadPR"},
   {"path":"/es/discos/40-kg/","loc":"es","type":"prog","id":"prog:kg:40","key":null,"parent":null,"title":"Cuántos discos para 40 kg | LoadPR"},

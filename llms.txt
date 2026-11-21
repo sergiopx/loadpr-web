@@ -119,7 +119,7 @@ The complete English text of every tool, guide and app feature page, with tables
 ### Guides
 - [Guías de barras y discos](https://loadpr.com/es/guia/): Guías para levantadores: colores de los discos olímpicos, cuánto pesa cada barra y equivalencias de kg a libras para cargar bien la barra.
 - [Colores de los discos olímpicos \(IWF\)](https://loadpr.com/es/guia/colores-discos-olimpicos/): Qué significa cada color de disco olímpico según la IWF: 25 kg rojo, 20 kg azul, 15 kg amarillo, 10 kg verde y las placas de cambio.
-- [¿Cuánto pesa la barra Z, EZ y olímpica? kg y lb](https://loadpr.com/es/guia/peso-de-barras/): La barra Z \(EZ o W\) pesa 7–11 kg \(15–25 lb\): unos 10 kg la olímpica y 7 kg la normal. La barra olímpica del gym pesa 20 kg \(45 lb\). Tabla en kg y lb.
+- [¿Cuánto pesa la barra Z? De 7 a 11 kg \(EZ y W\)](https://loadpr.com/es/guia/peso-de-barras/): La barra Z \(EZ o W\) pesa de 7 a 11 kg: unos 10 kg \(22 lb\) la del gym y 7 kg \(15 lb\) la de casa. La barra olímpica larga pesa 20 kg \(45 lb\).
 - [100 kg en libras \(220,46 lb\) y tabla kg ↔ lb](https://loadpr.com/es/guia/equivalencias-kg-lb/): 100 kg son 220,46 libras \(1 kg = 2,2046 lb\). Tabla de equivalencias kg ↔ lb para las cargas habituales y cómo cargar 100 kg en la barra.
 - [¿Cuántos kilos son 1 a 6 discos por lado?](https://loadpr.com/es/guia/discos-por-lado/): 1 disco de 20 kg por lado son 60 kg, 2 discos 100 kg, 3 discos 140 kg y 4 discos 180 kg con barra de 20 kg. En libras, 2 discos por lado son 225 lb.
 
