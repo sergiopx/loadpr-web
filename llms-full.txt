@@ -138,7 +138,7 @@ URL: https://loadpr.com/guide/olympic-plate-colors/
 
 Updated 2026-10-28
 
-Competition plates follow the color code of the International Weightlifting Federation (IWF). Knowing the colors lets you read the load on a bar without walking over to check the numbers.
+Competition plates follow the color code of the International Weightlifting Federation (IWF). Knowing the colors lets you read the load on a bar without walking over to check the numbers. Turning the plates you see into a total is covered in [how to count the weight on a barbell](https://loadpr.com/guide/count-weight-on-a-barbell/).
 
 ### Main plates
 
@@ -194,7 +194,7 @@ Updated 2026-11-06
 
 ### Is the bar at the gym 45 lb?
 
-Almost always, yes. The long bar with rotating sleeves in the squat rack and on the bench is a men's Olympic bar: 45 lb (20 kg). Shorter, thinner bars without rotating sleeves (about 1 inch thick) are lighter, usually 15–25 lb. If a bar has no stamp, check the end cap or ask the staff.
+Almost always, yes. The long bar with rotating sleeves in the squat rack and on the bench is a men's Olympic bar: 45 lb (20 kg). Shorter, thinner bars without rotating sleeves (about 1 inch thick) are lighter, usually 15–25 lb. Those are standard bars and they take plates with a smaller hole: see [Olympic vs standard plates](https://loadpr.com/guide/olympic-vs-standard-plates/). If a bar has no stamp, check the end cap or ask the staff.
 
 ### How much does an EZ curl bar weigh?
 
@@ -670,7 +670,7 @@ Percentages let one plan fit every lifter. A program that says 80% gives a 140 k
 | 70% | 98 kg | 97.5 kg |
 | 60% | 84 kg | 85 kg |
 
-The exact number is rarely loadable, so you round to the nearest weight your plates can make. The [1RM percentage calculator](https://loadpr.com/1rm-percentage-calculator/) does that for the whole table.
+The exact number is rarely loadable, so you round to the nearest weight your plates can make. The [1RM percentage calculator](https://loadpr.com/1rm-percentage-calculator/) does that for the whole table. To do it by hand, see [how to calculate a percentage of your max](https://loadpr.com/guide/percentage-of-max/).
 
 ### Every lift has its own 1RM
 
@@ -907,7 +907,7 @@ The chart stops at 12 reps because past that point the formulas disagree more an
 
 ### How to read the chart
 
-Find the number of reps you plan to do, read the percentage across, and multiply it by your 1RM. Then round to a weight your plates can make. The chart describes a set taken to the last rep you can manage. If your program wants reps left in the tank, use a lower percentage than the chart shows for that rep count. 5/3/1's [Boring But Big percentages](https://loadpr.com/531-calculator/boring-but-big-percentages/) are an example: sets of 10 at 50% of the training max, which is 45% of a 1RM when the training max is 90% of it, far below the 75% the chart gives for 10 reps.
+Find the number of reps you plan to do, read the percentage across, and multiply it by your 1RM. Then round to a weight your plates can make; [calculating a percentage of your max](https://loadpr.com/guide/percentage-of-max/) shows both steps with the plates. The chart describes a set taken to the last rep you can manage. If your program wants reps left in the tank, use a lower percentage than the chart shows for that rep count. 5/3/1's [Boring But Big percentages](https://loadpr.com/531-calculator/boring-but-big-percentages/) are an example: sets of 10 at 50% of the training max, which is 45% of a 1RM when the training max is 90% of it, far below the 75% the chart gives for 10 reps.
 
 The chart is a 1RM formula run backwards. The guide [how 1RM is calculated](https://loadpr.com/guide/how-to-calculate-1rm/) shows the formulas themselves.
 
@@ -1002,7 +1002,7 @@ The top attempt is three 45 lb plates on each side of the bar. To see the plates
 - **Come in rested.** Test after a lighter week or at the end of a training block, not after a hard session.
 - **Decide what counts.** Squat depth, a pause on the chest for the bench, lockout on the deadlift. Hold every attempt to the same standard you will use next time.
 - **Use the same setup.** Belt or no belt, the same bar and the same unit. A max belongs to its conditions.
-- **Warm up your body before the bar.** A few minutes of easy movement, then the first set of the table.
+- **Warm up your body before the bar.** A few minutes of easy movement, then the first set of the table. A normal training day needs a shorter ramp than a test day: see [how many warm-up sets to do before squat, bench and deadlift](https://loadpr.com/guide/warm-up-sets/).
 
 ### Safety: spotters, safety arms and missing a rep
 
@@ -1370,7 +1370,7 @@ Targets from percentages and programs, with the loads just below and just above,
 Taking whichever load is closer is the simplest rule, and with standard plates it is never more than half a step off: 2.5 lb or 1.25 kg. When the target sits exactly in the middle, like 202.5 lb between 200 and 205, you have to choose:
 
 - **Round down** on heavy top sets and anything near your max, where a few extra pounds can cost a rep.
-- **Round up** on lighter work, such as warm-ups and back-off sets, if you would rather not undershoot.
+- **Round up** on lighter work, such as [warm-up sets](https://loadpr.com/guide/warm-up-sets/) and back-off sets, if you would rather not undershoot.
 - **Stay consistent.** If you always round the same way, week-to-week progress in your log still compares like with like.
 
 The [closest loadable weight](https://loadpr.com/features/closest-loadable-weight/) page explains the rule the LoadPR app uses.
@@ -1473,7 +1473,7 @@ Mixed units are where counting goes wrong. A 20 kg plate is 44.09 lb, not 45 lb,
 - In pounds: 45 + 2 × 44.09 = **133.18 lb**, not 135 lb.
 - In kilos: the 45 lb bar is 20.41 kg, so 20.41 + 2 × 20 = **60.41 kg**.
 
-[How much a plate weighs](https://loadpr.com/guide/how-much-does-a-plate-weigh/) lists every plate in both units, and the [kg to lb converter](https://loadpr.com/kg-to-lb/) handles the totals.
+[How much a plate weighs](https://loadpr.com/guide/how-much-does-a-plate-weigh/) lists every plate in both units, and the [kg to lb converter](https://loadpr.com/kg-to-lb/) handles the totals. If the whole bar is kilo bumpers, [loading kg plates in a lb gym](https://loadpr.com/plate-calculator/kg-plates-in-a-lb-gym/) has the totals for each pair.
 
 ### Collars and the two sides
 
