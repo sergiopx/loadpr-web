@@ -282,7 +282,7 @@ About 102 kg.
 
 URL: https://loadpr.com/guide/plates-on-each-side/
 
-Updated 2026-11-09
+Updated 2026-11-23
 
 **Short answer: with a 45 lb bar and 45 lb plates, 1 plate on each side is 135 lb, 2 plates are 225 lb, 3 plates are 315 lb, 4 plates are 405 lb, 5 plates are 495 lb and 6 plates are 585 lb.** In the gym, "a plate" means one 45 lb plate (a 20 kg plate in a kilo gym), and lifters count the plates on one side of the bar. In kilos, 2 plates on each side of a 20 kg bar is 100 kg.
 
@@ -310,6 +310,18 @@ A 45 lb Olympic bar with 45 lb plates. Each total links to the plate breakdown f
 | 6 | 585 | 12 |
 
 405 lb is the "four plates" milestone and 495 lb is five plates. How many plates fit on one sleeve depends on the bar and on how thick the plates are.
+
+### How much is 6 plates on each side?
+
+**6 plates on each side is 585 lb** with 45 lb plates on a 45 lb bar, which is 265.35 kg. The same three steps as above:
+
+- Plates on one side: 6 × 45 = 270 lb.
+- Both sides: 2 × 270 = 540 lb.
+- Add the bar: 540 + 45 = **585 lb**.
+
+That is 12 plates on the bar, 90 lb more than 5 plates on each side (495 lb). In a kilo gym, six 20 kg plates on each side of a 20 kg bar make 260 kg, which is 573.2 lb. On a 33 lb (15 kg) bar, six 45s on each side are 573 lb.
+
+A 6 plate deadlift is the same 585 lb, because most gyms deadlift with the same 45 lb bar. Whether six plates fit on one sleeve depends on the bar and on how thick the plates are: thick bumper plates take more room than iron ones. On a plate-loaded leg press there is no bar, so 6 plates on each side are 540 lb of plates plus the sled, and the sled's weight depends on the machine (see [how much a leg press weighs without plates](https://loadpr.com/guide/leg-press-sled-weight/)). And if "6 plates" means six in total, three on each side, the bar is 315 lb.
 
 ### Plates on each side in kg
 
@@ -371,6 +383,12 @@ The tables on this page are plain arithmetic, with as many 45s as the load needs
 
 **How much is 6 plates on each side?**
 585 lb with six 45 lb plates on each side of a 45 lb bar, or 260 kg with six 20 kg plates on each side of a 20 kg bar.
+
+**How much is a 6 plate deadlift?**
+585 lb: a 45 lb bar with six 45 lb plates on each side, which is 265.35 kg. With 20 kg plates on a 20 kg bar it is 260 kg.
+
+**How much is 6 plates on each side on a leg press?**
+540 lb of plates (twelve 45 lb plates) plus the sled. The sled's weight depends on the machine, so add your machine's sled weight to the 540 lb.
 
 ---
 
@@ -1052,7 +1070,7 @@ For the bench press, yes, or safety arms set just below your chest. Even the 90%
 
 URL: https://loadpr.com/guide/warm-up-sets/
 
-Updated 2026-10-25
+Updated 2026-11-25
 
 **Short answer: most lifters do 3 to 5 warm-up sets before a heavy squat, bench press or deadlift, and more as the work set gets heavier.** A simple ramp is four sets: 40% of your work set for 5 reps, 60% for 5, 75% for 3 and 85% for 2. Before 315 lb that is 125, 190, 235 and 270 lb. Before 140 kg it is 55, 85, 105 and 120 kg.
 
@@ -1108,7 +1126,7 @@ Every warm-up set is a new weight to load, which is where most of the plate math
 
 - **Too many reps near the top.** Sets of 5 or more at 85% tire you before the set that matters.
 - **One big jump.** Going from the empty bar straight to the work set skips the practice at a heavy weight.
-- **Taking the percentages from your 1RM.** This ramp is a percentage of today's work set, not of your max.
+- **Taking the percentages from your 1RM.** This ramp is a percentage of today's work set, not of your max. 5/3/1 has its own scheme: the [5/3/1 warm-up sets](https://loadpr.com/warmup-calculator/wendler-531-warm-up-sets/) are 40%, 50% and 60% of the training max.
 - **Loading the exact number.** 126 lb cannot be made with standard pound plates on a 45 lb bar; 125 lb can.
 - **The same warm-up for every lift.** A deadlift starts from a plate on each side, not from the empty bar.
 
@@ -1135,7 +1153,7 @@ Fewer as the bar gets heavier. This ramp uses 5, 5, 3 and 2 reps at 40%, 60%, 75
 
 URL: https://loadpr.com/guide/531-training-max/
 
-Updated 2026-11-11
+Updated 2026-11-25
 
 **Short answer: in 5/3/1 the training max (TM) is 90% of your 1RM, and every percentage in the program is taken from the training max, not from your max.** A 455 lb deadlift max gives a 409.5 lb training max, so the 85% set is 350 lb, not 386.75 lb. Later versions of Jim Wendler's program often set the training max at 85% of the 1RM instead.
 
@@ -1160,7 +1178,7 @@ The original program runs four weeks. The last set of weeks 1 to 3 is a plus set
 | 3 (5/3/1) | 75% × 5: 305 lb | 85% × 3: 350 lb | 95% × 1+: 390 lb |
 | 4 (deload) | 40% × 5: 165 lb | 50% × 5: 205 lb | 60% × 5: 245 lb |
 
-The heaviest set of the cycle, 95% in week 3, is 389.03 lb exact and 390 lb on the bar, still well under the 455 lb max. That is the point: the training max keeps every set submaximal so you can add weight cycle after cycle. For any other max, the [5/3/1 calculator](https://loadpr.com/531-calculator/) builds all four weeks from your 1RM, with the plates for every set.
+The heaviest set of the cycle, 95% in week 3, is 389.03 lb exact and 390 lb on the bar, still well under the 455 lb max. That is the point: the training max keeps every set submaximal so you can add weight cycle after cycle. In weeks 1 to 3 the main sets come after three [5/3/1 warm-up sets](https://loadpr.com/warmup-calculator/wendler-531-warm-up-sets/) at 40%, 50% and 60% of the training max. For any other max, the [5/3/1 calculator](https://loadpr.com/531-calculator/) builds all four weeks from your 1RM, with the plates for every set.
 
 ### Training max at 90% or 85%?
 
@@ -2186,6 +2204,102 @@ Before. The order is warm-ups, main sets, Joker sets, then FSL: in week 3 from a
 
 **What are the FSL weights for a 140 kg squat?**
 The training max is 126 kg, so FSL is 5 × 5 at 82.5 kg in week 1, 87.5 kg in week 2 and 95 kg in week 3, on a 20 kg bar.
+
+---
+
+## What are the warm-up sets in 5/3/1?
+
+URL: https://loadpr.com/warmup-calculator/wendler-531-warm-up-sets/
+
+The 5/3/1 warm-up is three sets before the main sets: 40% of the training max for 5 reps, 50% for 5 and 60% for 3. From a 405 lb deadlift max the training max is 364.5 lb, so the warm-ups are 145 lb × 5, 180 lb × 5 and 220 lb × 3, loaded on a 45 lb bar. They are the same in weeks 1, 2 and 3; only the main sets change. The warmup calculator below builds a general ramp from any weight; the steps further down show how to read the 5/3/1 sets from it.
+
+### Example: warm-ups for a 405 lb deadlift
+
+Your deadlift max is 405 lb. Work out the warm-ups in three steps:
+
+- Take the training max, 90% of the 1RM: 405 × 90% = **364.5 lb**.
+- Take 40%, 50% and 60% of the training max: 145.8, 182.25 and 218.7 lb.
+- Round each to a weight you can load with pound plates on a 45 lb bar.
+
+| Warm-up | Exact weight | Load × reps | Plates on each side |
+|---|---|---|---|
+| 40% of TM | 145.8 lb | 145 lb × 5 | 45, 5 |
+| 50% of TM | 182.25 lb | 180 lb × 5 | 45, 10, 10, 2.5 |
+| 60% of TM | 218.7 lb | 220 lb × 3 | 45, 35, 5, 2.5 |
+
+The first main set of week 1 is 65% × 5, 235 lb (45, 45 and 5 on each side), so the last warm-up leaves a 15 lb jump to the work.
+
+### The warm-ups in every week of the cycle
+
+The warm-up stays the same while the main sets climb. From the same 364.5 lb training max:
+
+| Week | Warm-ups | Main sets |
+|---|---|---|
+| 1 (5s) | 145 × 5, 180 × 5, 220 × 3 | 235 × 5, 275 × 5, 310 × 5+ |
+| 2 (3s) | 145 × 5, 180 × 5, 220 × 3 | 255 × 3, 290 × 3, 330 × 3+ |
+| 3 (5/3/1) | 145 × 5, 180 × 5, 220 × 3 | 275 × 5, 310 × 3, 345 × 1+ |
+| 4 (deload) | none | 145 × 5, 180 × 5, 220 × 5 |
+
+All weights in lb. The deload week has no separate warm-up: its three sets are the same 40%, 50% and 60% of the training max, with 5 reps on the last set instead of 3. The [5/3/1 calculator](https://loadpr.com/531-calculator/) lists the warm-ups above the main sets of weeks 1 to 3, with the plates for each.
+
+### Using the warmup calculator for 5/3/1
+
+The calculator on this page builds a general ramp: 40%, 60%, 75% and 85% of the weight you enter. To read the 5/3/1 warm-ups from it, enter your training max, not your work set. From 364.5 lb it gives 145 lb at 40% and 220 lb at 60%, the first and last 5/3/1 warm-ups. Then:
+
+- add the 50% set in between yourself: 180 lb for 5;
+- do the 60% set for 3 reps, not 5;
+- skip the 75% and 85% rows, because in 5/3/1 those weights belong to the main sets.
+
+To get every warm-up and main set with their plates in one table instead, use the [5/3/1 calculator](https://loadpr.com/531-calculator/).
+
+### The same in kilos: a 140 kg squat
+
+A 140 kg squat max gives a training max of 140 × 90% = **126 kg**. With kilo plates on a 20 kg bar:
+
+| Warm-up | Exact weight | Load × reps | Plates on each side |
+|---|---|---|---|
+| 40% of TM | 50.4 kg | 50 kg × 5 | 15 |
+| 50% of TM | 63 kg | 62.5 kg × 5 | 20, 1.25 |
+| 60% of TM | 75.6 kg | 75 kg × 3 | 25, 2.5 |
+
+The first main set of week 1 is 65%, 82.5 kg.
+
+### Bench press: warm-ups from a 225 lb max
+
+The warm-up works the same for the upper-body lifts. A 225 lb bench max gives a 202.5 lb training max, so the warm-ups are **80 lb × 5** (10, 5 and 2.5 on each side), **100 lb × 5** (25 and 2.5) and **120 lb × 3** (35 and 2.5). The exact values are 81, 101.25 and 121.5 lb.
+
+### Training max at 85%
+
+If you set the training max at 85% of your 1RM, as Wendler's later books often do, the warm-ups come out lighter too. From the 405 lb deadlift the training max is 344.25 lb, and the warm-ups are 140 lb × 5 (45 and 2.5 on each side), 170 lb × 5 (45, 10, 5 and 2.5) and 205 lb × 3 (45 and 35). The [5/3/1 training max guide](https://loadpr.com/guide/531-training-max/) compares the 90% and 85% versions.
+
+### After the cycle the warm-ups go up
+
+The warm-ups follow the training max. When the deadlift training max goes up 10 lb, from 364.5 to 374.5 lb, the next cycle's warm-ups are 150 lb × 5, 185 lb × 5 and 225 lb × 3: a 45 and a 25 on each side for the second set, and two 45s for the third.
+
+### Common mistakes with 5/3/1 warm-ups
+
+- **Taking the percentages from the 1RM.** 40%, 50% and 60% of a 405 lb max are 162, 202.5 and 243 lb, each heavier than the program's 145.8, 182.25 and 218.7 lb. The warm-ups come from the training max.
+- **Doing the last warm-up for 5.** In weeks 1 to 3 the 60% set is 3 reps; 5 reps at 60% belongs to the deload week.
+- **Adding a warm-up to the deload.** The deload sets already are the 40%, 50% and 60% weights.
+- **Loading the exact number.** 182.25 lb can't go on a bar; 180 lb can.
+- **Keeping last cycle's warm-ups.** Work them out again whenever the training max changes.
+
+### FAQ
+
+**What are the 5/3/1 warm-up percentages?**
+40% of the training max for 5 reps, 50% for 5 and 60% for 3. From a 364.5 lb training max that is 145, 180 and 220 lb.
+
+**Are 5/3/1 warm-ups a percentage of the training max or the 1RM?**
+Of the training max. From a 405 lb deadlift max the training max is 364.5 lb, so the warm-ups are 145, 180 and 220 lb, not 162, 202.5 and 243 lb.
+
+**What are the 5/3/1 warm-ups for a 140 kg squat?**
+The training max is 126 kg, so the warm-ups are 50 kg × 5, 62.5 kg × 5 and 75 kg × 3 on a 20 kg bar.
+
+**Do you do the 5/3/1 warm-up sets in the deload week?**
+No. The deload week's three sets are 40%, 50% and 60% of the training max for 5 reps each: 145, 180 and 220 lb from a 364.5 lb training max.
+
+**What plates go on the bar for 5/3/1 warm-ups from a 405 lb deadlift?**
+On a 45 lb bar, each side: 45 and 5 for 145 lb; 45, 10, 10 and 2.5 for 180 lb; 45, 35, 5 and 2.5 for 220 lb.
 
 # App features
 

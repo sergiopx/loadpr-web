@@ -13,6 +13,7 @@
   {"path":"/plate-calculator/kg-plates-in-a-lb-gym/","loc":"en","type":"satellite","id":"sat:kgPlatesLbGym","key":"kgPlatesLbGym","parent":"/plate-calculator/","title":"Kg Plates in a Lb Gym: Plate Calculator | LoadPR"},
   {"path":"/531-calculator/boring-but-big-percentages/","loc":"en","type":"satellite","id":"sat:bbbPercentages","key":"bbbPercentages","parent":"/531-calculator/","title":"Boring But Big Percentages: 5x10 at 50% TM | LoadPR"},
   {"path":"/531-calculator/fsl-and-joker-sets/","loc":"en","type":"satellite","id":"sat:fslJokerSets","key":"fslJokerSets","parent":"/531-calculator/","title":"5/3/1 FSL and Joker Sets: Percentages Explained | LoadPR"},
+  {"path":"/warmup-calculator/wendler-531-warm-up-sets/","loc":"en","type":"satellite","id":"sat:warmup531","key":"warmup531","parent":"/warmup-calculator/","title":"5/3/1 Warm-Up Sets: 40, 50, 60% of Training Max | LoadPR"},
   {"path":"/guide/","loc":"en","type":"guideHub","id":"guideHub","key":null,"parent":null,"title":"Barbell & Plate Guides | LoadPR"},
   {"path":"/guide/olympic-plate-colors/","loc":"en","type":"guide","id":"guide:plateColors","key":"plateColors","parent":null,"title":"Olympic Plate Colors (IWF) | LoadPR"},
   {"path":"/guide/barbell-weights/","loc":"en","type":"guide","id":"guide:barWeights","key":"barWeights","parent":null,"title":"How Much Does a Barbell Weigh? 45 lb, EZ & Trap Bar | LoadPR"},

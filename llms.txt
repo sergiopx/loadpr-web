@@ -51,6 +51,7 @@ The complete English text of every tool, guide and app feature page, with tables
 - [Kg Plates in a Lb Gym: Plate Calculator](https://loadpr.com/plate-calculator/kg-plates-in-a-lb-gym/): A 20 kg plate is 44.09 lb, so two per side on a 45 lb bar make 221.37 lb, not 225. Convert every plate, then load kg plates with the calculator.
 - [Boring But Big Percentages: 5x10 at 50% TM](https://loadpr.com/531-calculator/boring-but-big-percentages/): Boring But Big is 5 sets of 10 at 50% of your 5/3/1 training max. A 315 lb squat max gives a 283.5 lb TM, so BBB sets are 141.75 lb, loaded as 140 lb.
 - [5/3/1 FSL and Joker Sets: Percentages Explained](https://loadpr.com/531-calculator/fsl-and-joker-sets/): FSL repeats the first set of the week \(65, 70 or 75% of TM\) for 5x5. Joker sets go 5–10% heavier than the top set. A 405 lb max: week 1 FSL is 235 lb.
+- [5/3/1 Warm-Up Sets: 40, 50, 60% of Training Max](https://loadpr.com/warmup-calculator/wendler-531-warm-up-sets/): 5/3/1 warm-ups are 40% × 5, 50% × 5 and 60% × 3 of the training max. From a 405 lb deadlift max: 145, 180 and 220 lb, with the plates for each set.
 
 ### App features
 - [LoadPR App Features for iPhone and Apple Watch](https://loadpr.com/features/): What LoadPR does on iPhone and Apple Watch: plate loading, gyms and plates, percentages, PR tracking, charts, timers, and what is free.
