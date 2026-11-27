@@ -1442,7 +1442,7 @@ No. A pair of 1 lb plates makes 2 lb steps, so 186 lb on a 45 lb bar becomes 185
 
 URL: https://loadpr.com/guide/count-weight-on-a-barbell/
 
-Updated 2026-10-29
+Updated 2026-11-27
 
 **Short answer: add up the plates on one side, double that, then add the bar.** A 45 lb bar with a 45, a 25 and a 5 on each side is 45 + 2 × (45 + 25 + 5) = 195 lb. A properly loaded bar carries the same plates on both ends, so you only need to read one side.
 
@@ -1499,7 +1499,7 @@ Spring clips weigh little and most lifters leave them out of the count. Competit
 
 ### Let a tool add it up
 
-[What's on the bar](https://loadpr.com/whats-on-the-bar/) does this count for you: tap the plates you see on one side, pick the bar and collars, and it shows the total in kg and lb. To go the other way, from a target weight to the plates per side, use the [plate calculator](https://loadpr.com/plate-calculator/).
+[What's on the bar](https://loadpr.com/whats-on-the-bar/) does this count for you: tap the plates you see on one side, pick the bar and collars, and it shows the total in kg and lb. To go the other way, from a target weight to the plates per side, use the [plate calculator](https://loadpr.com/plate-calculator/). To add up a whole workout rather than one bar, multiply each load by its sets and reps: [how to calculate training volume](https://loadpr.com/guide/training-volume/) shows the session total.
 
 ### Common mistakes
 
@@ -1529,7 +1529,7 @@ Convert the plates first: a 20 kg plate is 44.09 lb, so one on each side of a 45
 
 URL: https://loadpr.com/guide/percentage-of-max/
 
-Updated 2026-11-05
+Updated 2026-11-27
 
 **Short answer: multiply your max by the percentage written as a decimal, then round to a weight you can load.** 80% of a 315 lb max is 315 × 0.80 = 252 lb, and the nearest load with standard plates on a 45 lb bar is 250 lb. For 70% multiply by 0.70, for 85% by 0.85 and for 90% by 0.90.
 
@@ -1553,7 +1553,7 @@ Most programs move between a few percentages from week to week. The same three s
 | 85% | 267.75 lb | 270 lb | 45, 45, 10, 10, 2.5 |
 | 90% | 283.5 lb | 285 lb | 45, 45, 25, 5 |
 
-For any other max, the [1RM percentage calculator](https://loadpr.com/1rm-percentage-calculator/) lists every percentage from 100% down to 50%, each with the nearest weight you can load.
+For any other max, the [1RM percentage calculator](https://loadpr.com/1rm-percentage-calculator/) lists every percentage from 100% down to 50%, each with the nearest weight you can load. To see how much weight those sets add up to over a session, see [how to calculate training volume](https://loadpr.com/guide/training-volume/).
 
 ### How to work out 70 percent of your max
 
@@ -1888,6 +1888,90 @@ No, it is a tie. 225 lb for 10 estimates exactly 300 lb, so against a 300 lb mar
 
 **How many reps at 105 kg beat 100 kg for 5?**
 4 reps. 100 kg for 5 estimates 116.67 kg by Epley; 105 kg for 3 gives 115.5 kg and 105 kg for 4 gives 119 kg.
+
+---
+
+## How do you calculate training volume?
+
+URL: https://loadpr.com/guide/training-volume/
+
+Updated 2026-11-27
+
+**Short answer: training volume is sets × reps × weight, added up over every set you count.** 3 sets of 5 reps at 225 lb is 3 × 5 × 225 = 3,375 lb. For a whole workout, work out each exercise the same way and add the results. Lifters also call this number tonnage or volume load.
+
+### Example: 3 sets of 5 at 225 lb
+
+You squat 225 lb, two 45s on each side of a 45 lb bar, for 3 sets of 5. Work out the volume in three steps:
+
+- Volume of one set: 5 reps × 225 lb = 1,125 lb.
+- Total reps: 3 sets × 5 reps = 15 reps.
+- Total volume: 15 × 225 lb = **3,375 lb**, the same as 3 × 1,125 lb.
+
+The weight is the whole bar, bar and plates together: the number you write in your log. In kilos, 3,375 lb is 1,530.87 kg.
+
+### Total volume lifted in a workout
+
+For a session, find each exercise's volume and add them up. A workout of squats, bench press and barbell rows:
+
+| Exercise | Sets × reps | Weight | Volume |
+|---|---|---|---|
+| Squat | 3 × 5 | 225 lb | 3,375 lb |
+| Bench press | 3 × 8 | 155 lb | 3,720 lb |
+| Barbell row | 3 × 10 | 115 lb | 3,450 lb |
+| Session |  |  | 10,545 lb |
+
+3,375 + 3,720 + 3,450 = 10,545 lb. The bench press moved more volume than the squat even with a lighter bar, because 3 sets of 8 at 155 lb add up to more than 3 sets of 5 at 225 lb. Volume measures how much work you did, not how heavy it was.
+
+### Sets with different weights: a 5/3/1 week
+
+When the weight changes from set to set, work out each set on its own and add them. Week 1 of 5/3/1 from a 300 lb max, a 270 lb training max, is 175 lb for 5, 205 lb for 5 and 230 lb for 5 or more:
+
+| Set | Weight × reps | Volume |
+|---|---|---|
+| 65% | 175 lb × 5 | 875 lb |
+| 75% | 205 lb × 5 | 1,025 lb |
+| 85% | 230 lb × 5+ | 1,150 lb at 5 reps |
+| Main sets |  | 3,050 lb |
+
+The last set is a plus set, so its volume depends on the reps you get. 8 reps at 230 lb is 1,840 lb, and the three sets then come to **3,740 lb**. Count the reps you actually did, not the minimum the program asks for. The [5/3/1 calculator](https://loadpr.com/531-calculator/) lists every set of a cycle with its loadable weight and plates.
+
+### Do warm-up sets count toward volume?
+
+That is your call, as long as you use the same rule every session. A common rule is to count only work sets, because warm-ups change with how you feel that day. They do add up, though: a ramp to 225 lb of 90 lb × 5, 135 lb × 5, 170 lb × 3 and 190 lb × 2 is 2,015 lb, which takes the squat from 3,375 lb to 5,390 lb. Counting them one week and not the next makes your volume jump by about that much for no reason. How to build the ramp is covered in [warm-up sets](https://loadpr.com/guide/warm-up-sets/).
+
+### Training volume in kilos
+
+The formula does not care about the unit. 5 sets of 5 at 100 kg is 25 reps × 100 kg = **2,500 kg**. Keep a total in one unit: if some sets were logged in pounds, convert them before you add. 2,500 kg is 5,511.56 lb, and the [kg ↔ lb converter](https://loadpr.com/kg-to-lb/) does the rest.
+
+### Does the bar count?
+
+Yes. Volume uses the weight you lifted, and the bar is part of it: 225 lb is two 45s on each side plus the 45 lb bar. Leaving the bar out takes 45 lb off every rep. On machines the same idea applies with the sled or the Smith bar, whose weight depends on the model; pick one way of counting and keep it, as in [how much a leg press weighs without plates](https://loadpr.com/guide/leg-press-sled-weight/).
+
+### Tonnage vs counting sets
+
+Tonnage is one way to measure volume. Programs and coaches also talk about volume as a number of hard sets per lift or per week. The two answer different questions: the set count says how much hard work you did, the tonnage says how much weight you moved. Tonnage goes up when you add reps at the same weight, so a bigger number is not always a sign you got stronger. For that, look at your records: [what a PR is in the gym](https://loadpr.com/guide/what-is-a-pr/) explains weight PRs and rep PRs.
+
+### Common mistakes
+
+- **Leaving out the reps.** 3 sets at 225 lb is not 675 lb of volume; with 5 reps a set it is 3,375 lb.
+- **Using the planned reps on a plus set.** 230 lb for 8 is 1,840 lb, not the 1,150 lb of the minimum 5.
+- **Mixing kg and lb in one total.** Convert first: 2,500 kg is 5,511.56 lb.
+- **Switching the warm-up rule.** Counting warm-ups only some days adds 2,015 lb to a 225 lb squat day that never happened.
+- **Comparing different lifts.** A deadlift day and an arm day can't be compared by tonnage; compare the same lift from week to week.
+
+### FAQ
+
+**How do you calculate training volume?**
+Multiply sets × reps × weight for each exercise, then add the exercises together. 3 sets of 5 at 225 lb is 3,375 lb.
+
+**What is tonnage in weight training?**
+The total weight you lifted, counting every rep: sets × reps × weight for each exercise, added up. Squats 3 × 5 at 225 lb, bench 3 × 8 at 155 lb and rows 3 × 10 at 115 lb come to 10,545 lb.
+
+**How do you calculate volume when the weight changes every set?**
+Work out each set on its own and add them. 175 lb × 5, 205 lb × 5 and 230 lb × 5 is 875 + 1,025 + 1,150 = 3,050 lb.
+
+**Should I include warm-ups in my total volume?**
+Either way works if you keep the same rule. Warm-ups of 90 lb × 5, 135 lb × 5, 170 lb × 3 and 190 lb × 2 add 2,015 lb, so 3 × 5 at 225 lb goes from 3,375 lb to 5,390 lb.
 
 # Tool variations
 

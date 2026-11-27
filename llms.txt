@@ -29,6 +29,7 @@ The complete English text of every tool, guide and app feature page, with tables
 - **How much does a Smith machine bar weigh?** It depends on the machine. Many Smith machine bars weigh about 15–25 lb \(7–11 kg\), and counterbalanced models can feel lighter still.
 - **How much does a leg press weigh without plates?** It depends on the model. There is no standard leg press sled weight like the 45 lb \(20 kg\) barbell.
 - **How many reps do you need to beat your PR?** To beat an estimated max you need more reps than 30 × \(max ÷ weight − 1\), so take the first whole number above that. If your best set is 225 lb for 5, an estimated 262.5 lb by the Epley formula, then 235 lb for 4 reps beats it \(266.33 lb\) and 235 lb for 3 does not \(258.5 lb\).
+- **How do you calculate training volume?** Training volume is sets × reps × weight, added up over every set you count. 3 sets of 5 reps at 225 lb is 3 × 5 × 225 = 3,375 lb.
 
 ## English (en)
 
@@ -87,6 +88,7 @@ The complete English text of every tool, guide and app feature page, with tables
 - [How Much Does a Smith Machine Bar Weigh? Lb & Kg](https://loadpr.com/guide/smith-machine-bar-weight/): It depends on the model: many Smith bars are about 15–25 lb \(7–11 kg\) and counterbalanced ones feel lighter. Find yours and log it the same way.
 - [How Much Does a Leg Press Weigh Without Plates?](https://loadpr.com/guide/leg-press-sled-weight/): It depends on the model: read the label on the frame. Then add the plates: a 100 lb sled with two 45s per side is 280 lb. Angle and logging tips.
 - [How Many Reps to Beat Your PR? The Formula](https://loadpr.com/guide/reps-to-beat-your-pr/): To beat an estimated max you need more than 30 × \(max ÷ weight − 1\) reps. A 225 lb × 5 best \(262.5 lb\) falls to 235 lb × 4. Table and 5/3/1 examples.
+- [How to Calculate Training Volume \(Tonnage\)](https://loadpr.com/guide/training-volume/): Training volume is sets × reps × weight: 3 sets of 5 at 225 lb is 3,375 lb. Add each exercise for the session total, with lb, kg and 5/3/1 examples.
 
 ### Plate charts by weight
 - [How many plates for 95 to 495 lb (10 pages, one per weight)](https://loadpr.com/how-many-plates/95-lb/): URL pattern https://loadpr.com/how-many-plates/<weight>-lb/
